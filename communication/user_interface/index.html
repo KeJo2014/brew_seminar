@@ -8,8 +8,12 @@
 </head>
 
 <body>
-    Client1
-    <button onclick="sendMsg()">Send Msg</button>
+    
+    <button onclick="start()">Start</button><br>
+    <button onclick="reset()">Reset</button><br>
+    <button onclick="undoDone()">undo</button><br>
+    <button onclick="next()">Next</button><br>
+    <button onclick="stop()">STOP</button>
 </body>
 <script>
     // Create WebSocket connection.
@@ -30,8 +34,20 @@
         console.log('Message from server ', event.data);
     });
     // Send a msg to the websocket
-    const sendMsg = () => {
-        socket.send('Hello from Client1!');
+    const start = () => {
+        socket.send('{"command":"start"}');
+    }
+    const next = () => {
+        socket.send('{"command":"next"}');
+    }
+    const reset = () => {
+        socket.send('{"command":"reset"}');
+    }
+    const undoDone = () => {
+        socket.send('{"command":"undo_last"}');
+    }
+    const stop = () => {
+        socket.send('{"command":"stop"}');
     }
 </script>
 
