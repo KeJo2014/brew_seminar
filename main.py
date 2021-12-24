@@ -3,123 +3,39 @@ from asyncio.windows_events import NULL
 import json
 import logging
 import websockets
+import os
 
+from communication.websocket import *
 from process.brauablauf import interpretRecipe
 
-protocol = []
-currentProcesses = []
+recipe = []
+current_processes = []
 
 logging.basicConfig()
 
-STATE = {"value": 0}
 
-USERS = set()
+def check_turn_pages():
+    global recipe
+    global current_processes
+
+    for i in range(len(recipe['roadmap']['points'])):
+        if(recipe['roadmap']['points'][i] == "Maischen"):
+            if(i == current_processes['recipe-progress']):
+                return(True)
+    return(False)
 
 
-def state_event():
-    return json.dumps({"type": "state", **STATE})
-
-
-def users_event():
-    return json.dumps({"type": "users", "count": len(USERS)})
-
-
-async def notify_state():
+async def maischen():
     if USERS:  # asyncio.wait doesn't accept an empty list
-        message = state_event()
-        await asyncio.wait([user.send(message) for user in USERS])
-
-
-async def start_brewing():
-    global currentProcesses
-    global protocol
-    default = {
-        "Server-Status": "up and running",
-        "recipe-progress": 0
-    }
-    currentProcesses = default
-
-    if USERS:  # asyncio.wait doesn't accept an empty list
-        message = json.dumps(protocol)
-        await asyncio.wait([user.send(message) for user in USERS])
-
-
-async def next_step():
-    global currentProcesses
-    default = {
-        "Server-Status": "up and running",
-        "recipe-progress": currentProcesses["recipe-progress"] + 1
-    }
-    currentProcesses = default
-
-    if USERS:  # asyncio.wait doesn't accept an empty list
-        await asyncio.wait([user.send(json.dumps(currentProcesses)) for user in USERS])
-
-
-async def send_error(message):
-    if USERS:  # asyncio.wait doesn't accept an empty list
-        await asyncio.wait([user.send(message) for user in USERS])
-
-
-async def undo_last():
-    global currentProcesses
-    default = {
-        "Server-Status": "up and running",
-        "recipe-progress": currentProcesses["recipe-progress"] - 1
-    }
-    currentProcesses = default
-
-    if USERS:  # asyncio.wait doesn't accept an empty list
-        await asyncio.wait([user.send(json.dumps(currentProcesses)) for user in USERS])
-
-
-async def reset():
-    global currentProcesses
-    global protocol
-    default = {
-        "Server-Status": "up and running",
-        "recipe-progress": 0
-    }
-    currentProcesses = default
-
-    if USERS:  # asyncio.wait doesn't accept an empty list
-        message = json.dumps(protocol)
-        await asyncio.wait([user.send(message) for user in USERS])
-        await asyncio.wait([user.send(json.dumps(currentProcesses)) for user in USERS])
-
-
-async def stop():
-    global currentProcesses
-    default = {
-        "Server-Status": "passive",
-        "recipe-progress": 0
-    }
-    currentProcesses = default
-
-    if USERS:  # asyncio.wait doesn't accept an empty list
-        logging.error("SERVER IS STOPPED")
-        await asyncio.wait([user.send(json.dumps(currentProcesses)) for user in USERS])
-
-
-async def notify_users():
-    if USERS:  # asyncio.wait doesn't accept an empty list
-        message = users_event()
-        await asyncio.wait([user.send(message) for user in USERS])
-
-
-async def register(websocket):
-    USERS.add(websocket)
-    await notify_users()
-
-
-async def unregister(websocket):
-    USERS.remove(websocket)
-    await notify_users()
+        await asyncio.wait([user.send() for user in USERS])
 
 
 async def server(websocket, path):
     # register(websocket) sends user_event() to websocket
     global default
+    global recipe
+    global sources_path
+    global current_processes
 
     await register(websocket)
     try:
@@ -127,15 +43,24 @@ async def server(websocket, path):
         async for message in websocket:
             data = json.loads(message)
             if(data["command"] == "start"):
-                await start_brewing()
+                await start_brewing(recipe)
             elif(data["command"] == "next"):
-                await next_step()
+                current_processes = await next_step(current_processes)
+                if(check_turn_pages()):
+
+                    await switch_to_maischen()
+            elif(data["command"] == "select_recipe"):
+                npath = sources_path+"/recipes/"+data["response"]
+                recipe = interpretRecipe(npath)
+                await send_response(json.dumps(recipe))
             elif(data["command"] == "reset"):
-                await reset()
+                current_processes = await reset(recipe, current_processes)
             elif(data["command"] == "undo_last"):
-                await undo_last()
+                current_processes = await undo_last(current_processes)
             elif(data["command"] == "stop"):
-                await stop()
+                current_processes = await stop(current_processes)
+            elif(data["command"] == "switch_to_maischen"):
+                await maischen()
             else:
                 logging.error("unsupported event: %s", data["command"])
     finally:
@@ -143,9 +68,9 @@ async def server(websocket, path):
 
  ########################################################################## main part ##########################################################################
 # loading global variables
-# read protocol
-path = r"C:\Users\Jonas\Documents\Brauanlage\brew_seminar\sources\recipes\test.fbp"
-protocol = interpretRecipe(path)
+# read recipe
+sources_path = "./sources"
+recipe = {"error": "no recipe selected"}
 logging.info("recipe successfully loaded!")
 
 # setting default tasks
@@ -153,7 +78,7 @@ default = {
     "Server-Status": "passive",
     "recipe-progress": 0
 }
-currentProcesses.append(default)
+current_processes = default
 start_server = websockets.serve(server, "localhost", 5000)
 
 asyncio.get_event_loop().run_until_complete(start_server)

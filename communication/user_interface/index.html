@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    
+
     <button onclick="start()">Start</button><br>
     <button onclick="reset()">Reset</button><br>
     <button onclick="undoDone()">undo</button><br>
@@ -31,7 +31,24 @@
 
     // Listen for messages
     socket.addEventListener('message', function (event) {
-        console.log('Message from server ', event.data);
+        x = JSON.parse(event.data);
+        switch (x['command']) {
+            case 'select_recipe':
+                console.log("test.fbp seems to be selected");
+                socket.send('{"command":"select_recipe","response":"test.fbp"}');
+                break;
+            case 'reponse':
+                console.log("Server response: " + x);
+                break;
+            case 'switch_to_maischen':
+                console.log("Switch to Maische");
+                socket.send('{"command":"switch_to_maischen"}');
+                break;
+            default:
+                console.log("Unkown command: " + event.data);
+
+                break;
+        }
     });
     // Send a msg to the websocket
     const start = () => {
