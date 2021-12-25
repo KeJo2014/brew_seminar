@@ -3,14 +3,12 @@ from asyncio.windows_events import NULL
 import json
 import logging
 import websockets
-import os
 
-
-from process.communication.websocket import *
+from process.communication.websocket import beginn_brewing, send_maisch_update, register, next_step, switch_to_maischen, reset, stop, undo_last, send_response, unregister, USERS
 from process.brauablauf import interpretRecipe
-from process.db import create_new_table, insert_into_table
-from process.trigger.funk import getTemperature, getMotorMode
-from process.timer import *
+from process.db import create_new_table
+from process.trigger.funk import getTemperature, getMotorMode, heat_to
+from process.timer import set_timer, start_timer
 
 recipe = []
 current_processes = []
@@ -19,17 +17,21 @@ logging.basicConfig()
 
 
 def check_turn_pages():
+    """
+    checks if client needs to switch to maischen
+    """
     global recipe
     global current_processes
-
     for i in range(len(recipe['roadmap']['points'])):
-        if(recipe['roadmap']['points'][i] == "Maischen"):
-            if(i == current_processes['recipe-progress']):
-                return(True)
+        if(recipe['roadmap']['points'][i] == "Maischen" and i == current_processes['recipe-progress']):
+            return(True)
     return(False)
 
 
 async def maischen():
+    """
+    starts the maischen procedure
+    """
     global recipe
     print(recipe['recipe'])
     create_new_table()
@@ -38,40 +40,32 @@ async def maischen():
                     "nineteenth", "twentieth", "twenty-first", "twenty-second", "twenty-third", "twenty-fourth", "twenty-fifth", "twenty-sixth", "twenty-seventh", "twenty-eighth", "twenty-ninth", "thirtieth", "thirty-first"]
     for i in range(len(recipe['recipe']['data']['maischplan'])):
         time += recipe['recipe']['data']['maischplan']['rests'][designations[i]]['duration']
-
     set_timer(time, recipe)
     todo = f"heating up to {recipe['recipe']['data']['maischplan']['Einmaischen']} degrees celcius..."
-    await send_maisch_update(getTemperature(), getMotorMode(), minute, todo)
+    await send_maisch_update(getTemperature(), getMotorMode(), 0, todo)
     await heat_to(recipe['recipe']['data']['maischplan']['Einmaischen'])
     start_timer()
-    # if USERS:  # asyncio.wait doesn't accept an empty list
-    #    await asyncio.wait([user.send() for user in USERS])
-
-
-async def maischen_procedure():
-
-    if USERS:  # asyncio.wait doesn't accept an empty list
-        await asyncio.wait([user.send("procedure") for user in USERS])
 
 
 async def server(websocket, path):
+    """
+    starts the websocket server
+    """
     # register(websocket) sends user_event() to websocket
     global default
     global recipe
     global sources_path
     global current_processes
-
     await register(websocket)
     try:
         await websocket.send(json.dumps(default))
         async for message in websocket:
             data = json.loads(message)
             if(data["command"] == "start"):
-                await start_brewing(recipe)
+                await beginn_brewing(recipe)
             elif(data["command"] == "next"):
                 current_processes = await next_step(current_processes)
                 if(check_turn_pages()):
-
                     await switch_to_maischen()
             elif(data["command"] == "select_recipe"):
                 npath = sources_path+"/recipes/"+data["response"]
@@ -83,6 +77,7 @@ async def server(websocket, path):
                 current_processes = await undo_last(current_processes)
             elif(data["command"] == "stop"):
                 current_processes = await stop(current_processes)
+                exit()
             elif(data["command"] == "switch_to_maischen"):
                 await maischen()
             else:
