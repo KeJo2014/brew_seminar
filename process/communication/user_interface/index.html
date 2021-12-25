@@ -40,6 +40,9 @@
             case 'reponse':
                 console.log("Server response: " + x);
                 break;
+            case 'error':
+                console.log("Server error: " + x['error_msg']);
+                break;
             case 'switch_to_maischen':
                 console.log("Switch to Maische");
                 socket.send('{"command":"switch_to_maischen"}');

@@ -1,4 +1,5 @@
 import asyncio
+from asyncio.tasks import current_task
 import json
 import logging
 
@@ -69,7 +70,7 @@ async def send_error(message):
     sends an error message to the client
     """
     if USERS:  # asyncio.wait doesn't accept an empty list
-        await asyncio.wait([user.send(message) for user in USERS])
+        await asyncio.wait([user.send('{"command": "error","error_msg": "'+message+'"}') for user in USERS])
 
 
 async def send_finish_maisch():
