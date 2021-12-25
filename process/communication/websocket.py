@@ -54,6 +54,21 @@ async def send_error(message):
         await asyncio.wait([user.send(message) for user in USERS])
 
 
+async def send_finish_maisch():
+    if USERS:  # asyncio.wait doesn't accept an empty list
+        await asyncio.wait([user.send('{"command":"finish_maisch"}') for user in USERS])
+
+
+async def send_maisch_update(temp, motor, current_time, todo):
+    if USERS:  # asyncio.wait doesn't accept an empty list
+        cpu_temp = 12  # get real value
+        #message = '{"command":"m_update","hardware_data":{"m_temp":'+temp+',"engine_mode":true,"cpu_temp":'+cpu_temp+'},"time":'+current_time+'}'
+        message = json.dumps({"command": "m_update", "m_temp": temp, "engine_mode": motor,
+                             "cpu_temp": cpu_temp, "time": current_time, "todo": todo})
+        print(message)
+        await asyncio.wait([user.send(message) for user in USERS])
+
+
 async def undo_last(current_processes):
 
     default = {

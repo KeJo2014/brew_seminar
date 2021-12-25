@@ -5,8 +5,12 @@ import logging
 import websockets
 import os
 
-from communication.websocket import *
+
+from process.communication.websocket import *
 from process.brauablauf import interpretRecipe
+from process.db import create_new_table, insert_into_table
+from process.trigger.funk import getTemperature, getMotorMode
+from process.timer import *
 
 recipe = []
 current_processes = []
@@ -26,8 +30,28 @@ def check_turn_pages():
 
 
 async def maischen():
+    global recipe
+    print(recipe['recipe'])
+    create_new_table()
+    time = 0
+    designations = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth",
+                    "nineteenth", "twentieth", "twenty-first", "twenty-second", "twenty-third", "twenty-fourth", "twenty-fifth", "twenty-sixth", "twenty-seventh", "twenty-eighth", "twenty-ninth", "thirtieth", "thirty-first"]
+    for i in range(len(recipe['recipe']['data']['maischplan'])):
+        time += recipe['recipe']['data']['maischplan']['rests'][designations[i]]['duration']
+
+    set_timer(time, recipe)
+    todo = f"heating up to {recipe['recipe']['data']['maischplan']['Einmaischen']} degrees celcius..."
+    await send_maisch_update(getTemperature(), getMotorMode(), minute, todo)
+    await heat_to(recipe['recipe']['data']['maischplan']['Einmaischen'])
+    start_timer()
+    # if USERS:  # asyncio.wait doesn't accept an empty list
+    #    await asyncio.wait([user.send() for user in USERS])
+
+
+async def maischen_procedure():
+
     if USERS:  # asyncio.wait doesn't accept an empty list
-        await asyncio.wait([user.send() for user in USERS])
+        await asyncio.wait([user.send("procedure") for user in USERS])
 
 
 async def server(websocket, path):
