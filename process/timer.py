@@ -50,7 +50,7 @@ async def procedure():
                     todo = "maischen finished"
                     engine(False)
                     await send_finish_maisch()
-                    
+                    stop()
                 else:
                     await heat_to(recipe['recipe']['data']['maischplan']['rests'][designations[current_step]]['temperature'])
             else:
@@ -58,7 +58,7 @@ async def procedure():
                 engine(False)
                 todo = "maischen finished"
                 await send_finish_maisch()
-                reset()
+                stop()
         else:
             print("holding temperature")
             await hold_current_temperature(recipe['recipe']['data']['maischplan']['rests'][designations[current_step]]['temperature'])
@@ -76,6 +76,7 @@ def stop():
     task.cancel()
     reset()
 
+
 def reset():
     """
     resets the timer
@@ -83,10 +84,13 @@ def reset():
     global timer
     global last_time
     global current_step
+    global minute
+    minute = 0
     timer = 0
     current_step = 0
     last_time = 0
     print('reseted')
+
 
 def start_timer():
     """

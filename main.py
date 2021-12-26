@@ -5,7 +5,7 @@ import logging
 from os import error
 import websockets
 import process.cardinal_system.cardinal as cardinal
- 
+
 
 from process.communication.websocket import beginn_brewing, send_maisch_update, register, next_step, send_error, switch_to_maischen, reset, stop, undo_last, send_response, unregister, USERS
 from process.brauablauf import interpretRecipe
@@ -65,11 +65,12 @@ async def server(websocket, path):
         await websocket.send(json.dumps(default))
         async for message in websocket:
             data = json.loads(message)
-            if(cardinal.check_command(data["command"],current_processes, recipe) == "granted"):
+            if(cardinal.check_command(data["command"], current_processes, recipe) == "granted"):
                 if(data["command"] == "start"):
-                        default = {"Server-Status": "up and running","recipe-progress": 0}
-                        current_processes = default
-                        await beginn_brewing(recipe)
+                    default = {"Server-Status": "up and running",
+                               "recipe-progress": 0}
+                    current_processes = default
+                    await beginn_brewing(recipe)
                 elif(data["command"] == "next"):
                     current_processes = await next_step(current_processes)
                     if(check_turn_pages()):
@@ -90,7 +91,7 @@ async def server(websocket, path):
                 else:
                     logging.error("unsupported event: %s", data["command"])
             else:
-                await send_error(cardinal.check_command(data["command"],current_processes, recipe))
+                await send_error(cardinal.check_command(data["command"], current_processes, recipe))
     finally:
         await unregister(websocket)
 

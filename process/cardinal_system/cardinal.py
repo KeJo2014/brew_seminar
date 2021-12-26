@@ -4,19 +4,23 @@ from logging import error
 
 
 errorList = NULL
+
+
 def load_errorlist():
     """
     load cardinalsystem errors
     """
     global errorList
-    data = open("process\cardinal_system\errorList.cardinal","r")
+    data = open("process\cardinal_system\errorList.cardinal", "r")
     errorList = json.loads(data.readline())['error_codes']
+
 
 def check_command(command, current_processes, recipe):
     """
     checks if the command is allowed
     """
-    print(current_processes)
+    print(
+        f"current progress: {current_processes['recipe-progress']+1} | Server state: {current_processes['Server-Status']}")
     global errorList
     if(command == "start" or command == "select_recipe"):
         if(current_processes["Server-Status"] == "passive"):
