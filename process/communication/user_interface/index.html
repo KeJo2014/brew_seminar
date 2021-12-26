@@ -14,6 +14,7 @@
     <button onclick="undoDone()">undo</button><br>
     <button onclick="next()">Next</button><br>
     <button onclick="stop()">STOP</button>
+    <button onclick="protocol()">Protokoll</button>
 </body>
 <script>
     // Create WebSocket connection.
@@ -75,6 +76,9 @@
     }
     const stop = () => {
         socket.send('{"command":"stop"}');
+    }
+    const protocol = () => {
+        socket.send('{"command":"safe_protocol","protocol":"test"}');
     }
 </script>
 

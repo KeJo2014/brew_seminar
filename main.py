@@ -12,6 +12,7 @@ from process.brauablauf import interpretRecipe
 from process.db import create_new_table
 from process.trigger.funk import engine, get_temperature, get_motor_mode, heat_to
 from process.timer import set_timer, start_timer
+from process.data_protocol.manage_protocol import save_protocol
 
 
 recipe = []
@@ -88,6 +89,8 @@ async def server(websocket, path):
                     exit()
                 elif(data["command"] == "switch_to_maischen"):
                     await maischen()
+                elif(data["command"] == "safe_protocol"):
+                    save_protocol(data['protocol'])
                 else:
                     logging.error("unsupported event: %s", data["command"])
             else:

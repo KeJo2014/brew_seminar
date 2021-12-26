@@ -42,7 +42,7 @@ def check_command(command, current_processes, recipe):
             return(errorList['403a'])
     elif(command == "stop"):
         return('granted')
-    elif(command == "undo_last" or command == "switch_to_maischen"):
+    elif(command == "undo_last" or command == "switch_to_maischen" or command == "safe_protocol"):
         if(current_processes["Server-Status"] != "passive"):
             if(current_processes["recipe-progress"] > 0):
                 return('granted')
