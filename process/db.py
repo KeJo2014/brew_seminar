@@ -17,7 +17,7 @@ def create_new_table():
     print(f'created table called: {table_name}')
 
 
-def insert_into_table(motor_mode, temperature):
+def insert_into_table(motor_mode, temperature, procedure):
     # mycursor = mydb.cursor()
     # sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
     # val = ("John", "Highway 21")
@@ -25,4 +25,4 @@ def insert_into_table(motor_mode, temperature):
     # mydb.commit()
     # print(mycursor.rowcount, "record inserted.")
     print(
-        f'Values successfullly inserted into table! ({temperature} // {motor_mode}')
+        f'Values successfullly inserted into table! ({temperature} // {motor_mode} // {procedure}')

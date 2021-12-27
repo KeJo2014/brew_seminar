@@ -7,11 +7,11 @@ import websockets
 import process.cardinal_system.cardinal as cardinal
 
 
-from process.communication.websocket import beginn_brewing, send_maisch_update, register, next_step, send_error, switch_to_maischen, reset, stop, undo_last, send_response, unregister, USERS
+from process.communication.websocket import beginn_brewing, send_maisch_update, register, next_step, send_boiling_update, send_error, switch_to_maischen, reset, stop, undo_last, send_response, unregister, USERS
 from process.brauablauf import interpretRecipe
 from process.db import create_new_table
 from process.trigger.funk import engine, get_temperature, get_motor_mode, heat_to
-from process.timer import set_timer, start_timer
+from process.timer import set_timer, start_timer, get_boiling_point_at_position
 from process.data_protocol.manage_protocol import save_protocol
 
 
@@ -29,8 +29,10 @@ def check_turn_pages():
     global current_processes
     for i in range(len(recipe['roadmap']['points'])):
         if(recipe['roadmap']['points'][i] == "Maischen" and i == current_processes['recipe-progress']):
-            return(True)
-    return(False)
+            return('maischen')
+        elif(recipe['roadmap']['points'][i] == "Kochen" and i == current_processes['recipe-progress']):
+            return('würzekochen')
+    return('nope')
 
 
 async def maischen():
@@ -49,7 +51,25 @@ async def maischen():
     todo = f"heating up to {recipe['recipe']['data']['maischplan']['Einmaischen']} degrees celcius..."
     await send_maisch_update(get_temperature(), get_motor_mode(), 0, todo)
     await heat_to(recipe['recipe']['data']['maischplan']['Einmaischen'])
-    start_timer()
+    start_timer(current_processes['recipe-progress'])
+
+
+async def switch_to_wuerzekochen():
+    """
+    switches to würzekochen
+    """
+    global recipe
+    print(recipe['recipe'])
+    time = 0
+    designations = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth",
+                    "nineteenth", "twentieth", "twenty-first", "twenty-second", "twenty-third", "twenty-fourth", "twenty-fifth", "twenty-sixth", "twenty-seventh", "twenty-eighth", "twenty-ninth", "thirtieth", "thirty-first"]
+    for i in range(len(recipe['recipe']['wÃ¼rzekochen']['hop'])):
+        time = recipe['recipe']['wÃ¼rzekochen']['hop'][designations[i]]['time']
+    set_timer(time, recipe)
+    todo = f"heating up to {recipe['recipe']['wÃ¼rzekochen']['hop'][designations[i]]['time']} degrees celcius..."
+    await send_boiling_update(get_temperature(), 0, todo)
+    await heat_to(get_boiling_point_at_position())
+    start_timer(current_processes['recipe-progress'])
 
 
 async def server(websocket, path):
@@ -74,8 +94,10 @@ async def server(websocket, path):
                     await beginn_brewing(recipe)
                 elif(data["command"] == "next"):
                     current_processes = await next_step(current_processes)
-                    if(check_turn_pages()):
+                    if(check_turn_pages() == "maischen"):
                         await switch_to_maischen()
+                    elif(check_turn_pages() == "würzekochen"):
+                        await switch_to_wuerzekochen()
                 elif(data["command"] == "select_recipe"):
                     npath = sources_path+"/recipes/"+data["response"]
                     recipe = interpretRecipe(npath)

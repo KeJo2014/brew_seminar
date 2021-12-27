@@ -81,6 +81,14 @@ async def send_finish_maisch():
         await asyncio.wait([user.send('{"command":"finish_maisch"}') for user in USERS])
 
 
+async def send_finish_boiling():
+    """
+    sends the finish boiling command to client
+    """
+    if USERS:  # asyncio.wait doesn't accept an empty list
+        await asyncio.wait([user.send('{"command":"finish_boiling"}') for user in USERS])
+
+
 async def send_maisch_update(temp, motor, current_time, todo):
     """
     updates current stats
@@ -89,6 +97,18 @@ async def send_maisch_update(temp, motor, current_time, todo):
         cpu_temp = 12  # get real value
         message = json.dumps({"command": "m_update", "m_temp": temp, "engine_mode": motor,
                              "cpu_temp": cpu_temp, "time": current_time, "todo": todo})
+        print(message)
+        await asyncio.wait([user.send(message) for user in USERS])
+
+
+async def send_boiling_update(temp, current_step, todo):
+    """
+    updates current stats
+    """
+    if USERS:  # asyncio.wait doesn't accept an empty list
+        cpu_temp = 12  # get real value
+        message = json.dumps({"command": "b_update", "b_temp": temp,
+                             "cpu_temp": cpu_temp, "step": current_step, "todo": todo})
         print(message)
         await asyncio.wait([user.send(message) for user in USERS])
 
