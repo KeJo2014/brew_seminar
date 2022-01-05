@@ -2,7 +2,7 @@ import asyncio
 from asyncio.windows_events import NULL
 import json
 import logging
-from os import error
+import os
 import websockets
 import process.cardinal_system.cardinal as cardinal
 
@@ -123,6 +123,8 @@ async def server(websocket, path):
  ########################################################################## main part ##########################################################################
 # loading global variables
 # read recipe
+
+os.chdir('../Brauanlage/brew_seminar')
 sources_path = "./sources"
 recipe = {"error": "no recipe selected"}
 logging.info("recipe successfully loaded!")
