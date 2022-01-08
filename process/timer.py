@@ -1,6 +1,6 @@
 import asyncio
 from asyncio.windows_events import NULL
-from process.communication.websocket import send_finish_maisch, send_maisch_update, send_boiling_update, send_finish_boiling
+from process.communication.websocket import send_finish_maisch, send_maisch_update, send_boiling_update, send_finish_boiling, transmit_data
 from process.trigger.funk import get_temperature, get_motor_mode, heat_to, hold_current_temperature, engine
 from process.db import insert_into_table
 
@@ -13,7 +13,7 @@ recipe = NULL
 last_time = 0
 boiling_temp = 0
 
-eye_of_agamotto = 0.1
+eye_of_agamotto = 0.001
 
 
 def set_timer(time, rec):
@@ -35,40 +35,58 @@ async def maischen_procedure():
     global current_step
     global last_time
     global eye_of_agamotto
+    count = 0
+    just_information = True
+    designations = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth",
+                    "nineteenth", "twentieth", "twenty-first", "twenty-second", "twenty-third", "twenty-fourth", "twenty-fifth", "twenty-sixth", "twenty-seventh", "twenty-eighth", "twenty-ninth", "thirtieth", "thirty-first"]
     while True:
-        print(f'Minute: {minute}')
-        minute += 1
-        designations = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth",
-                        "nineteenth", "twentieth", "twenty-first", "twenty-second", "twenty-third", "twenty-fourth", "twenty-fifth", "twenty-sixth", "twenty-seventh", "twenty-eighth", "twenty-ninth", "thirtieth", "thirty-first"]
-        todo = ""
-        if(minute == recipe['recipe']['data']['maischplan']['rests'][designations[current_step]]['duration']+last_time):
-            if(current_step < len(recipe['recipe']['data']['maischplan']['rests'])-1):
-                last_time += recipe['recipe']['data']['maischplan']['rests'][designations[current_step]]['duration']
-                current_step += 1
-                print(f'current step: {current_step}')
-                todo = f"heating up for step Nr. {current_step}"
-                print(
-                    f"current step: {current_step} || length: {len(recipe['recipe']['data']['maischplan']['rests'])}")
-                if(current_step >= len(recipe['recipe']['data']['maischplan']['rests'])-1):
+        count += 1
+        if(count == 60):
+            just_information = False
+            count = 0
+        else:
+            just_information = True
+        if(just_information == False):
+            print(f'Minute: {minute}')
+            minute += 1
+            todo = ""
+            if(minute == recipe['recipe']['data']['maischplan']['rests'][designations[current_step]]['duration']+last_time):
+                if(current_step < len(recipe['recipe']['data']['maischplan']['rests'])-1):
+                    last_time += recipe['recipe']['data']['maischplan']['rests'][designations[current_step]]['duration']
+                    current_step += 1
+                    print(f'current step: {current_step}')
+                    todo = f"heating up for step Nr. {current_step}"
+                    print(
+                        f"current step: {current_step} || length: {len(recipe['recipe']['data']['maischplan']['rests'])}")
+                    if(current_step >= len(recipe['recipe']['data']['maischplan']['rests'])-1):
+                        print('finished!')
+                        todo = "maischen finished"
+                        engine(False)
+                        await send_finish_maisch()
+                        stop()
+                    else:
+                        await heat_to(recipe['recipe']['data']['maischplan']['rests'][designations[current_step]]['temperature'])
+                else:
                     print('finished!')
-                    todo = "maischen finished"
                     engine(False)
+                    todo = "maischen finished"
                     await send_finish_maisch()
                     stop()
-                else:
-                    await heat_to(recipe['recipe']['data']['maischplan']['rests'][designations[current_step]]['temperature'])
             else:
-                print('finished!')
-                engine(False)
-                todo = "maischen finished"
-                await send_finish_maisch()
-                stop()
+                print("holding temperature")
+                await hold_current_temperature(recipe['recipe']['data']['maischplan']['rests'][designations[current_step]]['temperature'])
+                todo = f"holding temperature (~{recipe['recipe']['data']['maischplan']['rests'][designations[current_step]]['temperature']} Grad) -{current_step}"
+            await send_maisch_update(get_temperature(), get_motor_mode(), minute, todo)
         else:
-            print("holding temperature")
+            todo = "transmitting information"
+            print(recipe['recipe']['data']['maischplan']['rests']
+                  [designations[current_step]]['temperature'])
             await hold_current_temperature(recipe['recipe']['data']['maischplan']['rests'][designations[current_step]]['temperature'])
-            todo = f"holding temperature (~{recipe['recipe']['data']['maischplan']['rests'][designations[current_step]]['temperature']} Grad) -{current_step}"
+            await transmit_data(get_temperature(), get_motor_mode())
+            print(f'next task in {60-count} seconds')
+
         insert_into_table(get_temperature(), get_motor_mode(), 'maischen')
-        await send_maisch_update(get_temperature(), get_motor_mode(), minute, todo)
+
         await asyncio.sleep(eye_of_agamotto)
 
 
@@ -80,29 +98,45 @@ async def boiling_procedure():
     global current_step
     global boiling_temp
     global eye_of_agamotto
+    count = 0
+    just_information = True
+    designations = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth",
+                    "nineteenth", "twentieth", "twenty-first", "twenty-second", "twenty-third", "twenty-fourth", "twenty-fifth", "twenty-sixth", "twenty-seventh", "twenty-eighth", "twenty-ninth", "thirtieth", "thirty-first"]
     while True:
-        print(f'Minute: {minute}')
-        minute += 1
-        designations = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth",
-                        "nineteenth", "twentieth", "twenty-first", "twenty-second", "twenty-third", "twenty-fourth", "twenty-fifth", "twenty-sixth", "twenty-seventh", "twenty-eighth", "twenty-ninth", "thirtieth", "thirty-first"]
-        todo = ""
-        if(minute == recipe['recipe']['wÃ¼rzekochen']['hop'][designations[current_step]]['time']):
-            if(minute < recipe['recipe']['wÃ¼rzekochen']['duration']):
-                current_step += 1
-                print(f'current step: {current_step}')
-                todo = f"add following hop"
-
-            else:
-                print('finished!')
-                todo = "boiling finished"
-                await send_finish_boiling()
-                stop()
+        count += 1
+        if(count == 60):
+            just_information = False
+            count = 0
         else:
-            print("holding temperature")
+            just_information = True
+        if(just_information == False):
+            print(f'Minute: {minute}')
+            minute += 1
+
+            todo = ""
+            if(minute == recipe['recipe']['wÃ¼rzekochen']['hop'][designations[current_step]]['time']):
+                if(minute < recipe['recipe']['wÃ¼rzekochen']['duration']):
+                    current_step += 1
+                    print(f'current step: {current_step}')
+                    todo = f"add following hop"
+
+                else:
+                    print('finished!')
+                    todo = "boiling finished"
+                    await send_finish_boiling()
+                    stop()
+            else:
+                print("holding temperature")
+                await hold_current_temperature(boiling_temp)
+                todo = f"holding temperature (~{boiling_temp} Grad) -{current_step}"
+                await send_boiling_update(get_temperature(), minute, todo)
+        else:
+            todo = "transmitting information"
             await hold_current_temperature(boiling_temp)
-            todo = f"holding temperature (~{boiling_temp} Grad) -{current_step}"
+            await transmit_data(get_temperature(), get_motor_mode())
+            print(f'next task in {60-count} seconds')
         insert_into_table(get_temperature(), False, 'boiling')
-        await send_boiling_update(get_temperature(), minute, todo)
+
         await asyncio.sleep(eye_of_agamotto)
 
 

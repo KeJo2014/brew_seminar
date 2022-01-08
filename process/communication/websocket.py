@@ -88,6 +88,13 @@ async def send_finish_boiling():
     if USERS:  # asyncio.wait doesn't accept an empty list
         await asyncio.wait([user.send('{"command":"finish_boiling"}') for user in USERS])
 
+async def transmit_data(temp, engine_mode):
+    """
+    transmit data to client
+    """
+    message = json.dumps({"command": "transmit_information", "m_temp": temp, "engine_mode": engine_mode})
+    if USERS:  # asyncio.wait doesn't accept an empty list
+        await asyncio.wait([user.send(message) for user in USERS])
 
 async def send_maisch_update(temp, motor, current_time, todo):
     """

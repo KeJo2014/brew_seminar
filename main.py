@@ -47,7 +47,7 @@ async def maischen():
                     "nineteenth", "twentieth", "twenty-first", "twenty-second", "twenty-third", "twenty-fourth", "twenty-fifth", "twenty-sixth", "twenty-seventh", "twenty-eighth", "twenty-ninth", "thirtieth", "thirty-first"]
     for i in range(len(recipe['recipe']['data']['maischplan'])):
         time += recipe['recipe']['data']['maischplan']['rests'][designations[i]]['duration']
-    set_timer(time, recipe)
+    set_timer(time*60, recipe)
     todo = f"heating up to {recipe['recipe']['data']['maischplan']['Einmaischen']} degrees celcius..."
     await send_maisch_update(get_temperature(), get_motor_mode(), 0, todo)
     await heat_to(recipe['recipe']['data']['maischplan']['Einmaischen'])
@@ -124,7 +124,7 @@ async def server(websocket, path):
 # loading global variables
 # read recipe
 
-os.chdir('../Brauanlage/brew_seminar')
+# os.chdir('../Brauanlage/brew_seminar')
 sources_path = "./sources"
 recipe = {"error": "no recipe selected"}
 logging.info("recipe successfully loaded!")

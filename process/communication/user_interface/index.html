@@ -51,6 +51,9 @@
             case 'm_update':
                 console.log(x);
                 break;
+            case 'transmit_information':
+                console.log(x);
+                break;
             case 'finish_maisch':
                 console.log('finish_maisch! | sending next step');
                 socket.send('{"command":"next"}');
