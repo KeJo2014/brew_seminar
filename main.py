@@ -1,8 +1,6 @@
 import asyncio
-from asyncio.windows_events import NULL
 import json
 import logging
-import os
 import websockets
 import process.cardinal_system.cardinal as cardinal
 
@@ -63,10 +61,10 @@ async def switch_to_wuerzekochen():
     time = 0
     designations = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth",
                     "nineteenth", "twentieth", "twenty-first", "twenty-second", "twenty-third", "twenty-fourth", "twenty-fifth", "twenty-sixth", "twenty-seventh", "twenty-eighth", "twenty-ninth", "thirtieth", "thirty-first"]
-    for i in range(len(recipe['recipe']['wÃ¼rzekochen']['hop'])):
-        time = recipe['recipe']['wÃ¼rzekochen']['hop'][designations[i]]['time']
+    for i in range(len(recipe['recipe']['wuerzekochen']['hop'])):
+        time = recipe['recipe']['wuerzekochen']['hop'][designations[i]]['time']
     set_timer(time, recipe)
-    todo = f"heating up to {recipe['recipe']['wÃ¼rzekochen']['hop'][designations[i]]['time']} degrees celcius..."
+    todo = f"heating up to {recipe['recipe']['wuerzekochen']['hop'][designations[i]]['time']} degrees celcius..."
     await send_boiling_update(get_temperature(), 0, todo)
     await heat_to(get_boiling_point_at_position())
     start_timer(current_processes['recipe-progress'])
@@ -137,7 +135,7 @@ default = {
     "recipe-progress": 0
 }
 current_processes = default
-start_server = websockets.serve(server, "localhost", 5000)
+start_server = websockets.serve(server, "localhost", 80)
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()

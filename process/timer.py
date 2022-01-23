@@ -1,15 +1,14 @@
 import asyncio
-from asyncio.windows_events import NULL
 from process.communication.websocket import send_finish_maisch, send_maisch_update, send_boiling_update, send_finish_boiling, transmit_data
 from process.trigger.funk import get_temperature, get_motor_mode, heat_to, hold_current_temperature, engine
 from process.db import insert_into_table
 
 timer = 0
-task = NULL
+task = []
 minute = 0
 current_step = 0
 
-recipe = NULL
+recipe = []
 last_time = 0
 boiling_temp = 0
 
@@ -114,8 +113,8 @@ async def boiling_procedure():
             minute += 1
 
             todo = ""
-            if(minute == recipe['recipe']['wÃ¼rzekochen']['hop'][designations[current_step]]['time']):
-                if(minute < recipe['recipe']['wÃ¼rzekochen']['duration']):
+            if(minute == recipe['recipe']['wuerzekochen']['hop'][designations[current_step]]['time']):
+                if(minute < recipe['recipe']['wuerzekochen']['duration']):
                     current_step += 1
                     print(f'current step: {current_step}')
                     todo = f"add following hop"

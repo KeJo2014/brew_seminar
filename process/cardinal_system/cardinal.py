@@ -1,9 +1,8 @@
-from asyncio.windows_events import NULL
 import json
 from logging import error
 
 
-errorList = NULL
+errorList = []
 
 
 def load_errorlist():
