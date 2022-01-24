@@ -26,7 +26,7 @@ def check_command(command, current_processes, recipe):
             return('granted')
         else:
             return(errorList["405a"])
-    if(command == "select_recipe" or command == "reset"):
+    if(command == "select_recipe" or command == "reset" or command == "get_recipe"):
         if(current_processes["Server-Status"] != "passive"):
             return('granted')
         else:
