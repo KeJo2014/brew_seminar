@@ -97,6 +97,7 @@ async def boiling_procedure():
     global current_step
     global boiling_temp
     global eye_of_agamotto
+    engine(False)                   # engine off
     count = 0
     just_information = True
     designations = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth",

@@ -1,5 +1,6 @@
 import asyncio
 from asyncio.tasks import current_task
+from email import message
 import json
 import logging
 
@@ -46,7 +47,8 @@ async def beginn_brewing(recipe):
     send the beginn brewing command to client
     """
     if USERS:  # asyncio.wait doesn't accept an empty list
-        message = json.dumps(recipe)
+        recipe = json.dumps(recipe)
+        message = '{"command": "recipe_content", "recipe": '+recipe+'}'
         await asyncio.wait([user.send(message) for user in USERS])
 
 
@@ -56,10 +58,11 @@ async def next_step(current_processes):
     """
     default = {
         "Server-Status": "up and running",
-        "recipe-progress": (current_processes['recipe-progress'] + 1)
+        "recipe-progress": (current_processes['recipe-progress'] + 1),
+        "command": "next_server_step"
     }
     current_processes = default
-
+    print(current_processes)
     if USERS:  # asyncio.wait doesn't accept an empty list
         await asyncio.wait([user.send(json.dumps(current_processes)) for user in USERS])
     return(current_processes)
@@ -149,7 +152,8 @@ async def reset(recipe, current_processes):
     """
     default = {
         "Server-Status": "up and running",
-        "recipe-progress": 0
+        "recipe-progress": 0,
+        "command": "next_server_step"
     }
     current_processes = default
 
@@ -166,7 +170,8 @@ async def stop(current_processes):
     """
     default = {
         "Server-Status": "passive",
-        "recipe-progress": 0
+        "recipe-progress": 0,
+        "command": "next_server_step"
     }
     current_processes = default
 
@@ -201,9 +206,10 @@ async def unregister(websocket):
     await notify_users()
 
 
-async def send_response(response):
+async def send_response(response, command):
     """
     sends a response to the client
     """
     if USERS:  # asyncio.wait doesn't accept an empty list
+        response = '{"command": "'+command+'", "response": '+response+'}'
         await asyncio.wait([user.send(response) for user in USERS])

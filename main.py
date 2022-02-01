@@ -99,7 +99,7 @@ async def server(websocket, path):
                 elif(data["command"] == "select_recipe"):
                     npath = sources_path+"/recipes/"+data["response"]
                     recipe = interpretRecipe(npath)
-                    await send_response(json.dumps(recipe))
+                    await send_response(json.dumps(recipe),'recipe_content')
                 elif(data["command"] == "reset"):
                     current_processes = await reset(recipe, current_processes)
                 elif(data["command"] == "undo_last"):
@@ -109,6 +109,8 @@ async def server(websocket, path):
                     exit()
                 elif(data["command"] == "switch_to_maischen"):
                     await maischen()
+                elif(data["command"] == "get_recipe"):
+                    await send_response(json.dumps(recipe),'recipe_content')
                 elif(data["command"] == "safe_protocol"):
                     save_protocol(data['protocol'])
                 else:
@@ -132,7 +134,8 @@ engine(False)
 cardinal.load_errorlist()
 default = {
     "Server-Status": "passive",
-    "recipe-progress": 0
+    "recipe-progress": 0,
+    "command": "next_server_step"
 }
 current_processes = default
 start_server = websockets.serve(server, "localhost", 80)
