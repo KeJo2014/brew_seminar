@@ -18,7 +18,7 @@ h1 {
 .glass-div {
   width: 100%;
   height: auto;
-  /* padding: 2rem; */
+  padding: 2rem;
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -107,8 +107,56 @@ h1 {
 
 .row {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .column {
-  width: 50%;
+  width: 40%;
+}
+
+.control-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#control {
+  display: flex;
+  flex-direction: column;
+}
+
+#but-start, #but-stop, #but-next, #but-undo, #but-file {
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 1rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Inter';
+    font-weight: bold;
+    color: white;
+}
+
+#but-start i, #but-next i, #but-undo i, #but-file i {
+  padding: 0.5rem;
+  mix-blend-mode:screen;
+}
+
+#but-start {
+  background: rgba(131, 255, 106, 0.7);
+}
+
+#but-stop {
+  background: rgba(255, 106, 106, 0.7);
+}
+
+#but-next, #but-undo {
+  background: rgba(106, 200, 255, 0.7);
+}
+
+#but-file {
+  background: rgba(109, 106, 255, 0.7);
 }

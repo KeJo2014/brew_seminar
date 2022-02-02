@@ -14,8 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    
+    
+    <script src="https://kit.fontawesome.com/01fe45157f.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body id="making-html">
@@ -38,13 +41,16 @@
             </tr>
         </table>
     </div>
-    <div class="glass-div">
-        <!-- <button id="but-start" onclick="start()">Start</button><br> -->
-        <!-- <button id="but-reset" onclick="reset()">Reset</button><br> -->
-        <button id="but-undo" onclick="undoDone()">undo</button><br>
-        <button id="but-next" onclick="next()">Next</button><br>
-        <button id="but-stop" onclick="stop()">STOP</button>
-        <button id="but-protokoll" onclick="protocol()">Protokoll</button>
+    <div class="glass-div control-bar">
+        <button id="but-undo" onclick="undoDone()"><i class="fas fa-arrow-left fa-5x"></i><h3>Zurück</h3></button>
+        <div id="control">
+        <button id="but-start" onclick="start()"><i class="fas fa-play fa-lg"></i><h3>Start</h3></button>
+        <button id="but-file" onclick="protocol()"><i class="fas fa-file fa-lg"></i><h3>Protokoll</h3></button>
+        </div>
+        <button id="but-next" onclick="next()"><i class="fas fa-arrow-right fa-5x"></i><h3>Weiter</h3></button>
+        <!-- <button id="but-stop" onclick="stop()"><i class="fas fa-stop fa-5x"></i><h3>Stop</h3></button> -->
+        <!-- <button id="but-reset" onclick="reset()">Reset</button> -->
+        
     </div>
 </div>
 <div class="column">
