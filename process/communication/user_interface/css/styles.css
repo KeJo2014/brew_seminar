@@ -1,3 +1,4 @@
+
 .select-html {
   padding: 4rem 20rem 4rem 20rem;
   margin: 0;
@@ -10,7 +11,7 @@
   flex-direction: column;
 }
 
-h1 {
+.site-title {
   color: white;
   font-size: 4rem;
 }
@@ -79,13 +80,55 @@ h1 {
 #making-html {
   padding: 4rem;
   margin: 0;
-  height: 90vh;
+  height: 140vh;
   background: linear-gradient(125deg, #FDEE00 0, #902504 70%);
   font-family: 'Inter';
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+#title-m {
+  margin-bottom: 0;
+}
+
+#recipe-info {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+#recipe-info tr td{
+  padding: 0 1rem 0 1rem;
+  border-right: 2px white solid;
+}
+
+#recipe-info tr td:last-child{
+  padding: 0 1rem 0 1rem;
+  border-right: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.column {
+  width: 40%;
+}
+
+/* Betriebsstatus */
+
+.centered  {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#model {
+  width: 300px;
 }
 
 .list {
@@ -101,19 +144,32 @@ h1 {
   text-align: start;
 }
 
+/* Rezeptanzeige */
+
+#recipe-output {
+  width: 100%;
+}
+
 .step {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 219, 119);
+  font-size: 1rem;
+  margin-bottom: 1px;
+  text-align: left;
 }
 
-.row {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.p-title {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  margin-top: 1px;
+  text-align: left;
 }
 
-.column {
-  width: 40%;
+.p-content {
+  padding: 0.5rem 0 2rem 0;
 }
+
+
+/* Controll Zentrum */
 
 .control-bar {
   display: flex;
@@ -143,6 +199,10 @@ h1 {
 #but-start i, #but-next i, #but-undo i, #but-file i {
   padding: 0.5rem;
   mix-blend-mode:screen;
+}
+
+#but-start h5, #but-stop h5, #but-next h5, #but-undo h5, #but-file h5 {
+  font-size: 1rem;
 }
 
 #but-start {
