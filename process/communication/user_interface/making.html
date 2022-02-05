@@ -25,9 +25,9 @@
     <h1 class="site-title" id="title-m">Zubereitung</h1>
     <table id="recipe-info">
         <tr>
-            <td>Ersteller</td>
-            <td>Rezeptname</td>
-            <td>Erstellungs-Datum</td>
+            <td id="author">Ersteller</td>
+            <td id="recipe_name">Rezeptname</td>
+            <td id="created_at">Erstellungs-Datum</td>
         </tr>
     </table>
     <div class="row">
@@ -37,20 +37,20 @@
                 <table class="list">
                     <tr>
                         <th>Phase</th>
-                        <td>Maischen</td>
+                        <td id="phase">Maischen</td>
                     </tr>
                     <tr>
                         <th>Temperatur</th>
-                        <td>78°C</td>
+                        <td id="temp">78°C</td>
                     </tr>
                     <tr>
                         <th>Rührwerk</th>
-                        <td>AN</td>
+                        <td id="engine">AN</td>
                     </tr>
                 </table>
             </div>
             <div class="glass-div control-bar">
-                <button id="but-undo" onclick="undoDone()">
+                <button id="but-undo" onclick="undo()">
                     <i class="fas fa-arrow-left fa-5x"></i>
                     <h5>Zurück</h3>
                 </button>
@@ -80,10 +80,10 @@
                         <th class="step">momentaner Schritt</th>
                     </tr>
                     <tr>
-                        <th class="p-title">Prozesstitel</th>
+                        <th class="p-title" id="current_title">Prozesstitel</th>
                     </tr>
                     <tr>
-                        <td class="p-content">
+                        <td class="p-content" id="step_content">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                             labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
                             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
@@ -96,10 +96,10 @@
                         <th class="step">nächster Schritt</th>
                     </tr>
                     <tr>
-                        <th class="p-title">Prozesstitel</th>
+                        <th class="p-title" id="next_title">Prozesstitel</th>
                     </tr>
                     <tr>
-                        <td class="p-content">
+                        <td class="p-content" id="next_step">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                             labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
                             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
@@ -114,73 +114,60 @@
         </div>
     </div>
 </body>
+<script src="js/websocket_connection.js"></script>
 <script>
-    // Create WebSocket connection.
-    const socket = new WebSocket('ws://localhost:80');
+    setTimeout(function (){
+  
+    // Something you want delayed.
+    start();
+    //get recipe
+    
+    //load recipe
+    rec = get_recipe_content();
 
-    // Connection opened
-    socket.addEventListener('open', function (event) {
-        console.log('Connected to the WS Server!')
-    });
+    //set static
+    console.log(get_recipe_content())
+    document.getElementById("recipe_name").innerHTML = rec.recipe.name;
 
-    // Connection closed
-    socket.addEventListener('close', function (event) {
-        console.log('Disconnected from the WS Server!')
-    });
+    document.getElementById("author").innerHTML = "flveg_student";
 
-    // Listen for messages
-    socket.addEventListener('message', function (event) {
-        x = JSON.parse(event.data);
-        switch (x['command']) {
-            case 'select_recipe':
-                console.log("test.fbp seems to be selected");
-                socket.send('{"command":"select_recipe","response":"test.fbp"}');
-                break;
-            case 'reponse':
-                console.log("Server response: " + x);
-                break;
-            case 'error':
-                console.log("Server error: " + x['error_msg']);
-                break;
-            case 'switch_to_maischen':
-                console.log("Switch to Maische");
-                socket.send('{"command":"switch_to_maischen"}');
-                break;
-            case 'm_update':
-                console.log(x);
-                break;
-            case 'transmit_information':
-                console.log(x);
-                break;
-            case 'finish_maisch':
-                console.log('finish_maisch! | sending next step');
-                socket.send('{"command":"next"}');
-                break;
-            default:
-                console.log("Unkown command: " + event.data);
+    document.getElementById("phase").innerHTML = rec.roadmap.points[get_step_number()];
 
-                break;
+    document.getElementById("temp").innerHTML = get_temp()+"°C";
+
+    document.getElementById("engine").innerHTML = get_engine();
+
+    document.getElementById("current_title").innerHTML = rec.roadmap.points[get_step_number()];
+    
+    document.getElementById("step_content").innerHTML = rec.roadmap.notes[get_step_number()];
+
+    
+
+    if(get_step_number()+1 == rec.roadmap.notes.length){
+        document.getElementById("next_title").innerHTML = "Ende";
+        document.getElementById("next_step").innerHTML = "Das Rezept ist abgeschlossen.";
+    }else{
+        document.getElementById("next_step").innerHTML = rec.roadmap.notes[get_step_number()+1];
+        document.getElementById("next_title").innerHTML = rec.roadmap.points[get_step_number()+1];
+    }
+
+}, 1000); // How long you want the delay to be, measured in milliseconds.
+        
+    function update_interface(){
+        rec = get_recipe_content();
+        document.getElementById("phase").innerHTML = rec.roadmap.points[get_step_number()];
+        document.getElementById("temp").innerHTML = get_temp()+"°C";
+        document.getElementById("engine").innerHTML = get_engine();
+        document.getElementById("current_title").innerHTML = rec.roadmap.points[get_step_number()];
+        document.getElementById("step_content").innerHTML = rec.roadmap.notes[get_step_number()];
+        if(get_step_number()+1 == rec.roadmap.notes.length){
+        document.getElementById("next_title").innerHTML = "Ende";
+        document.getElementById("next_step").innerHTML = "Das Rezept ist abgeschlossen.";
+        }else{
+            document.getElementById("next_step").innerHTML = rec.roadmap.notes[get_step_number()+1];
+            document.getElementById("next_title").innerHTML = rec.roadmap.points[get_step_number()+1];
         }
-    });
-    // Send a msg to the websocket
-    const start = () => {
-        socket.send('{"command":"start"}');
-    }
-    const next = () => {
-        socket.send('{"command":"next"}');
-    }
-    const reset = () => {
-        socket.send('{"command":"reset"}');
-    }
-    const undoDone = () => {
-        socket.send('{"command":"undo_last"}');
-    }
-    const stop = () => {
-        socket.send('{"command":"stop"}');
-    }
-    const protocol = () => {
-        socket.send('{"command":"safe_protocol","protocol":"test"}');
-    }
+   }
 </script>
 
 

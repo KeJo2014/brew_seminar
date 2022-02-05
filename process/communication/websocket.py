@@ -129,7 +129,8 @@ async def undo_last(current_processes):
     """
     default = {
         "Server-Status": "up and running",
-        "recipe-progress": (current_processes["recipe-progress"] - 1)
+        "recipe-progress": (current_processes["recipe-progress"] - 1),
+        "command": "next_server_step"
     }
     current_processes = default
 

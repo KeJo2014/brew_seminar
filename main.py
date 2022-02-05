@@ -109,6 +109,8 @@ async def server(websocket, path):
                     exit()
                 elif(data["command"] == "switch_to_maischen"):
                     await maischen()
+                elif(data["command"] == "get_step"):
+                    await send_response(json.dumps(current_processes),'step')
                 elif(data["command"] == "get_recipe"):
                     await send_response(json.dumps(recipe),'recipe_content')
                 elif(data["command"] == "safe_protocol"):

@@ -21,6 +21,8 @@ def check_command(command, current_processes, recipe):
     print(
         f"current progress: {current_processes['recipe-progress']+1} | Server state: {current_processes['Server-Status']}")
     global errorList
+    if(command == "get_step"):
+        return('granted')
     if(command == "start" or command == "select_recipe"):
         if(current_processes["Server-Status"] == "passive"):
             return('granted')

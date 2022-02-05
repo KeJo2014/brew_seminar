@@ -1,5 +1,8 @@
 //global variables
 recipe = null
+progress = 0;
+temp = 0;
+engine = "AUS";
 
 // Create WebSocket connection.
 const socket = new WebSocket('ws://localhost:80');
@@ -7,6 +10,8 @@ const socket = new WebSocket('ws://localhost:80');
 // Connection opened
 socket.addEventListener('open', function (event) {
     console.log('Connected to the WS Server!') 
+    get_recipe();
+    get_step();
 });
 
 // Connection closed
@@ -21,6 +26,7 @@ socket.addEventListener('message', function (event) {
     switch (x['command']) {
         case 'next_server_step':
             console.log("server status update! mode: " + x['Server-Status']+ " || recipe progress: " + x['recipe-progress']);
+            get_step();
             break;
         case 'select_recipe':
             console.log("test.fbp seems to be selected");
@@ -36,6 +42,11 @@ socket.addEventListener('message', function (event) {
         case 'error':
             console.log("Server error: " + x['error_msg']);
             break;
+        case 'step':
+            console.log(x["response"]["recipe-progress"]);
+            progress = x["response"]["recipe-progress"];
+            update_interface();
+            break;
         case 'switch_to_maischen':
             console.log("Switch to Maische");
             socket.send('{"command":"switch_to_maischen"}');
@@ -48,7 +59,13 @@ socket.addEventListener('message', function (event) {
             console.log("recipe received from server");
             break;
         case 'transmit_information':
-            console.log(x);
+            temp = x['m_temp'];
+            if(x['m_engine'] == false){
+                engine = "AUS";
+            }else{
+                engine = "EIN";
+            }
+            update_interface();
             break;
         default:
             console.log("Unkown command: " + event.data);
@@ -72,14 +89,26 @@ function undo(){
 function stop(){
     socket.send('{"command":"stop"}');
 }
-function protocoll(){
+function protocol(){
     socket.send('{"command":"safe_protocol","protocol":"test"}');
 }
 function get_recipe(){
     socket.send('{"command":"get_recipe"}');
 }
+function get_step(){
+    socket.send('{"command":"get_step"}');
+}
 
 // get global variables
 function get_recipe_content(){
     return recipe;
+}
+function get_step_number(){
+    return progress;
+}
+function get_temp(){
+    return temp;
+}
+function get_engine(){
+    return engine;
 }
