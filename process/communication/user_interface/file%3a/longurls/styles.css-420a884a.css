@@ -1,0 +1,246 @@
+
+.select-html {
+  padding: 4rem 20rem 4rem 20rem;
+  margin: 0;
+  height: 90vh;
+  background: linear-gradient(125deg, #FDEE00 0, #902504 70%);
+  font-family: 'Inter';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.site-title {
+  color: white;
+  font-size: 4rem;
+}
+
+.glass-div {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* select.html */
+
+.select {
+  width: 25%;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  align-self: end;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Inter';
+  font-weight: bold;
+}
+
+.tableFixHead {
+  overflow-y: auto;
+  max-height: 15rem;
+}
+
+.tableFixHead thead th {
+  position: sticky;
+  top: 0;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.table th {
+  background: white;
+}
+
+.table thead tr {
+  border-radius: 1rem;
+}
+
+/* making.html */
+
+#making-html {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(125deg, #FDEE00 0, #902504 70%);
+  font-family: 'Inter';
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#title-m {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: -0.5rem;
+  padding-bottom: 1rem;
+}
+
+#recipe-info {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+
+#recipe-info tr td{
+  padding: 1rem 0 1rem 0;
+  
+}
+
+#recipe-info tr td:last-child{
+  border-top: 2px white solid;
+}
+
+.row {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#h-column {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  width: 40%;
+}
+/* Betriebsstatus */
+
+.centered  {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#model {
+  width: 50%;
+}
+
+.list {
+  width: 100%;
+  padding: 2rem;
+}
+
+.list tr {
+  padding: 1rem;
+}
+
+.list tr th {
+  text-align: start;
+}
+
+#engine-status {
+  width: 1rem;
+  height:  1rem;
+  background-color: rgba(131, 255, 106, 0.7);
+  border-radius: 50%;
+}
+
+/* Rezeptanzeige */
+
+#recipe-output {
+  width: 100%;
+  padding: 2rem;
+  max-height: 100vh;
+}
+
+.step {
+  color: rgb(255, 219, 119);
+  font-size: 1rem;
+  margin-bottom: 1px;
+  text-align: left;
+}
+
+.p-title {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  margin-top: 1px;
+  text-align: left;
+}
+
+.p-content {
+  padding: 0.5rem 0 2rem 0;
+}
+
+
+/* Controll Zentrum */
+
+.control-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#control {
+  display: flex;
+  flex-direction: column;
+}
+
+#but-start, #but-stop, #but-next, #but-undo, #but-file {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 1rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Inter';
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#but-start i, #but-next i, #but-undo i, #but-file i {
+  padding: 0.5rem;
+  mix-blend-mode:screen;
+}
+
+#but-start h5, #but-stop h5, #but-next h5, #but-undo h5, #but-file h5 {
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+#but-start {
+  background: rgba(131, 255, 106, 0.7);
+}
+
+#but-stop {
+  background: rgba(255, 106, 106, 0.7);
+}
+
+#but-next, #but-undo {
+  background: rgba(106, 200, 255, 0.7);
+}
+
+#but-file {
+  background: rgba(109, 106, 255, 0.7);
+}
