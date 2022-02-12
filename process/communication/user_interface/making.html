@@ -124,6 +124,7 @@
     </div>
 </body>
 <script src="js/websocket_connection.js"></script>
+<script src="js/decription.js"></script>
 <script>
     setTimeout(function (){
   
@@ -136,19 +137,19 @@
 
     //set static
     console.log(get_recipe_content())
-    document.getElementById("recipe_name").innerHTML = rec.recipe.name;
+    document.getElementById("recipe_name").innerHTML = decript(rec.recipe.name);
 
     document.getElementById("author").innerHTML = "flveg_student";
 
-    document.getElementById("phase").innerHTML = rec.roadmap.points[get_step_number()];
+    document.getElementById("phase").innerHTML = decript(rec.roadmap.points[get_step_number()]);
 
     document.getElementById("temp").innerHTML = get_temp()+"°C";
 
     document.getElementById("engine").innerHTML = get_engine();
 
-    document.getElementById("current_title").innerHTML = rec.roadmap.points[get_step_number()];
+    document.getElementById("current_title").innerHTML = decript(rec.roadmap.points[get_step_number()]);
     
-    document.getElementById("step_content").innerHTML = rec.roadmap.notes[get_step_number()];
+    document.getElementById("step_content").innerHTML = decript(rec.roadmap.notes[get_step_number()]);
 
     
 
@@ -156,25 +157,25 @@
         document.getElementById("next_title").innerHTML = "Ende";
         document.getElementById("next_step").innerHTML = "Das Rezept ist abgeschlossen.";
     }else{
-        document.getElementById("next_step").innerHTML = rec.roadmap.notes[get_step_number()+1];
-        document.getElementById("next_title").innerHTML = rec.roadmap.points[get_step_number()+1];
+        document.getElementById("next_step").innerHTML = decript(rec.roadmap.notes[get_step_number()+1]);
+        document.getElementById("next_title").innerHTML = decript(rec.roadmap.points[get_step_number()+1]);
     }
 
 }, 1000); // How long you want the delay to be, measured in milliseconds.
         
     function update_interface(){
         rec = get_recipe_content();
-        document.getElementById("phase").innerHTML = rec.roadmap.points[get_step_number()];
+        document.getElementById("phase").innerHTML = decript(rec.roadmap.points[get_step_number()]);
         document.getElementById("temp").innerHTML = get_temp()+"°C";
         document.getElementById("engine").innerHTML = get_engine();
-        document.getElementById("current_title").innerHTML = rec.roadmap.points[get_step_number()];
-        document.getElementById("step_content").innerHTML = rec.roadmap.notes[get_step_number()];
+        document.getElementById("current_title").innerHTML = decript(rec.roadmap.points[get_step_number()]);
+        document.getElementById("step_content").innerHTML = decript(rec.roadmap.notes[get_step_number()]);
         if(get_step_number()+1 == rec.roadmap.notes.length){
         document.getElementById("next_title").innerHTML = "Ende";
         document.getElementById("next_step").innerHTML = "Das Rezept ist abgeschlossen.";
         }else{
-            document.getElementById("next_step").innerHTML = rec.roadmap.notes[get_step_number()+1];
-            document.getElementById("next_title").innerHTML = rec.roadmap.points[get_step_number()+1];
+            document.getElementById("next_step").innerHTML = decript(rec.roadmap.notes[get_step_number()+1]);
+            document.getElementById("next_title").innerHTML = decript(rec.roadmap.points[get_step_number()+1]);
         }
    }
 </script>
