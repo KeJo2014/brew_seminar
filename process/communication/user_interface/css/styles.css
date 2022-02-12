@@ -25,6 +25,8 @@
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
+  max-height: 95vh;
+  
 }
 
 /* select.html */
@@ -85,14 +87,16 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 #title-m {
   writing-mode: vertical-rl;
   text-orientation: upright;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   letter-spacing: -0.5rem;
+  padding-bottom: 1rem;
 }
 
 #recipe-info {
@@ -166,7 +170,7 @@
 #recipe-output {
   width: 100%;
   padding: 2rem;
-  max-height: 100vh;
+  max-height: 95vh;
 }
 
 .step {
@@ -185,6 +189,7 @@
 
 .p-content {
   padding: 0.5rem 0 2rem 0;
+  /* overflow-y: scroll; */
 }
 
 
