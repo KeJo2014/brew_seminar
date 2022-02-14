@@ -90,30 +90,6 @@
   overflow: hidden;
 }
 
-#title-m {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  text-align: center;
-  font-size: 3rem;
-  letter-spacing: -0.5rem;
-  padding-bottom: 1rem;
-}
-
-#recipe-info {
-  text-align: center;
-  font-size: 1rem;
-  color: white;
-}
-
-#recipe-info tr td{
-  padding: 1rem 0 1rem 0;
-  
-}
-
-#recipe-info tr td:last-child{
-  border-top: 2px white solid;
-}
-
 .row {
   width: 100%;
   height: 100vh;
@@ -122,76 +98,39 @@
   justify-content: space-around;
 }
 
-#h-column {
-  width: 10%;
-  display: flex;
+#c-column {
+  width: 45%;
+  display: flex; 
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
-.column {
-  width: 40%;
-}
-/* Betriebsstatus */
-
-.centered  {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+#r-column {
+  width: 45%;
 }
 
-#model {
-  width: 50%;
+#title-m {
+  font-size: 4rem;
+  text-align: center;
+  margin: 0;
+  padding-top: 1rem;
 }
 
-.list {
-  width: 100%;
-  padding: 2rem;
-}
-
-.list tr {
-  padding: 1rem;
-}
-
-.list tr th {
-  text-align: start;
-}
-
-#engine-status {
-  width: 1rem;
-  height:  1rem;
-  background-color: rgba(131, 255, 106, 0.7);
-  border-radius: 50%;
-}
-
-/* Rezeptanzeige */
-
-#recipe-output {
-  width: 100%;
-  padding: 2rem;
-  max-height: 95vh;
-}
-
-.step {
-  color: rgb(255, 219, 119);
+#recipe-info {
+  text-align: center;
   font-size: 1rem;
-  margin-bottom: 1px;
-  text-align: left;
+  color: white;
+  padding-bottom: 1rem;
 }
 
-.p-title {
-  color: rgb(0, 0, 0);
-  font-size: 2rem;
-  margin-top: 1px;
-  text-align: left;
+#recipe-info tr td{
+  padding: 0 1rem 0 1rem;
+  border-right: 2px white solid;
 }
 
-.p-content {
-  padding: 0.5rem 0 2rem 0;
-  /* overflow-y: scroll; */
+#recipe-info tr td:last-child{
+  border: 0;
 }
-
 
 /* Controll Zentrum */
 
@@ -199,17 +138,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  margin: 1rem;
 }
 
-#control {
-  display: flex;
-  flex-direction: column;
-}
-
-#but-start, #but-stop, #but-next, #but-undo, #but-file {
+.btn {
     padding: 0.5rem;
-    margin: 0.5rem;
+    margin: 1rem 0.25rem 1rem 0.25rem;
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 1rem;
     -webkit-backdrop-filter: blur(10px);
@@ -221,30 +155,139 @@
     display: flex;
     flex-direction: column;
     justify-items: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
 }
 
-#but-start i, #but-next i, #but-undo i, #but-file i {
+.btn i{
   padding: 0.5rem;
   mix-blend-mode:screen;
 }
 
-#but-start h5, #but-stop h5, #but-next h5, #but-undo h5, #but-file h5 {
+.btn h5{
   font-size: 1rem;
   margin: 0.5rem;
 }
 
 #but-start {
-  background: rgba(131, 255, 106, 0.7);
+  background: rgb(131, 255, 106);
 }
 
 #but-stop {
-  background: rgba(255, 106, 106, 0.7);
+  background: rgb(255, 106, 106);
 }
 
 #but-next, #but-undo {
-  background: rgba(106, 200, 255, 0.7);
+  background: rgb(106, 200, 255);
 }
 
 #but-file {
-  background: rgba(109, 106, 255, 0.7);
+  background: rgb(109, 106, 255);
 }
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s;
+}
+.btn:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  transform: scale(1.2,1.2);
+}
+.btn:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
+
+/* Betriebsstatus */
+
+.centered  {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#model {
+  padding-top: 1rem;
+  width: 50%;
+}
+
+.list {
+  width: 60%;
+  padding: 1rem;
+}
+
+.list tr {
+  padding: 1rem;
+}
+
+.list tr th {
+  text-align: end;
+  padding-right: 0.5rem;
+}
+
+.list tr td {
+  text-align: start;
+  padding-left: 0.5rem;
+}
+
+
+#engine-status {
+  background-color: rgba(131, 255, 106, 0.7);
+}
+
+/* Rezeptanzeige */
+
+#recipe-output {
+  width: 100%;
+  padding: 1rem;
+  max-height: 95vh;
+}
+
+#recipe-output tr td {
+  overflow-y: visible;
+}
+
+.step {
+  color: rgb(255, 219, 119);
+  font-size: 1rem;
+  text-align: left;
+}
+
+.p-title {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  text-align: left;
+}
+
+.p-content {
+  padding: 0.5rem 0 2rem 0;
+}
+
+#next_step {
+  padding: 0.5rem 0 0 0;
+}
+
