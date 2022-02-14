@@ -27,6 +27,21 @@ function create_pdf(){
     //start time
     doc.text(55, 60, get_logs()['meta']['start_time']+ " Uhr")  
 
-    doc.text(55, 66, get_recipe_content()['recipe']['name'])
+    //recipe information
+    doc.text(55, 66, String(get_recipe_content()['recipe']['name']))
+    doc.text(70, 89,  String(get_recipe_content()['recipe']['data']['brewing_water']['total']))
+    doc.text(70, 95,  String(get_recipe_content()['recipe']['data']['bulk']['wheatMalt']))
+    doc.text(70, 101.4,  String(get_recipe_content()['recipe']['data']['bulk']['pilsner']))
+
+    //sum hop
+    sum = 0
+    hop = get_recipe_content()['recipe']['wuerzekochen']['hop']
+    enumeration = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth']
+    i = 0
+    while(typeof hop[enumeration[i]] !== 'undefined'){
+        sum += hop[enumeration[i]]['mass']
+        i++
+    }
+    doc.text(70, 107,  String(sum))
     doc.save("test.pdf");
 }
