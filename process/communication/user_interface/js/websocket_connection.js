@@ -3,6 +3,7 @@ recipe = null
 progress = 0;
 temp = 0;
 engine = "AUS";
+logs = [];
 
 // Create WebSocket connection.
 const socket = new WebSocket('ws://localhost:80');
@@ -12,6 +13,7 @@ socket.addEventListener('open', function (event) {
     console.log('Connected to the WS Server!') 
     get_recipe();
     get_step();
+    get_logs_from_Server();
 });
 
 // Connection closed
@@ -47,6 +49,9 @@ socket.addEventListener('message', function (event) {
             progress = x["response"]["recipe-progress"];
             update_interface();
             break;
+        case 'logs':
+            logs = x['response'];
+            console.log(x)
         case 'switch_to_maischen':
             console.log("Switch to Maische");
             socket.send('{"command":"switch_to_maischen"}');
@@ -92,6 +97,9 @@ function stop(){
 function protocol(){
     socket.send('{"command":"safe_protocol","protocol":"test"}');
 }
+function get_logs_from_Server(){
+    socket.send('{"command":"get_logs"}');
+}
 function get_recipe(){
     socket.send('{"command":"get_recipe"}');
 }
@@ -111,4 +119,7 @@ function get_temp(){
 }
 function get_engine(){
     return engine;
+}
+function get_logs(){
+    return logs;
 }

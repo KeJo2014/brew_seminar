@@ -2,6 +2,7 @@ import asyncio
 import json
 import logging
 import websockets
+from datetime import datetime, date
 import process.cardinal_system.cardinal as cardinal
 
 
@@ -11,10 +12,12 @@ from process.db import create_new_table
 from process.trigger.funk import engine, get_temperature, get_motor_mode, heat_to
 from process.timer import set_timer, start_timer, get_boiling_point_at_position
 from process.data_protocol.manage_protocol import save_protocol
+from process.logging.logging import Logger
 
 
 recipe = []
 current_processes = []
+logger = 0
 
 logging.basicConfig()
 
@@ -79,6 +82,7 @@ async def server(websocket, path):
     global recipe
     global sources_path
     global current_processes
+    global logger
     await register(websocket)
     try:
         await websocket.send(json.dumps(default))
@@ -89,6 +93,10 @@ async def server(websocket, path):
                     default = {"Server-Status": "up and running",
                                "recipe-progress": 0}
                     current_processes = default
+                    now = datetime.now()
+                    current_time = now.strftime("%H:%M:%S")
+                    dat = date.today().strftime("%d/%m/%Y")
+                    logger = Logger(dat, current_time)
                     await beginn_brewing(recipe)
                 elif(data["command"] == "next"):
                     current_processes = await next_step(current_processes)
@@ -113,6 +121,8 @@ async def server(websocket, path):
                     await send_response(json.dumps(current_processes),'step')
                 elif(data["command"] == "get_recipe"):
                     await send_response(json.dumps(recipe),'recipe_content')
+                elif(data["command"] == "get_logs"):
+                    await send_response(logger.get_logs(),'logs')
                 elif(data["command"] == "safe_protocol"):
                     save_protocol(data['protocol'])
                 else:
