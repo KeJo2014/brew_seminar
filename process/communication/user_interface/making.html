@@ -28,7 +28,7 @@
             <table id="recipe-info">
             <tr>
                 <td id="recipe_name">Rezeptname</td>
-                <td id="created_at">Datum</td>
+                <td id="date">Datum</td>
             </tr>
             </table>
             <div class="glass-div centered">
@@ -128,7 +128,14 @@
     console.log(get_recipe_content())
     document.getElementById("recipe_name").innerHTML = decript(rec.recipe.name);
 
-    document.getElementById("author").innerHTML = "flveg_student";
+    //set date
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+    today = dd + '.' + mm + '.' + yyyy;
+    document.getElementById("date").innerHTML = today;
 
     document.getElementById("phase").innerHTML = decript(rec.roadmap.points[get_step_number()]);
 
