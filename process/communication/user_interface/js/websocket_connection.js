@@ -25,6 +25,7 @@ socket.addEventListener('close', function (event) {
 socket.addEventListener('message', function (event) {
     //console.log('Message from server', event.data);
     x = JSON.parse(event.data);
+    console.log(x);
     switch (x['command']) {
         case 'next_server_step':
             console.log("server status update! mode: " + x['Server-Status']+ " || recipe progress: " + x['recipe-progress']);
@@ -52,6 +53,7 @@ socket.addEventListener('message', function (event) {
         case 'logs':
             logs = x['response'];
             console.log(x)
+            break;
         case 'switch_to_maischen':
             console.log("Switch to Maische");
             socket.send('{"command":"switch_to_maischen"}');
