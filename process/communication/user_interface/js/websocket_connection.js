@@ -67,7 +67,7 @@ socket.addEventListener('message', function (event) {
             break;
         case 'transmit_information':
             temp = x['m_temp'];
-            if(x['m_engine'] == false){
+            if(x['m_engine'] == "false"){
                 engine = "AUS";
             }else{
                 engine = "EIN";
