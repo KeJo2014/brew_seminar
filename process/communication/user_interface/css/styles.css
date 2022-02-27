@@ -1,4 +1,7 @@
-
+html {
+  width: 100%;
+  height: 100%;
+}
 .select-html {
   padding: 4rem 20rem 4rem 20rem;
   margin: 0;
@@ -26,6 +29,7 @@
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   max-height: 95vh;
+  margin: 0.5rem 0 0.5rem 0;
   
 }
 
@@ -81,32 +85,29 @@
 #making-html {
   padding: 0;
   margin: 0;
-  height: 100vh;
   background: linear-gradient(125deg, #FDEE00 0, #902504 70%);
   font-family: 'Inter';
   display: flex;
   align-items: center;
   flex-direction: column;
-  overflow: hidden;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .row {
   width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 1rem;
 }
 
-#c-column {
+.column {
   width: 45%;
   display: flex; 
   flex-direction: column;
   align-items: center;
-}
-
-#r-column {
-  width: 45%;
 }
 
 #title-m {
@@ -120,7 +121,6 @@
   text-align: center;
   font-size: 1rem;
   color: white;
-  padding-bottom: 1rem;
 }
 
 #recipe-info tr td{
@@ -264,11 +264,17 @@
 #recipe-output {
   width: 100%;
   padding: 1rem;
-  max-height: 95vh;
+  display: block;
 }
 
 #recipe-output tr td {
-  overflow-y: visible;
+  padding: 0.5rem 0 2rem 0;
+}
+
+#recipe-output tr td div{
+  height: 100px;
+  overflow-y: scroll;
+  width: 100%;
 }
 
 .step {
@@ -283,11 +289,46 @@
   text-align: left;
 }
 
-.p-content {
-  padding: 0.5rem 0 2rem 0;
-}
-
 #next_step {
   padding: 0.5rem 0 0 0;
 }
 
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+#t-time {
+  padding: 1rem;
+}
+
+#t-time th{
+  font-size: 1.5rem;
+  font-weight: unset;
+}
+
+#t-time td{
+  text-align: center;
+  font-size: 1.5rem;
+}
+#duration {
+  color: rgb(106, 200, 255);
+}
+
+#finish_time {
+  color: rgb(0, 255, 0);
+}
+@media only screen and (max-width: 600px) {
+  .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .column {
+    width: 95%;
+  }
+}

@@ -23,7 +23,7 @@
 
 <body id="making-html">
     <div class="row">
-        <div id="c-column">
+        <div class="column">
             <h1 class="site-title" id="title-m">Zubereitung</h1>
             <table id="recipe-info">
             <tr>
@@ -70,7 +70,7 @@
 
             </div>
         </div>
-        <div id="r-column">
+        <div class="column">
             <div class="glass-div recipe">
                 <table id="recipe-output">
                     <tr>
@@ -80,13 +80,15 @@
                         <th class="p-title" id="current_title">Prozesstitel</th>
                     </tr>
                     <tr>
-                        <td class="p-content" id="step_content">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        <td id="step_content">
+                            <div>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -96,18 +98,27 @@
                         <th class="p-title" id="next_title">Prozesstitel</th>
                     </tr>
                     <tr>
-                        <td class="p-content" id="next_step">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        <td id="next_step">
+                            <div>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            </div>
                         </td>
                     </tr>
                 </table>
             </div>
-
+            <div class="glass-div time">
+                <table id="t-time">
+                    <tr><th>Zeit bis zum Ende der Phase</th></tr>
+                    <tr><td id="duration">78min</td></tr>
+                    <tr><th>Fertig um: </th></tr>
+                    <tr><td id="finish_time">16:00 Uhr</td></tr>
+                </table>
+            </div> 
         </div>
     </div>
 </body>
