@@ -4,6 +4,9 @@ progress = 0;
 temp = 0;
 engine = "AUS";
 logs = [];
+time_field = "none";
+finish_time = "X Uhr"
+duration = 0;
 
 // Create WebSocket connection.
 const socket = new WebSocket('ws://localhost:80');
@@ -36,6 +39,7 @@ socket.addEventListener('message', function (event) {
             socket.send('{"command":"select_recipe","response":"test.fbp"}');
             break;
         case 'finish_maisch':
+            time_field = "none";
             console.log('finish_maisch! | sending next step');
             socket.send('{"command":"next"}');
             break;
@@ -55,6 +59,8 @@ socket.addEventListener('message', function (event) {
             console.log(x)
             break;
         case 'switch_to_maischen':
+            set_time_field_value("maischen");
+            time_field = "block";
             console.log("Switch to Maische");
             socket.send('{"command":"switch_to_maischen"}');
             break;
@@ -109,6 +115,17 @@ function get_step(){
     socket.send('{"command":"get_step"}');
 }
 
+function set_time_field_value(step){
+    if(step == "Maischen"){
+        time = 0
+        designations = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth","nineteenth", "twentieth", "twenty-first", "twenty-second", "twenty-third", "twenty-fourth", "twenty-fifth", "twenty-sixth", "twenty-seventh", "twenty-eighth", "twenty-ninth", "thirtieth", "thirty-first"];
+        for (let i = 0; i < recipe['recipe']['data']['maischplan'].length; i++) {
+            time += recipe['recipe']['data']['maischplan']['rests'][designations[i]]['duration'];
+        }
+        finish_time = time;
+    }
+}
+
 // get global variables
 function get_recipe_content(){
     return recipe;
@@ -124,4 +141,10 @@ function get_engine(){
 }
 function get_logs(){
     return logs;
+}
+function get_visibility_status_time_panel(){
+    return time_field;
+}
+function get_time_field_values(){
+    return([duration, time_field]);
 }
