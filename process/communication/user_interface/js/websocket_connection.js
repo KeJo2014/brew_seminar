@@ -5,8 +5,8 @@ temp = 0;
 engine = "AUS";
 logs = [];
 time_field = "none";
-finish_time = "X Uhr"
-duration = 0;
+duration = "X Uhr"
+finish_time = 0;
 
 // Create WebSocket connection.
 const socket = new WebSocket('ws://localhost:80');
@@ -119,11 +119,19 @@ function set_time_field_value(step){
     if(step == "Maischen"){
         time = 0
         designations = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth","nineteenth", "twentieth", "twenty-first", "twenty-second", "twenty-third", "twenty-fourth", "twenty-fifth", "twenty-sixth", "twenty-seventh", "twenty-eighth", "twenty-ninth", "thirtieth", "thirty-first"];
-        for (let i = 0; i < recipe['recipe']['data']['maischplan'].length; i++) {
+        for (let i = 0; i < 3; i++) {   //todo: change to recipe length
+            console.log(recipe['recipe']['data']['maischplan'].length);
             time += recipe['recipe']['data']['maischplan']['rests'][designations[i]]['duration'];
         }
+        time = 60;
+        finish_time = new Date();
+        finish_time.setMinutes(finish_time.getMinutes() + time);
+        console.warning(finish_time);
         finish_time = time;
+        //convert unix time to human readable time
+        
     }
+    
 }
 
 // get global variables
@@ -146,5 +154,5 @@ function get_visibility_status_time_panel(){
     return time_field;
 }
 function get_time_field_values(){
-    return([duration, time_field]);
+    return([duration, finish_time]);
 }
