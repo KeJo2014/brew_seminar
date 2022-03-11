@@ -1036,3 +1036,13 @@ Traceback (most recent call last):
     raise exceptions.ValidationError(
 django.core.exceptions.ValidationError: ['“pretty” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format.']
 [35;1mHTTP POST /evaluate 500 [0.32, 127.0.0.1:1724][0m
+[mHTTP GET / 200 [0.08, 127.0.0.1:1282][0m
+Not Found: /favicon.ico
+[33mHTTP GET /favicon.ico 404 [0.09, 127.0.0.1:1286][0m
+[mHTTP GET /dashboard 200 [0.02, 127.0.0.1:1290][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:1293]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1293]
+Fri Mar 11 21:41:23 2022: Another client connected
+[mHTTP GET /evaluate 200 [0.10, 127.0.0.1:1297][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:1293]
+[mHTTP GET /admin/ 200 [0.22, 127.0.0.1:1301][0m
