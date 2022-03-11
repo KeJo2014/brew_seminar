@@ -1,0 +1,26 @@
+C:\Users\Jonas\Documents\django\brew_system\brewing\consumer.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_system\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /dashboard 200 [0.05, 127.0.0.1:26391][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:26392]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:26392]
+Another client connected
+[mHTTP GET /dashboard 200 [0.04, 127.0.0.1:26409][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:26410]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:26410]
+Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:26410]
+[mHTTP GET /dashboard 200 [0.04, 127.0.0.1:26436][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:26439]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:26439]
+Another client connected
+C:\Users\Jonas\Documents\django\brew_system\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /dashboard 200 [0.05, 127.0.0.1:26485][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:26488]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:26488]
+Another client connected
+C:\Users\Jonas\Documents\django\brew_system\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /dashboard 200 [0.04, 127.0.0.1:26522][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:26524]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:26524]
+Another client connected
+C:\Users\Jonas\Documents\django\brew_system\brewing\process\brew_server.py changed, reloading.

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Analysis</h1>
+        <div>
+            <form action="{% url 'evaluate'%}" method="post">
+                {% csrf_token %}
+                <select name="date" id="date">
+                    {% for date in dates %}
+                        <option value="{{ date }}">{{ date }}</option>
+                    {% endfor %}
+                </select>
+                <select name="step" id="step">
+                    {% for step in steps %}
+                        <option value="{{ step }}">{{ step }}</option>
+                    {% endfor %}
+                </select>
+                <input type="submit" style="">
+            </form>
+        </div>
+    </div>
+    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+        <canvas id="chart_temperture"></canvas>
+    </div><br>
+    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+        <canvas id="chart_plato"></canvas>
+    </div>
+</body>
+<script>
+    //temperature graph
+    ctx = document.getElementById("chart_temperture").getContext("2d");
+
+    chart = new Chart(ctx, {
+    type: "line",
+    data: {
+        labels: [
+            {% for time in minutes %}
+                "{{ time }}",
+            {% endfor %}
+        ],
+        datasets: [
+            {
+            label: "Temperature in degrees celcius",
+            backgroundColor: "#79AEC8",
+            borderColor: "#417690",
+            data: [
+                {% for data in data %}
+                    {{data.temperature}},
+                {% endfor %}
+            ]
+            }
+        ]
+    },
+    options: {
+        title: {
+            text: "Temperature evaluation",
+            display: true
+        }
+    }
+    });
+
+    //plato graph
+    ctx = document.getElementById("chart_plato").getContext("2d");
+
+    chart = new Chart(ctx, {
+    type: "line",
+    data: {
+        labels: [
+            {% for time in minutes %}
+                "{{ time }}",
+            {% endfor %}
+        ],
+        datasets: [
+            {
+            label: "Plato",
+            backgroundColor: "#79AEC8",
+            borderColor: "#417690",
+            data: [
+                {% for data in data %}
+                    {{data.plato}},
+                {% endfor %}
+            ]
+            }
+        ]
+    },
+    options: {
+        title: {
+            text: "Plato evaluation",
+            display: true
+        }
+    }
+    });
+</script>
+</html>

@@ -1,0 +1,1038 @@
+[mHTTP GET /dashboard 200 [0.04, 127.0.0.1:27009][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:27011]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:27011]
+Thu Mar 10 19:33:10 2022: Another client connected
+[mHTTP GET /dashboard 200 [0.02, 127.0.0.1:27036][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:27011]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:27037]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:27037]
+Thu Mar 10 19:33:39 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:27037]
+[mHTTP GET / 200 [0.18, 127.0.0.1:49727][0m
+Not Found: /favicon.ico
+[33mHTTP GET /favicon.ico 404 [0.08, 127.0.0.1:49727][0m
+[mHTTP GET /dashboard 200 [0.04, 127.0.0.1:49738][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:49743]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:49743]
+Fri Mar 11 11:54:37 2022: Another client connected
+[32mHTTP GET /admin 301 [0.02, 127.0.0.1:49764][0m
+[mHTTP GET /admin/ 200 [0.20, 127.0.0.1:49764][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:49743]
+[mHTTP GET /static/admin/css/base.css 200 [0.02, 127.0.0.1:49764][0m
+[mHTTP GET /static/admin/css/dark_mode.css 200 [0.04, 127.0.0.1:49765][0m
+[mHTTP GET /static/admin/css/nav_sidebar.css 200 [0.06, 127.0.0.1:49764][0m
+[mHTTP GET /static/admin/css/dashboard.css 200 [0.05, 127.0.0.1:49765][0m
+[mHTTP GET /static/admin/css/responsive.css 200 [0.03, 127.0.0.1:49764][0m
+[mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.02, 127.0.0.1:49764][0m
+[mHTTP GET /static/admin/css/fonts.css 200 [0.02, 127.0.0.1:49764][0m
+[mHTTP GET /static/admin/img/icon-addlink.svg 200 [0.02, 127.0.0.1:49764][0m
+[mHTTP GET /static/admin/img/icon-changelink.svg 200 [0.02, 127.0.0.1:49765][0m
+[mHTTP GET /static/admin/img/icon-deletelink.svg 200 [0.03, 127.0.0.1:49769][0m
+[mHTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 200 [0.02, 127.0.0.1:49769][0m
+[mHTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 200 [0.05, 127.0.0.1:49765][0m
+[mHTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 200 [0.06, 127.0.0.1:49764][0m
+[mHTTP GET /admin/logout/ 200 [0.11, 127.0.0.1:49764][0m
+[32mHTTP GET /admin/ 302 [0.05, 127.0.0.1:49782][0m
+[mHTTP GET /admin/login/?next=/admin/ 200 [0.17, 127.0.0.1:49782][0m
+[mHTTP GET /static/admin/css/login.css 200 [0.02, 127.0.0.1:49782][0m
+[32mHTTP POST /admin/login/?next=/admin/ 302 [0.87, 127.0.0.1:49793][0m
+[mHTTP GET /admin/ 200 [0.10, 127.0.0.1:49793][0m
+[mHTTP GET /admin/brewing/messurement/ 200 [0.36, 127.0.0.1:49803][0m
+[mHTTP GET /static/admin/css/changelists.css 200 [0.03, 127.0.0.1:49803][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.07, 127.0.0.1:49804][0m
+[mHTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [0.07, 127.0.0.1:49803][0m
+[mHTTP GET /static/admin/js/jquery.init.js 200 [0.06, 127.0.0.1:49804][0m
+[mHTTP GET /static/admin/js/core.js 200 [0.03, 127.0.0.1:49803][0m
+[mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 200 [0.03, 127.0.0.1:49804][0m
+[mHTTP GET /static/admin/js/actions.js 200 [0.04, 127.0.0.1:49803][0m
+[mHTTP GET /static/admin/js/urlify.js 200 [0.03, 127.0.0.1:49804][0m
+[mHTTP GET /static/admin/js/prepopulate.js 200 [0.03, 127.0.0.1:49803][0m
+[mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 200 [0.06, 127.0.0.1:49804][0m
+[mHTTP GET /static/admin/img/tooltag-add.svg 200 [0.02, 127.0.0.1:49804][0m
+[mHTTP GET /admin/brewing/messurement/9/change/ 200 [0.50, 127.0.0.1:49825][0m
+[mHTTP GET /static/admin/css/forms.css 200 [0.04, 127.0.0.1:49825][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:49826][0m
+[mHTTP GET /static/admin/js/prepopulate_init.js 200 [0.03, 127.0.0.1:49825][0m
+[mHTTP GET /static/admin/css/widgets.css 200 [0.03, 127.0.0.1:49825][0m
+[mHTTP GET /static/admin/js/change_form.js 200 [0.03, 127.0.0.1:49826][0m
+[32mHTTP POST /admin/brewing/messurement/9/change/ 302 [0.10, 127.0.0.1:49826][0m
+[mHTTP GET /admin/brewing/messurement/ 200 [0.30, 127.0.0.1:49826][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:49826][0m
+[mHTTP GET /static/admin/img/icon-yes.svg 200 [0.02, 127.0.0.1:49836][0m
+[mHTTP GET /evaluate 200 [0.05, 127.0.0.1:49836][0m
+[mHTTP GET /evaluate 200 [0.06, 127.0.0.1:49856][0m
+[mHTTP GET / 200 [0.10, 127.0.0.1:19595][0m
+Not Found: /favicon.ico
+[33mHTTP GET /favicon.ico 404 [0.06, 127.0.0.1:19602][0m
+[mHTTP GET /dashboard 200 [0.02, 127.0.0.1:19602][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:19612]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:19612]
+Fri Mar 11 20:17:30 2022: Another client connected
+[mHTTP GET /admin/ 200 [0.33, 127.0.0.1:19912][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:19612]
+[mHTTP GET /admin/brewing/recipe/ 200 [0.19, 127.0.0.1:24483][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.14, 127.0.0.1:24483][0m
+[mHTTP GET /admin/brewing/recipe/add/ 200 [0.19, 127.0.0.1:24489][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:24489][0m
+[32mHTTP POST /admin/brewing/recipe/add/ 302 [0.09, 127.0.0.1:24496][0m
+[mHTTP GET /admin/brewing/recipe/ 200 [0.22, 127.0.0.1:24496][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:24496][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /admin/brewing/recipe/ 200 [0.34, 127.0.0.1:24668][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.08, 127.0.0.1:24668][0m
+Not Found: /admin/dashboard
+[33mHTTP GET /admin/dashboard 404 [0.13, 127.0.0.1:24676][0m
+[mHTTP GET /dashboard 200 [0.04, 127.0.0.1:24681][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24684]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24684]
+Fri Mar 11 20:27:54 2022: Another client connected
+Exception inside application: load() missing 1 required positional argument: 'fp'
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\generic\websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\consumer.py", line 18, in connect
+    self.send_json({'type':'chat_message', 'message':json.dumps(brew_server.get_status())})
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\process\brew_server.py", line 26, in get_status
+    self.status["recipe"] = json.load()
+TypeError: load() missing 1 required positional argument: 'fp'
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24684]
+[mHTTP GET /dashboard 200 [0.04, 127.0.0.1:24692][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24695]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24695]
+Fri Mar 11 20:28:20 2022: Another client connected
+Exception inside application: load() missing 1 required positional argument: 'fp'
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\generic\websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\consumer.py", line 18, in connect
+    self.send_json({'type':'chat_message', 'message':json.dumps(brew_server.get_status())})
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\process\brew_server.py", line 26, in get_status
+    self.status["recipe"] = json.load()
+TypeError: load() missing 1 required positional argument: 'fp'
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24695]
+[mHTTP GET /dashboard 200 [0.04, 127.0.0.1:24726][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24730]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24730]
+Fri Mar 11 20:29:19 2022: Another client connected
+Exception inside application: load() missing 1 required positional argument: 'fp'
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\generic\websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\consumer.py", line 18, in connect
+    self.send_json({'type':'chat_message', 'message':json.dumps(brew_server.get_status())})
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\process\brew_server.py", line 26, in get_status
+    self.status["recipe"] = json.load()
+TypeError: load() missing 1 required positional argument: 'fp'
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24730]
+C:\Users\Jonas\Documents\django\brew_system\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /dashboard 200 [0.08, 127.0.0.1:24792][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24796]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24796]
+Fri Mar 11 20:30:36 2022: Another client connected
+Exception inside application: the JSON object must be str, bytes or bytearray, not recipe
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\consumer.py", line 24, in receive
+    self.evaluate_response(message)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\consumer.py", line 46, in evaluate_response
+    brew_server.load_recipe(1)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\process\brew_server.py", line 33, in load_recipe
+    rec  = json.loads(recipe.objects.get(id=recipe_id))
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not recipe
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24796]
+C:\Users\Jonas\Documents\django\brew_system\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /dashboard 200 [0.06, 127.0.0.1:24846][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24850]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24850]
+Fri Mar 11 20:31:58 2022: Another client connected
+Exception inside application: Object of type recipe is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\consumer.py", line 24, in receive
+    self.evaluate_response(message)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\consumer.py", line 46, in evaluate_response
+    brew_server.load_recipe(1)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\process\brew_server.py", line 33, in load_recipe
+    rec  = json.dumps(recipe.objects.get(id=recipe_id))
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type recipe is not JSON serializable
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24850]
+C:\Users\Jonas\Documents\django\brew_system\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /dashboard 200 [0.04, 127.0.0.1:24900][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24904]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24904]
+Fri Mar 11 20:32:58 2022: Another client connected
+C:\Users\Jonas\Documents\django\brew_system\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /dashboard 200 [0.07, 127.0.0.1:24970][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24975]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24975]
+Fri Mar 11 20:34:07 2022: Another client connected
+C:\Users\Jonas\Documents\django\brew_system\brewing\consumer.py changed, reloading.
+[mHTTP GET /dashboard 200 [0.07, 127.0.0.1:25047][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:25054]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:25054]
+Fri Mar 11 20:35:59 2022: Another client connected
+[mHTTP GET /evaluate 200 [0.07, 127.0.0.1:25290][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:25054]
+[mHTTP GET /admin/brewing/recipe/ 200 [0.38, 127.0.0.1:25301][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:25301][0m
+[mHTTP GET /admin/brewing/messurement/ 200 [0.18, 127.0.0.1:25301][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:25301][0m
+[mHTTP GET /evaluate 200 [0.09, 127.0.0.1:25323][0m
+[mHTTP GET /admin/brewing/messurement/6/change/ 200 [0.19, 127.0.0.1:25350][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:25350][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 2086, in add_fields
+    join_info = self.setup_joins(
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1756, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1668, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'step' into field. Choices are: id, last_brewed, name, recipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 14, in evaluate
+    steps_number = recipe.objects.values('step').annotate(Count('step')).order_by('step')
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1059, in values
+    clone = self._values(*fields, **expressions)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1054, in _values
+    clone.query.set_values(fields)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 2403, in set_values
+    self.add_fields(field_names, True)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 2119, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'step' into field. Choices are: id, last_brewed, name, recipe
+[35;1mHTTP GET /evaluate 500 [0.39, 127.0.0.1:25867][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 2086, in add_fields
+    join_info = self.setup_joins(
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1756, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1668, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'step' into field. Choices are: id, last_brewed, name, recipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 14, in evaluate
+    steps_number = recipe.objects.values('step').annotate(Count('step')).order_by('step')
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1059, in values
+    clone = self._values(*fields, **expressions)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1054, in _values
+    clone.query.set_values(fields)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 2403, in set_values
+    self.add_fields(field_names, True)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 2119, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'step' into field. Choices are: id, last_brewed, name, recipe
+[35;1mHTTP GET /evaluate 500 [0.28, 127.0.0.1:25900][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 16, in evaluate
+    for i in range(steps_number):
+TypeError: 'QuerySet' object cannot be interpreted as an integer
+[35;1mHTTP GET /evaluate 500 [0.30, 127.0.0.1:25927][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 17, in evaluate
+    for i in range(steps_number):
+TypeError: 'QuerySet' object cannot be interpreted as an integer
+[35;1mHTTP GET /evaluate 500 [0.24, 127.0.0.1:25964][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 17, in evaluate
+    for i in range(steps_number['step__count']):
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 331, in __getitem__
+    raise TypeError(
+TypeError: QuerySet indices must be integers or slices, not str.
+[35;1mHTTP GET /evaluate 500 [0.27, 127.0.0.1:26057][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 17, in evaluate
+    for i in range(steps_number[1]):
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 363, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+[35;1mHTTP GET /evaluate 500 [0.27, 127.0.0.1:26080][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 17, in evaluate
+    for i in range(steps_number[0]):
+TypeError: 'dict' object cannot be interpreted as an integer
+[35;1mHTTP GET /evaluate 500 [0.45, 127.0.0.1:26110][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+[mHTTP GET /evaluate 200 [0.12, 127.0.0.1:26135][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+[mHTTP GET /evaluate 200 [0.11, 127.0.0.1:26164][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+[mHTTP GET /evaluate 200 [0.13, 127.0.0.1:26199][0m
+[mHTTP GET /evaluate 200 [0.09, 127.0.0.1:26224][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 22, in evaluate
+    d = i.split(',')[0]
+AttributeError: 'messurement' object has no attribute 'split'
+[35;1mHTTP GET /evaluate 500 [0.47, 127.0.0.1:26395][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 22, in evaluate
+    d = i.date.split(',')[0]
+AttributeError: 'messurement' object has no attribute 'date'
+[35;1mHTTP GET /evaluate 500 [0.31, 127.0.0.1:26429][0m
+[mHTTP GET /admin/brewing/messurement/6/change/ 200 [0.31, 127.0.0.1:26440][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:26440][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 22, in evaluate
+    d = i.time.split(',')[0]
+AttributeError: 'datetime.datetime' object has no attribute 'split'
+[35;1mHTTP GET /evaluate 500 [0.23, 127.0.0.1:26479][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+[mHTTP GET /evaluate 200 [0.10, 127.0.0.1:26514][0m
+[mHTTP GET /evaluate 200 [0.06, 127.0.0.1:26539][0m
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 34, in evaluate
+    for i in range(steps_number):
+TypeError: 'QuerySet' object cannot be interpreted as an integer
+[35;1mHTTP POST /evaluate 500 [0.34, 127.0.0.1:26539][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+[mHTTP GET /evaluate 200 [0.20, 127.0.0.1:26602][0m
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 47, in evaluate
+    "data": messurement.objects.filter(step=step, date=date),
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1182, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1200, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1207, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1494, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1524, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1370, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1184, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1668, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'date' into field. Choices are: id, plato, step, temperature, time
+[35;1mHTTP POST /evaluate 500 [0.32, 127.0.0.1:26602][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+[mHTTP GET /evaluate 200 [0.09, 127.0.0.1:26628][0m
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 47, in evaluate
+    "data": messurement.objects.filter(step=step, time=date),
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1182, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1200, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1207, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1494, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1524, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1440, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1270, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "c:\users\jonas\documents\django\django\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "c:\users\jonas\documents\django\django\django\db\models\lookups.py", line 340, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "c:\users\jonas\documents\django\django\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "c:\users\jonas\documents\django\django\django\db\models\fields\__init__.py", line 1528, in get_prep_value
+    value = super().get_prep_value(value)
+  File "c:\users\jonas\documents\django\django\django\db\models\fields\__init__.py", line 1407, in get_prep_value
+    return self.to_python(value)
+  File "c:\users\jonas\documents\django\django\django\db\models\fields\__init__.py", line 1510, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“11/03/2022” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format.']
+[35;1mHTTP POST /evaluate 500 [0.30, 127.0.0.1:26628][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 26, in evaluate
+    return render(request, 'brewing/evaluate.html', {
+  File "c:\users\jonas\documents\django\django\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "c:\users\jonas\documents\django\django\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\users\jonas\documents\django\django\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "c:\users\jonas\documents\django\django\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "c:\users\jonas\documents\django\django\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "c:\users\jonas\documents\django\django\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "c:\users\jonas\documents\django\django\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\users\jonas\documents\django\django\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '[1]' from 'date[1]'
+[35;1mHTTP GET /evaluate 500 [0.31, 127.0.0.1:26729][0m
+[mHTTP GET /evaluate 200 [0.10, 127.0.0.1:26744][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 30, in evaluate
+    return render(request, 'brewing/evaluate.html', {
+  File "c:\users\jonas\documents\django\django\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "c:\users\jonas\documents\django\django\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\users\jonas\documents\django\django\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "c:\users\jonas\documents\django\django\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "c:\users\jonas\documents\django\django\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "c:\users\jonas\documents\django\django\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "c:\users\jonas\documents\django\django\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\users\jonas\documents\django\django\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '['real']' from 'date['real']'
+[35;1mHTTP GET /evaluate 500 [0.41, 127.0.0.1:26835][0m
+[mHTTP GET /evaluate 200 [0.08, 127.0.0.1:26866][0m
+[mHTTP GET /evaluate 200 [0.04, 127.0.0.1:1126][0m
+[mHTTP GET /evaluate 200 [0.08, 127.0.0.1:1139][0m
+[mHTTP GET /evaluate 200 [0.07, 127.0.0.1:1169][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+[mHTTP GET /evaluate 200 [0.12, 127.0.0.1:1270][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 30, in evaluate
+    minutes = messurement.objects.get(time=dates["real"]).time.minute
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 509, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1182, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1200, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1207, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1494, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1524, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1440, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1270, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "c:\users\jonas\documents\django\django\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "c:\users\jonas\documents\django\django\django\db\models\lookups.py", line 340, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "c:\users\jonas\documents\django\django\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "c:\users\jonas\documents\django\django\django\db\models\fields\__init__.py", line 1528, in get_prep_value
+    value = super().get_prep_value(value)
+  File "c:\users\jonas\documents\django\django\django\db\models\fields\__init__.py", line 1407, in get_prep_value
+    return self.to_python(value)
+  File "c:\users\jonas\documents\django\django\django\db\models\fields\__init__.py", line 1489, in to_python
+    parsed = parse_datetime(value)
+  File "c:\users\jonas\documents\django\django\django\utils\dateparse.py", line 114, in parse_datetime
+    return datetime.datetime.fromisoformat(value)
+TypeError: fromisoformat: argument must be str
+[35;1mHTTP GET /evaluate 500 [0.42, 127.0.0.1:1301][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 31, in evaluate
+    minutes = messurement.objects.get(time=dates["real"]).time.minute
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 509, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1182, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1200, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1207, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1494, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1524, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1440, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1270, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "c:\users\jonas\documents\django\django\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "c:\users\jonas\documents\django\django\django\db\models\lookups.py", line 340, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "c:\users\jonas\documents\django\django\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "c:\users\jonas\documents\django\django\django\db\models\fields\__init__.py", line 1528, in get_prep_value
+    value = super().get_prep_value(value)
+  File "c:\users\jonas\documents\django\django\django\db\models\fields\__init__.py", line 1407, in get_prep_value
+    return self.to_python(value)
+  File "c:\users\jonas\documents\django\django\django\db\models\fields\__init__.py", line 1489, in to_python
+    parsed = parse_datetime(value)
+  File "c:\users\jonas\documents\django\django\django\utils\dateparse.py", line 114, in parse_datetime
+    return datetime.datetime.fromisoformat(value)
+TypeError: fromisoformat: argument must be str
+[35;1mHTTP GET /evaluate 500 [0.43, 127.0.0.1:1355][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+[mHTTP GET /evaluate 200 [0.09, 127.0.0.1:1386][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 31, in evaluate
+    minutes.append(messurement.objects.get(time=dates["real"][i]).time.minute)
+NameError: name 'minutes' is not defined
+[35;1mHTTP GET /evaluate 500 [0.25, 127.0.0.1:1423][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+[mHTTP GET /evaluate 200 [0.11, 127.0.0.1:1460][0m
+[mHTTP GET /evaluate 200 [0.09, 127.0.0.1:1502][0m
+[mHTTP GET /evaluate 200 [0.09, 127.0.0.1:1514][0m
+[mHTTP GET /admin/brewing/messurement/ 200 [0.47, 127.0.0.1:1528][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:1528][0m
+[mHTTP GET /evaluate 200 [0.09, 127.0.0.1:1558][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+[mHTTP GET /evaluate 200 [0.10, 127.0.0.1:1637][0m
+C:\Users\Jonas\Documents\django\brew_system\brewing\views.py changed, reloading.
+[mHTTP GET /evaluate 200 [0.10, 127.0.0.1:1684][0m
+[mHTTP GET /evaluate 200 [0.05, 127.0.0.1:1707][0m
+Internal Server Error: /evaluate
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_system\brewing\views.py", line 56, in evaluate
+    "data": messurement.objects.filter(step=step, time=date),
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1182, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1200, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1207, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1494, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1524, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1440, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 1270, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "c:\users\jonas\documents\django\django\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "c:\users\jonas\documents\django\django\django\db\models\lookups.py", line 340, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "c:\users\jonas\documents\django\django\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "c:\users\jonas\documents\django\django\django\db\models\fields\__init__.py", line 1528, in get_prep_value
+    value = super().get_prep_value(value)
+  File "c:\users\jonas\documents\django\django\django\db\models\fields\__init__.py", line 1407, in get_prep_value
+    return self.to_python(value)
+  File "c:\users\jonas\documents\django\django\django\db\models\fields\__init__.py", line 1510, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“pretty” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format.']
+[35;1mHTTP POST /evaluate 500 [0.32, 127.0.0.1:1724][0m
