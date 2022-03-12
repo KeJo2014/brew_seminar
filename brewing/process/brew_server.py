@@ -3,7 +3,7 @@ import time
 from datetime import datetime
 import logging
 
-from ..models import recipe
+from ..models import recipe, messurement
 
 class brew_server():
     def __init__(self):
@@ -15,6 +15,7 @@ class brew_server():
             "sensor_data": {
                 "temperature": 0,
                 "engine_mode": False,
+                "plato": 0,
             },
             "start_time": current_time,
         }
@@ -32,3 +33,6 @@ class brew_server():
     def load_recipe(self, recipe_id):
         rec  = json.dumps(recipe.objects.get(id=recipe_id).recipe)
         self.status["recipe"] = rec
+    
+    def write_sensor_data(self):
+       messurement.objects.create(self.status["sensor_data"]["temperature"], self.status["sensor_data"]["engine_mode"], self.status["sensor_data"]["plato"])

@@ -28,6 +28,9 @@
     </div><br>
     <div class="chart-container context" style="margin: auto;position: relative; height:40vh; width:80vw">
         <canvas id="chart_plato"></canvas>
+    </div><br>
+    <div class="chart-container context" style="margin: auto;position: relative; height:40vh; width:80vw">
+        <canvas id="chart_engine"></canvas>
     </div>
     
 </body>
@@ -84,6 +87,39 @@
             data: [
                 {% for data in data %}
                     {{data.plato}},
+                {% endfor %}
+            ]
+            }
+        ]
+    },
+    options: {
+        title: {
+            text: "Plato evaluation",
+            display: true
+        },
+        maintainAspectRatio: false,
+    }
+    });
+    //engine graph
+    ctx = document.getElementById("chart_engine").getContext("2d");
+
+    chart = new Chart(ctx, {
+    type: "line",
+    data: {
+        labels: [
+            {% for data in data %}
+                "{{ data.time }}",
+            {% endfor %}
+        ],
+        datasets: [
+            {
+            label: "engine mode",
+            lineTension: 0,  //disables bezier curves
+            backgroundColor: "#79AEC8",
+            borderColor: "#417690",
+            data: [
+                {% for mode in engine %}
+                    {{mode}},
                 {% endfor %}
             ]
             }

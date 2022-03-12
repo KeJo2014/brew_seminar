@@ -13,6 +13,7 @@ class messurement(models.Model):
     time = models.DateTimeField(auto_now=True)
     temperature = models.CharField(max_length=10)
     plato = models.CharField(max_length=10)
+    engine = models.BooleanField(default=False)
     step = models.IntegerField()
 
     def __str__(self):
