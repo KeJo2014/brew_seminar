@@ -9,31 +9,27 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 </head>
 <body>
-    <div>
-        <h1>Analysis</h1>
+    <div class="context">
         <div>
             <form action="{% url 'evaluate'%}" method="post">
                 {% csrf_token %}
-                <select name="date" id="date">
-                    {% for date in dates %}
-                        <option value="{{ date }}">{{ date }}</option>
-                    {% endfor %}
-                </select>
-                <select name="step" id="step">
+                <h4 style="font-size: large;">Diagram für Schritt: </h4><select name="step" id="step">
                     {% for step in steps %}
                         <option value="{{ step }}">{{ step }}</option>
                     {% endfor %}
                 </select>
-                <input type="submit" style="">
+                <input type="submit" style="" value="generate">
             </form>
         </div>
     </div>
-    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+    
+    <div class="chart-container context" style="margin: auto; position: relative; height:40vh; width:80vw; padding-top: 4%;">
         <canvas id="chart_temperture"></canvas>
     </div><br>
-    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+    <div class="chart-container context" style="margin: auto;position: relative; height:40vh; width:80vw">
         <canvas id="chart_plato"></canvas>
     </div>
+    
 </body>
 <script>
     //temperature graph
@@ -43,8 +39,8 @@
     type: "line",
     data: {
         labels: [
-            {% for time in minutes %}
-                "{{ time }}",
+            {% for data in data %}
+                "{{ data.time }}",
             {% endfor %}
         ],
         datasets: [
@@ -64,7 +60,8 @@
         title: {
             text: "Temperature evaluation",
             display: true
-        }
+        },
+        maintainAspectRatio: false,
     }
     });
 
@@ -75,13 +72,13 @@
     type: "line",
     data: {
         labels: [
-            {% for time in minutes %}
-                "{{ time }}",
+            {% for data in data %}
+                "{{ data.time }}",
             {% endfor %}
         ],
         datasets: [
             {
-            label: "Plato",
+            label: "degrees Plato",
             backgroundColor: "#79AEC8",
             borderColor: "#417690",
             data: [
@@ -96,8 +93,83 @@
         title: {
             text: "Plato evaluation",
             display: true
-        }
+        },
+        maintainAspectRatio: false,
     }
     });
 </script>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Cool infinite background scrolling animation. * Twitter: @kootoopas */
+/* Exo thin font from Google. */
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+ @-webkit-keyframes bg-scrolling-reverse {
+	 100% {
+		 background-position: 50px 50px;
+	}
+}
+ @-moz-keyframes bg-scrolling-reverse {
+	 100% {
+		 background-position: 50px 50px;
+	}
+}
+ @-o-keyframes bg-scrolling-reverse {
+	 100% {
+		 background-position: 50px 50px;
+	}
+}
+ @keyframes bg-scrolling-reverse {
+	 100% {
+		 background-position: 50px 50px;
+	}
+}
+ @-webkit-keyframes bg-scrolling {
+	 0% {
+		 background-position: 50px 50px;
+	}
+}
+ @-moz-keyframes bg-scrolling {
+	 0% {
+		 background-position: 50px 50px;
+	}
+}
+ @-o-keyframes bg-scrolling {
+	 0% {
+		 background-position: 50px 50px;
+	}
+}
+ @keyframes bg-scrolling {
+	 0% {
+		 background-position: 50px 50px;
+	}
+}
+/* Main styles */
+ body {
+	 color: #999;
+	 font: 400 10.6666666667px exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+	 text-align: center;
+	/* img size is 50x50 */
+	 background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+	 -webkit-animation: bg-scrolling-reverse 2.5s infinite;
+	/* Safari 4+ */
+	 -moz-animation: bg-scrolling-reverse 2.5s infinite;
+	/* Fx 5+ */
+	 -o-animation: bg-scrolling-reverse 2.5s infinite;
+	/* Opera 12+ */
+	 animation: bg-scrolling-reverse 2.5s infinite;
+	/* IE 10+ */
+	 -webkit-animation-timing-function: linear;
+	 -moz-animation-timing-function: linear;
+	 -o-animation-timing-function: linear;
+	 animation-timing-function: linear;
+}
+ body::before {
+	 content: "Analysis";
+	 font-size: 4rem;
+	 font-weight: 100;
+	 font-style: normal;
+}
+ 
+</style>
 </html>
