@@ -261,3 +261,97 @@ C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading
 [mHTTP GET /evaluate 200 [0.08, 127.0.0.1:1979][0m
 [mHTTP POST /evaluate 200 [0.06, 127.0.0.1:1979][0m
 [mHTTP POST /evaluate 200 [0.05, 127.0.0.1:1990][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /dashboard 200 [0.08, 127.0.0.1:17269][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:17272]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:17272]
+Sat Mar 12 16:43:48 2022: Another client connected
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /dashboard 200 [0.05, 127.0.0.1:17279][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:17282]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:17282]
+Sat Mar 12 16:44:57 2022: Another client connected
+Exception inside application: Expecting property name enclosed in double quotes: line 1 column 501 (char 500)
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 24, in receive
+    self.evaluate_response(message)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 46, in evaluate_response
+    brew_server.load_recipe(1)      #add real recipe id
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py", line 38, in load_recipe
+    self.recipe = json.loads(recipe.objects.get(id=recipe_id).recipe)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 501 (char 500)
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:17282]
+[mHTTP GET /admin/brewing/messurement/ 200 [0.46, 127.0.0.1:17285][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:17285][0m
+[mHTTP GET /admin/brewing/recipe/ 200 [0.14, 127.0.0.1:17285][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:17285][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\models.py changed, reloading.
+[mHTTP GET /admin/brewing/messurement/ 200 [0.43, 127.0.0.1:17321][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:17321][0m
+[mHTTP GET /admin/brewing/recipe/ 200 [0.15, 127.0.0.1:17321][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:17321][0m
+[mHTTP GET /admin/brewing/recipe/1/change/ 200 [0.27, 127.0.0.1:12349][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.07, 127.0.0.1:12349][0m
+[32mHTTP POST /admin/brewing/recipe/1/change/ 302 [0.10, 127.0.0.1:12355][0m
+[mHTTP GET /admin/brewing/recipe/ 200 [0.18, 127.0.0.1:12355][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:12355][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /dashboard 200 [0.06, 127.0.0.1:12368][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:12374]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:12374]
+Sat Mar 12 16:49:01 2022: Another client connected
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /dashboard 200 [0.09, 127.0.0.1:1036][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:1039]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1039]
+Sat Mar 12 16:50:26 2022: Another client connected
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /dashboard 200 [0.06, 127.0.0.1:1054][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:1058]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1058]
+Sat Mar 12 16:51:09 2022: Another client connected
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.

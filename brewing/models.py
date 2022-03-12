@@ -4,7 +4,7 @@ from django.db import models
 class recipe(models.Model):
     last_brewed = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=255)
-    recipe = models.CharField(max_length=500)
+    recipe = models.CharField(max_length=5000)
     
     def __str__(self):
         return f"{self.name}: {self.recipe}"
