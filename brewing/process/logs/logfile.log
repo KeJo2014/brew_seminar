@@ -355,3 +355,96 @@ WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1058]
 Sat Mar 12 16:51:09 2022: Another client connected
 C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
 C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+HTTP GET / 200 [0.04, 127.0.0.1:56117]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.07, 127.0.0.1:56117]
+HTTP GET /dashboard 200 [0.01, 127.0.0.1:56117]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:56121]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:56121]
+Wed Mar 16 20:16:50 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:56121]
+HTTP GET /dashboard 200 [0.01, 127.0.0.1:56117]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:56123]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:56123]
+Wed Mar 16 20:17:15 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:56123]
+HTTP GET /evaluate 200 [0.03, 127.0.0.1:56117]
+HTTP GET /admin 301 [0.00, 127.0.0.1:56117]
+HTTP GET /admin/ 302 [0.02, 127.0.0.1:56117]
+HTTP GET /admin/login/?next=/admin/ 200 [0.04, 127.0.0.1:56117]
+HTTP GET /static/admin/css/base.css 200 [0.46, 127.0.0.1:56117]
+HTTP GET /static/admin/css/nav_sidebar.css 200 [0.46, 127.0.0.1:49939]
+HTTP GET /static/admin/js/nav_sidebar.js 200 [0.47, 127.0.0.1:49940]
+HTTP GET /static/admin/css/login.css 200 [0.47, 127.0.0.1:49941]
+HTTP GET /static/admin/css/responsive.css 200 [0.47, 127.0.0.1:49942]
+HTTP GET /static/admin/css/fonts.css 200 [0.01, 127.0.0.1:49940]
+HTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 200 [0.01, 127.0.0.1:49942]
+HTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 200 [0.01, 127.0.0.1:49942]
+HTTP POST /admin/login/?next=/admin/ 302 [0.70, 127.0.0.1:49942]
+HTTP GET /admin/ 200 [0.03, 127.0.0.1:49942]
+HTTP GET /static/admin/css/dashboard.css 200 [0.00, 127.0.0.1:49942]
+HTTP GET /static/admin/img/icon-addlink.svg 200 [0.01, 127.0.0.1:49942]
+HTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 200 [0.01, 127.0.0.1:49939]
+HTTP GET /static/admin/img/icon-changelink.svg 200 [0.01, 127.0.0.1:49940]
+HTTP GET /admin/brewing/messurement/ 200 [0.07, 127.0.0.1:49939]
+HTTP GET /static/admin/css/changelists.css 200 [0.01, 127.0.0.1:49939]
+HTTP GET /static/admin/js/jquery.init.js 200 [0.02, 127.0.0.1:49941]
+HTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:49942]
+HTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [0.03, 127.0.0.1:49940]
+HTTP GET /static/admin/js/core.js 200 [0.04, 127.0.0.1:56117]
+HTTP GET /static/admin/js/admin/RelatedObjectLookups.js 200 [0.04, 127.0.0.1:49951]
+HTTP GET /static/admin/js/vendor/xregexp/xregexp.js 200 [0.01, 127.0.0.1:49942]
+Exception inside application: Single thread executor already being used, would deadlock
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 40, in __call__
+    return await self.staticfiles_handler_class()(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 56, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\http.py", line 198, in __call__
+    await self.handle(scope, async_to_sync(send), body_stream)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 382, in __call__
+    raise RuntimeError(
+RuntimeError: Single thread executor already being used, would deadlock
+HTTP GET /static/admin/js/actions.js 500 [0.50, 127.0.0.1:49939]
+Exception inside application: Single thread executor already being used, would deadlock
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 40, in __call__
+    return await self.staticfiles_handler_class()(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 56, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\http.py", line 198, in __call__
+    await self.handle(scope, async_to_sync(send), body_stream)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 382, in __call__
+    raise RuntimeError(
+RuntimeError: Single thread executor already being used, would deadlock
+HTTP GET /static/admin/js/urlify.js 500 [0.49, 127.0.0.1:49941]
+Exception inside application: Single thread executor already being used, would deadlock
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 40, in __call__
+    return await self.staticfiles_handler_class()(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 56, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\http.py", line 198, in __call__
+    await self.handle(scope, async_to_sync(send), body_stream)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 382, in __call__
+    raise RuntimeError(
+RuntimeError: Single thread executor already being used, would deadlock
+HTTP GET /static/admin/js/prepopulate.js 500 [0.48, 127.0.0.1:49940]
+HTTP GET /static/admin/js/urlify.js 200 [0.00, 127.0.0.1:49940]
+HTTP GET /static/admin/js/prepopulate.js 200 [0.00, 127.0.0.1:49940]
+HTTP GET /static/admin/img/tooltag-add.svg 200 [0.00, 127.0.0.1:49940]
+HTTP GET /admin/brewing/messurement/15/change/ 200 [0.10, 127.0.0.1:49940]
+HTTP GET /static/admin/css/forms.css 200 [0.03, 127.0.0.1:49940]
+HTTP GET /static/admin/js/change_form.js 200 [0.01, 127.0.0.1:49951]
+HTTP GET /static/admin/js/actions.js 200 [0.02, 127.0.0.1:49939]
+HTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:49942]
+HTTP GET /static/admin/js/prepopulate_init.js 200 [0.03, 127.0.0.1:49941]
+HTTP GET /static/admin/css/widgets.css 200 [0.00, 127.0.0.1:49940]
+HTTP GET /admin/brewing/messurement/ 200 [0.07, 127.0.0.1:49940]
+HTTP GET /admin/brewing/messurement/16/change/ 200 [0.05, 127.0.0.1:49940]
+HTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:49940]
+HTTP POST /admin/brewing/messurement/16/change/ 302 [0.03, 127.0.0.1:49940]
+HTTP GET /admin/brewing/messurement/ 200 [0.07, 127.0.0.1:49940]
+HTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:49940]
+HTTP GET /static/admin/img/icon-yes.svg 200 [0.01, 127.0.0.1:49940]
+HTTP GET /evaluate 200 [0.01, 127.0.0.1:49940]
