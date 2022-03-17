@@ -51,7 +51,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 20%;
+    width: 15%;
     background-color: white;
     border-radius: 25px 0 0 25px;
     mix-blend-mode: screen;
@@ -69,11 +69,15 @@ body {
     padding: 0.5rem 2rem 0.5rem 1rem;
     margin: 0.5rem 0 0.5rem 0;
     border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
 }
 
 #menu ul li a:hover{
     color: white;
-    /* background: linear-gradient(116.61deg, #902504 0.81%, #FB8B01 36.09%, #FDD400 69.33%, #FDEE00 98.98%); */
+    background: linear-gradient(116.61deg, #902504 0.81%, #FB8B01 36.09%, #FDD400 69.33%, #FDEE00 98.98%);
 }
 
 #menu ul li a i{
@@ -82,15 +86,48 @@ body {
 }
 
 #main {
-    width: 60%;
+    width: 55%;
     z-index: 5;
+    padding: 1rem;
 }
 
 #side {
-    width: 20%;
+    width: 30%;
     border-radius: 0 25px 25px 0;
     z-index: 10;
     background: rgba(255,255,255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    padding-left: 1rem;
+}
+
+.inputBox {
+    margin: 1rem;
+} 
+
+.input {
+    background: rgba(255,255,255, 0.5);
+    border-radius: 25px;
+    color: rgb(116, 116, 116);
+    height: 20px;
+    width: 80%;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 0 0.5rem 1rem;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.numberInput {
+    border-radius: 25px 0 0 25px;
 }
 
 
@@ -98,13 +135,13 @@ body {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-/* Styles */
+
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
-/* Styles */
+    
 }
 
 /* Smartphones (portrait) ----------- */

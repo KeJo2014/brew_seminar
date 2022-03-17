@@ -1,2 +1,66 @@
 {% extends "brewing/template.html" %}
 {% block title %}Erstellen{% endblock %}
+{% block maincontent %}
+<h1>Rezept Erstellen</h1>
+
+{% endblock %}
+{% block sidecontent %}
+<div class="inputBox">
+    <input type="text" class="input" id="name" name="name" placeholder="Name">
+    <input type="date" class="input" id="date" name="date" placeholder="Datum">
+    <input type="text" class="input" id="sort" name="sort" placeholder="Biersorte">
+    <input type="text" class="input" id="author" name="author" placeholder="Author">
+</div>
+<div class="inputBox">
+    <input type="number" class="input" id="ausschlagswuerze" name="ausschlagswuerze" placeholder="Ausschlagswürze [l]">
+    <input type="number" class="input" id="sudhausausbeute" name="sudhausausbeute" placeholder="Sudhausausbeute [l]">
+</div>
+<div class="inputBox">
+    <input type="number" class="input numberInput" step="0.1" id="stammwuerze" name="stammwuerze" placeholder="Stammwürze [%]">
+    <input type="number" class="input" id="bittere" name="bittere" placeholder="Bittere [IBU]">
+</div>
+{% endblock %}
+
+{
+    "Name": "Anf\u00e4ngerweizen",
+    "Datum": "03.12.2011",
+    "Sorte": "Helles Hefeweizen",
+    "Autor": "Thomator",
+    "Ausschlagswuerze": 22,
+    "Sudhausausbeute": 58,
+    "Stammwuerze": 13,
+    "Bittere": 15,
+    "Farbe": "17",
+    "Alkohol": 5.3,
+    "Kurzbeschreibung": "Bestens f\u00fcr Anf\u00e4nger geeignet",
+    "Infusion_Hauptguss": "18",
+    "Malz1": "Weizenmalz hell",
+    "Malz1_Menge": 2.5,
+    "Malz1_Einheit": "kg",
+    "Malz2": "M\u00fcnchner Malz",
+    "Malz2_Menge": 1.5,
+    "Malz2_Einheit": "kg",
+    "Malz3": "Wiener Malz",
+    "Malz3_Menge": 1,
+    "Malz3_Einheit": "kg",
+    "Maischform": "infusion",
+    "Infusion_Einmaischtemperatur": 56,
+    "Infusion_Rasttemperatur1": "62",
+    "Infusion_Rastzeit1": "30",
+    "Infusion_Rasttemperatur2": "72",
+    "Infusion_Rastzeit2": "30",
+    "Abmaischtemperatur": "78",
+    "Nachguss": "14",
+    "Kochzeit_Wuerze": "90",
+    "Hopfen_VWH_1_Sorte": "Saphir (Dolden)",
+    "Hopfen_VWH_1_Menge": "10",
+    "Hopfen_VWH_1_alpha": "4.6",
+    "Hopfen_1_Sorte": "Saphir (Dolden)",
+    "Hopfen_1_Menge": "20",
+    "Hopfen_1_alpha": "4.6",
+    "Hopfen_1_Kochzeit": "70",
+    "Hefe": "Kuchlbauer gestrippt",
+    "Gaertemperatur": "22",
+    "Karbonisierung": "6",
+    "Anmerkung_Autor": "Trotz des sehr einfach gehaltenen Maischprogramms ein sehr leckeres und s\u00fcffiges Wei\u00dfbier. Entscheidend ist die Hefe. Die Kuchlbauerhefe ergibt ein sehr w\u00fcrziges Wei\u00dfbier."
+}
