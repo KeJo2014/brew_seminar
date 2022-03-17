@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/template.css' %}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>{% block title %}{% endblock %}</title>
@@ -16,9 +16,9 @@
     <div class="workingArea">
     <nav class="card" id="menu">
         <ul>
-            <li><a href="home"><i class="fa-solid fa-house"></i>Home</a></li>
-            <li><a href="brewing"><i class="fa-solid fa-gears"></i>Brauen</a></li>
-            <li><a href="creating"><i class="fa-solid fa-pen-to-square"></i>Erstellen</a></li>
+            <li><a href="home"><i class="fa-solid fa-house"></i><p>Home</p></a></li>
+            <li><a href="brewing"><i class="fa-solid fa-gears"></i><p>Brauen</p></a></li>
+            <li><a href="creating"><i class="fa-solid fa-pen-to-square"></i><p>Erstellen</p></a></li>
         </ul>
     </nav>
     <div class="card" id="main">

@@ -41,7 +41,7 @@ body {
 
 .box {
     background: rgb(255,255,255);
-background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.03551827407464747) 100%);
+    background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.03551827407464747) 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     display: flex;
@@ -62,30 +62,18 @@ background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.0
     padding: 0;
 }
 
-#menu ul li {
+#menu ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
     padding: 0.5rem 2rem 0.5rem 1rem;
     margin: 0.5rem 0 0.5rem 0;
     border-radius: 25px;
 }
 
-#menu ul li:hover {
-    background: linear-gradient(116.61deg, #902504 0.81%, #FB8B01 36.09%, #FDD400 69.33%, #FDEE00 98.98%);
-    color: white;
-}
-
-#menu ul li:local-link {
-    background: linear-gradient(116.61deg, #902504 0.81%, #FB8B01 36.09%, #FDD400 69.33%, #FDEE00 98.98%);
-    color: white;
-}
-
-#menu ul li a{
-    text-decoration: none;
-    font-size: 1rem;
-    color: black;
-}
-
 #menu ul li a:hover{
     color: white;
+    /* background: linear-gradient(116.61deg, #902504 0.81%, #FB8B01 36.09%, #FDD400 69.33%, #FDEE00 98.98%); */
 }
 
 #menu ul li a i{
@@ -104,29 +92,7 @@ background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.0
     z-index: 10;
     background: rgba(255,255,255, 0.5);
 }
-/* Brewing Page */
 
-.selectRecipe {
-    overflow-y: auto;
-    height: 106px;
-  }
-  .selectRecipe thead th {
-    position: sticky;
-    top: 0;
-  }
-  .selectRecipe table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  .selectRecipe table th,
-  .selectRecipe table td {
-    padding: 8px 16px;
-    border: 1px solid #ccc;
-  }
-  .selectRecipe table th {
-    background: #eee;
-  }
-/* Brewing Page end*/
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
@@ -173,12 +139,7 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
-    footer a i{
-        font-size: 2vw;
-    }
-    #menu {
-        width: 30%;
-    }
+
 }
 
 /* Large screens ----------- */
