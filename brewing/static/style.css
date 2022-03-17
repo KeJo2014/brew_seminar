@@ -1,0 +1,195 @@
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Inter';
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    background: linear-gradient(116.61deg, #902504 0.81%, #FB8B01 36.09%, #FDD400 69.33%, #FDEE00 98.98%);
+    background-repeat: no-repeat;
+    backdrop-filter: blur(4px);
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.workingArea {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card {
+    background: rgba(255,255,255, 0.7);
+    display: flex;
+    height: 100%;
+}
+
+.box {
+    background: rgb(255,255,255);
+background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.03551827407464747) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    display: flex;
+}
+
+#menu {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    background-color: white;
+    border-radius: 25px 0 0 25px;
+    mix-blend-mode: screen;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li {
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    margin: 0.5rem 0 0.5rem 0;
+    border-radius: 25px;
+}
+
+#menu ul li:hover {
+    background: linear-gradient(116.61deg, #902504 0.81%, #FB8B01 36.09%, #FDD400 69.33%, #FDEE00 98.98%);
+    color: white;
+}
+
+#menu ul li:local-link {
+    background: linear-gradient(116.61deg, #902504 0.81%, #FB8B01 36.09%, #FDD400 69.33%, #FDEE00 98.98%);
+    color: white;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+
+#menu ul li a:hover{
+    color: white;
+}
+
+#menu ul li a i{
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+#main {
+    width: 60%;
+    z-index: 5;
+}
+
+#side {
+    width: 20%;
+    border-radius: 0 25px 25px 0;
+    z-index: 10;
+    background: rgba(255,255,255, 0.5);
+}
+/* Brewing Page */
+
+.selectRecipe {
+    overflow-y: auto;
+    height: 106px;
+  }
+  .selectRecipe thead th {
+    position: sticky;
+    top: 0;
+  }
+  .selectRecipe table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .selectRecipe table th,
+  .selectRecipe table td {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+  }
+  .selectRecipe table th {
+    background: #eee;
+  }
+/* Brewing Page end*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    footer a i{
+        font-size: 2vw;
+    }
+    #menu {
+        width: 30%;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

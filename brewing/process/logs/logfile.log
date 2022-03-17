@@ -448,3 +448,960 @@ HTTP GET /admin/brewing/messurement/ 200 [0.07, 127.0.0.1:49940]
 HTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:49940]
 HTTP GET /static/admin/img/icon-yes.svg 200 [0.01, 127.0.0.1:49940]
 HTTP GET /evaluate 200 [0.01, 127.0.0.1:49940]
+HTTP GET / 200 [0.09, 127.0.0.1:53885]
+HTTP GET / 200 [0.04, 127.0.0.1:49361]
+HTTP GET /static/polls/style.css 404 [0.08, 127.0.0.1:49361]
+HTTP GET / 200 [0.01, 127.0.0.1:49361]
+HTTP GET /static/polls/style.css 404 [0.01, 127.0.0.1:49361]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:55274]
+HTTP GET /static/polls/style.css 404 [0.01, 127.0.0.1:55274]
+HTTP GET / 200 [0.01, 127.0.0.1:55274]
+HTTP GET /static/polls/style.css 404 [0.01, 127.0.0.1:55274]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:55279]
+HTTP GET /static/polls/style.css 404 [0.00, 127.0.0.1:55279]
+HTTP GET / 200 [0.01, 127.0.0.1:55279]
+HTTP GET /static/polls/style.css 404 [0.01, 127.0.0.1:55279]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.02, 127.0.0.1:63506]
+HTTP GET /static/polls/style.css 200 [0.50, 127.0.0.1:63506]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:62886]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:62886]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:55261]
+HTTP GET /static/polls/style.css 200 [0.01, 127.0.0.1:55261]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.05, 127.0.0.1:55264]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:55264]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:61775]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:61775]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:61791]
+HTTP GET /static/polls/style.css 200 [0.01, 127.0.0.1:61791]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:63092]
+HTTP GET /static/polls/style.css 200 [0.01, 127.0.0.1:63092]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:63094]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:63094]
+HTTP GET / 200 [0.01, 127.0.0.1:63094]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:63094]
+HTTP GET / 200 [0.01, 127.0.0.1:63094]
+HTTP GET /static/polls/style.css 304 [0.00, 127.0.0.1:63094]
+HTTP GET / 200 [0.01, 127.0.0.1:63094]
+HTTP GET /static/polls/style.css 304 [0.00, 127.0.0.1:63094]
+HTTP GET / 200 [0.01, 127.0.0.1:63094]
+HTTP GET /static/polls/style.css 304 [0.00, 127.0.0.1:63094]
+HTTP GET / 200 [0.01, 127.0.0.1:63094]
+HTTP GET /static/polls/style.css 304 [0.00, 127.0.0.1:63094]
+HTTP GET / 200 [0.06, 127.0.0.1:63094]
+HTTP GET /static/polls/style.css 304 [0.00, 127.0.0.1:63094]
+HTTP GET / 200 [0.02, 127.0.0.1:63094]
+HTTP GET /static/polls/style.css 304 [0.00, 127.0.0.1:63094]
+HTTP GET / 200 [0.01, 127.0.0.1:63235]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:63235]
+HTTP GET / 200 [0.01, 127.0.0.1:63235]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:63235]
+HTTP GET / 200 [0.01, 127.0.0.1:63235]
+HTTP GET /static/polls/style.css 304 [0.00, 127.0.0.1:63235]
+HTTP GET / 200 [0.02, 127.0.0.1:54605]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:54605]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:62106]
+HTTP GET /static/polls/style.css 200 [0.01, 127.0.0.1:62106]
+HTTP GET / 200 [0.01, 127.0.0.1:62106]
+HTTP GET /static/polls/style.css 200 [0.01, 127.0.0.1:62106]
+HTTP GET / 200 [0.01, 127.0.0.1:62106]
+HTTP GET /static/polls/style.css 200 [0.01, 127.0.0.1:62106]
+HTTP GET / 200 [0.01, 127.0.0.1:62106]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:62106]
+HTTP GET / 200 [0.03, 127.0.0.1:62106]
+HTTP GET /static/polls/style.css 200 [0.01, 127.0.0.1:62106]
+HTTP GET / 200 [0.01, 127.0.0.1:62106]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:62106]
+HTTP GET / 200 [0.01, 127.0.0.1:62106]
+HTTP GET /static/polls/style.css 200 [0.01, 127.0.0.1:62106]
+HTTP GET / 200 [0.01, 127.0.0.1:62106]
+HTTP GET /static/polls/style.css 200 [0.01, 127.0.0.1:62106]
+HTTP GET / 200 [0.01, 127.0.0.1:62106]
+HTTP GET /static/polls/style.css 200 [0.01, 127.0.0.1:62106]
+HTTP GET / 200 [0.01, 127.0.0.1:62106]
+HTTP GET /static/polls/style.css 200 [0.01, 127.0.0.1:62106]
+HTTP GET / 200 [0.01, 127.0.0.1:62106]
+HTTP GET /static/polls/style.css 200 [0.01, 127.0.0.1:62106]
+HTTP GET / 200 [0.01, 127.0.0.1:62690]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:62690]
+HTTP GET / 200 [0.01, 127.0.0.1:62690]
+HTTP GET /static/polls/style.css 200 [0.02, 127.0.0.1:62690]
+HTTP GET / 200 [0.01, 127.0.0.1:62690]
+HTTP GET /static/polls/style.css 304 [0.00, 127.0.0.1:62690]
+HTTP GET / 200 [0.01, 127.0.0.1:59979]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:59979]
+HTTP GET / 200 [0.01, 127.0.0.1:53473]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:53473]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:53484]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:53484]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:53485]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:53485]
+HTTP GET / 200 [0.01, 127.0.0.1:53485]
+HTTP GET /static/polls/style.css 200 [0.01, 127.0.0.1:53485]
+HTTP GET / 200 [0.01, 127.0.0.1:53485]
+HTTP GET /static/polls/style.css 200 [0.01, 127.0.0.1:53485]
+HTTP GET / 200 [0.01, 127.0.0.1:53485]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:53485]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:60760]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:60760]
+HTTP GET / 200 [0.01, 127.0.0.1:60760]
+HTTP GET /static/polls/style.css 200 [0.00, 127.0.0.1:60760]
+HTTP GET / 200 [0.04, 127.0.0.1:60702]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:60702]
+Not Found: /brew
+HTTP GET /brew 404 [0.01, 127.0.0.1:60702]
+Not Found: /brew.html
+HTTP GET /brew.html 404 [0.01, 127.0.0.1:60702]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+Not Found: /brew.html
+HTTP GET /brew.html 404 [0.02, 127.0.0.1:53522]
+Not Found: /brew.html
+HTTP GET /brew.html 404 [0.12, 127.0.0.1:53522]
+Not Found: /menu.html
+HTTP GET /menu.html 404 [0.01, 127.0.0.1:53522]
+Not Found: /menu.html
+HTTP GET /menu.html 404 [0.01, 127.0.0.1:53522]
+Not Found: /menu.html
+HTTP GET /menu.html 404 [0.01, 127.0.0.1:65030]
+HTTP GET / 200 [0.01, 127.0.0.1:65030]
+HTTP GET /static/style.css 200 [0.48, 127.0.0.1:65030]
+HTTP GET / 200 [0.01, 127.0.0.1:62763]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:62763]
+HTTP GET /dashboard 200 [0.01, 127.0.0.1:62763]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:62765]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:62765]
+Thu Mar 17 10:09:22 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:62765]
+Internal Server Error: /menu
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 14, in menu
+    return render(request, 'brewing/menu.html')
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends "index.html"> must be the first tag in the template.
+HTTP GET /menu 500 [0.18, 127.0.0.1:62763]
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 8, in index
+    return render(request, 'brewing/index.html')
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends "menu.html"> must be the first tag in the template.
+HTTP GET / 500 [0.05, 127.0.0.1:54833]
+HTTP GET / 200 [0.03, 127.0.0.1:57376]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:57376]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:57378]
+Internal Server Error: /menu
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\engine.py", line 162, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: index.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 14, in menu
+    return render(request, 'brewing/menu.html')
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 64, in render
+    reraise(exc, self.backend)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 85, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: index.html
+HTTP GET /menu 500 [0.06, 127.0.0.1:57378]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /menu 200 [0.05, 127.0.0.1:64927]
+HTTP GET /static/style.css 200 [0.51, 127.0.0.1:64927]
+Not Found: /favicon.ico
+Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\engine.py", line 162, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: menu.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 14, in home
+    return render(request, 'brewing/home.html')
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 64, in render
+    reraise(exc, self.backend)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 85, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: menu.html
+HTTP GET /home 500 [0.06, 127.0.0.1:64931]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\engine.py", line 162, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: menu.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 17, in home
+    return render(request, 'brewing/home.html')
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 64, in render
+    reraise(exc, self.backend)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 85, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: menu.html
+HTTP GET /home 500 [0.09, 127.0.0.1:52535]
+HTTP GET /menu 200 [0.01, 127.0.0.1:52535]
+HTTP GET /menu 200 [0.01, 127.0.0.1:52535]
+Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\engine.py", line 162, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: menu.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 17, in home
+    return render(request, 'brewing/home.html')
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 64, in render
+    reraise(exc, self.backend)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 85, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: menu.html
+HTTP GET /home 500 [0.05, 127.0.0.1:52535]
+HTTP GET /home 200 [0.01, 127.0.0.1:52535]
+HTTP GET /home 200 [0.01, 127.0.0.1:52535]
+HTTP GET /home 200 [0.01, 127.0.0.1:52535]
+HTTP GET /static/style.css 200 [0.41, 127.0.0.1:52535]
+HTTP GET /home 200 [0.02, 127.0.0.1:52535]
+HTTP GET /home 200 [0.01, 127.0.0.1:52535]
+HTTP GET /home 200 [0.01, 127.0.0.1:52535]
+HTTP GET /home 200 [0.02, 127.0.0.1:52535]
+HTTP GET /home 200 [0.01, 127.0.0.1:52535]
+HTTP GET /home 200 [0.01, 127.0.0.1:52535]
+HTTP GET /home 200 [0.01, 127.0.0.1:52535]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /home 200 [0.02, 127.0.0.1:54869]
+HTTP GET /static/style.css 200 [0.47, 127.0.0.1:54869]
+Not Found: /favicon.ico
+HTTP GET /home 200 [0.01, 127.0.0.1:54873]
+Not Found: /favicon.ico
+Not Found: /.../brewing
+HTTP GET /.../brewing 404 [0.01, 127.0.0.1:54874]
+Not Found: /.../brewing
+HTTP GET /.../brewing 404 [0.01, 127.0.0.1:54874]
+HTTP GET / 200 [0.01, 127.0.0.1:54874]
+Not Found: /favicon.ico
+HTTP GET /home 200 [0.01, 127.0.0.1:62620]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:62620]
+HTTP GET /home 200 [0.01, 127.0.0.1:62620]
+HTTP GET /creating 200 [0.01, 127.0.0.1:62620]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:62620]
+HTTP GET /home 200 [0.01, 127.0.0.1:62620]
+HTTP GET /creating 200 [0.01, 127.0.0.1:62620]
+Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 56, in home
+    return render(request, 'brewing/home.html')
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'extends' cannot appear more than once in the same template
+HTTP GET /home 500 [0.06, 127.0.0.1:60099]
+HTTP GET /home 200 [0.01, 127.0.0.1:60099]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:60099]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:60099]
+HTTP GET /home 200 [0.01, 127.0.0.1:60099]
+HTTP GET /creating 200 [0.01, 127.0.0.1:60099]
+HTTP GET /creating 200 [0.01, 127.0.0.1:60099]
+HTTP GET /creating 200 [0.01, 127.0.0.1:60099]
+HTTP GET /home 200 [0.01, 127.0.0.1:60099]
+HTTP GET /home 200 [0.03, 127.0.0.1:60099]
+HTTP GET /home 200 [0.01, 127.0.0.1:60099]
+HTTP GET / 200 [0.01, 127.0.0.1:61252]
+HTTP GET /home 200 [0.01, 127.0.0.1:61252]
+HTTP GET /creating 200 [0.01, 127.0.0.1:61252]
+HTTP GET /home 200 [0.01, 127.0.0.1:61252]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:61252]
+HTTP GET /home 200 [0.03, 127.0.0.1:57371]
+HTTP GET /static/style.css 200 [0.40, 127.0.0.1:57371]
+HTTP GET /home 200 [0.01, 127.0.0.1:50585]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:50585]
+HTTP GET /home 200 [0.06, 127.0.0.1:50585]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:50585]
+HTTP GET /home 200 [0.01, 127.0.0.1:50585]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:50585]
+HTTP GET /home 200 [0.01, 127.0.0.1:50585]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:50585]
+HTTP GET /home 200 [0.01, 127.0.0.1:50585]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:50585]
+HTTP GET /home 200 [0.01, 127.0.0.1:50585]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:50585]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:50585]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50585]
+HTTP GET /home 200 [0.01, 127.0.0.1:50585]
+HTTP GET /creating 200 [0.01, 127.0.0.1:50585]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:50585]
+HTTP GET /home 200 [0.01, 127.0.0.1:50585]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:50585]
+HTTP GET /home 200 [0.01, 127.0.0.1:50585]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:50585]
+HTTP GET /home 200 [0.01, 127.0.0.1:50585]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:50585]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:50585]
+HTTP GET /home 200 [0.01, 127.0.0.1:50585]
+HTTP GET /creating 200 [0.01, 127.0.0.1:50585]
+HTTP GET /home 200 [0.01, 127.0.0.1:50585]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:50585]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:50585]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:50585]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:50585]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:50585]
+HTTP GET /home 200 [0.01, 127.0.0.1:50585]
+HTTP GET /creating 200 [0.01, 127.0.0.1:50585]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:50585]
+HTTP GET /home 200 [0.01, 127.0.0.1:50585]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+HTTP GET /home 200 [0.02, 127.0.0.1:60176]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:60176]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:60176]
+HTTP GET /home 200 [0.01, 127.0.0.1:60176]
+HTTP GET /creating 200 [0.01, 127.0.0.1:60176]
+HTTP GET /creating 200 [0.01, 127.0.0.1:60176]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:60176]
+HTTP GET /home 200 [0.01, 127.0.0.1:60176]
+HTTP GET /home 200 [0.01, 127.0.0.1:60176]
+HTTP GET /home 200 [0.02, 127.0.0.1:60176]
+HTTP GET /home 200 [0.02, 127.0.0.1:60176]
+HTTP GET /static/style.css 200 [0.47, 127.0.0.1:60176]
+HTTP GET /home 200 [0.01, 127.0.0.1:60176]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:60176]
+HTTP GET /home 200 [0.01, 127.0.0.1:60176]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:60176]
+HTTP GET /home 200 [0.01, 127.0.0.1:60176]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:60176]
+HTTP GET /home 200 [0.02, 127.0.0.1:60176]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:60176]
+HTTP GET /home 200 [0.01, 127.0.0.1:50438]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:50438]
+HTTP GET / 200 [0.05, 127.0.0.1:58570]
+HTTP GET /static/style.css 200 [0.46, 127.0.0.1:58570]
+HTTP GET /home 200 [0.01, 127.0.0.1:58570]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:58570]
+HTTP GET /home 200 [0.01, 127.0.0.1:59273]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:59273]
+HTTP GET /home 200 [0.01, 127.0.0.1:59273]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:59273]
+HTTP GET /home 200 [0.01, 127.0.0.1:59273]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:59273]
+HTTP GET /home 200 [0.01, 127.0.0.1:59273]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:59273]
+HTTP GET /home 200 [0.01, 127.0.0.1:60370]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:60370]
+HTTP GET /home 200 [0.01, 127.0.0.1:60370]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:60370]
+HTTP GET /home 200 [0.01, 127.0.0.1:60370]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:60370]
+HTTP GET /home 200 [0.01, 127.0.0.1:60370]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:60370]
+HTTP GET /home 200 [0.01, 127.0.0.1:53040]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:53040]
+HTTP GET /home 200 [0.01, 127.0.0.1:53040]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:53040]
+HTTP GET /home 200 [0.01, 127.0.0.1:63836]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:63836]
+HTTP GET /home 200 [0.01, 127.0.0.1:63836]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:63836]
+HTTP GET /home 200 [0.01, 127.0.0.1:63836]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:63836]
+HTTP GET /home 200 [0.01, 127.0.0.1:63836]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:63836]
+HTTP GET /home 200 [0.01, 127.0.0.1:63836]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:63836]
+HTTP GET /home 200 [0.01, 127.0.0.1:63836]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:63836]
+HTTP GET /home 200 [0.04, 127.0.0.1:55960]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:55960]
+Not Found: /favicon.ico
+HTTP GET /home 200 [0.01, 127.0.0.1:50580]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50580]
+HTTP GET /home 200 [0.02, 127.0.0.1:50580]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50580]
+HTTP GET /home 200 [0.06, 127.0.0.1:50580]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:50580]
+HTTP GET /home 200 [0.01, 127.0.0.1:50580]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50580]
+HTTP GET /home 200 [0.01, 127.0.0.1:50580]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:50580]
+HTTP GET /home 200 [0.01, 127.0.0.1:49672]
+HTTP GET /home 200 [0.01, 127.0.0.1:49351]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:49351]
+HTTP GET /home 200 [0.01, 127.0.0.1:59666]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:59666]
+HTTP GET /home 200 [0.04, 127.0.0.1:59666]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:59666]
+HTTP GET /home 200 [0.01, 127.0.0.1:59666]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:59666]
+HTTP GET /home 200 [0.01, 127.0.0.1:59666]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:59666]
+HTTP GET /home 200 [0.01, 127.0.0.1:59666]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:59666]
+HTTP GET /home 200 [0.01, 127.0.0.1:59666]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:59666]
+HTTP GET /home 200 [0.01, 127.0.0.1:59666]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:59666]
+HTTP GET /home 200 [0.01, 127.0.0.1:59666]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:59666]
+HTTP GET /home 200 [0.01, 127.0.0.1:61435]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:61435]
+Not Found: /favicon.ico
+HTTP GET /home 200 [0.01, 127.0.0.1:61486]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:61486]
+HTTP GET /home 200 [0.01, 127.0.0.1:61486]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:61486]
+HTTP GET /home 200 [0.03, 127.0.0.1:64765]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:64765]
+Not Found: /favicon.ico
+HTTP GET /home 200 [0.01, 127.0.0.1:54470]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:54470]
+HTTP GET /home 200 [0.01, 127.0.0.1:54470]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:54470]
+HTTP GET /home 200 [0.01, 127.0.0.1:54470]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:54470]
+HTTP GET /home 200 [0.06, 127.0.0.1:54470]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:54470]
+HTTP GET /home 200 [0.01, 127.0.0.1:54470]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:54470]
+HTTP GET /home 200 [0.01, 127.0.0.1:54470]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:54470]
+HTTP GET /home 200 [0.03, 127.0.0.1:54470]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:54470]
+HTTP GET /home 200 [0.01, 127.0.0.1:60353]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:60353]
+HTTP GET /home 200 [0.01, 127.0.0.1:60353]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:60353]
+HTTP GET /home 200 [0.01, 127.0.0.1:60353]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:60353]
+HTTP GET /home 200 [0.01, 127.0.0.1:60353]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:60353]
+HTTP GET /home 200 [0.03, 127.0.0.1:61654]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:61654]
+HTTP GET /home 200 [0.01, 127.0.0.1:61654]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:61654]
+HTTP GET /home 200 [0.01, 127.0.0.1:61455]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:61455]
+HTTP GET /home 200 [0.01, 127.0.0.1:56672]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:56672]
+HTTP GET /home 200 [0.02, 127.0.0.1:56672]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:56672]
+HTTP GET /home 200 [0.01, 127.0.0.1:56672]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:56672]
+HTTP GET /home 200 [0.01, 127.0.0.1:53166]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:53166]
+HTTP GET /home 200 [0.01, 127.0.0.1:53166]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:53166]
+HTTP GET /home 200 [0.01, 127.0.0.1:53166]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:53166]
+HTTP GET /home 200 [0.01, 127.0.0.1:53166]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:53166]
+HTTP GET /home 200 [0.01, 127.0.0.1:59498]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:59498]
+Not Found: /favicon.ico
+HTTP GET /home 200 [0.01, 127.0.0.1:59511]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:59511]
+Not Found: /favicon.ico
+HTTP GET /home 200 [0.01, 127.0.0.1:64320]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:64320]
+Not Found: /favicon.ico
+HTTP GET /home 200 [0.01, 127.0.0.1:64321]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:64321]
+HTTP GET /home 200 [0.01, 127.0.0.1:64321]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:64321]
+HTTP GET /home 200 [0.01, 127.0.0.1:60685]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:60685]
+HTTP GET /home 200 [0.01, 127.0.0.1:60685]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:60685]
+HTTP GET /home 200 [0.01, 127.0.0.1:60685]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:60685]
+HTTP GET /home 200 [0.01, 127.0.0.1:53987]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:53987]
+HTTP GET /home 200 [0.01, 127.0.0.1:53987]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:53987]
+HTTP GET /home 200 [0.01, 127.0.0.1:53987]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:53987]
+HTTP GET /home 200 [0.01, 127.0.0.1:53987]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:53987]
+HTTP GET /home 200 [0.01, 127.0.0.1:53987]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:53987]
+HTTP GET /home 200 [0.05, 127.0.0.1:64648]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:64648]
+Not Found: /favicon.ico
+HTTP GET /home 200 [0.01, 127.0.0.1:50493]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50493]
+Not Found: /favicon.ico
+HTTP GET /home 200 [0.08, 127.0.0.1:50505]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50505]
+HTTP GET /home 200 [0.01, 127.0.0.1:50505]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50505]
+HTTP GET /home 200 [0.01, 127.0.0.1:50505]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50505]
+HTTP GET /home 200 [0.01, 127.0.0.1:50505]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:50505]
+HTTP GET /home 200 [0.01, 127.0.0.1:50505]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50505]
+HTTP GET /home 200 [0.01, 127.0.0.1:50505]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50505]
+HTTP GET /home 200 [0.01, 127.0.0.1:50505]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50505]
+HTTP GET /home 200 [0.01, 127.0.0.1:50505]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50505]
+HTTP GET /home 200 [0.01, 127.0.0.1:50505]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:50505]
+HTTP GET /home 200 [0.01, 127.0.0.1:50505]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50505]
+HTTP GET /home 200 [0.01, 127.0.0.1:50505]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50505]
+HTTP GET /home 200 [0.01, 127.0.0.1:50505]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50505]
+HTTP GET /home 200 [0.04, 127.0.0.1:50505]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50505]
+HTTP GET /home 200 [0.01, 127.0.0.1:50505]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:50505]
+HTTP GET /home 200 [0.01, 127.0.0.1:63225]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:63225]
+Not Found: /favicon.ico
+HTTP GET /home 200 [0.01, 127.0.0.1:58000]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:58000]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:58000]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:58000]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:58000]
+HTTP GET /creating 200 [0.01, 127.0.0.1:58000]
+HTTP GET /home 200 [0.01, 127.0.0.1:58000]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:58000]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:51645]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:51645]
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 59, in brewing
+    return render(request, 'brewing/brewing.html')
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'maincontent' appears more than once
+HTTP GET /brewing 500 [0.18, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:51645]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:51645]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:55963]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:55963]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:55963]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:55963]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:55963]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:55963]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:58055]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:58055]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:58055]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:58055]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:58055]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:58055]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:58055]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:58055]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:58055]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:58055]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:58055]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:58055]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:53427]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:53427]
+Not Found: /favicon.ico
+HTTP GET /home 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:53429]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:53429]
+HTTP GET /creating 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:53429]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:53429]
+HTTP GET /home 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:53429]
+HTTP GET /home 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:53429]
+HTTP GET /home 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:53429]
+HTTP GET /home 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:53429]
+HTTP GET /home 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:53429]
+HTTP GET /home 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:53429]
+HTTP GET /home 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:53429]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:53429]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 200 [0.01, 127.0.0.1:53429]
+HTTP GET /home 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:53429]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:53429]
+HTTP GET /creating 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:53429]
+HTTP GET /home 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:53429]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:53429]
+HTTP GET /creating 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:53429]
+HTTP GET /home 200 [0.01, 127.0.0.1:53429]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 304 [0.00, 127.0.0.1:53429]
+HTTP GET /creating 200 [0.01, 127.0.0.1:53429]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:53429]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:53429]
+HTTP GET /static/style.css 304 [0.01, 127.0.0.1:53429]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:59934]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:59934]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:59934]
+HTTP GET /static/style.css 200 [0.00, 127.0.0.1:59934]

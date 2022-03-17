@@ -48,3 +48,15 @@ def evaluate(request):
             "steps": steps,
             "engine": engine,
         })
+
+def template(request):
+    return render(request, 'brewing/template.html')
+
+def home(request):
+    return render(request, 'brewing/home.html')
+
+def brewing(request):
+    return render(request, 'brewing/brewing.html')
+
+def creating(request):
+    return render(request, 'brewing/creating.html')

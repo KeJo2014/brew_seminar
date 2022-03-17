@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body class="background" id="menu-bg">
+    <div class="workingArea">
+    <nav class="card" id="menu">
+        <ul>
+            <li><a href="home"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="brewing"><i class="fa-solid fa-gears"></i>Brauen</a></li>
+            <li><a href="creating"><i class="fa-solid fa-pen-to-square"></i>Erstellen</a></li>
+        </ul>
+    </nav>
+    <div class="card" id="main">
+    {% block maincontent %}
+
+    {% endblock %}
+    </div>
+    <div class="card" id="side">
+    {% block sidecontent %}
+
+    {% endblock %}
+    </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/84d4e1a0a8.js" crossorigin="anonymous"></script>
+
+</html>
