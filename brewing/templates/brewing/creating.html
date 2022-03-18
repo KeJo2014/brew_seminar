@@ -1,127 +1,182 @@
 {% extends "brewing/template.html" %}
 {% block title %}Erstellen{% endblock %}
 {% block maincontent %}
-<h1>Rezept Erstellen</h1>
-<div class="inputBox">
-    <h2>Brauwasser</h2>
-    <div id="waterBox">
-        <input type="text" class="input" id="guss1" name="guss1" placeholder="1. Guss" required title="GUSS">
-        <input type="number" class="input inputSpace" id="gussvol1" name="gussvol1" placeholder="Gussvolumen [l]"
-            required title="GUSSVOLUMEN">
+<div class="spacePadding">
+    <h1>Rezept Erstellen</h1>
+    <div class="inputBox">
+        <h2>Brauwasser</h2>
+        <div id="waterBox">
+            <input type="text" class="input" id="guss1" name="guss1" placeholder="1. Guss" required title="GUSS">
+            <input type="number" class="input inputSpace" id="gussvol1" name="gussvol1" placeholder="Gussvolumen [l]"
+                required title="GUSSVOLUMEN">
+        </div>
+        <div class="buttonBox">
+            <button type="button" onclick="addWater()"><i class="fa-solid fa-plus"></i></button>
+            <button type="button" onclick="delWater()"><i class="fa-solid fa-minus"></i></button>
+        </div>
     </div>
-    <div class="buttonBox">
-        <button type="button" onclick="addWater()"><i class="fa-solid fa-plus"></i></button>
-        <button type="button" onclick="delWater()"><i class="fa-solid fa-minus"></i></button>
+    <div class="inputBox">
+        <h2>Schüttung</h2>
+        <div id="maltBox">
+            <input type="text" class="input" id="malz1" name="malz1" placeholder="1. Malzsorte" required
+                title="MALZSORTE">
+            <input type="number" class="input inputSpace" id="malzmenge1" name="malzmenge1" placeholder="Malzmenge [g]"
+                required title="MALZMENGE">
+        </div>
+        <div class="buttonBox">
+            <button type="button" onclick="addMalt()"><i class="fa-solid fa-plus"></i></button>
+            <button type="button" onclick="delMalt()"><i class="fa-solid fa-minus"></i></button>
+        </div>
     </div>
+    <div class="inputBox">
+        <h2>Maischplan</h2>
+        <div id="maischBox">
+            <input type="text" class="input" id="maisch1" name="maisch1" placeholder="1. Maischphase" required
+                title="MAISCHPHASE">
+            <input type="number" class="input inputSpace" id="maischtemp1" name="maischtemp1" placeholder="Maischtemperatur [°C]"
+                required title="MAISCHTEMPERATUR">
+            
+            <div class="align-items-end">
+                <button type="button" class="smallerButton" onclick="addRast()"><i class="fa-solid fa-plus"></i></button>
+                <button type="button" class="smallerButton" onclick="delRast()"><i class="fa-solid fa-minus"></i></button>
+            </div>
+        </div>
+        <div class="buttonBox">
+            <button type="button" onclick="addMaischphase()"><i class="fa-solid fa-plus"></i></button>
+            <button type="button" onclick="delMaischphase()"><i class="fa-solid fa-minus"></i></button>
+        </div>
+    </div>
+    <script>
+        var indexMalt = 1;
+        var indexWater = 1;
+        var indexPhase = 1;
+
+        function addMalt() {
+            indexMalt++;
+            var inputMaltText = document.createElement('input');
+            inputMaltText.setAttribute('type', 'text');
+            inputMaltText.setAttribute('class', 'input');
+            inputMaltText.setAttribute('id', 'malz' + indexMalt);
+            inputMaltText.setAttribute('name', 'malz' + indexMalt);
+            inputMaltText.setAttribute('placeholder', indexMalt + '. Malzsorte');
+            inputMaltText.setAttribute('title', 'MALZSORTE');
+
+            var inputMaltNumber = document.createElement('input');
+            inputMaltNumber.setAttribute('type', 'number');
+            inputMaltNumber.setAttribute('class', 'input inputSpace');
+            inputMaltNumber.setAttribute('id', 'malzmenge' + indexMalt);
+            inputMaltNumber.setAttribute('name', 'malzmenge' + indexMalt);
+            inputMaltNumber.setAttribute('placeholder', 'Malzmenge [g]');
+            inputMaltNumber.setAttribute('title', 'MALZMENGE');
+
+            var parent = document.querySelector('#maltBox')
+            parent.appendChild(inputMaltText);
+            parent.appendChild(inputMaltNumber);
+
+        }
+
+        function delMalt() {
+            var idMalz = 'malz' + indexMalt;
+            var idMalzmenge = 'malzmenge' + indexMalt;
+            document.getElementById(idMalz).remove();
+            document.getElementById(idMalzmenge).remove();
+            indexMalt--;
+        }
+
+        function addWater() {
+            indexWater++;
+            var inputWaterText = document.createElement('input');
+            inputWaterText.setAttribute('type', 'text');
+            inputWaterText.setAttribute('class', 'input');
+            inputWaterText.setAttribute('id', 'guss' + indexWater);
+            inputWaterText.setAttribute('name', 'guss' + indexWater);
+            inputWaterText.setAttribute('placeholder', indexWater + '. Guss');
+            inputWaterText.setAttribute('title', 'GUSS');
+
+            var inputWaterNumber = document.createElement('input');
+            inputWaterNumber.setAttribute('type', 'number');
+            inputWaterNumber.setAttribute('class', 'input inputSpace');
+            inputWaterNumber.setAttribute('id', 'gussvol' + indexWater);
+            inputWaterNumber.setAttribute('name', 'gussvol' + indexWater);
+            inputWaterNumber.setAttribute('placeholder', 'Gussvolumen [l]');
+            inputWaterNumber.setAttribute('title', 'GUSSVOLUMEN');
+
+            var parent = document.querySelector('#waterBox')
+            parent.appendChild(inputWaterText);
+            parent.appendChild(inputWaterNumber);
+
+        }
+
+        function delWater() {
+            var idWater = 'guss' + indexWater;
+            var idWaterVol = 'gussvol' + indexWater;
+            document.getElementById(idWater).remove();
+            document.getElementById(idWaterVol).remove();
+            indexWater--;
+        }
+
+        function addMaischphase() {
+            indexPhase++;
+            var inputPhaseText = document.createElement('input');
+            inputPhaseText.setAttribute('type', 'text');
+            inputPhaseText.setAttribute('class', 'input');
+            inputPhaseText.setAttribute('id', 'maisch' + indexPhase);
+            inputPhaseText.setAttribute('name', 'maisch' + indexPhase);
+            inputPhaseText.setAttribute('placeholder', indexPhase + '. Maischphase');
+            inputPhaseText.setAttribute('title', 'MAISCHPHASE');
+
+            var inputPhaseNumber = document.createElement('input');
+            inputPhaseNumber.setAttribute('type', 'number');
+            inputPhaseNumber.setAttribute('class', 'input inputSpace');
+            inputPhaseNumber.setAttribute('id', 'maischtemp' + indexPhase);
+            inputPhaseNumber.setAttribute('name', 'maischtemp' + indexPhase);
+            inputPhaseNumber.setAttribute('placeholder', 'Maischtemperatur [°C]');
+            inputPhaseNumber.setAttribute('title', 'MAISCHTEMPERATUR');
+
+            var parent = document.querySelector('#maischBox')
+            parent.appendChild(inputPhaseText);
+            parent.appendChild(inputPhaseNumber);
+
+        }
+
+        function delMaischphase() {
+            var idPhase = 'maisch' + indexPhase;
+            var idPhaseTemp = 'maischtemp' + indexPhase;
+            document.getElementById(idPhase).remove();
+            document.getElementById(idPhaseTemp).remove();
+            indexPhase--;
+        }
+    </script>
 </div>
-<div class="inputBox">
-    <h2>Schüttung</h2>
-    <div id="maltBox">
-        <input type="text" class="input" id="malz1" name="malz1" placeholder="1. Malzsorte" required title="MALZSORTE">
-        <input type="number" class="input inputSpace" id="malzmenge1" name="malzmenge1" placeholder="Malzmenge [g]"
-            required title="MALZMENGE">
-    </div>
-    <div class="buttonBox">
-        <button type="button" onclick="addMalt()"><i class="fa-solid fa-plus"></i></button>
-        <button type="button" onclick="delMalt()"><i class="fa-solid fa-minus"></i></button>
-    </div>
-</div>
-<script>
-    var indexMalt = 1;
-    var indexWater = 1;
-
-    function addMalt() {
-        indexMalt++;
-        var inputMaltText = document.createElement('input');
-        inputMaltText.setAttribute('type', 'text');
-        inputMaltText.setAttribute('class', 'input');
-        inputMaltText.setAttribute('id', 'malz' + indexMalt);
-        inputMaltText.setAttribute('name', 'malz' + indexMalt);
-        inputMaltText.setAttribute('placeholder', indexMalt + '. Malzsorte');
-        inputMaltText.setAttribute('title', 'MALZSORTE');
-
-        var inputMaltNumber = document.createElement('input');
-        inputMaltNumber.setAttribute('type', 'number');
-        inputMaltNumber.setAttribute('class', 'input inputSpace');
-        inputMaltNumber.setAttribute('id', 'malzmenge' + indexMalt);
-        inputMaltNumber.setAttribute('name', 'malzmenge' + indexMalt);
-        inputMaltNumber.setAttribute('placeholder', 'Malzmenge [g]');
-        inputMaltNumber.setAttribute('title', 'MALZMENGE');
-
-        var parent = document.querySelector('#maltBox')
-        parent.appendChild(inputMaltText);
-        parent.appendChild(inputMaltNumber);
-
-    }
-
-    function delMalt() {
-        var idMalz = 'malz' + indexMalt;
-        var idMalzmenge = 'malzmenge' + indexMalt;
-        document.getElementById(idMalz).remove();
-        document.getElementById(idMalzmenge).remove();
-        indexMalt--;
-    }
-
-    function addWater() {
-        indexWater++;
-        var inputWaterText = document.createElement('input');
-        inputWaterText.setAttribute('type', 'text');
-        inputWaterText.setAttribute('class', 'input');
-        inputWaterText.setAttribute('id', 'guss' + indexWater);
-        inputWaterText.setAttribute('name', 'guss' + indexWater);
-        inputWaterText.setAttribute('placeholder', indexWater + '. Guss');
-        inputWaterText.setAttribute('title', 'GUSS');
-
-        var inputWaterNumber = document.createElement('input');
-        inputWaterNumber.setAttribute('type', 'number');
-        inputWaterNumber.setAttribute('class', 'input inputSpace');
-        inputWaterNumber.setAttribute('id', 'gussvol' + indexWater);
-        inputWaterNumber.setAttribute('name', 'gussvol' + indexWater);
-        inputWaterNumber.setAttribute('placeholder', 'Gussvolumen [l]');
-        inputWaterNumber.setAttribute('title', 'GUSSVOLUMEN');
-
-        var parent = document.querySelector('#waterBox')
-        parent.appendChild(inputWaterText);
-        parent.appendChild(inputWaterNumber);
-
-    }
-
-    function delWater() {
-        var idWater = 'guss' + indexWater;
-        var idWaterVol = 'gussvol' + indexWater;
-        document.getElementById(idWater).remove();
-        document.getElementById(idWaterVol).remove();
-        indexWater--;
-    }
-</script>
-
 {% endblock %}
 {% block sidecontent %}
-<div class="inputBox">
-    <input type="text" class="input" id="name" name="name" placeholder="Name" required title="NAME">
-    <input type="date" class="input" id="date" name="date" placeholder="Datum" required title="DATUM">
-    <input type="text" class="input" id="sort" name="sort" placeholder="Biersorte" required title="BIERSORTE">
-    <input type="text" class="input" id="author" name="author" placeholder="Autor" required title="AUTOR">
-</div>
-<div class="inputBox">
-    <input type="number" class="input numberInput" id="ausschlagswuerze" name="ausschlagswuerze"
-        placeholder="Ausschlagswürze [l]" required min="0" title="AUSSCHLAGWÜRZE">
-    <input type="number" class="input numberInput" id="sudhausausbeute" name="sudhausausbeute"
-        placeholder="Sudhausausbeute [l]" required min="0" title="SUDHAUSAUSBEUTE">
-</div>
-<div class="inputBox">
-    <input type="number" class="input numberInput" step="0.1" id="stammwuerze" name="stammwuerze"
-        placeholder="Stammwürze [%]" required min="0" title="STAMMWÜRZE">
-    <input type="number" class="input numberInput" id="bittere" name="bittere" placeholder="Bittere [IBU]" required
-        min="0" title="BITTERE">
-    <input type="number" class="input numberInput" id="farbe" name="farbe" placeholder="Farbe [EBC]" required min="0"
-        title="FARBE">
-    <input type="number" class="input numberInput" id="alkohol" step="0.1" name="alkohol" placeholder="Alkohol [‰]"
-        required min="0" title="ALKOHOL">
-</div>
-<div class="inputBox">
-    <textarea id="beschreibung" class="input" name="beschreibung" rows="4" cols="50" placeholder="Beschreibung"
-        title="BESCHREIBUNG"></textarea>
+<div class="spacePadding">
+    <div class="inputBox">
+        <input type="text" class="input" id="name" name="name" placeholder="Name" required title="NAME">
+        <input type="date" class="input" id="date" name="date" placeholder="Datum" required title="DATUM">
+        <input type="text" class="input" id="sort" name="sort" placeholder="Biersorte" required title="BIERSORTE">
+        <input type="text" class="input" id="author" name="author" placeholder="Autor" required title="AUTOR">
+    </div>
+    <div class="inputBox">
+        <input type="number" class="input numberInput" id="ausschlagswuerze" name="ausschlagswuerze"
+            placeholder="Ausschlagswürze [l]" required min="0" title="AUSSCHLAGWÜRZE">
+        <input type="number" class="input numberInput" id="sudhausausbeute" name="sudhausausbeute"
+            placeholder="Sudhausausbeute [l]" required min="0" title="SUDHAUSAUSBEUTE">
+    </div>
+    <div class="inputBox">
+        <input type="number" class="input numberInput" step="0.1" id="stammwuerze" name="stammwuerze"
+            placeholder="Stammwürze [%]" required min="0" title="STAMMWÜRZE">
+        <input type="number" class="input numberInput" id="bittere" name="bittere" placeholder="Bittere [IBU]" required
+            min="0" title="BITTERE">
+        <input type="number" class="input numberInput" id="farbe" name="farbe" placeholder="Farbe [EBC]" required
+            min="0" title="FARBE">
+        <input type="number" class="input numberInput" id="alkohol" step="0.1" name="alkohol" placeholder="Alkohol [‰]"
+            required min="0" title="ALKOHOL">
+    </div>
+    <div class="inputBox">
+        <textarea id="beschreibung" class="input" name="beschreibung" rows="4" cols="50" placeholder="Beschreibung"
+            title="BESCHREIBUNG"></textarea>
+    </div>
 </div>
 {% endblock %}
 <!-- 
