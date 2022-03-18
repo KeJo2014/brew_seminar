@@ -12,25 +12,25 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 
-<body class="background" id="menu-bg">
+<body class="bg">
     <div class="workingArea">
-    <nav class="card" id="menu">
+    <nav class="menu">
         <ul>
             <li><a href="home"><i class="fa-solid fa-house"></i><p>Home</p></a></li>
             <li><a href="brewing"><i class="fa-solid fa-gears"></i><p>Brauen</p></a></li>
             <li><a href="creating"><i class="fa-solid fa-pen-to-square"></i><p>Erstellen</p></a></li>
         </ul>
     </nav>
-    <div class="card" id="main">
+    <main>
     {% block maincontent %}
 
     {% endblock %}
-    </div>
-    <div class="card" id="side">
+    </main>
+    <aside>
     {% block sidecontent %}
 
     {% endblock %}
-    </div>
+    </aside>
     </div>
 </body>
 <script src="https://kit.fontawesome.com/84d4e1a0a8.js" crossorigin="anonymous"></script>
