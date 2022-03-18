@@ -105,6 +105,12 @@ h2 {
     color: white;
 }
 
+h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
 .inputBox {
     margin: 1rem;
 } 
@@ -126,6 +132,19 @@ h2 {
     border-radius: 25px 0 0 25px;
 }
 
+.rastInput {
+    background: rgba(255,255,255, 0.5);
+    border-radius: 25px;
+    color: rgb(116, 116, 116);
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 0 0.5rem 1rem;
+    margin: 0.5rem 0 0.5rem 0;
+    width: 70%;
+}
+
 .inputSpace {
     margin: 0 0 1rem 0;
 }
@@ -141,6 +160,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0.25rem;
 }
 
 .buttonBox {
@@ -155,6 +175,13 @@ button {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+#rastBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .smallerButton {

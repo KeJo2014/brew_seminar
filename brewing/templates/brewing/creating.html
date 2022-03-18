@@ -35,10 +35,16 @@
                 title="MAISCHPHASE">
             <input type="number" class="input inputSpace" id="maischtemp1" name="maischtemp1" placeholder="Maischtemperatur [°C]"
                 required title="MAISCHTEMPERATUR">
-            
-            <div class="align-items-end">
-                <button type="button" class="smallerButton" onclick="addRast()"><i class="fa-solid fa-plus"></i></button>
-                <button type="button" class="smallerButton" onclick="delRast()"><i class="fa-solid fa-minus"></i></button>
+            <div id="rastBox11">
+                <h3 id="h3Rast11">1.Rast</h3>
+                <input type="number" class="rastInput" id="rasttemp11" name="rasttemp11" placeholder="Rasttemperatur [°C]"
+                required title="RASTTEMPERATUR">
+                <input type="number" class="rastInput inputSpace" id="rastdur11" name="rastdur11" placeholder="Rastdauer [min]"
+                required title="RASTDAUER">
+            </div>
+            <div class="align-items-end" id="smallerButtonsBox11">
+                <button type="button" class="smallerButton" id="buttonAddRast11" onclick="addRast()"><i class="fa-solid fa-plus"></i></button>
+                <button type="button" class="smallerButton" id="buttonDelRast11" onclick="delRast()"><i class="fa-solid fa-minus"></i></button>
             </div>
         </div>
         <div class="buttonBox">
@@ -50,6 +56,7 @@
         var indexMalt = 1;
         var indexWater = 1;
         var indexPhase = 1;
+        var indexRast = 1;
 
         function addMalt() {
             indexMalt++;
@@ -117,6 +124,7 @@
 
         function addMaischphase() {
             indexPhase++;
+
             var inputPhaseText = document.createElement('input');
             inputPhaseText.setAttribute('type', 'text');
             inputPhaseText.setAttribute('class', 'input');
@@ -131,20 +139,100 @@
             inputPhaseNumber.setAttribute('id', 'maischtemp' + indexPhase);
             inputPhaseNumber.setAttribute('name', 'maischtemp' + indexPhase);
             inputPhaseNumber.setAttribute('placeholder', 'Maischtemperatur [°C]');
-            inputPhaseNumber.setAttribute('title', 'MAISCHTEMPERATUR');
+            inputPhaseNumber.setAttribute('title', 'MAISCHTEMPERATUR')
+
+            var rastBox = document.createElement('div');
+            smallerButtonsBox.setAttribute('class', 'align-items-end');
+            smallerButtonsBox.setAttribute('id', 'rastBox' + indexPhase + indexRast);
+
+            var smallerButtonsBox = document.createElement('div');
+            smallerButtonsBox.setAttribute('class', 'align-items-end');
+            smallerButtonsBox.setAttribute('id', 'smallerButtonsBox' + indexPhase + indexRast);
+
+            var buttonAddRast = document.createElement('button');
+            buttonAddRast.setAttribute('type', 'button');
+            buttonAddRast.setAttribute('class', 'smallerButton');
+            buttonAddRast.setAttribute('id', 'buttonAddRast' + indexPhase + indexRast);
+            buttonAddRast.setAttribute('onclick', 'addRast()');
+
+            var iconAddRast = document.createElement('i');
+            iconAddRast.setAttribute('class', 'fa-solid fa-plus');
+
+            var buttonDelRast = document.createElement('button');
+            buttonDelRast.setAttribute('type', 'button');
+            buttonDelRast.setAttribute('class', 'smallerButton');
+            buttonDelRast.setAttribute('id', 'buttonDelRast' + indexPhase + indexRast);
+            buttonDelRast.setAttribute('onclick', 'delRast()');
+
+            var iconDelRast = document.createElement('i');
+            iconDelRast.setAttribute('class', 'fa-solid fa-minus');
 
             var parent = document.querySelector('#maischBox')
+            buttonAddRast.appendChild(iconAddRast);
+            buttonDelRast.appendChild(iconDelRast);
+            smallerButtonsBox.appendChild(buttonAddRast);
+            smallerButtonsBox.appendChild(buttonDelRast);
             parent.appendChild(inputPhaseText);
             parent.appendChild(inputPhaseNumber);
+            parent.appendChild(rastBox);
+            parent.appendChild(smallerButtonsBox);
 
         }
 
         function delMaischphase() {
             var idPhase = 'maisch' + indexPhase;
             var idPhaseTemp = 'maischtemp' + indexPhase;
+            var idsmallerButtonsBox = 'smallerButtonsBox' + indexPhase + indexRast;
+            var idbuttonAddRast = 'buttonAddRast' + indexPhase + indexRast;
+            var idbuttonDelRast = 'buttonDelRast' + indexPhase + indexRast;
             document.getElementById(idPhase).remove();
             document.getElementById(idPhaseTemp).remove();
+            document.getElementById(idsmallerButtonsBox).remove();
+            document.getElementById(idbuttonAddRast).remove();
+            document.getElementById(idbuttonDelRast).remove();
             indexPhase--;
+        }
+
+        function addRast() {
+            indexRast++;
+
+            var h3Rast = document.createElement('h3');
+            h3Rast.setAttribute('id', 'h3Rast' + indexPhase + indexRast);
+            var h3RastText = document.createTextNode(indexRast + '. Rast');
+
+            var inputRastTempNumber = document.createElement('input');
+            inputRastTempNumber.setAttribute('type', 'number');
+            inputRastTempNumber.setAttribute('class', 'rastInput');
+            inputRastTempNumber.setAttribute('id', 'rasttemp' + indexPhase + indexRast);
+            inputRastTempNumber.setAttribute('name', 'rasttemp' + indexPhase + indexRast);
+            inputRastTempNumber.setAttribute('placeholder', 'Rasttemperatur [°C]');
+            inputRastTempNumber.setAttribute('title', 'RASTTEMPERATUR');
+
+            var inputRastDurNumber = document.createElement('input');
+            inputRastDurNumber.setAttribute('type', 'number');
+            inputRastDurNumber.setAttribute('class', 'rastInput inputSpace');
+            inputRastDurNumber.setAttribute('id', 'rastdur' + indexPhase + indexRast);
+            inputRastDurNumber.setAttribute('name', 'rastdur' + indexPhase + indexRast);
+            inputRastDurNumber.setAttribute('placeholder', 'Rastdauer [min]');
+            inputRastDurNumber.setAttribute('title', 'RASTDAUER');
+
+            var parent = document.querySelector('#rastBox')
+            h3Rast.appendChild(h3RastText);
+            parent.appendChild(h3Rast);
+            parent.appendChild(inputRastTempNumber);
+            parent.appendChild(inputRastDurNumber);
+
+        }
+
+        function delRast() {
+            var idh3Rast = 'h3Rast' + indexPhase + indexRast;
+            var idRastTemp = 'rasttemp' + indexPhase + indexRast;
+            var idRastDur = 'rastdur' + indexPhase + indexRast;
+            
+            document.getElementById(idh3Rast).remove();
+            document.getElementById(idRastTemp).remove();
+            document.getElementById(idRastDur).remove();
+            indexRast--;
         }
     </script>
 </div>
