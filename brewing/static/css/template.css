@@ -1,3 +1,7 @@
+@import "home.css";
+@import "brewing.css";
+@import "create.css";
+
 * {
     box-sizing: border-box;
   }
