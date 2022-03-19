@@ -1,10 +1,21 @@
-@import "home.css";
-@import "brewing.css";
-@import "create.css";
+:root {
+  --brown: rgb(144,37,4);
+  --orange: rgb(243,131,1);
+  --yellow: rgb(253,237,0);
+  --white: rgb(255, 255, 255);
+  --dark-grey: rgb(80, 80, 80);
+  --light-grey: rgb(170, 170, 170);
+  --trans03: rgba(255, 255, 255, 0.3);
+  --trans05: rgba(255, 255, 255, 0.5);
+  --trans07: rgba(255, 255, 255, 0.7);
+  --gradient: linear-gradient(135deg, #902504 0%, #FB8B01 36%, #FDD400 70%, #FDEE00 100%);
+  --gradientWhite: linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.3) 100%);
+}
 
 * {
     box-sizing: border-box;
   }
+
 
 html {
     width: 100%;
@@ -17,7 +28,7 @@ html {
 
 body {
     margin: 0;
-    background: linear-gradient(116.61deg, #902504 0.81%, #FB8B01 36.09%, #FDD400 69.33%, #FDEE00 98.98%);
+    background: var(--gradient);
     background-repeat: no-repeat;
     backdrop-filter: blur(4px);
     z-index: -10;
@@ -35,7 +46,7 @@ body {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: rgba(255, 255, 255, 0.404);
+  background-color: var(--trans03);
   border-radius: 25px;
   z-index: 5;
 }
@@ -46,14 +57,13 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 100%);
+    background: var(--gradientWhite);
     border-radius: 50%;
     z-index: 20;
   }
 
 .box {
-    background: rgb(255,255,255);
-    background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.03551827407464747) 100%);
+    background: var(--gradientWhite);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
 }
@@ -78,7 +88,7 @@ nav ul {
 nav ul li a{
   text-decoration: none;
   font-size: 1rem;
-  color:rgb(255, 102, 0);
+  color: var(--orange);
   border-radius: 25px;
   display: flex;
   flex-direction: row;
@@ -89,7 +99,7 @@ nav ul li a{
 
 nav ul li a:hover{
   color: white;
-  background: linear-gradient(116.61deg, #902504 0.81%, #FB8B01 36.09%, #FDD400 69.33%, #FDEE00 98.98%);
+  background: var(--gradient);
 }
 
 nav ul li a i{
@@ -98,7 +108,7 @@ nav ul li a i{
 }
 
 main {
-  background: rgba(255,255,255, 0.7);
+  background: var(--trans07);
   height: 105%;
   overflow-y: auto;
   padding: 1rem;
@@ -106,7 +116,7 @@ main {
 
 aside {
   border-radius: 0 25px 25px 0;
-  background: rgba(255,255,255, 0.5);
+  background: var(--trans05);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -114,6 +124,7 @@ aside {
   align-items: center;
   padding: 1rem;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 button {

@@ -1,4 +1,80 @@
-#container {
+@import "home.css";
+#recipeInfo {
     width: 100%;
-    height: 100%;
+}
+
+#recipeInfo tr td{
+    padding: 0 0.5rem 0 0.5rem;
+    color: var(--dark-grey);
+    border-right: 2px solid white;
+}
+
+#recipeInfo tr td:last-child{
+    border-right: none;
+}
+
+#modelInfo {
+    width: 100%;
+}
+
+#modelInfo tr td{
+    padding: 0.5rem;
+    color: var(--orange);
+}
+
+#modelInfo tr th{
+    padding: 0.5rem;
+    text-align: right;
+    color:var(--brown);
+}
+
+#controlBar {
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.controlButton {
+    color: var(--dark-grey);
+    background-color: var(--trans05);
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    margin: 0.25rem;
+}
+
+#tabelGuidance {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.labelGuidance {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.phaseGuidance {
+    padding-bottom: 0.5rem;
+    color: var(--orange);
+    font-size: 2rem;
+}
+
+#nextPhase {
+    color: var(--brown);
+}
+
+#tabelGuidance tr td{
+    text-align: left;
+    padding-bottom: 2rem;
+    color: var(--dark-grey);
+}
+
+#t-time {
+    width: 100%;
 }

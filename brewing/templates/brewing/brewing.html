@@ -3,13 +3,87 @@
 
 {% block maincontent %}
 <main class="main-l">
-
+    <h1>Zubereitung</h1>
+    <table id="recipeInfo">
+        <tr>
+            <td id="recipe_name" title="REZEPTNAME">Rezeptname</td>
+            <td id="sort" title="BIERSORTE">Biersorte</td>
+            <td id="date" title="DATUM">Datum</td>
+            <td id="author" title="AUTOR">Autor</td>
+            <td id="brewCount" title="BRAUUNGEN">Brauungen</td>
+        </tr>
+    </table>
+    <table id="tabelGuidance">
+        <tr>
+            <th class="labelGuidance">momentaner Schritt</th>
+        </tr>
+        <tr>
+            <th class="phaseGuidance" id="currentPhase">Prozesstitel</th>
+        </tr>
+        <tr>
+            <td id="currentContent">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </td>
+        </tr>
+        <tr>
+            <th class="labelGuidance">nächster Schritt</th>
+        </tr>
+        <tr>
+            <th class="phaseGuidance" id="nextPhase">Prozesstitel</th>
+        </tr>
+        <tr>
+            <td id="nextContent">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </td>
+        </tr>
+    </table>
 </main>
 {% endblock %}
 
 
 {% block sidecontent %}
 <aside class="aside-m">
-        
+    {% load static %}
+    <img href="{% static 'img/brautopf.png' %}" alt="brautopf">
+    <table id="modelInfo">
+        <tr>
+            <th>Phase</th>
+            <td id="phase">Maischen</td>
+        </tr>
+        <tr>
+            <th>Temperatur</th>
+            <td id="temp">78°C</td>
+        </tr>
+        <tr>
+            <th>Rührwerk</th>
+            <td id="engine">AN</td>
+        </tr>
+        <tr>
+            <th>Phasenende</th>
+            <td id="duration">78min</td>
+        </tr>
+        <tr>
+            <th>Brauende</th>
+            <td id="finish_time">16:00 Uhr</td>
+        </tr>
+    </table>
+    <div id="controlBar">
+        <button class="controlButton" id="but-undo" onclick="undo()"><i class="fas fa-arrow-left"></i></button>
+        <button class="controlButton" id="but-start" onclick="start()"><i class="fas fa-play"></i></button>
+        <!-- <button class="controlButton" id="but-stop" onclick="stop()"><i class="fas fa-pause"></i></button> -->
+        <button class="controlButton" id="but-reset" onclick="reset()"><i class="fas fa-stop"></i></button>
+        <!-- <button class="controlButton" id="but-file" onclick="protocol()"><i class="fas fa-file"></i></button> -->
+        <button class="controlButton" id="but-next" onclick="next()"><i class="fas fa-arrow-right"></i></button>
+    </div>
 </aside>
 {% endblock %}

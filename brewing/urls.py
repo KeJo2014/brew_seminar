@@ -7,6 +7,6 @@ urlpatterns = [
     path("evaluate", views.evaluate, name="evaluate"),
     path("home", views.home, name="home"),
     path("brewing", views.brewing, name="brewing"),
-    path("creating", views.creating, name="creating"),
+    path("create", views.create, name="create"),
     path("template", views.template, name="template"),
 ]

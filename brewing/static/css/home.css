@@ -1,3 +1,5 @@
+@import "template.css";
+
 .main-xl {
     width: 85%;
     border-radius: 0 25px 25px 0;
@@ -9,8 +11,8 @@
 }
 
 #recipeTableBox {
-    background-color:rgba(255, 255, 255, 0.562);
-    padding: 0 0 1rem 0;
+    background-color:var(--trans05);
+    padding: 0 0 1.5rem 0;
     border-radius: 25px;
     width: 100%;
 }
@@ -30,7 +32,7 @@
 }
 
 #selectRecipeTable thead th{
-    color:rgb(187, 100, 0);
+    color:var(--brown);
     padding: 1rem;
     border: none;
     font-size: 1rem;
@@ -60,7 +62,7 @@
 
 .selected {
     background-color: white;
-    color: rgb(255, 123, 0) !important;
+    color: var(--orange) !important;
 }
 
 .recipeButtonBox {

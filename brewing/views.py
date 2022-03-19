@@ -58,5 +58,5 @@ def home(request):
 def brewing(request):
     return render(request, 'brewing/brewing.html')
 
-def creating(request):
-    return render(request, 'brewing/creating.html')
+def create(request):
+    return render(request, 'brewing/create.html')
