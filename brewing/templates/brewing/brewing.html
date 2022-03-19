@@ -1,6 +1,6 @@
 {% extends "brewing/template.html" %}
 {% block title %}Brauen{% endblock %}
-
+{% load static %}
 {% block maincontent %}
 <main class="main-l">
     <h1>Zubereitung</h1>
@@ -53,7 +53,6 @@
 
 {% block sidecontent %}
 <aside class="aside-m">
-    {% load static %}
     <img id="model" src="{% static 'img/brautopf.png' %}" alt="brautopf">
     <table id="modelInfo">
         <tr>
@@ -86,4 +85,5 @@
         <button class="controlButton" id="but-next" onclick="next()"><i class="fas fa-arrow-right"></i></button>
     </div>
 </aside>
+<script src="{% static '/js/brewing.js' %}" crossorigin="anonymous"></script>
 {% endblock %}

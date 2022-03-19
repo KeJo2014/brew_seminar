@@ -1,4 +1,5 @@
 {% extends "brewing/template.html" %}
+{% load static %}
 {% block title %}Erstellen{% endblock %}
 {% block maincontent %}
 <main class="main-l">
@@ -120,6 +121,7 @@
             title="BESCHREIBUNG"></textarea>
     </div>
 </aside>
+<script src="{% static '/js/creating.js' %}" crossorigin="anonymous"></script>
 {% endblock %}
 <!-- 
 {"recipe":{

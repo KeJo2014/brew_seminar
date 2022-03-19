@@ -1,5 +1,5 @@
 {% extends "brewing/template.html" %}
-
+{% load static %}
 {% block title %}Home{% endblock %}
 
 {% block maincontent %}
@@ -50,4 +50,7 @@
   </div>
 </div>
 </main>
+
+<script src="{% static '/js/home.js' %}" crossorigin="anonymous"></script>
 {% endblock %}
+
