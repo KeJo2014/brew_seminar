@@ -3694,3 +3694,271 @@ HTTP GET /creating 200 [0.01, 127.0.0.1:57285]
 HTTP GET /static/template/home.css 304 [0.00, 127.0.0.1:57285]
 HTTP GET /brewing 200 [0.01, 127.0.0.1:57285]
 HTTP GET /home 200 [0.01, 127.0.0.1:57285]
+HTTP GET /static/template/home.css 304 [0.00, 127.0.0.1:57285]
+HTTP GET /home 200 [0.03, 127.0.0.1:55150]
+HTTP GET /static/template/template.css 304 [0.01, 127.0.0.1:55150]
+HTTP GET /static/template/home.css 304 [0.01, 127.0.0.1:55149]
+HTTP GET /static/template/creating.css 304 [0.01, 127.0.0.1:55151]
+HTTP GET /static/template/home.js 304 [0.01, 127.0.0.1:55152]
+HTTP GET /static/template/creating.js 304 [0.01, 127.0.0.1:55153]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:55153]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:55303]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:52929]
+HTTP GET /static/template/brewing.css 200 [0.41, 127.0.0.1:52929]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:52929]
+HTTP GET /creating 200 [0.01, 127.0.0.1:52929]
+HTTP GET /home 200 [0.01, 127.0.0.1:52929]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:52929]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:52929]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:52929]
+HTTP GET /static/template/home.css 200 [0.01, 127.0.0.1:52930]
+HTTP GET /static/template/creating.css 200 [0.01, 127.0.0.1:52940]
+HTTP GET /static/template/brewing.css 200 [0.01, 127.0.0.1:52941]
+HTTP GET /static/template/home.js 200 [0.02, 127.0.0.1:52943]
+HTTP GET /static/template/creating.js 200 [0.02, 127.0.0.1:52942]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:52942]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:52942]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:52942]
+HTTP GET /static/template/home.css 200 [0.01, 127.0.0.1:52943]
+HTTP GET /static/template/creating.css 200 [0.02, 127.0.0.1:52941]
+HTTP GET /static/template/brewing.css 200 [0.02, 127.0.0.1:52940]
+HTTP GET /static/template/creating.js 200 [0.02, 127.0.0.1:52930]
+HTTP GET /static/template/home.js 200 [0.02, 127.0.0.1:52929]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:52929]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:52929]
+HTTP GET /static/template/brewing.css 304 [0.00, 127.0.0.1:52929]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:54360]
+HTTP GET /static/template/brewing.css 304 [0.00, 127.0.0.1:54360]
+HTTP GET /static/template/three.js 200 [0.01, 127.0.0.1:54359]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:57372]
+HTTP GET /static/template/brewing.css 304 [0.00, 127.0.0.1:57372]
+HTTP GET /static/template/three.js 304 [0.00, 127.0.0.1:57373]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:57373]
+HTTP GET /brewing 200 [0.03, 127.0.0.1:57373]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:57373]
+HTTP GET /static/template/home.css 200 [0.01, 127.0.0.1:57372]
+HTTP GET /static/template/creating.css 200 [0.01, 127.0.0.1:57376]
+HTTP GET /static/template/brewing.css 200 [0.01, 127.0.0.1:57377]
+HTTP GET /static/template/home.js 200 [0.02, 127.0.0.1:57379]
+HTTP GET /static/template/creating.js 200 [0.02, 127.0.0.1:57378]
+HTTP GET /static/template/three.js 200 [0.02, 127.0.0.1:57373]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:57373]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:57373]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:57373]
+HTTP GET /brewing 200 [0.03, 127.0.0.1:57373]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:57373]
+HTTP GET /static/template/home.css 200 [0.01, 127.0.0.1:57378]
+HTTP GET /static/template/creating.css 200 [0.01, 127.0.0.1:57379]
+HTTP GET /static/template/brewing.css 200 [0.01, 127.0.0.1:57377]
+HTTP GET /static/template/creating.js 200 [0.02, 127.0.0.1:57376]
+HTTP GET /static/template/home.js 200 [0.02, 127.0.0.1:57372]
+HTTP GET /static/template/three.js 200 [0.02, 127.0.0.1:57373]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:57373]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:57373]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:57373]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:57373]
+HTTP GET /static/template/three.js 304 [0.00, 127.0.0.1:57373]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:57373]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:57373]
+HTTP GET /static/template/home.css 200 [0.01, 127.0.0.1:61160]
+HTTP GET /static/template/creating.css 200 [0.01, 127.0.0.1:61161]
+HTTP GET /static/template/brewing.css 200 [0.02, 127.0.0.1:61162]
+HTTP GET /static/template/creating.js 200 [0.02, 127.0.0.1:61163]
+HTTP GET /static/template/home.js 200 [0.03, 127.0.0.1:61164]
+HTTP GET /static/template/three.js 200 [0.03, 127.0.0.1:57373]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:57373]
+HTTP GET /static/template/brewing.css 304 [0.00, 127.0.0.1:57373]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:57373]
+HTTP GET /static/template/brewing.css 200 [0.00, 127.0.0.1:57373]
+HTTP GET /brewing 200 [0.03, 127.0.0.1:62606]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:62606]
+HTTP GET /static/template/home.css 200 [0.01, 127.0.0.1:62605]
+HTTP GET /static/template/creating.css 200 [0.01, 127.0.0.1:62608]
+HTTP GET /static/template/brewing.css 200 [0.02, 127.0.0.1:62607]
+HTTP GET /static/template/creating.js 200 [0.02, 127.0.0.1:62610]
+HTTP GET /static/template/home.js 200 [0.02, 127.0.0.1:62609]
+HTTP GET /static/template/three.js 200 [0.02, 127.0.0.1:62606]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:62606]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:62606]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:62606]
+HTTP GET /static/template/creating.css 200 [0.01, 127.0.0.1:62610]
+HTTP GET /static/template/home.css 200 [0.02, 127.0.0.1:62609]
+HTTP GET /static/template/brewing.css 200 [0.02, 127.0.0.1:62607]
+HTTP GET /static/template/creating.js 200 [0.02, 127.0.0.1:62608]
+HTTP GET /static/template/home.js 200 [0.02, 127.0.0.1:62605]
+HTTP GET /static/template/three.js 200 [0.03, 127.0.0.1:62606]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:62606]
+HTTP GET /brewing 200 [0.03, 127.0.0.1:62606]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:62606]
+HTTP GET /static/template/home.css 200 [0.01, 127.0.0.1:62605]
+HTTP GET /static/template/creating.css 200 [0.01, 127.0.0.1:62608]
+HTTP GET /static/template/creating.js 200 [0.01, 127.0.0.1:62609]
+HTTP GET /static/template/brewing.css 200 [0.02, 127.0.0.1:62607]
+HTTP GET /static/template/home.js 200 [0.02, 127.0.0.1:62610]
+HTTP GET /static/template/three.js 200 [0.02, 127.0.0.1:62606]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:62606]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:62606]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:62606]
+HTTP GET /static/template/home.css 200 [0.01, 127.0.0.1:62610]
+HTTP GET /static/template/creating.css 200 [0.01, 127.0.0.1:62607]
+HTTP GET /static/template/brewing.css 200 [0.02, 127.0.0.1:62609]
+HTTP GET /static/template/creating.js 200 [0.02, 127.0.0.1:62608]
+HTTP GET /static/template/home.js 200 [0.03, 127.0.0.1:62605]
+HTTP GET /static/template/three.js 200 [0.03, 127.0.0.1:62606]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:62606]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:62606]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:62606]
+HTTP GET /static/template/home.css 200 [0.01, 127.0.0.1:62605]
+HTTP GET /static/template/creating.css 200 [0.01, 127.0.0.1:62608]
+HTTP GET /static/template/brewing.css 200 [0.01, 127.0.0.1:62609]
+HTTP GET /static/template/home.js 200 [0.02, 127.0.0.1:62610]
+HTTP GET /static/template/creating.js 200 [0.02, 127.0.0.1:62607]
+HTTP GET /static/template/three.js 200 [0.02, 127.0.0.1:62606]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:62606]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:62606]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:62606]
+HTTP GET /static/template/home.css 200 [0.01, 127.0.0.1:62607]
+HTTP GET /static/template/brewing.css 200 [0.01, 127.0.0.1:62609]
+HTTP GET /static/template/creating.css 200 [0.01, 127.0.0.1:62610]
+HTTP GET /static/template/creating.js 200 [0.02, 127.0.0.1:62608]
+HTTP GET /static/template/home.js 200 [0.02, 127.0.0.1:62605]
+HTTP GET /static/template/three.js 200 [0.02, 127.0.0.1:62606]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:62606]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:62606]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:62606]
+HTTP GET /static/template/home.css 200 [0.01, 127.0.0.1:62605]
+HTTP GET /static/template/creating.css 200 [0.02, 127.0.0.1:62608]
+HTTP GET /static/template/creating.js 200 [0.02, 127.0.0.1:62609]
+HTTP GET /static/template/home.js 200 [0.02, 127.0.0.1:62607]
+HTTP GET /static/template/brewing.css 200 [0.03, 127.0.0.1:62610]
+HTTP GET /static/template/three.js 200 [0.03, 127.0.0.1:62606]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:62606]
+HTTP GET / 200 [0.01, 127.0.0.1:62653]
+HTTP GET /static/style.css 404 [0.01, 127.0.0.1:62653]
+Not Found: /favicon.ico
+HTTP GET /brewing 200 [0.01, 127.0.0.1:62696]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:62696]
+HTTP GET /static/template/home.css 200 [0.01, 127.0.0.1:62697]
+HTTP GET /static/template/brewing.css 200 [0.02, 127.0.0.1:62698]
+HTTP GET /static/template/creating.css 304 [0.02, 127.0.0.1:62699]
+HTTP GET /static/template/creating.js 304 [0.02, 127.0.0.1:62700]
+HTTP GET /static/template/home.js 304 [0.02, 127.0.0.1:62701]
+Exception inside application: Single thread executor already being used, would deadlock
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 40, in __call__
+    return await self.staticfiles_handler_class()(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 56, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\http.py", line 198, in __call__
+    await self.handle(scope, async_to_sync(send), body_stream)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 382, in __call__
+    raise RuntimeError(
+RuntimeError: Single thread executor already being used, would deadlock
+HTTP GET /static/template/three.js 500 [0.52, 127.0.0.1:62696]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:50354]
+HTTP GET /static/template/brewing.css 304 [0.01, 127.0.0.1:50354]
+HTTP GET /static/template/three.js 304 [0.00, 127.0.0.1:50355]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:50355]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:50355]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:50355]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:50355]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:54579]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:54579]
+HTTP GET /static/template/home.css 200 [0.01, 127.0.0.1:54578]
+HTTP GET /static/template/creating.css 200 [0.01, 127.0.0.1:54581]
+HTTP GET /static/template/creating.js 200 [0.01, 127.0.0.1:54583]
+HTTP GET /static/template/brewing.css 200 [0.02, 127.0.0.1:54582]
+HTTP GET /static/template/home.js 200 [0.02, 127.0.0.1:54584]
+Exception inside application: Single thread executor already being used, would deadlock
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 40, in __call__
+    return await self.staticfiles_handler_class()(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 56, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\http.py", line 198, in __call__
+    await self.handle(scope, async_to_sync(send), body_stream)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 382, in __call__
+    raise RuntimeError(
+RuntimeError: Single thread executor already being used, would deadlock
+HTTP GET /static/template/three.js 500 [0.32, 127.0.0.1:54579]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:54579]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:54579]
+HTTP GET /static/template/three.js 200 [0.01, 127.0.0.1:54579]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:54579]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:54579]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:54579]
+HTTP GET /static/template/template.css 200 [0.01, 127.0.0.1:54579]
+HTTP GET /static/template/home.css 200 [0.01, 127.0.0.1:54584]
+HTTP GET /static/template/creating.css 200 [0.01, 127.0.0.1:54582]
+HTTP GET /static/template/brewing.css 200 [0.01, 127.0.0.1:54583]
+HTTP GET /static/template/home.js 200 [0.02, 127.0.0.1:54578]
+HTTP GET /static/template/creating.js 200 [0.02, 127.0.0.1:54581]
+HTTP GET /static/template/three.js 200 [0.02, 127.0.0.1:54579]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:54579]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:54579]
+HTTP GET /static/template/brewing.css 200 [0.01, 127.0.0.1:54579]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:54579]
+HTTP GET /static/template/brewing.css 304 [0.00, 127.0.0.1:54579]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:54579]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:54579]
+HTTP GET /static/template/brewing.css 304 [0.00, 127.0.0.1:54579]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+HTTP GET /brewing 200 [0.02, 127.0.0.1:60803]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /brewing 200 [0.02, 127.0.0.1:52041]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:52041]
+HTTP GET /brewing 200 [0.03, 127.0.0.1:52051]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:59251]
+Not Found: /shared-assets/models/NeilArmstrong.webp
+HTTP GET /shared-assets/models/NeilArmstrong.webp 404 [0.04, 127.0.0.1:59253]
+Not Found: /shared-assets/environments/moon_1k.hdr
+HTTP GET /shared-assets/environments/moon_1k.hdr 404 [0.03, 127.0.0.1:59252]
+Not Found: /shared-assets/models/NeilArmstrong.glb
+HTTP GET /shared-assets/models/NeilArmstrong.glb 404 [0.03, 127.0.0.1:59256]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:59253]
+Not Found: /shared-assets/models/NeilArmstrong.webp
+HTTP GET /shared-assets/models/NeilArmstrong.webp 404 [0.01, 127.0.0.1:59253]
+Not Found: /shared-assets/environments/moon_1k.hdr
+Not Found: /shared-assets/models/NeilArmstrong.glb
+HTTP GET /shared-assets/environments/moon_1k.hdr 404 [0.02, 127.0.0.1:59253]
+HTTP GET /shared-assets/models/NeilArmstrong.glb 404 [0.02, 127.0.0.1:59252]
+Not Found: /favicon.ico
+HTTP GET /brewing 200 [0.01, 127.0.0.1:59260]
+Not Found: /shared-assets/models/NeilArmstrong.webp
+HTTP GET /shared-assets/models/NeilArmstrong.webp 404 [0.02, 127.0.0.1:59260]
+Not Found: /shared-assets/environments/moon_1k.hdr
+Not Found: /shared-assets/models/NeilArmstrong.glb
+HTTP GET /shared-assets/environments/moon_1k.hdr 404 [0.03, 127.0.0.1:59262]
+HTTP GET /shared-assets/models/NeilArmstrong.glb 404 [0.03, 127.0.0.1:59263]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:59262]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:59260]
+Not Found: /favicon.ico
+Not Found: /shared-assets/models/Astronaut.glb
+HTTP GET /shared-assets/models/Astronaut.glb 404 [0.01, 127.0.0.1:59262]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:59260]
+HTTP GET /static/template/template.css 200 [0.46, 127.0.0.1:59262]
+HTTP GET /static/template/home.css 200 [0.46, 127.0.0.1:59260]
+HTTP GET /static/template/creating.css 304 [0.47, 127.0.0.1:64998]
+HTTP GET /static/template/brewing.css 200 [0.47, 127.0.0.1:64999]
+HTTP GET /static/template/creating.js 304 [0.47, 127.0.0.1:65000]
+HTTP GET /static/template/home.js 304 [0.47, 127.0.0.1:65001]
+HTTP GET /static/template/three.js 200 [0.03, 127.0.0.1:59262]
+Not Found: /favicon.ico

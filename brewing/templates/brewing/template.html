@@ -9,19 +9,27 @@
     <link rel="stylesheet" type="text/css" href="{% static '/template/template.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static '/template/home.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static '/template/creating.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/template/brewing.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>{% block title %}{% endblock %}</title>
 </head>
+
 <body class="bg">
     <div class="bg-shape-circle"></div>
     <div class="bg-shape-box"></div>
     <nav class="menu">
         <ul>
-            <li><a href="home"><i class="fa-solid fa-house"></i><p>Home</p></a></li>
-            <li><a href="brewing"><i class="fa-solid fa-gears"></i><p>Brauen</p></a></li>
-            <li><a href="creating"><i class="fa-solid fa-pen-to-square"></i><p>Erstellen</p></a></li>
+            <li><a href="home"><i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </a></li>
+            <li><a href="brewing"><i class="fa-solid fa-gears"></i>
+                    <p>Brauen</p>
+                </a></li>
+            <li><a href="creating"><i class="fa-solid fa-pen-to-square"></i>
+                    <p>Erstellen</p>
+                </a></li>
         </ul>
     </nav>
     {% block maincontent %}
@@ -30,8 +38,10 @@
     {% block sidecontent %}
 
     {% endblock %}
+    <script src="https://kit.fontawesome.com/84d4e1a0a8.js" crossorigin="anonymous"></script>
+    <script src="{% static '/template/creating.js' %}" crossorigin="anonymous"></script>
+    <script src="{% static '/template/home.js' %}" crossorigin="anonymous"></script>
+    <script src="{% static '/template/three.js' %}" crossorigin="anonymous"></script>
 </body>
-<script src="https://kit.fontawesome.com/84d4e1a0a8.js" crossorigin="anonymous"></script>
-<script src="{% static '/template/creating.js' %}" crossorigin="anonymous"></script>
-<script src="{% static '/template/home.js' %}" crossorigin="anonymous"></script>
+
 </html>
