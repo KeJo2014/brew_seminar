@@ -1,4 +1,6 @@
 @import "home.css";
+
+
 #recipeInfo {
     width: 100%;
 }
@@ -7,6 +9,7 @@
     padding: 0 0.5rem 0 0.5rem;
     color: var(--dark-grey);
     border-right: 2px solid white;
+    text-align: center;
 }
 
 #recipeInfo tr td:last-child{
@@ -26,6 +29,10 @@
     padding: 0.5rem;
     text-align: right;
     color:var(--brown);
+}
+
+#model {
+    width: 100%;
 }
 
 #controlBar {

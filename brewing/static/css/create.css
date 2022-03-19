@@ -136,3 +136,7 @@ input[type="date"] {
     height: 2rem;
     font-size: 1rem;
 }
+
+#createRecipeButton {
+    margin: 3rem 0 0 0;
+}
