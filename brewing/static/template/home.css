@@ -1,0 +1,67 @@
+.main-xl {
+    width: 85%;
+    border-radius: 0 25px 25px 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#selectRecipeTable {
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.562);
+    border-radius: 25px;
+    border-collapse: collapse;
+}
+
+#selectRecipeTable thead{
+    background-color:rgb(255, 255, 255);
+    background-attachment:fixed;
+}
+
+#selectRecipeTable thead th{
+    color:rgb(73, 73, 73);
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#selectRecipeTable thead th:first-child{
+    border-radius:25px 0 0 0;
+}
+  
+#selectRecipeTable thead th:last-child{
+    border-radius:0 25px 0 0;
+}
+
+#selectRecipeTable tbody{
+    margin-bottom: 1rem;
+}
+
+#selectRecipeTable tbody tr td{
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+#selectRecipeTable tbody tr{
+    cursor: pointer;
+}
+
+.selected {
+    background-color: white;
+    color: rgb(255, 123, 0);
+}
+
+.recipeButtonBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.recipeEditButtonBox {
+    display: flex;
+    flex-direction: row;
+}

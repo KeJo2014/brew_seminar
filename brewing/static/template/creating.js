@@ -97,7 +97,7 @@ function addMaischphase() {
 
     var buttonAddRast = document.createElement('button');
     buttonAddRast.setAttribute('type', 'button');
-    buttonAddRast.setAttribute('class', 'smallerButton');
+    buttonAddRast.setAttribute('class', 'addDelButton smallerButton');
     buttonAddRast.setAttribute('id', 'buttonAddRast' + indexPhase);
     buttonAddRast.setAttribute('onclick', 'addRast(indexPhase)');
 
@@ -106,7 +106,7 @@ function addMaischphase() {
 
     var buttonDelRast = document.createElement('button');
     buttonDelRast.setAttribute('type', 'button');
-    buttonDelRast.setAttribute('class', 'smallerButton');
+    buttonDelRast.setAttribute('class', 'addDelButton smallerButton');
     buttonDelRast.setAttribute('id', 'buttonDelRast' + indexPhase);
     buttonDelRast.setAttribute('onclick', 'delRast(indexPhase)');
 

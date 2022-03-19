@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Inter';
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(116.61deg, #902504 0.81%, #FB8B01 36.09%, #FDD400 69.33%, #FDEE00 98.98%);
+    background-repeat: no-repeat;
+    backdrop-filter: blur(4px);
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.bg-shape-box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.404);
+  border-radius: 25px;
+  z-index: 5;
+}
+
+.bg-shape-circle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 100%);
+    border-radius: 50%;
+    z-index: 20;
+  }
+
+.box {
+    background: rgb(255,255,255);
+    background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.03551827407464747) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  background-color: white;
+  border-radius: 25px 0 0 25px;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 1rem;
+  color:rgb(255, 102, 0);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+nav ul li a:hover{
+  color: white;
+  background: linear-gradient(116.61deg, #902504 0.81%, #FB8B01 36.09%, #FDD400 69.33%, #FDEE00 98.98%);
+}
+
+nav ul li a i{
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+main {
+  background: rgba(255,255,255, 0.7);
+  height: 105%;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+aside {
+  border-radius: 0 25px 25px 0;
+  background: rgba(255,255,255, 0.5);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+button {
+  cursor: pointer;
+}

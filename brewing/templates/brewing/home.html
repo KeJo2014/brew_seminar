@@ -3,85 +3,48 @@
 {% block title %}Home{% endblock %}
 
 {% block maincontent %}
-    <div class="tableFixHead">
-        <table id="table">
-           <thead>
-            <tr>
-              <th>Rezeptname</th>
-              <th>Biersorte</th>
-              <th>Datum</th>
-            </tr>
-          </thead> 
-          <tbody>
-            <tr>
-              <td>1.1</td>
-              <td>2.1</td>
-              <td>2.1</td>
-            </tr>
-            <tr>
-              <td>1.2</td>
-              <td>2.2</td>
-              <td>2.2</td>
-  
-            </tr>
-            <tr>
-              <td>1.3</td>
-              <td>2.3</td>
-              <td>2.2</td>
-  
-            </tr>
-            <tr>
-              <td>1.4</td>
-              <td>2.4</td>
-              <td>2.2</td>
-  
-            </tr>
-            <tr>
-              <td>1.5</td>
-              <td>2.5</td>
-              <td>2.2</td>
-            </tr>
-            <tr>
-              <td>1.5</td>
-              <td>2.5</td>
-              <td>2.2</td>
-            </tr>
-            <tr>
-              <td>1.5</td>
-              <td>2.5</td>
-              <td>2.2</td>
-            </tr>
-            <tr>
-              <td>1.5</td>
-              <td>2.5</td>
-              <td>2.2</td>
-            </tr>
-            <tr>
-              <td>1.5</td>
-              <td>2.5</td>
-              <td>2.2</td>
-            </tr>
-            <tr>
-              <td>1.5</td>
-              <td>2.5</td>
-              <td>2.2</td>
-            </tr>
-            <tr>
-              <td>1.5</td>
-              <td>2.5</td>
-              <td>2.2</td>
-            </tr>
-            <tr>
-              <td>1.5</td>
-              <td>2.5</td>
-              <td>2.2</td>
-            </tr>
-            <tr>
-              <td>1.5</td>
-              <td>2.5</td>
-              <td>2.2</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+<main class="main-xl">
+  <table id="selectRecipeTable">
+    <thead>
+      <tr>
+        <th onclick="SortTable(0, 'T')">Rezeptname</th>
+        <th onclick="SortTable(1, 'T')">Biersorte</th>
+        <th onclick="SortTable(2, 'D', 'dmy')">Datum</th>
+        <th onclick="SortTable(3, 'T')">Autor</th>
+        <th onclick="SortTable(4, 'N')">Brauungen</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>unterfränkisches Weizen</td>
+        <td>Hefeweizen</td>
+        <td>22.02.2022</td>
+        <td>Jonathan Willert</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Nordenglisches Ale</td>
+        <td>Ale</td>
+        <td>19.03.2022</td>
+        <td>Alfons Bütner</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Lohrer Kellerbier</td>
+        <td>Kellerbier</td>
+        <td>1.01.2011</td>
+        <td>Richard Schneider</td>
+        <td>4</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="recipeButtonBox">
+  <button type="button" class="submitButton" id="submitRecipe">Brauen</button>
+  <div class="recipeEditButtonBox">
+    <button type="button" class="submitButton" id="delRecipe"><i class="fa-solid fa-trash-can"></i></button>
+    <button type="button" class="submitButton" id="editRecipe"><i class="fa-solid fa-pen-to-square"></i></button>
+    <button type="button" class="submitButton" id="addRecipe"><i class="fa-solid fa-plus"></i></button>
+  </div>
+</div>
+</main>
 {% endblock %}

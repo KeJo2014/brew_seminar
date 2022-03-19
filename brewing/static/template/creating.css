@@ -1,0 +1,135 @@
+.main-l {
+    width: 55%;
+}
+
+.aside-m {
+    width: 30%;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: white;
+    margin: 0.5rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+.inputBox {
+    margin: 1rem 0 0 0;
+    padding: 0 1rem 0 1rem;
+} 
+
+.input {
+    background: rgba(255,255,255, 0.5);
+    border-radius: 25px;
+    color: rgb(116, 116, 116);
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 0 0.5rem 1rem;
+    margin: 0.5rem 0 0.5rem 0;
+    width: 100%;
+}
+
+.input:focus {
+    outline: 2px solid white;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  margin-right: 0.7rem;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+  }
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+  margin-right: 0.7rem;
+}
+
+input[type="date"] {
+    margin-right: 0.7rem;
+}
+
+.rastInput {
+    background: rgba(255,255,255, 0.5);
+    border-radius: 25px;
+    color: rgb(116, 116, 116);
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 0 0.5rem 1rem;
+    margin: 0.5rem 0 0.5rem 0;
+    width: 70%;
+}
+
+.inputSpace {
+    margin: 0 0 1rem 0;
+}
+
+.addDelButton {
+    background: rgba(255,255,255, 0.5);
+    border: none;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    color: rgb(116, 116, 116);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.25rem;
+}
+
+.submitButton {
+    background: rgba(255,255,255, 0.5);
+    border: none;
+    border-radius: 25px;
+    padding: 1rem;
+    font-size: 1rem;
+    color: rgb(116, 116, 116);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+}
+
+.buttonBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-items-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.rastBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.smallerButton {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+}
