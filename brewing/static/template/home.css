@@ -8,20 +8,29 @@
     align-items: center;
 }
 
+#recipeTableBox {
+    background-color:rgba(255, 255, 255, 0.562);
+    padding: 0 0 1rem 0;
+    border-radius: 25px;
+    width: 100%;
+}
+
 #selectRecipeTable {
     width: 100%;
-    background-color:rgba(255, 255, 255, 0.562);
-    border-radius: 25px;
-    border-collapse: collapse;
+    border-spacing: 0px;
 }
 
 #selectRecipeTable thead{
     background-color:rgb(255, 255, 255);
-    background-attachment:fixed;
+    border-radius: 25px;
+}
+
+#selectRecipeTable thead tr{
+    border-radius:25px 25px 0 0;
 }
 
 #selectRecipeTable thead th{
-    color:rgb(73, 73, 73);
+    color:rgb(187, 100, 0);
     padding: 1rem;
     border: none;
     font-size: 1rem;
@@ -46,11 +55,12 @@
 
 #selectRecipeTable tbody tr{
     cursor: pointer;
+    color:rgb(109, 109, 109);
 }
 
 .selected {
     background-color: white;
-    color: rgb(255, 123, 0);
+    color: rgb(255, 123, 0) !important;
 }
 
 .recipeButtonBox {
