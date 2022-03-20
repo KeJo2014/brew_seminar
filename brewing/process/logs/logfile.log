@@ -5653,3 +5653,796 @@ HTTP GET /static/js/brewing.js 200 [0.01, 127.0.0.1:54937]
 HTTP GET /brewing 200 [0.01, 127.0.0.1:54938]
 HTTP GET /static/js/brewing.js 200 [0.00, 127.0.0.1:54938]
 HTTP GET /static/img/brautopf.png 304 [0.00, 127.0.0.1:54938]
+[mHTTP GET / 200 [0.08, 127.0.0.1:1193][0m
+[33mHTTP GET /static/style.css 404 [0.15, 127.0.0.1:1193][0m
+Not Found: /favicon.ico
+[33mHTTP GET /favicon.ico 404 [0.10, 127.0.0.1:1193][0m
+[mHTTP GET /create 200 [0.03, 127.0.0.1:1210][0m
+[mHTTP GET /static/css/create.css 200 [0.02, 127.0.0.1:1210][0m
+[mHTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:1210][0m
+[mHTTP GET /static/css/brewing.css 200 [0.02, 127.0.0.1:1210][0m
+[mHTTP GET /static/css/home.css 200 [0.01, 127.0.0.1:1210][0m
+[mHTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:1210][0m
+[mHTTP GET /static/img/favicon.ico 200 [0.02, 127.0.0.1:1210][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\models.py changed, reloading.
+[32mHTTP GET /admin 301 [0.02, 127.0.0.1:25011][0m
+[32mHTTP GET /admin/ 302 [0.08, 127.0.0.1:25011][0m
+[mHTTP GET /admin/login/?next=/admin/ 200 [0.20, 127.0.0.1:25011][0m
+[mHTTP GET /static/admin/css/login.css 200 [0.03, 127.0.0.1:25011][0m
+[32mHTTP POST /admin/login/?next=/admin/ 302 [0.79, 127.0.0.1:25016][0m
+[mHTTP GET /admin/ 200 [0.11, 127.0.0.1:25016][0m
+[mHTTP GET /admin/brewing/recipe/ 200 [0.22, 127.0.0.1:25016][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.07, 127.0.0.1:25016][0m
+[mHTTP POST /admin/brewing/recipe/ 200 [0.10, 127.0.0.1:25016][0m
+[mHTTP GET /static/admin/js/cancel.js 200 [0.02, 127.0.0.1:25016][0m
+[32mHTTP POST /admin/brewing/recipe/ 302 [0.09, 127.0.0.1:25023][0m
+[mHTTP GET /admin/brewing/recipe/ 200 [0.12, 127.0.0.1:25023][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:25023][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\models.py changed, reloading.
+[mHTTP GET /create 200 [0.11, 127.0.0.1:25352][0m
+[36mHTTP GET /static/css/create.css 304 [0.02, 127.0.0.1:25352][0m
+[36mHTTP GET /static/js/creating.js 304 [0.01, 127.0.0.1:25352][0m
+[36mHTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:25358][0m
+[36mHTTP GET /static/css/home.css 304 [0.01, 127.0.0.1:25358][0m
+[36mHTTP GET /static/css/template.css 304 [0.01, 127.0.0.1:25358][0m
+[36mHTTP GET /static/img/favicon.ico 304 [0.01, 127.0.0.1:25358][0m
+[mHTTP GET /create 200 [0.03, 127.0.0.1:25388][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /create 200 [0.08, 127.0.0.1:1103][0m
+[36mHTTP GET /static/js/creating.js 304 [0.02, 127.0.0.1:1103][0m
+[36mHTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:1103][0m
+[36mHTTP GET /static/css/home.css 304 [0.01, 127.0.0.1:1103][0m
+[36mHTTP GET /static/css/template.css 304 [0.01, 127.0.0.1:1103][0m
+[36mHTTP GET /static/img/favicon.ico 304 [0.01, 127.0.0.1:1103][0m
+[mHTTP GET /create 200 [0.03, 127.0.0.1:1113][0m
+[36mHTTP GET /static/css/create.css 304 [0.01, 127.0.0.1:1113][0m
+[mHTTP GET /create 200 [0.03, 127.0.0.1:1121][0m
+[mHTTP GET /create 200 [0.03, 127.0.0.1:1216][0m
+[36mHTTP GET /static/css/create.css 304 [0.01, 127.0.0.1:1216][0m
+[36mHTTP GET /static/js/creating.js 304 [0.01, 127.0.0.1:1216][0m
+[36mHTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:1216][0m
+[36mHTTP GET /static/css/home.css 304 [0.01, 127.0.0.1:1216][0m
+[36mHTTP GET /static/css/template.css 304 [0.01, 127.0.0.1:1216][0m
+[36mHTTP GET /static/img/favicon.ico 304 [0.01, 127.0.0.1:1216][0m
+[mHTTP POST /create 200 [0.04, 127.0.0.1:1237][0m
+[36mHTTP GET /static/css/create.css 304 [0.23, 127.0.0.1:1520][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+Application instance <Task pending name='Task-42' coro=<StaticFilesWrapper.__call__() running at C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py:40> wait_for=<Future finished result=None>> for connection <WebRequest at 0x1d5b553ab50 method=GET uri=/static/css/create.css clientproto=HTTP/1.1> took too long to shut down and was killed.
+[36mHTTP GET /static/css/brewing.css 304 [815.89, 127.0.0.1:1521][0m
+[36mHTTP GET /static/css/home.css 304 [815.85, 127.0.0.1:1522][0m
+[36mHTTP GET /static/css/template.css 304 [815.84, 127.0.0.1:1523][0m
+[mHTTP GET /create 200 [0.11, 127.0.0.1:1115][0m
+[36mHTTP GET /static/css/create.css 304 [0.06, 127.0.0.1:1115][0m
+[mHTTP GET /static/js/creating.js 200 [0.05, 127.0.0.1:1116][0m
+[36mHTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:1116][0m
+[36mHTTP GET /static/css/home.css 304 [0.01, 127.0.0.1:1116][0m
+[36mHTTP GET /static/css/template.css 304 [0.01, 127.0.0.1:1116][0m
+[36mHTTP GET /static/img/favicon.ico 304 [0.01, 127.0.0.1:1116][0m
+Not Found: /admin/brewing/recipe/
+[33mHTTP GET /admin/brewing/recipe/ 404 [0.11, 127.0.0.1:1149][0m
+[mHTTP GET /create 200 [0.02, 127.0.0.1:1220][0m
+[mHTTP GET /static/js/creating.js 200 [0.05, 127.0.0.1:1220][0m
+[mHTTP GET /create 200 [0.05, 127.0.0.1:1293][0m
+[mHTTP GET /static/js/creating.js 200 [0.03, 127.0.0.1:1293][0m
+[mHTTP GET /create 200 [0.02, 127.0.0.1:1119][0m
+[36mHTTP GET /static/css/create.css 304 [0.02, 127.0.0.1:1119][0m
+[mHTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:1119][0m
+[36mHTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:1119][0m
+[36mHTTP GET /static/css/home.css 304 [0.01, 127.0.0.1:1119][0m
+[36mHTTP GET /static/css/template.css 304 [0.01, 127.0.0.1:1119][0m
+[36mHTTP GET /static/img/favicon.ico 304 [0.01, 127.0.0.1:1119][0m
+[mHTTP GET /create 200 [0.04, 127.0.0.1:1213][0m
+[mHTTP GET /static/js/creating.js 200 [0.03, 127.0.0.1:1213][0m
+[mHTTP GET /create 200 [0.03, 127.0.0.1:1371][0m
+[mHTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:1371][0m
+[mHTTP GET /create 200 [0.03, 127.0.0.1:1401][0m
+[mHTTP GET /static/js/creating.js 200 [0.03, 127.0.0.1:1403][0m
+[mHTTP GET /create 200 [0.03, 127.0.0.1:1421][0m
+[mHTTP GET /static/js/creating.js 200 [0.03, 127.0.0.1:1421][0m
+[mHTTP GET /create 200 [0.03, 127.0.0.1:1438][0m
+[36mHTTP GET /static/css/create.css 304 [0.02, 127.0.0.1:1438][0m
+[mHTTP GET /static/js/creating.js 200 [0.08, 127.0.0.1:1438][0m
+[36mHTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:1438][0m
+[36mHTTP GET /static/css/home.css 304 [0.01, 127.0.0.1:1438][0m
+[36mHTTP GET /static/css/template.css 304 [0.01, 127.0.0.1:1438][0m
+[36mHTTP GET /static/img/favicon.ico 304 [0.01, 127.0.0.1:1438][0m
+[mHTTP GET /create 200 [0.03, 127.0.0.1:1471][0m
+[mHTTP GET /static/js/creating.js 200 [0.05, 127.0.0.1:1473][0m
+[mHTTP GET /create 200 [0.03, 127.0.0.1:1502][0m
+[mHTTP GET /static/js/creating.js 200 [0.04, 127.0.0.1:1502][0m
+[mHTTP GET /create 200 [0.04, 127.0.0.1:1560][0m
+[mHTTP GET /static/js/creating.js 200 [0.02, 127.0.0.1:1560][0m
+[mHTTP POST /create 200 [0.03, 127.0.0.1:1603][0m
+[36mHTTP GET /static/js/creating.js 304 [0.01, 127.0.0.1:1603][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /home 200 [0.08, 127.0.0.1:31099][0m
+[mHTTP GET /static/js/home.js 200 [0.11, 127.0.0.1:31099][0m
+[36mHTTP GET /static/css/create.css 304 [0.12, 127.0.0.1:31101][0m
+[36mHTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:31101][0m
+[36mHTTP GET /static/css/home.css 304 [0.01, 127.0.0.1:31101][0m
+[36mHTTP GET /static/css/template.css 304 [0.01, 127.0.0.1:31101][0m
+[36mHTTP GET /static/img/favicon.ico 304 [0.02, 127.0.0.1:31101][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /create 200 [0.07, 127.0.0.1:31125][0m
+[36mHTTP GET /static/js/creating.js 304 [0.05, 127.0.0.1:31125][0m
+Internal Server Error: /create
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 83, in create
+    recipe = brew_recipe(name=name, date=date, bier_sorte=bier_sorte, author=author, ausschlagwuerze=ausschlagwuerze, sudhausausbeute=sudhausausbeute, stamwuerze=stamwuerze, ibu=ibu, ebc=ebc, alcohol=alcohol, description=description, brauwasser=brau_wasser, schuettung=schuettung, maischplan=maischplan, wuerze_kochen=wuerze_kochen, gaerung=gaerung)
+  File "c:\users\jonas\documents\django\django\django\db\models\base.py", line 584, in __init__
+    raise TypeError(
+TypeError: brew_recipe() got unexpected keyword arguments: 'schuettung', 'wuerze_kochen', 'gaerung'
+[35;1mHTTP POST /create 500 [0.27, 127.0.0.1:31184][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /create
+Traceback (most recent call last):
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: brewing_brew_recipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 84, in create
+    recipe.save()
+  File "c:\users\jonas\documents\django\django\django\db\models\base.py", line 830, in save
+    self.save_base(
+  File "c:\users\jonas\documents\django\django\django\db\models\base.py", line 881, in save_base
+    updated = self._save_table(
+  File "c:\users\jonas\documents\django\django\django\db\models\base.py", line 1024, in _save_table
+    results = self._do_insert(
+  File "c:\users\jonas\documents\django\django\django\db\models\base.py", line 1065, in _do_insert
+    return manager._insert(
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1552, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\compiler.py", line 1638, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: brewing_brew_recipe
+[35;1mHTTP POST /create 500 [0.58, 127.0.0.1:31358][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /create
+Traceback (most recent call last):
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: brewing_brew_recipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 84, in create
+    recipe.save()
+  File "c:\users\jonas\documents\django\django\django\db\models\base.py", line 830, in save
+    self.save_base(
+  File "c:\users\jonas\documents\django\django\django\db\models\base.py", line 881, in save_base
+    updated = self._save_table(
+  File "c:\users\jonas\documents\django\django\django\db\models\base.py", line 1024, in _save_table
+    results = self._do_insert(
+  File "c:\users\jonas\documents\django\django\django\db\models\base.py", line 1065, in _do_insert
+    return manager._insert(
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1552, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\compiler.py", line 1638, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: brewing_brew_recipe
+[35;1mHTTP POST /create 500 [0.32, 127.0.0.1:31418][0m
+[mHTTP GET /admin/ 200 [0.22, 127.0.0.1:31465][0m
+[mHTTP GET /static/admin/img/icon-deletelink.svg 200 [0.02, 127.0.0.1:31465][0m
+Internal Server Error: /admin/brewing/brew_recipe/
+Traceback (most recent call last):
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: brewing_brew_recipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 1928, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 831, in get_changelist_instance
+    return ChangeList(
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\views\main.py", line 123, in __init__
+    self.get_results(request)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\views\main.py", line 279, in get_results
+    result_count = paginator.count
+  File "c:\users\jonas\documents\django\django\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "c:\users\jonas\documents\django\django\django\core\paginator.py", line 96, in count
+    return c()
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 497, in count
+    return self.query.get_count(using=self.db)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 546, in get_count
+    return obj.get_aggregation(using, ["__count"])["__count"]
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 531, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\compiler.py", line 1375, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: brewing_brew_recipe
+[35;1mHTTP GET /admin/brewing/brew_recipe/ 500 [0.37, 127.0.0.1:31470][0m
+[mHTTP GET /admin/ 200 [0.19, 127.0.0.1:31537][0m
+Internal Server Error: /admin/brewing/brew_recipe/
+Traceback (most recent call last):
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: brewing_brew_recipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 1928, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 831, in get_changelist_instance
+    return ChangeList(
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\views\main.py", line 123, in __init__
+    self.get_results(request)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\views\main.py", line 279, in get_results
+    result_count = paginator.count
+  File "c:\users\jonas\documents\django\django\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "c:\users\jonas\documents\django\django\django\core\paginator.py", line 96, in count
+    return c()
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 497, in count
+    return self.query.get_count(using=self.db)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 546, in get_count
+    return obj.get_aggregation(using, ["__count"])["__count"]
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 531, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\compiler.py", line 1375, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: brewing_brew_recipe
+[35;1mHTTP GET /admin/brewing/brew_recipe/ 500 [0.28, 127.0.0.1:31537][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\admin.py changed, reloading.
+[mHTTP GET /admin/ 200 [0.18, 127.0.0.1:31591][0m
+Internal Server Error: /admin/brewing/recipe/
+Traceback (most recent call last):
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: brewing_recipe.description
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 303, in __len__
+    self._fetch_all()
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 1628, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 58, in __iter__
+    results = compiler.execute_sql(
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\compiler.py", line 1375, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: brewing_recipe.description
+[35;1mHTTP GET /admin/brewing/recipe/ 500 [0.29, 127.0.0.1:31601][0m
+[mHTTP GET /admin/ 200 [0.16, 127.0.0.1:31608][0m
+Internal Server Error: /admin/brewing/brew_recipe/
+Traceback (most recent call last):
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: brewing_brew_recipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 1928, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 831, in get_changelist_instance
+    return ChangeList(
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\views\main.py", line 123, in __init__
+    self.get_results(request)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\views\main.py", line 279, in get_results
+    result_count = paginator.count
+  File "c:\users\jonas\documents\django\django\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "c:\users\jonas\documents\django\django\django\core\paginator.py", line 96, in count
+    return c()
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 497, in count
+    return self.query.get_count(using=self.db)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 546, in get_count
+    return obj.get_aggregation(using, ["__count"])["__count"]
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 531, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\compiler.py", line 1375, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: brewing_brew_recipe
+[35;1mHTTP GET /admin/brewing/brew_recipe/ 500 [0.22, 127.0.0.1:31619][0m
+[32mHTTP GET /admin/ 302 [0.15, 127.0.0.1:31801][0m
+[mHTTP GET /admin/login/?next=/admin/ 200 [0.16, 127.0.0.1:31801][0m
+[mHTTP POST /admin/login/?next=/admin/ 200 [0.93, 127.0.0.1:31812][0m
+[mHTTP POST /admin/login/?next=/admin/ 200 [0.70, 127.0.0.1:31821][0m
+[mHTTP POST /admin/login/?next=/admin/ 200 [0.49, 127.0.0.1:31830][0m
+[mHTTP GET /admin/login/?next=/admin/ 200 [0.24, 127.0.0.1:31906][0m
+[32mHTTP POST /admin/login/?next=/admin/ 302 [0.59, 127.0.0.1:31916][0m
+[mHTTP GET /admin/ 200 [0.09, 127.0.0.1:31916][0m
+Internal Server Error: /admin/brewing/brew_recipe/
+Traceback (most recent call last):
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: brewing_brew_recipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 1928, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 831, in get_changelist_instance
+    return ChangeList(
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\views\main.py", line 123, in __init__
+    self.get_results(request)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\views\main.py", line 279, in get_results
+    result_count = paginator.count
+  File "c:\users\jonas\documents\django\django\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "c:\users\jonas\documents\django\django\django\core\paginator.py", line 96, in count
+    return c()
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 497, in count
+    return self.query.get_count(using=self.db)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 546, in get_count
+    return obj.get_aggregation(using, ["__count"])["__count"]
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 531, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\compiler.py", line 1375, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: brewing_brew_recipe
+[35;1mHTTP GET /admin/brewing/brew_recipe/ 500 [0.31, 127.0.0.1:31916][0m
+[mHTTP GET /create 200 [0.06, 127.0.0.1:31946][0m
+[mHTTP GET /admin/ 200 [0.07, 127.0.0.1:31953][0m
+Internal Server Error: /admin/brewing/recipe/
+Traceback (most recent call last):
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: brewing_recipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 1928, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 831, in get_changelist_instance
+    return ChangeList(
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\views\main.py", line 123, in __init__
+    self.get_results(request)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\views\main.py", line 279, in get_results
+    result_count = paginator.count
+  File "c:\users\jonas\documents\django\django\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "c:\users\jonas\documents\django\django\django\core\paginator.py", line 96, in count
+    return c()
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 497, in count
+    return self.query.get_count(using=self.db)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 546, in get_count
+    return obj.get_aggregation(using, ["__count"])["__count"]
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 531, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\compiler.py", line 1375, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: brewing_recipe
+[35;1mHTTP GET /admin/brewing/recipe/ 500 [0.49, 127.0.0.1:31959][0m
+[mHTTP GET /admin/ 200 [0.12, 127.0.0.1:31964][0m
+Internal Server Error: /admin/brewing/messurement/
+Traceback (most recent call last):
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: brewing_messurement
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 1928, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\options.py", line 831, in get_changelist_instance
+    return ChangeList(
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\views\main.py", line 123, in __init__
+    self.get_results(request)
+  File "c:\users\jonas\documents\django\django\django\contrib\admin\views\main.py", line 279, in get_results
+    result_count = paginator.count
+  File "c:\users\jonas\documents\django\django\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "c:\users\jonas\documents\django\django\django\core\paginator.py", line 96, in count
+    return c()
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 497, in count
+    return self.query.get_count(using=self.db)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 546, in get_count
+    return obj.get_aggregation(using, ["__count"])["__count"]
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\query.py", line 531, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "c:\users\jonas\documents\django\django\django\db\models\sql\compiler.py", line 1375, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "c:\users\jonas\documents\django\django\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "c:\users\jonas\documents\django\django\django\db\backends\sqlite3\base.py", line 366, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: brewing_messurement
+[35;1mHTTP GET /admin/brewing/messurement/ 500 [0.34, 127.0.0.1:31974][0m
+[mHTTP GET /admin/ 200 [0.09, 127.0.0.1:31974][0m
+[mHTTP GET /admin/auth/user/ 200 [0.30, 127.0.0.1:31974][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:31974][0m
+[mHTTP GET /static/admin/img/search.svg 200 [0.02, 127.0.0.1:31974][0m
+[mHTTP GET /static/admin/img/sorting-icons.svg 200 [0.01, 127.0.0.1:31974][0m
+[mHTTP GET /admin/ 200 [0.14, 127.0.0.1:31984][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\models.py changed, reloading.
+[mHTTP GET /admin/ 200 [0.17, 127.0.0.1:32086][0m
+[mHTTP GET /admin/brewing/brew_recipe/ 200 [0.15, 127.0.0.1:32093][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.07, 127.0.0.1:32093][0m
+[mHTTP POST /create 200 [0.05, 127.0.0.1:32093][0m
+[36mHTTP GET /static/css/create.css 304 [0.08, 127.0.0.1:32093][0m
+[36mHTTP GET /static/js/home.js 304 [0.03, 127.0.0.1:32094][0m
+[36mHTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:32094][0m
+[36mHTTP GET /static/css/home.css 304 [0.01, 127.0.0.1:32094][0m
+[36mHTTP GET /static/css/template.css 304 [0.01, 127.0.0.1:32094][0m
+[36mHTTP GET /static/img/favicon.ico 304 [0.02, 127.0.0.1:32094][0m
+[mHTTP GET /admin/brewing/brew_recipe/ 200 [0.18, 127.0.0.1:32105][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:32105][0m
+[mHTTP GET /admin/brewing/brew_recipe/1/change/ 200 [0.49, 127.0.0.1:32105][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:32105][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\models.py changed, reloading.
+[mHTTP GET /admin/brewing/brew_recipe/1/change/ 200 [0.44, 127.0.0.1:32279][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:32283][0m

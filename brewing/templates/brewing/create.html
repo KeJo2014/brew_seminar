@@ -2,6 +2,8 @@
 {% load static %}
 {% block title %}Erstellen{% endblock %}
 {% block maincontent %}
+<form action="{% url 'create'%}" method="post" id="form">
+    {%csrf_token%}
 <main class="main-l">
     <h1>Rezept Erstellen</h1>
     <div class="inputBox">
@@ -86,8 +88,15 @@
         <input type="number" class="input" id="karbon1" name="karbon1" min="0" placeholder="Karbonisierung [g/l]"
             title="KARBONISIERUNG">
     </div>
+    <div>
+        <input type="text" style="display: none;" name="json_brauwasser" id="json_brauwasser">
+        <input type="text" style="display: none;" name="json_schuettung" id="json_schuettung">
+        <input type="text" style="display: none;" name="json_maisch" id="json_maisch">
+        <input type="text" style="display: none;" name="json_wuerze" id="json_wuerze">
+        <input type="text" style="display: none;" name="json_gaerung" id="json_gaerung">
+    </div>
     <div class="inputBox">
-        <button type="submit" class="submitButton" id="createRecipeButton" name="createJSON" onlick="createJSON()">Erstellen</button>
+        <button onclick="handle_submit()" class="submitButton" id="createRecipeButton" >Erstellen</button>
     </div>
 </main>
 {% endblock %}
@@ -120,6 +129,7 @@
         <textarea id="beschreibung" class="input" name="beschreibung" rows="4" cols="50" placeholder="Beschreibung..."
             title="BESCHREIBUNG"></textarea>
     </div>
+    </form>
 </aside>
 <script src="{% static '/js/creating.js' %}" crossorigin="anonymous"></script>
 {% endblock %}

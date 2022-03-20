@@ -4,6 +4,13 @@ var indexPhase = 1;
 var indexRast = [1, 1];
 var indexHopfen = 1;
 
+//json
+var brauwasser = [];
+var schüttung = [];
+var maisch = [];
+var würze = [];
+var gärung = [];
+
 function addMalt() {
     ++indexMalt;
     var inputMaltText = document.createElement('input');
@@ -226,4 +233,65 @@ function delHopfen(id1, id2, id3, id4) {
     document.getElementById(id3).remove();
     document.getElementById(id4).remove();
     --indexHopfen;
+}
+
+function handle_submit(){
+    //brauwasser
+    for (let index = 1; index <= indexWater; index++) {
+        var guss = document.getElementById('guss' + index).value;
+        var volume = document.getElementById('gussvol' + index).value;
+        var entry = [guss, volume];
+        brauwasser.push(entry);
+    }
+    var json = JSON.stringify(brauwasser);
+    document.getElementById("json_brauwasser").value = json;
+    //schüttung
+    for (let index = 1; index <= indexMalt; index++) {
+        var malt = document.getElementById('malz' + index).value;
+        var amount = document.getElementById('malzmenge' + index).value;
+        var entry = [malt, amount];
+        schüttung.push(entry);
+    }
+    var json = JSON.stringify(schüttung);
+    document.getElementById("json_schuettung").value = json;
+    //Maisch
+    for (let index = 1; index <= indexPhase; index++) {
+        var maischi = document.getElementById('maisch' + index).value;
+        var temp = document.getElementById('maischtemp' + index).value;
+        var sub = [];
+        for (let index2 = 1; index2 <= indexRast[1]; index2++) {
+            var rasttemp = document.getElementById('rasttemp' + index + index2).value;
+            var rastdur = document.getElementById('rastdur' + index + index2).value;
+            var micro_entry = [rasttemp, rastdur];
+            sub.push(micro_entry);
+        }
+        var entry = [maischi, temp, sub];
+        maisch.push(entry);
+    }
+    var json = JSON.stringify(maisch);
+    document.getElementById("json_maisch").value = json;
+    //Würzekochen
+    würze.push(document.getElementById('kochendur').value);
+    for (let index = 1; index <= indexHopfen; index++) {
+        var hop = document.getElementById('hopfen' + index).value;
+        var amount = document.getElementById('hopfenmenge' + index).value;
+        var acid = document.getElementById('alpha' + index).value;
+        var time = document.getElementById('hopfentime' + index).value;
+        var entry = [hop, amount, acid, time];
+        würze.push(entry);
+    }
+    var json = JSON.stringify(würze);
+    document.getElementById("json_wuerze").value = json;
+    //gärung
+    var sort = document.getElementById('hefe1').value;
+    var temp = document.getElementById('gaertemp1').value;
+    var end = document.getElementById('endgaergrad1').value;
+    var carbon = document.getElementById('karbon1').value;
+    var entry = [sort, temp, end, carbon];
+    gärung.push(entry);
+    var json = JSON.stringify(gärung);
+    document.getElementById("json_gaerung").value = json;
+
+    //submit
+    document.getElementById("form").submit();
 }
