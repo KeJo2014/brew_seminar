@@ -60,3 +60,6 @@ def brewing(request):
 
 def create(request):
     return render(request, 'brewing/create.html')
+
+def edit(request):
+    return render(request, 'brewing/edit.html')
