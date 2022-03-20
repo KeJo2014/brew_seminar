@@ -14,7 +14,7 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 
-<body class="bg">
+<body>
     <div class="bg-shape-circle"></div>
     <div class="bg-shape-box"></div>
     <nav class="menu">
@@ -25,17 +25,19 @@
             <li><a href="brewing"><i class="fa-solid fa-gears"></i>
                     <p>Brauen</p>
                 </a></li>
-            <li><a href="create"><i class="fa-solid fa-pen-to-square"></i>
+            <li><a href="create"><i class="fa-solid fa-plus"></i>
                     <p>Erstellen</p>
                 </a></li>
         </ul>
     </nav>
+    <div id="content">
     {% block maincontent %}
 
     {% endblock %}
     {% block sidecontent %}
 
     {% endblock %}
+    </div>
     <script src="https://kit.fontawesome.com/84d4e1a0a8.js" crossorigin="anonymous"></script>
     
 </body>

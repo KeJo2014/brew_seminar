@@ -1,11 +1,12 @@
 @import "brewing.css";
 
 .main-l {
-    width: 55%;
+    width: 65%;
+    overflow-x: hidden;
 }
 
 .aside-m {
-    width: 30%;
+    width: 35%;
 }
 
 h1 {
@@ -139,4 +140,54 @@ input[type="date"] {
 
 #createRecipeButton {
     margin: 3rem 0 0 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .main-l {
+        width: 100%;
+        margin-bottom: 1rem;
+        height: 50%;
+    }
+    
+    .aside-m {
+        width: 100%;
+        margin-bottom: 1rem;
+        justify-content: flex-start;
+        height: 50%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .main-l {
+        width: 100%;
+    }
+    
+    .aside-m {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .main-l {
+        width: 65%;
+    }
+    
+    .aside-m {
+        width: 35%;
+        justify-content: center;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
