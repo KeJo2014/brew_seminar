@@ -18,25 +18,13 @@
     </thead>
     <tbody>
       <tr>
-        <td>unterfränkisches Weizen</td>
-        <td>Hefeweizen</td>
-        <td>22.02.2022</td>
-        <td>Jonathan Willert</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>Nordenglisches Ale</td>
-        <td>Ale</td>
-        <td>19.03.2022</td>
-        <td>Alfons Bütner</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>Lohrer Kellerbier</td>
-        <td>Kellerbier</td>
-        <td>1.01.2011</td>
-        <td>Richard Schneider</td>
-        <td>4</td>
+        {% for recipe in recipes %}
+          <td>{{recipe.name}}</td> 
+          <td>{{recipe.bier_sorte}}</td>
+          <td>{{recipe.date}}</td>
+          <td>{{recipe.author}}</td> 
+          <td>{{recipe.number_of_brews}}</td>
+        {% endfor %}
       </tr>
     </tbody>
   </table>

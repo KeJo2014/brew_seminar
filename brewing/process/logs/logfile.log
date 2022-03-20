@@ -7334,3 +7334,17 @@ HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:50041]
 HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:50041]
 HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:50041]
 >>>>>>> e8f56788daf4b8f9a1283efa638c7b6a6113278e
+[mHTTP GET /create 200 [0.16, 127.0.0.1:32501][0m
+[mHTTP GET /static/js/creating.js 200 [0.10, 127.0.0.1:32501][0m
+[mHTTP GET /home 200 [0.03, 127.0.0.1:32508][0m
+[mHTTP GET /home 200 [0.06, 127.0.0.1:32513][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /admin/brewing/brew_recipe/1/change/ 200 [0.57, 127.0.0.1:10231][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:10231][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\models.py changed, reloading.
+[mHTTP GET /home 200 [0.06, 127.0.0.1:10285][0m
+[mHTTP GET /static/css/create.css 200 [0.03, 127.0.0.1:10285][0m
+[36mHTTP GET /static/img/favicon.ico 304 [0.01, 127.0.0.1:10285][0m
+[mHTTP GET /home 200 [0.07, 127.0.0.1:10318][0m
+[36mHTTP GET /static/css/create.css 304 [0.02, 127.0.0.1:10318][0m
+[mHTTP GET /home 200 [0.07, 127.0.0.1:10336][0m

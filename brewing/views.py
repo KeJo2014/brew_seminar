@@ -53,7 +53,10 @@ def template(request):
     return render(request, 'brewing/template.html')
 
 def home(request):
-    return render(request, 'brewing/home.html')
+    recipes = brew_recipe.objects.all()
+    return render(request, 'brewing/home.html',{
+        "recipes": recipes,
+    })
 
 def brewing(request):
     return render(request, 'brewing/brewing.html')
@@ -84,3 +87,6 @@ def create(request):
         recipe.save()
 
         return render(request, 'brewing/home.html')
+
+def edit(request):
+    return render(request, 'brewing/edit.html')
