@@ -53,10 +53,21 @@ def template(request):
     return render(request, 'brewing/template.html')
 
 def home(request):
-    recipes = brew_recipe.objects.all()
-    return render(request, 'brewing/home.html',{
-        "recipes": recipes,
-    })
+    if(request.method == "GET"):
+        recipes = brew_recipe.objects.all()
+        return render(request, 'brewing/home.html',{
+            "recipes": recipes,
+        })
+    else:
+        command = request.POST.get('command')
+        if(command == "delete"):
+            recipe_name = request.POST.get('recipe_name')
+            #delete recipe
+            brew_recipe.objects.filter(name=recipe_name).delete()
+            return render(request, 'brewing/home.html',{
+                "recipes": brew_recipe.objects.all(),
+            })
+    
 
 def brewing(request):
     return render(request, 'brewing/brewing.html')

@@ -108,9 +108,18 @@ $("#selectRecipeTable tbody tr").click(function(){
  });
 
  $('#delRecipe').on('click', function(e){
-	alert("Löschen: " + $("#selectRecipeTable tbody tr.selected td:first").html());
+	 console.log();
+	var selected = $("#selectRecipeTable tbody tr.selected td:first");
+	document.getElementById("deleteRecipe").value=selected;
+	alert("Löschen: " + $("#selectRecipeTable tbody tr.selected td:first")).html();
 });
 
 $('#editRecipe').on('click', function(e){
 	alert("Ändern: " + $("#selectRecipeTable tbody tr.selected td:first").html());
 });
+
+function handle_delete(selected){
+	console.log("Löschen: " + selected);
+	document.getElementById("deleteRecipe").value=selected;
+	//document.getElementById("deleteRecipeForm").submit();
+}
