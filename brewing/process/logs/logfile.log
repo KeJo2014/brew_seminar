@@ -7348,3 +7348,229 @@ C:\Users\Jonas\Documents\django\brew_seminar\brewing\models.py changed, reloadin
 [mHTTP GET /home 200 [0.07, 127.0.0.1:10318][0m
 [36mHTTP GET /static/css/create.css 304 [0.02, 127.0.0.1:10318][0m
 [mHTTP GET /home 200 [0.07, 127.0.0.1:10336][0m
+HTTP GET /home 200 [0.04, 127.0.0.1:63065]
+HTTP GET /static/css/create.css 200 [0.58, 127.0.0.1:63065]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:63065]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:63065]
+HTTP GET /home 200 [0.01, 127.0.0.1:63065]
+HTTP GET /static/js/home.js 200 [0.00, 127.0.0.1:63065]
+HTTP GET /static/css/create.css 304 [0.01, 127.0.0.1:63072]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:63065]
+HTTP GET /static/css/create.css 304 [0.00, 127.0.0.1:63072]
+HTTP GET /create 200 [0.01, 127.0.0.1:63065]
+HTTP GET /create 200 [0.02, 127.0.0.1:50067]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:50067]
+HTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:50068]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:50068]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:50068]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:50068]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:50068]
+HTTP GET /create 200 [0.01, 127.0.0.1:50877]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:50877]
+HTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:50878]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:50878]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:50878]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:50878]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:50878]
+HTTP GET /create 200 [0.01, 127.0.0.1:63331]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:63331]
+HTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:63332]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:63332]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:63332]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:63332]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:63332]
+HTTP GET /create 200 [0.01, 127.0.0.1:56346]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:56346]
+HTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:56347]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:56347]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:56347]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:56347]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:56347]
+HTTP GET /create 200 [0.01, 127.0.0.1:55267]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:55267]
+HTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:55268]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:55268]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:55268]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:55268]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:55268]
+HTTP GET /create 200 [0.01, 127.0.0.1:55277]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:55277]
+HTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:55278]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:55278]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:55278]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:55278]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:55278]
+HTTP GET /create 200 [0.01, 127.0.0.1:54269]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:54269]
+HTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:54270]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:54270]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:54270]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:54270]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:54270]
+Internal Server Error: /create
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: brewing_brew_recipe.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 87, in create
+    recipe.save()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: brewing_brew_recipe.name
+HTTP POST /create 500 [0.16, 127.0.0.1:65128]
+Not Found: /favicon.ico
+HTTP GET /create 200 [0.01, 127.0.0.1:65128]
+HTTP GET /home 200 [0.01, 127.0.0.1:65128]
+HTTP GET /static/css/create.css 304 [0.00, 127.0.0.1:65128]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:65135]
+HTTP GET /static/css/brewing.css 304 [0.00, 127.0.0.1:65135]
+HTTP GET /static/css/home.css 304 [0.00, 127.0.0.1:65135]
+HTTP GET /static/css/template.css 304 [0.00, 127.0.0.1:65135]
+HTTP GET /home 200 [0.01, 127.0.0.1:65128]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:65135]
+HTTP GET /create 200 [0.01, 127.0.0.1:65128]
+HTTP GET /static/js/creating.js 304 [0.00, 127.0.0.1:65135]
+HTTP GET /create 200 [0.01, 127.0.0.1:59359]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:59359]
+HTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:59360]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:59360]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:59360]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:59360]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:59360]
+HTTP GET /create 200 [0.01, 127.0.0.1:55021]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:55021]
+HTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:55022]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:55022]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:55022]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:55022]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:55022]
+HTTP GET /create 200 [0.02, 127.0.0.1:55029]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:55029]
+HTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:55030]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:55030]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:55030]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:55030]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:55030]
+HTTP POST /create 200 [0.03, 127.0.0.1:55030]
+HTTP GET /static/css/create.css 304 [0.00, 127.0.0.1:55030]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:55029]
+HTTP GET /home 200 [0.02, 127.0.0.1:55030]
+HTTP GET /home 200 [0.02, 127.0.0.1:61868]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:61868]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:61869]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61869]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:61869]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61869]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:61869]
+HTTP GET /admin/ 302 [0.02, 127.0.0.1:61869]
+HTTP GET /admin/login/?next=/admin/ 200 [0.08, 127.0.0.1:61869]
+HTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:61869]
+HTTP GET /static/admin/css/nav_sidebar.css 304 [0.01, 127.0.0.1:61868]
+HTTP GET /static/admin/css/login.css 304 [0.02, 127.0.0.1:55122]
+HTTP GET /static/admin/js/nav_sidebar.js 304 [0.02, 127.0.0.1:55123]
+HTTP GET /static/admin/css/responsive.css 304 [0.02, 127.0.0.1:55124]
+HTTP GET /static/admin/css/fonts.css 304 [0.00, 127.0.0.1:61869]
+HTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 304 [0.00, 127.0.0.1:61869]
+HTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 304 [0.01, 127.0.0.1:55122]
+HTTP POST /admin/login/?next=/admin/ 302 [0.73, 127.0.0.1:61869]
+HTTP GET /admin/ 200 [0.07, 127.0.0.1:61869]
+HTTP GET /static/admin/css/dashboard.css 304 [0.00, 127.0.0.1:61869]
+HTTP GET /static/admin/img/icon-addlink.svg 200 [0.01, 127.0.0.1:61869]
+HTTP GET /static/admin/img/icon-changelink.svg 200 [0.02, 127.0.0.1:55123]
+HTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 304 [0.02, 127.0.0.1:55124]
+HTTP GET /admin/brewing/brew_recipe/ 200 [0.09, 127.0.0.1:61869]
+HTTP GET /static/admin/css/changelists.css 304 [0.01, 127.0.0.1:61869]
+HTTP GET /static/admin/js/core.js 304 [0.01, 127.0.0.1:61868]
+HTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:55124]
+HTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.02, 127.0.0.1:55122]
+HTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.03, 127.0.0.1:55127]
+HTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:55123]
+HTTP GET /static/admin/js/actions.js 304 [0.03, 127.0.0.1:61869]
+HTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:61868]
+HTTP GET /static/admin/js/prepopulate.js 304 [0.02, 127.0.0.1:55124]
+HTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.02, 127.0.0.1:55122]
+HTTP GET /static/admin/img/tooltag-add.svg 200 [0.01, 127.0.0.1:61869]
+HTTP GET /admin/brewing/brew_recipe/2/change/ 200 [0.13, 127.0.0.1:61869]
+HTTP GET /static/admin/css/forms.css 200 [0.02, 127.0.0.1:61869]
+HTTP GET /static/admin/js/prepopulate_init.js 304 [0.01, 127.0.0.1:55124]
+HTTP GET /static/admin/js/change_form.js 304 [0.02, 127.0.0.1:55127]
+HTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:55123]
+HTTP GET /static/admin/css/widgets.css 200 [0.01, 127.0.0.1:61869]
+HTTP GET /admin/brewing/brew_recipe/ 200 [0.05, 127.0.0.1:63606]
+HTTP GET /admin/brewing/messurement/ 200 [0.03, 127.0.0.1:63606]
+HTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:63606]
+HTTP GET /admin/brewing/brew_recipe/ 200 [0.04, 127.0.0.1:63606]
+HTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:63608]
+HTTP GET /admin/auth/user/ 200 [0.05, 127.0.0.1:63606]
+HTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:63608]
+HTTP GET /static/admin/img/search.svg 200 [0.01, 127.0.0.1:63606]
+HTTP GET /static/admin/img/icon-yes.svg 200 [0.02, 127.0.0.1:63608]
+HTTP GET /static/admin/img/sorting-icons.svg 200 [0.01, 127.0.0.1:63608]
+HTTP GET /admin/auth/group/ 200 [0.03, 127.0.0.1:63606]
+HTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:63608]
+HTTP GET /admin/brewing/brew_recipe/ 200 [0.05, 127.0.0.1:63606]
+HTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:63608]
+HTTP GET /admin/brewing/brew_recipe/2/change/ 200 [0.09, 127.0.0.1:63606]
+HTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:63608]
+HTTP GET /admin/brewing/brew_recipe/2/delete/ 200 [0.04, 127.0.0.1:55516]
+HTTP GET /static/admin/js/cancel.js 200 [0.02, 127.0.0.1:55516]
+HTTP POST /admin/brewing/brew_recipe/2/delete/ 302 [0.03, 127.0.0.1:55516]
+HTTP GET /admin/brewing/brew_recipe/ 200 [0.05, 127.0.0.1:55516]
+HTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:55516]
+HTTP GET / 200 [0.01, 127.0.0.1:55516]
+HTTP GET /static/style.css 404 [0.01, 127.0.0.1:55516]
+HTTP GET /home 200 [0.01, 127.0.0.1:55516]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:55516]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:55524]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:55524]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:55524]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:55524]
+HTTP GET /create 200 [0.01, 127.0.0.1:55516]
+HTTP GET /static/js/creating.js 304 [0.00, 127.0.0.1:55524]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:55516]

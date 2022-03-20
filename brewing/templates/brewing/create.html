@@ -2,9 +2,10 @@
 {% load static %}
 {% block title %}Erstellen{% endblock %}
 {% block maincontent %}
-<form action="{% url 'create'%}" method="post" id="form">
-    {%csrf_token%}
+
 <main class="main-l">
+    <form action="{% url 'create'%}" method="post" id="form">
+        {%csrf_token%}
     <h1>Rezept Erstellen</h1>
     <div class="inputBox">
         <h2>Brauwasser</h2>
@@ -99,8 +100,6 @@
         <button onclick="handle_submit()" class="submitButton" id="createRecipeButton" >Erstellen</button>
     </div>
 </main>
-{% endblock %}
-{% block sidecontent %}
 <aside class="aside-m">
     <div class="inputBox">
         <h2>Allgemein</h2>
@@ -129,7 +128,7 @@
         <textarea id="beschreibung" class="input" name="beschreibung" rows="4" cols="50" placeholder="Beschreibung..."
             title="BESCHREIBUNG"></textarea>
     </div>
-    </form>
+</form>
 </aside>
 <script src="{% static '/js/creating.js' %}" crossorigin="anonymous"></script>
 {% endblock %}
