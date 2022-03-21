@@ -98,28 +98,22 @@ return "" + String(y) + "" + String(m) + "" + String(d) + "";
 SortTable(2, 'D', 'dmy');
 SortTable(2, 'D', 'dmy');
 
+var selectedRowValue;
+
 $("#selectRecipeTable tbody tr").click(function(){
 	$(this).addClass('selected').siblings().removeClass('selected');    
-	// var value=$(this).find('td:first').html();    
+	selectedRowValue = $(this).find('td:first').html();    
  });
  
  $('#submitRecipe').on('click', function(e){
 	 alert("Brauen: " + $("#selectRecipeTable tbody tr.selected td:first").html());
  });
 
- $('#delRecipe').on('click', function(e){
-	 console.log();
-	var selected = $("#selectRecipeTable tbody tr.selected td:first");
-	document.getElementById("deleteRecipe").value=selected;
-	alert("Löschen: " + $("#selectRecipeTable tbody tr.selected td:first")).html();
-});
-
 $('#editRecipe').on('click', function(e){
 	alert("Ändern: " + $("#selectRecipeTable tbody tr.selected td:first").html());
 });
 
-function handle_delete(selected){
-	console.log("Löschen: " + selected);
-	document.getElementById("deleteRecipe").value=selected;
-	//document.getElementById("deleteRecipeForm").submit();
-}
+$('#delRecipe').on('click', function(e){
+	document.getElementById("recipe_name").value = selectedRowValue;
+	document.getElementById("delete_form").submit();
+});

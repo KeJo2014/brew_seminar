@@ -35,7 +35,7 @@
     <form id="delete_form" action="{% url 'home' %}" method="post">
       {% csrf_token %}
       <input type="text" style="display: none;" name="command" value="delete">
-      <input type="text" style="display: block;" name="recipe_name" id="recipe_name" value="">
+      <input type="text" style="display: none;" name="recipe_name" id="recipe_name" value="">
       <button class="submitButton" id="delRecipe"><i class="fa-solid fa-trash-can"></i></button>
     </form>
     <button type="button" class="submitButton" id="editRecipe"><i class="fa-solid fa-pen-to-square"></i></button>

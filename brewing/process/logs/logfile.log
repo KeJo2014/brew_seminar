@@ -7817,3 +7817,209 @@ C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading
 [mHTTP GET /static/js/home.js 200 [0.02, 127.0.0.1:30688][0m
 [mHTTP POST /home 200 [0.04, 127.0.0.1:30695][0m
 [36mHTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:30695][0m
+HTTP GET /create 200 [0.03, 127.0.0.1:51855]
+HTTP GET /static/css/create.css 200 [0.52, 127.0.0.1:51855]
+HTTP GET /static/js/creating.js 200 [0.52, 127.0.0.1:51856]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:51856]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:51856]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:51856]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:51856]
+HTTP GET /home 200 [0.02, 127.0.0.1:51856]
+HTTP GET /home 200 [0.03, 127.0.0.1:50358]
+HTTP GET /static/js/home.js 200 [0.53, 127.0.0.1:50360]
+HTTP GET /static/css/create.css 304 [0.53, 127.0.0.1:50359]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:50360]
+HTTP GET /static/css/home.css 304 [0.00, 127.0.0.1:50360]
+HTTP GET /static/css/template.css 304 [0.00, 127.0.0.1:50360]
+HTTP POST /home 200 [0.01, 127.0.0.1:50360]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:50360]
+HTTP GET /home 200 [0.01, 127.0.0.1:50796]
+HTTP POST /home 200 [0.01, 127.0.0.1:50358]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:50359]
+HTTP POST /home 200 [0.03, 127.0.0.1:50156]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:50156]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:50157]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:50157]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:50157]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:50157]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:50157]
+HTTP POST /home 200 [0.01, 127.0.0.1:50157]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:50157]
+HTTP POST /home 200 [0.02, 127.0.0.1:53696]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:53696]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:53697]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:53697]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:53697]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:53697]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:53697]
+HTTP GET /home 200 [0.02, 127.0.0.1:54665]
+HTTP POST /home 200 [0.01, 127.0.0.1:55300]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:55300]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:55301]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:55301]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:55301]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:55301]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:55301]
+HTTP POST /home 200 [0.01, 127.0.0.1:55301]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:55301]
+HTTP GET /home 200 [0.01, 127.0.0.1:55309]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP POST /home 200 [0.06, 127.0.0.1:49236]
+HTTP GET /static/css/create.css 200 [0.41, 127.0.0.1:49236]
+HTTP GET /static/js/home.js 200 [0.41, 127.0.0.1:49237]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:49237]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:49237]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:49237]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:49237]
+HTTP POST /home 200 [0.01, 127.0.0.1:65396]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:65396]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:65397]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:65397]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:65397]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:65397]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:65397]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:65397]
+HTTP GET /static/img/brautopf.png 200 [0.01, 127.0.0.1:65397]
+HTTP GET /static/js/brewing.js 200 [0.01, 127.0.0.1:65396]
+HTTP GET /home 200 [0.01, 127.0.0.1:65397]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:65397]
+HTTP GET /home 200 [0.01, 127.0.0.1:65410]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:65410]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:65411]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:65411]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:65411]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:65411]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:65411]
+Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 58, in home
+    return render(request, 'brewing/home.html',{
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'delete-recipe' with arguments '('',)' not found. 1 pattern(s) tried: ['delete_recipe/(?P<recipe_name>[^/]+)\\Z']
+HTTP GET /home 500 [0.16, 127.0.0.1:51198]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:51198]
+HTTP GET / 200 [0.01, 127.0.0.1:51208]
+HTTP GET /home 200 [0.01, 127.0.0.1:59333]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:59333]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:59334]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:59334]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:59334]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:59334]
+HTTP POST /home 200 [0.03, 127.0.0.1:59334]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:59334]
+HTTP POST /home 200 [0.03, 127.0.0.1:59334]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:59334]
+HTTP POST /home 200 [0.03, 127.0.0.1:59334]
+HTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:59334]
+HTTP POST /home 200 [0.03, 127.0.0.1:59334]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:59334]
+HTTP POST /home 200 [0.01, 127.0.0.1:51165]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:51165]
+HTTP GET /static/js/home.js 200 [0.03, 127.0.0.1:51166]
+HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:51165]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:51166]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:51166]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:51166]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /brewing 200 [0.02, 127.0.0.1:65308]
+HTTP GET /static/img/brautopf.png 200 [0.60, 127.0.0.1:65308]
+HTTP GET /static/js/brewing.js 200 [0.59, 127.0.0.1:65311]
+HTTP GET /create 200 [0.02, 127.0.0.1:65308]
+HTTP GET /static/js/creating.js 200 [0.00, 127.0.0.1:65312]
+HTTP GET /create 200 [0.01, 127.0.0.1:65308]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:65308]
+HTTP GET /home 200 [0.01, 127.0.0.1:65308]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:65312]
+HTTP GET /create 200 [0.01, 127.0.0.1:65308]
+HTTP GET /create 200 [0.01, 127.0.0.1:65313]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:65313]
+HTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:65314]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:65314]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:65314]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:65314]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:65314]
+HTTP GET /create 200 [0.01, 127.0.0.1:55283]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:55283]
+HTTP GET /static/js/creating.js 200 [0.01, 127.0.0.1:55284]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:55284]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:55284]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:55284]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:55284]
+HTTP GET /home 200 [0.01, 127.0.0.1:55284]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:55284]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:50599]
+HTTP GET /static/img/brautopf.png 200 [0.00, 127.0.0.1:50600]
+HTTP GET /static/js/brewing.js 200 [0.02, 127.0.0.1:50599]
+HTTP GET /home 200 [0.01, 127.0.0.1:50600]
+HTTP GET /static/js/home.js 200 [0.00, 127.0.0.1:50600]
