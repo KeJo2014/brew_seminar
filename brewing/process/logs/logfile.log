@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [mHTTP GET /dashboard 200 [0.16, 127.0.0.1:20177][0m
 WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:20184]
 WebSocket CONNECT /ws/socket-server/ [127.0.0.1:20184]
@@ -8350,3 +8351,5 @@ HTTP GET /brewing 200 [0.05, 127.0.0.1:60065]
 HTTP GET /home 200 [0.01, 127.0.0.1:64615]
 HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:64615]
 C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+=======
+>>>>>>> 5b6bffcf7aca2677b869067b6ca18bc6108f3a4a
