@@ -38,7 +38,13 @@
       <input type="text" style="display: none;" name="recipe_name" id="recipe_name" value="">
       <button class="submitButton" id="delRecipe"><i class="fa-solid fa-trash-can"></i></button>
     </form>
-    <button type="button" class="submitButton" id="editRecipe"><i class="fa-solid fa-pen-to-square"></i></button>
+    <form id="edit_form" action="{% url 'edit' 'Mandarina Bavaria BM50+ LOB' %}" method="post">
+      {% csrf_token %}
+      <input type="text" style="display: none;" name="command" value="edit">
+      <input type="text" style="display: none;" name="recipe_name" id="recipe_name" value="">
+      <button type="button" class="submitButton" id="editRecipe"><i class="fa-solid fa-pen-to-square"></i></button>
+    </form>
+    
     <button type="button" class="submitButton" id="addRecipe" onclick="location.href='create'"><i class="fa-solid fa-plus"></i></button>
   </div>
 </div>

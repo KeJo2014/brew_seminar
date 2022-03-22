@@ -19,13 +19,13 @@
     <div class="bg-shape-box"></div>
     <nav class="menu">
         <ul>
-            <li><a href="home"><i class="fa-solid fa-house"></i>
+            <li><a href="{% url 'home' %}"><i class="fa-solid fa-house"></i>
                     <p>Home</p>
                 </a></li>
-            <li><a href="brewing"><i class="fa-solid fa-gears"></i>
+            <li><a href="{% url 'brewing' %}"><i class="fa-solid fa-gears"></i>
                     <p>Brauen</p>
                 </a></li>
-            <li><a href="create"><i class="fa-solid fa-plus"></i>
+            <li><a href="{% url 'create' %}"><i class="fa-solid fa-plus"></i>
                     <p>Erstellen</p>
                 </a></li>
         </ul>

@@ -110,14 +110,18 @@ $("#selectRecipeTable tbody tr").click(function(){
  });
 
 $('#editRecipe').on('click', function(e){
-	alert("Ändern: " + $("#selectRecipeTable tbody tr.selected td:first").html());
+	if (confirm('Willst Du dieses Rezept wirklich ändern?')) {
+		location.href = 'edit/' + selectedRowValue;
+	  } else {
+		console.log('Ändern abgebrochen');
+	  }
 });
 
 $('#delRecipe').on('click', function(e){
 	if (confirm('Willst Du dieses Rezept wirklich löschen?')) {
 		document.getElementById("recipe_name").value = selectedRowValue;
 		document.getElementById("delete_form").submit();
-		console.log('Thing was saved to the database.');
+		console.log('Rezept wurde gelöscht');
 	  } else {
 		console.log('Löschen abgebrochen');
 	  }

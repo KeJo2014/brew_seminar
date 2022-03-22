@@ -97,7 +97,35 @@ def create(request):
         recipe = brew_recipe(name=name, date=date, bier_sorte=bier_sorte, author=author, ausschlagwuerze=ausschlagwuerze, sudhausausbeute=sudhausausbeute, stamwuerze=stamwuerze, ibu=ibu, ebc=ebc, alcohol=alcohol, description=description, brauwasser=brau_wasser, schüttung=schuettung, maischplan=maischplan, wuerzekochen=wuerze_kochen, gärung=gaerung)
         recipe.save()
 
-        return render(request, 'brewing/home.html')
+        return render(request, 'brewing/create.html')
 
 def edit(request, recipe_name):
-    return render(request, 'brewing/edit.html')
+    if(request.method == "GET"):
+        recipe_selected = brew_recipe.objects.filter(name=recipe_name)
+        return render(request, 'brewing/edit.html',{
+            "recipes": recipe_selected,
+        })
+    else:
+        name = request.POST.get('name')
+        date = request.POST.get('date')
+        bier_sorte = request.POST.get('sort')
+        author = request.POST.get('author')
+        ausschlagwuerze = request.POST.get('ausschlagswuerze')
+        sudhausausbeute = request.POST.get('sudhausausbeute')
+        stamwuerze = request.POST.get('stammwuerze')
+        ibu = request.POST.get('bittere')
+        ebc = request.POST.get('farbe')
+        alcohol = request.POST.get('alkohol')
+        description = request.POST.get('beschreibung')
+        
+        brau_wasser = request.POST.get('json_brauwasser')
+        schuettung = request.POST.get('json_schuettung')
+        maischplan = request.POST.get('json_maisch')
+        wuerze_kochen = request.POST.get('json_wuerze')
+        gaerung = request.POST.get('json_gaerung')
+
+        recipe = brew_recipe(name=name, date=date, bier_sorte=bier_sorte, author=author, ausschlagwuerze=ausschlagwuerze, sudhausausbeute=sudhausausbeute, stamwuerze=stamwuerze, ibu=ibu, ebc=ebc, alcohol=alcohol, description=description, brauwasser=brau_wasser, schüttung=schuettung, maischplan=maischplan, wuerzekochen=wuerze_kochen, gärung=gaerung)
+        recipe.save()
+
+        return render(request, 'brewing/edit.html')
+    
