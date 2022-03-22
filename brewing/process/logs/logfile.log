@@ -9969,3 +9969,4 @@ HTTP GET /edit/test 200 [0.01, 127.0.0.1:51085]
 HTTP GET /static/js/edit.js 304 [0.00, 127.0.0.1:51085]
 HTTP GET /edit/test 200 [0.01, 127.0.0.1:51085]
 HTTP GET /static/js/edit.js 304 [0.00, 127.0.0.1:51085]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\process\brew_server.py changed, reloading.
