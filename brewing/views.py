@@ -99,5 +99,5 @@ def create(request):
 
         return render(request, 'brewing/home.html')
 
-def edit(request):
+def edit(request, recipe_name):
     return render(request, 'brewing/edit.html')
