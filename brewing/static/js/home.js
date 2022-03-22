@@ -114,6 +114,11 @@ $('#editRecipe').on('click', function(e){
 });
 
 $('#delRecipe').on('click', function(e){
-	document.getElementById("recipe_name").value = selectedRowValue;
-	document.getElementById("delete_form").submit();
+	if (confirm('Willst Du dieses Rezept wirklich löschen?')) {
+		document.getElementById("recipe_name").value = selectedRowValue;
+		document.getElementById("delete_form").submit();
+		console.log('Thing was saved to the database.');
+	  } else {
+		console.log('Löschen abgebrochen');
+	  }
 });

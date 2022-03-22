@@ -11,7 +11,7 @@
         <h2>Brauwasser</h2>
         <div id="waterBox">
             <input type="text" class="input" id="guss1" name="guss1" placeholder="1. Guss" required title="GUSS">
-            <input type="number" class="input inputSpace" id="gussvol1" name="gussvol1" min="0"
+            <input type="number" class="input inputSpace" id="gussvol1" name="gussvol1" min="0" step="0.1"
                 placeholder="Gussvolumen [l]" required title="GUSSVOLUMEN">
         </div>
         <div class="buttonBox">
@@ -24,7 +24,7 @@
         <h2>Schüttung</h2>
         <div id="maltBox">
             <input type="text" class="input" id="malz1" name="malz1" placeholder="1. Malzsorte" title="MALZSORTE">
-            <input type="number" class="input inputSpace" id="malzmenge1" name="malzmenge1" min="0"
+            <input type="number" class="input inputSpace" id="malzmenge1" name="malzmenge1" min="0" step="0.1"
                 placeholder="Malzmenge [g]" title="MALZMENGE">
         </div>
         <div class="buttonBox">
@@ -38,13 +38,13 @@
         <div id="maischBox">
             <input type="text" class="input" id="maisch1" name="maisch1" placeholder="1. Maischphase"
                 title="MAISCHPHASE">
-            <input type="number" class="input inputSpace" id="maischtemp1" name="maischtemp1" min="0"
+            <input type="number" class="input inputSpace" id="maischtemp1" name="maischtemp1" min="0" step="0.1"
                 placeholder="Maischtemperatur [°C]" title="MAISCHTEMPERATUR">
             <div class="rastBox" id="rastBox1">
                 <h3 id="h3Rast11">1.Rast</h3>
-                <input type="number" class="rastInput" id="rasttemp11" name="rasttemp11" min="0"
+                <input type="number" class="rastInput" id="rasttemp11" name="rasttemp11" min="0" step="0.1"
                     placeholder="Rasttemperatur [°C]" required title="RASTTEMPERATUR">
-                <input type="number" class="rastInput inputSpace" id="rastdur11" name="rastdur11" min="0"
+                <input type="number" class="rastInput inputSpace" id="rastdur11" name="rastdur11" min="0" step="0.1"
                     placeholder="Rastdauer [min]" required title="RASTDAUER">
             </div>
             <div class="align-items-end" id="smallerButtonsBox1">
@@ -61,14 +61,14 @@
     </div>
     <div class="inputBox">
         <h2>Würzekochen</h2>
-        <input type="number" class="input inputSpace" id="kochendur" name="kochendur" min="0"
+        <input type="number" class="input inputSpace" id="kochendur" name="kochendur" min="0" step="0.1"
             placeholder="Würzekochdauer [min]" title="WÜRZEKOCHDAUER">
         <div id="hopfenBox">
             <input type="text" class="input" id="hopfen1" name="hopfen1" placeholder="1. Hopfensorte"
                 title="HOPFENSORTE">
-            <input type="number" class="input" id="hopfenmenge1" name="hopfenmenge1" min="0"
+            <input type="number" class="input" id="hopfenmenge1" name="hopfenmenge1" min="0" step="0.1"
                 placeholder="Hopfenmenge [g]" title="HOPFENMENGE">
-            <input type="number" class="input" id="alpha1" name="alpha1" min="0" placeholder="α-Säure [%]"
+            <input type="number" class="input" id="alpha1" name="alpha1" min="0" placeholder="α-Säure [%]" step="0.1"
                 title="ALPHASÄURE">
             <input type="text" class="input inputSpace" id="hopfentime1" name="hopfentime1"
                 placeholder="Hopfenzugabe vor Kochende [min]" title="HOPFENZUGABE">
@@ -83,10 +83,10 @@
     <div class="inputBox">
         <h2>Gärung und Reifung</h2>
         <input type="text" class="input" id="hefe1" name="hefe1" placeholder="Hefesorte" title="HEFESORTE">
-        <input type="number" class="input" id="gaertemp1" name="gaertemp1" min="0" placeholder="Gärtemperatur [°C]" title="GÄRTEMPERATUR">
-        <input type="number" class="input" id="endgaergrad1" name="endgaergrad1" min="0" placeholder="Endvergärungsgrad [%]"
+        <input type="number" class="input" id="gaertemp1" name="gaertemp1" min="0" step="0.1"placeholder="Gärtemperatur [°C]" title="GÄRTEMPERATUR">
+        <input type="number" class="input" id="endgaergrad1" name="endgaergrad1" min="0" step="0.1"placeholder="Endvergärungsgrad [%]"
             title="ENDVERGÄRUNGSGRAD">
-        <input type="number" class="input" id="karbon1" name="karbon1" min="0" placeholder="Karbonisierung [g/l]"
+        <input type="number" class="input" id="karbon1" name="karbon1" min="0" step="0.1"placeholder="Karbonisierung [g/l]"
             title="KARBONISIERUNG">
     </div>
     <div>
@@ -108,18 +108,18 @@
         <input type="text" class="input" id="author" name="author" placeholder="Autor" required title="AUTOR">
     </div>
     <div class="inputBox">
-        <input type="number" class="input" id="ausschlagswuerze" name="ausschlagswuerze"
-            placeholder="Ausschlagswürze [l]" required min="0" title="AUSSCHLAGWÜRZE">
+        <input type="number" class="input" id="ausschlagswuerze" name="ausschlagswuerze" 
+            placeholder="Ausschlagswürze [l]" required min="0" step="0.1"title="AUSSCHLAGWÜRZE">
         <input type="number" class="input" id="sudhausausbeute" name="sudhausausbeute"
-            placeholder="Sudhausausbeute [l]" required min="0" title="SUDHAUSAUSBEUTE">
+            placeholder="Sudhausausbeute [l]" required min="0" step="0.1"title="SUDHAUSAUSBEUTE">
     </div>
     <div class="inputBox">
-        <input type="number" class="input" step="0.1" id="stammwuerze" name="stammwuerze"
+        <input type="number" class="input"  step="0.1" id="stammwuerze" name="stammwuerze"
             placeholder="Stammwürze [%]" required min="0" title="STAMMWÜRZE">
         <input type="number" class="input" id="bittere" name="bittere" placeholder="Bittere [IBU]" required
-            min="0" title="BITTERE">
+            min="0" step="0.1" title="BITTERE">
         <input type="number" class="input" id="farbe" name="farbe" placeholder="Farbe [EBC]" required
-            min="0" title="FARBE">
+            min="0" step="0.1"title="FARBE">
         <input type="number" class="input" id="alkohol" step="0.1" name="alkohol" placeholder="Alkohol [‰]"
             required min="0" title="ALKOHOL">
     </div>
