@@ -8346,3 +8346,50 @@ HTTP POST /create 200 [0.03, 127.0.0.1:63400]
 HTTP GET /home 200 [0.02, 127.0.0.1:63400]
 HTTP POST /home 200 [0.04, 127.0.0.1:57197]
 HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:57200]
+[mHTTP GET / 200 [0.10, 127.0.0.1:18476][0m
+[33mHTTP GET /static/style.css 404 [0.05, 127.0.0.1:18476][0m
+Not Found: /favicon.ico
+[33mHTTP GET /favicon.ico 404 [0.10, 127.0.0.1:18480][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /home 200 [0.18, 127.0.0.1:18604][0m
+[mHTTP GET /static/css/create.css 200 [0.07, 127.0.0.1:18604][0m
+[mHTTP GET /static/js/home.js 200 [0.11, 127.0.0.1:18605][0m
+[mHTTP GET /static/css/brewing.css 200 [0.02, 127.0.0.1:18605][0m
+[mHTTP GET /static/css/home.css 200 [0.02, 127.0.0.1:18605][0m
+[mHTTP GET /static/css/template.css 200 [0.02, 127.0.0.1:18605][0m
+[mHTTP GET /static/img/favicon.ico 200 [0.02, 127.0.0.1:18605][0m
+[32mHTTP GET /admin/ 302 [0.06, 127.0.0.1:18631][0m
+[mHTTP GET /admin/login/?next=/admin/ 200 [0.18, 127.0.0.1:18631][0m
+[mHTTP GET /static/admin/css/login.css 200 [0.02, 127.0.0.1:18631][0m
+[32mHTTP POST /admin/login/?next=/admin/ 302 [0.58, 127.0.0.1:18636][0m
+[mHTTP GET /admin/ 200 [0.10, 127.0.0.1:18636][0m
+[mHTTP GET /static/admin/img/icon-deletelink.svg 200 [0.01, 127.0.0.1:18636][0m
+[mHTTP GET /admin/brewing/brew_recipe/ 200 [0.37, 127.0.0.1:18642][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:18642][0m
+[mHTTP GET /admin/brewing/brew_recipe/6/change/ 200 [0.43, 127.0.0.1:18642][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:18642][0m
+[mHTTP GET /admin/brewing/messurement/ 200 [0.14, 127.0.0.1:18646][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:18646][0m
+[mHTTP GET /admin/brewing/messurement/add/ 200 [0.24, 127.0.0.1:18646][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:18646][0m
+[32mHTTP POST /admin/brewing/messurement/add/ 302 [0.10, 127.0.0.1:18651][0m
+[mHTTP GET /admin/brewing/messurement/ 200 [0.15, 127.0.0.1:18651][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:18651][0m
+[mHTTP GET /admin/brewing/messurement/add/ 200 [0.15, 127.0.0.1:18658][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:18658][0m
+[32mHTTP POST /admin/brewing/messurement/add/ 302 [0.10, 127.0.0.1:18662][0m
+[mHTTP GET /admin/brewing/messurement/ 200 [0.30, 127.0.0.1:18662][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:18662][0m
+[mHTTP GET /create 200 [0.06, 127.0.0.1:18666][0m
+[36mHTTP GET /static/js/creating.js 304 [0.01, 127.0.0.1:18666][0m
+[mHTTP GET /evaluate 200 [0.05, 127.0.0.1:18672][0m
+[mHTTP GET /home 200 [0.04, 127.0.0.1:18680][0m
+[36mHTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:18680][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:18685][0m
+[mHTTP GET /static/js/brewing.js 200 [0.02, 127.0.0.1:18685][0m
+[mHTTP GET /static/img/brautopf.png 200 [0.05, 127.0.0.1:18685][0m
+[mHTTP GET /home 200 [0.06, 127.0.0.1:18692][0m
+Not Found: /edit
+[33mHTTP GET /edit 404 [0.06, 127.0.0.1:18761][0m
+[mHTTP GET /edit/test 200 [0.07, 127.0.0.1:18761][0m
