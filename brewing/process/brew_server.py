@@ -26,7 +26,9 @@ class brew_server():
         self.logger.addHandler(self.handler)
     
     def get_status(self):
-        return self.status
+        s = self.status
+        s["command"] = "update"
+        return s
     
     def write_to_log(self, message):
         timeStr = time.ctime()

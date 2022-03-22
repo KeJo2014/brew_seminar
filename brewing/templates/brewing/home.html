@@ -5,6 +5,11 @@
 {% block maincontent %}
 <main class="main-xl">
   <h1>Rezeptauswahl</h1>
+  {% if msg %}
+      <div class="alert alert-success">
+        {{ msg }}
+      </div>
+    {% endif %}
   <div id="recipeTableBox">
   <table id="selectRecipeTable">
     <thead>

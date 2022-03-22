@@ -69,8 +69,21 @@ def home(request):
             })
     
 
-def brewing(request):
-    return render(request, 'brewing/brewing.html')
+def brewing(request, recipe_id):
+    #check if user is authenticated
+    if(request.user.is_authenticated):
+        try:
+            recipe = brew_recipe.objects.get(id=recipe_id)
+        except:
+            return render(request, 'brewing/home.html',{
+                "recipes": brew_recipe.objects.all(),
+                "msg": "Recipe not found",
+            })
+        return render(request, 'brewing/brewing.html',{
+            "recipe": recipe,
+        })
+    else:
+        return redirect('/login')
 
 def create(request): 
     if(request.method == "GET"):

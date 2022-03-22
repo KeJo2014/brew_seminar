@@ -8353,3 +8353,116 @@ HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:64615]
 C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
 =======
 >>>>>>> 5b6bffcf7aca2677b869067b6ca18bc6108f3a4a
+[mHTTP GET / 200 [0.34, 127.0.0.1:18635][0m
+[33mHTTP GET /static/style.css 404 [0.37, 127.0.0.1:18640][0m
+Not Found: /favicon.ico
+[33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:18640][0m
+[mHTTP GET /home 200 [0.11, 127.0.0.1:18658][0m
+[36mHTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:18658][0m
+[mHTTP GET /brewing 200 [0.04, 127.0.0.1:18665][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /brewing/1
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 75, in brewing
+    recipe = brew_recipe.objects.get(id=recipe_id)
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 523, in get
+    raise self.model.DoesNotExist(
+brewing.models.brew_recipe.DoesNotExist: brew_recipe matching query does not exist.
+[35;1mHTTP GET /brewing/1 500 [0.43, 127.0.0.1:18786][0m
+Internal Server Error: /brewing/0
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 75, in brewing
+    recipe = brew_recipe.objects.get(id=recipe_id)
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 523, in get
+    raise self.model.DoesNotExist(
+brewing.models.brew_recipe.DoesNotExist: brew_recipe matching query does not exist.
+[35;1mHTTP GET /brewing/0 500 [0.24, 127.0.0.1:18786][0m
+[mHTTP GET /admin/ 200 [0.32, 127.0.0.1:18797][0m
+[mHTTP GET /admin/brewing/brew_recipe/ 200 [0.22, 127.0.0.1:18797][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:18797][0m
+[mHTTP GET /admin/brewing/brew_recipe/6/change/ 200 [0.48, 127.0.0.1:18804][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:18804][0m
+[mHTTP GET /brewing/6 200 [0.07, 127.0.0.1:18808][0m
+[mHTTP GET /brewing/6 200 [0.08, 127.0.0.1:18839][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing/6 200 [0.14, 127.0.0.1:18886][0m
+[mHTTP GET /brewing/5 200 [0.11, 127.0.0.1:18893][0m
+[mHTTP GET /brewing/6 200 [0.06, 127.0.0.1:18903][0m
+[mHTTP GET /brewing/6 200 [0.09, 127.0.0.1:18924][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:18924][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:18929]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:18929]
+Tue Mar 22 19:06:39 2022: Another client connected
+[mHTTP GET /brewing/6 200 [0.08, 127.0.0.1:19013][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:18929]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:19013][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:19019]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:19019]
+Tue Mar 22 19:08:48 2022: Another client connected
+[mHTTP GET /brewing/6 200 [0.07, 127.0.0.1:19044][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:19019]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:19044][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:19048]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:19048]
+Tue Mar 22 19:09:33 2022: Another client connected
+[mHTTP GET /brewing/6 200 [0.04, 127.0.0.1:19060][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:19048]
+[mHTTP GET /static/js/server_connection.js 200 [0.08, 127.0.0.1:19060][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:19065]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:19065]
+Tue Mar 22 19:09:46 2022: Another client connected
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /brewing/6 200 [0.09, 127.0.0.1:19177][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.08, 127.0.0.1:19177][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:19187]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:19187]
+Tue Mar 22 19:12:28 2022: Another client connected
+[mHTTP GET /brewing/6 200 [0.26, 127.0.0.1:9161][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:19187]
+[mHTTP GET /static/js/server_connection.js 200 [0.03, 127.0.0.1:9161][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:9167]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:9167]
+Tue Mar 22 19:20:15 2022: Another client connected
+[mHTTP GET /brewing/6 200 [0.06, 127.0.0.1:9186][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:9167]
+[mHTTP GET /static/js/server_connection.js 200 [0.01, 127.0.0.1:9186][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:9190]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:9190]
+Tue Mar 22 19:20:40 2022: Another client connected
+[mHTTP GET /admin/brewing/brew_recipe/6/change/ 200 [0.50, 127.0.0.1:9201][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:9201][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:9190]

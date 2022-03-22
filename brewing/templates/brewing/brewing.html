@@ -2,15 +2,16 @@
 {% block title %}Brauen{% endblock %}
 {% load static %}
 {% block maincontent %}
+<script src="{% static '/js/server_connection.js' %}" crossorigin="anonymous"></script>
 <main class="main-l">
     <h1>Zubereitung</h1>
     <table id="recipeInfo">
         <tr>
-            <td id="recipe_name" title="REZEPTNAME">Rezeptname</td>
-            <td id="sort" title="BIERSORTE">Biersorte</td>
-            <td id="date" title="DATUM">Datum</td>
-            <td id="author" title="AUTOR">Autor</td>
-            <td id="brewCount" title="BRAUUNGEN">Brauungen</td>
+            <td id="recipe_name" title="REZEPTNAME">{{recipe.name}}</td>
+            <td id="sort" title="BIERSORTE">{{recipe.bier_sorte}}</td>
+            <td id="date" title="DATUM">{{recipe.date}}</td>
+            <td id="author" title="AUTOR">{{recipe.author}}</td>
+            <td id="brewCount" title="BRAUUNGEN">{{recipe.number_of_brews}}</td>
         </tr>
     </table>
     <table id="tabelGuidance">
