@@ -4,7 +4,7 @@
 {% block maincontent %}
 
 <main class="main-l">
-    <form action="{% url 'create'%}" method="post" id="form">
+    <form action="{% url 'create' %}" method="post" id="form">
         {%csrf_token%}
     <h1>Rezept Erstellen</h1>
     <div class="inputBox">
@@ -117,9 +117,9 @@
         <input type="number" class="input"  step="0.1" id="stammwuerze" name="stammwuerze"
             placeholder="Stammwürze [%]" required min="0" title="STAMMWÜRZE">
         <input type="number" class="input" id="bittere" name="bittere" placeholder="Bittere [IBU]" required
-            min="0" step="0.1" title="BITTERE">
+            min="0" title="BITTERE">
         <input type="number" class="input" id="farbe" name="farbe" placeholder="Farbe [EBC]" required
-            min="0" step="0.1"title="FARBE">
+            min="0" title="FARBE">
         <input type="number" class="input" id="alkohol" step="0.1" name="alkohol" placeholder="Alkohol [‰]"
             required min="0" title="ALKOHOL">
     </div>
