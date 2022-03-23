@@ -6,11 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}">
     <title>Index</title>
 </head>
 
-<body class="background" id="menu-bg">
+<body>
+    <div id="scene3d"></div>
+    <script src="{% static 'js/three.js' %}"></script>
+    <script>
+        var scene3d = document.getElementById("scene3d");
+        var CANVAS_WIDTH = 300;
+        var CANVAS_HEIGHT = 300;
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, CANVAS_WIDTH / CANVAS_HEIGHT, 0.1, 1000);
+
+        const renderer = new THREE.WebGLRenderer({
+            alpha: true
+        });
+        const loader = new OBJLoader();
+        // load a resource
+        loader.load(
+            // resource URL
+            'bottle.obj',
+            // called when resource is loaded
+            function (object) {
+                scene.add(object);
+
+            },
+            // called when loading is in progresses
+            function (xhr) {
+
+                console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+
+            },
+            // called when loading has errors
+            function (error) {
+
+                console.log('An error happened');
+
+            }
+        );
+
+        
+        renderer.setSize(CANVAS_WIDTH, CANVAS_HEIGHT);
+        scene3d.appendChild(renderer.domElement);
+
+        camera.position.z = 5;
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            object.rotation.x += 0.01;
+            object.rotation.y += 0.01;
+
+            renderer.render(scene, camera);
+        };
+
+        animate();
+
+        
+
+        
+    </script>
 </body>
 
 

@@ -14,18 +14,18 @@
   <table id="selectRecipeTable">
     <thead>
       <tr>
-        <th onclick="SortTable(0, 'N')">Rezept-ID</th>
-        <th onclick="SortTable(0, 'T')">Rezeptname</th>
-        <th onclick="SortTable(1, 'T')">Biersorte</th>
-        <th onclick="SortTable(2, 'D', 'dmy')">Datum</th>
-        <th onclick="SortTable(3, 'T')">Autor</th>
-        <th onclick="SortTable(4, 'N')">Brauungen</th>
+        <th style="display: none;" onclick="sortTable('id')">Rezept-ID</th>
+        <th onclick="sortTable('name')">Rezeptname</th>
+        <th onclick="sortTable('bier_sorte')">Biersorte</th>
+        <th onclick="sortTable('date')">Datum</th>
+        <th onclick="sortTable('author')">Autor</th>
+        <th onclick="sortTable('number_of_brews')">Brauungen</th>
       </tr>
     </thead>
     <tbody>
       {% for recipe in recipes %}
       <tr>
-          <td>{{recipe.id}}</td>
+          <td style="display: none;" >{{recipe.id}}</td>
           <td>{{recipe.name}}</td> 
           <td>{{recipe.bier_sorte}}</td>
           <td>{{recipe.date}}</td>
@@ -39,19 +39,8 @@
   <div class="recipeButtonBox">
   <button type="button" class="submitButton" id="submitRecipe">Brauen</button>
   <div class="recipeEditButtonBox">
-    <form id="delete_form" action="{% url 'home' %}" method="post">
-      {% csrf_token %}
-      <input type="text" style="display: none;" name="command" value="delete">
-      <input type="text" style="display: none;" name="recipe_name" id="recipe_name" value="">
-      <button class="submitButton" id="delRecipe"><i class="fa-solid fa-trash-can"></i></button>
-    </form>
-    <form id="edit_form" action="{% url 'edit' '0' %}" method="post">
-      {% csrf_token %}
-      <input type="text" style="display: none;" name="command" value="edit">
-      <input type="text" style="display: none;" name="recipe_name" id="recipe_name" value="">
-      <button type="button" class="submitButton" id="editRecipe"><i class="fa-solid fa-pen-to-square"></i></button>
-    </form>
-    
+    <button class="submitButton" id="delRecipe"><i class="fa-solid fa-trash-can"></i></button>
+    <button type="button" class="submitButton" id="editRecipe"><i class="fa-solid fa-pen-to-square"></i></button>
     <button type="button" class="submitButton" id="addRecipe" onclick="location.href='create'"><i class="fa-solid fa-plus"></i></button>
   </div>
 </div>

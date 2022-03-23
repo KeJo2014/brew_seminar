@@ -1,3 +1,5 @@
+var indexMalt = 0;
+var indexWater = 0;
 var indexPhase = 0;
 var indexRast = [0,0];
 var indexHopfen = 0;
@@ -7,8 +9,6 @@ var brauwasserElement = document.getElementById('brauwasser');
 var brauwasserJson = brauwasserElement.getAttribute('value'); 
 var brauwasserArray = JSON.parse(brauwasserJson);
 
-var indexWater = brauwasserArray.length;
-
 for (let i = 0; i < brauwasserArray.length; i++)
 {
     addWater(brauwasserArray[i][0], brauwasserArray[i][1]); 
@@ -17,8 +17,6 @@ for (let i = 0; i < brauwasserArray.length; i++)
 var schüttungElement = document.getElementById('schüttung');
 var schüttungJson = schüttungElement.getAttribute('value'); 
 var schüttungArray = JSON.parse(schüttungJson);
-
-var indexMalt = schüttungArray.length;
 
 for (let i = 0; i < schüttungArray.length; i++)
 {
@@ -30,10 +28,6 @@ var maischplanJson = maischplanElement.getAttribute('value');
 var maischplanArray = JSON.parse(maischplanJson);
 var rastArray;
 
-console.log(maischplanJson);
-console.log(maischplanArray);
-
-
 for (let i = 0; i < maischplanArray.length; i++)
 {
     addMaischphase(maischplanArray[i][0], maischplanArray[i][1]); 
@@ -43,6 +37,34 @@ for (let i = 0; i < maischplanArray.length; i++)
         addRast(indexPhase, rastArray[j][0], rastArray[j][1]); 
     }
 }
+
+var kochenElement = document.getElementById('kochen');
+var kochenJson = kochenElement.getAttribute('value'); 
+var kochenArray = JSON.parse(kochenJson);
+
+var kochenDurElement = document.getElementById('kochendur');
+kochenDurElement.setAttribute('value', kochenArray[0]);
+
+for (let i = 1; i < kochenArray.length; i++)
+{
+    addHopfen(kochenArray[i][0], kochenArray[i][1], kochenArray[i][2], kochenArray[i][3]); 
+}
+
+var gärungElement = document.getElementById('gärung');
+var gärungJson = gärungElement.getAttribute('value'); 
+var gärungArray = JSON.parse(gärungJson);
+
+var gärungHefeElement = document.getElementById('hefe1');
+gärungHefeElement.setAttribute('value', gärungArray[0][0]);
+
+var gärungTempElement = document.getElementById('gaertemp1');
+gärungTempElement.setAttribute('value', gärungArray[0][1]);
+
+var gärungGradElement = document.getElementById('endgaergrad1');
+gärungGradElement.setAttribute('value', gärungArray[0][2]);
+
+var gärungKarbonElement = document.getElementById('karbon1');
+gärungKarbonElement.setAttribute('value', gärungArray[0][3]);
 
 var schüttung = [];
 var maisch = [];
@@ -116,7 +138,7 @@ function delWater(id1, id2) {
 }
 
 function addMaischphase(inputName, inputNumber) {
-    indexPhase += 1;
+    ++indexPhase;
     indexRast.push(0);
 
     var inputPhaseText = document.createElement('input');
@@ -150,7 +172,7 @@ function addMaischphase(inputName, inputNumber) {
     buttonAddRast.setAttribute('type', 'button');
     buttonAddRast.setAttribute('class', 'addDelButton smallerButton');
     buttonAddRast.setAttribute('id', 'buttonAddRast' + indexPhase);
-    buttonAddRast.setAttribute("onclick", "addRast(indexPhase, '', '')");
+    buttonAddRast.setAttribute("onclick", "addRast(" + indexPhase + ", '', '')");
 
     var iconAddRast = document.createElement('i');
     iconAddRast.setAttribute('class', 'fa-solid fa-plus');
@@ -159,7 +181,7 @@ function addMaischphase(inputName, inputNumber) {
     buttonDelRast.setAttribute('type', 'button');
     buttonDelRast.setAttribute('class', 'addDelButton smallerButton');
     buttonDelRast.setAttribute('id', 'buttonDelRast' + indexPhase);
-    buttonDelRast.setAttribute('onclick', 'delRast(indexPhase)');
+    buttonDelRast.setAttribute('onclick', 'delRast(' + indexPhase + ')');
 
     var iconDelRast = document.createElement('i');
     iconDelRast.setAttribute('class', 'fa-solid fa-minus');
@@ -181,22 +203,22 @@ function delMaischphase() {
     document.getElementById('maischtemp' + indexPhase).remove();
     document.getElementById('rastBox' + indexPhase).remove();
     document.getElementById('smallerButtonsBox' + indexPhase).remove();
+    indexRast[indexPhase] = 0;
     --indexPhase;
-
 }
 
 function addRast(index, inputTemp, inputDur) {
     indexRast[index] += 1;
 
     var h3Rast = document.createElement('h3');
-    h3Rast.setAttribute('id', 'h3Rast' + indexPhase + indexRast[index]);
+    h3Rast.setAttribute('id', 'h3Rast' + index + indexRast[index]);
     var h3RastText = document.createTextNode(indexRast[index] + '. Rast');
 
     var inputRastTempNumber = document.createElement('input');
     inputRastTempNumber.setAttribute('type', 'number');
     inputRastTempNumber.setAttribute('class', 'rastInput');
-    inputRastTempNumber.setAttribute('id', 'rasttemp' + indexPhase + indexRast[index]);
-    inputRastTempNumber.setAttribute('name', 'rasttemp' + indexPhase + indexRast[index]);
+    inputRastTempNumber.setAttribute('id', 'rasttemp' + index + indexRast[index]);
+    inputRastTempNumber.setAttribute('name', 'rasttemp' + index + indexRast[index]);
     inputRastTempNumber.setAttribute('min', '0');
     inputRastTempNumber.setAttribute('placeholder', 'Rasttemperatur [°C]');
     inputRastTempNumber.setAttribute('title', 'RASTTEMPERATUR');
@@ -205,14 +227,14 @@ function addRast(index, inputTemp, inputDur) {
     var inputRastDurNumber = document.createElement('input');
     inputRastDurNumber.setAttribute('type', 'number');
     inputRastDurNumber.setAttribute('class', 'rastInput inputSpace');
-    inputRastDurNumber.setAttribute('id', 'rastdur' + indexPhase + indexRast[index]);
-    inputRastDurNumber.setAttribute('name', 'rastdur' + indexPhase + indexRast[index]);
+    inputRastDurNumber.setAttribute('id', 'rastdur' + index + indexRast[index]);
+    inputRastDurNumber.setAttribute('name', 'rastdur' + index + indexRast[index]);
     inputRastDurNumber.setAttribute('min', '0');
     inputRastDurNumber.setAttribute('placeholder', 'Rastdauer [min]');
     inputRastDurNumber.setAttribute('title', 'RASTDAUER');
     inputRastDurNumber.setAttribute('value', inputDur);
 
-    var parent = document.querySelector('#' + 'rastBox' + indexPhase)
+    var parent = document.querySelector('#' + 'rastBox' + index)
     h3Rast.appendChild(h3RastText);
     parent.appendChild(h3Rast);
     parent.appendChild(inputRastTempNumber);
@@ -228,7 +250,7 @@ function delRast(index) {
 
 }
 
-function addHopfen() {
+function addHopfen(inputHopfen, inputHopfenMenge, inputAlpha, inputZugabe) {
     ++indexHopfen;
 
     var inputHopfenText = document.createElement('input');
@@ -238,6 +260,7 @@ function addHopfen() {
     inputHopfenText.setAttribute('name', 'hopfen' + indexHopfen);
     inputHopfenText.setAttribute('placeholder', indexHopfen + '. Hopfensorte');
     inputHopfenText.setAttribute('title', 'HOPFENSORTE');
+    inputHopfenText.setAttribute('value', inputHopfen);
 
     var inputHopfenMengeNumber = document.createElement('input');
     inputHopfenMengeNumber.setAttribute('type', 'number');
@@ -247,6 +270,7 @@ function addHopfen() {
     inputHopfenMengeNumber.setAttribute('min', '0');
     inputHopfenMengeNumber.setAttribute('placeholder', 'Hopfenmenge [g]');
     inputHopfenMengeNumber.setAttribute('title', 'HOPFENMENGE');
+    inputHopfenMengeNumber.setAttribute('value', inputHopfenMenge);
 
     var inputHopfenAlphaNumber = document.createElement('input');
     inputHopfenAlphaNumber.setAttribute('type', 'number');
@@ -256,6 +280,7 @@ function addHopfen() {
     inputHopfenAlphaNumber.setAttribute('min', '0');
     inputHopfenAlphaNumber.setAttribute('placeholder', 'α-Säure [%]');
     inputHopfenAlphaNumber.setAttribute('title', 'ALPHASÄURE');
+    inputHopfenAlphaNumber.setAttribute('value', inputAlpha);
 
     var inputHopfenTimeNumber = document.createElement('input');
     inputHopfenTimeNumber.setAttribute('type', 'text');
@@ -264,6 +289,7 @@ function addHopfen() {
     inputHopfenTimeNumber.setAttribute('name', 'hopfentime' + indexHopfen);
     inputHopfenTimeNumber.setAttribute('placeholder', 'Hopfenzugabe vor Kochende [min]');
     inputHopfenTimeNumber.setAttribute('title', 'HOPFENZUGABE');
+    inputHopfenTimeNumber.setAttribute('value', inputZugabe);
 
     var parent = document.querySelector('#hopfenBox')
     parent.appendChild(inputHopfenText);
@@ -281,7 +307,7 @@ function delHopfen(id1, id2, id3, id4) {
     --indexHopfen;
 }
 
-function handle_submit(){
+function handle_update(){
     //brauwasser
     for (let index = 1; index <= indexWater; index++) {
         var guss = document.getElementById('guss' + index).value;
@@ -339,5 +365,5 @@ function handle_submit(){
     document.getElementById("json_gaerung").value = json;
 
     //submit
-    document.getElementById("form").submit();
+    document.getElementById("edit_form").submit();
 }

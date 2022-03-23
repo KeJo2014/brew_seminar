@@ -53,21 +53,15 @@ def template(request):
     return render(request, 'brewing/template.html')
 
 def home(request):
-    if(request.method == "GET"):
-        recipes = brew_recipe.objects.all()
-        return render(request, 'brewing/home.html',{
-            "recipes": recipes,
-        })
-    else:
-        command = request.POST.get('command')
-        if(command == "delete"):
-            recipe_name = request.POST.get('recipe_name')
-            #delete recipe
-            brew_recipe.objects.filter(name=recipe_name).delete()
-            return render(request, 'brewing/home.html',{
-                "recipes": brew_recipe.objects.all(),
-            })
+    order_by = request.GET.get('order_by', 'name')
+    recipes = brew_recipe.objects.all().order_by(order_by);
+    return render(request, 'brewing/home.html',{
+        "recipes": recipes,
+    })
     
+def delete(request, recipe_id):
+    brew_recipe.objects.get(id=recipe_id).delete()
+    return redirect('home')
 
 def brewing(request, recipe_id):
     #check if user is authenticated
@@ -113,7 +107,7 @@ def create(request):
         return render(request, 'brewing/create.html')
 
 def edit(request, recipe_id):
-    if(request.user.is_authenticated):
+    if(request.method == "GET"):
         try:
             recipe = brew_recipe.objects.get(id=recipe_id)
         except:
@@ -125,26 +119,25 @@ def edit(request, recipe_id):
             "recipe": recipe,
         })
     else:
-        name = request.POST.get('name')
-        date = request.POST.get('date')
-        bier_sorte = request.POST.get('sort')
-        author = request.POST.get('author')
-        ausschlagwuerze = request.POST.get('ausschlagswuerze')
-        sudhausausbeute = request.POST.get('sudhausausbeute')
-        stamwuerze = request.POST.get('stammwuerze')
-        ibu = request.POST.get('bittere')
-        ebc = request.POST.get('farbe')
-        alcohol = request.POST.get('alkohol')
-        description = request.POST.get('beschreibung')
+        recipe = brew_recipe.objects.get(id=recipe_id)
+        recipe.name = request.POST.get('name')
+        recipe.date = request.POST.get('date')
+        recipe.bier_sorte = request.POST.get('sort')
+        recipe.author = request.POST.get('author')
+        recipe.ausschlagwuerze = request.POST.get('ausschlagswuerze')
+        recipe.sudhausausbeute = request.POST.get('sudhausausbeute')
+        recipe.stamwuerze = request.POST.get('stammwuerze')
+        recipe.ibu = request.POST.get('bittere')
+        recipe.ebc = request.POST.get('farbe')
+        recipe.alcohol = request.POST.get('alkohol')
+        recipe.description = request.POST.get('beschreibung')
         
-        brau_wasser = request.POST.get('json_brauwasser')
-        schuettung = request.POST.get('json_schuettung')
-        maischplan = request.POST.get('json_maisch')
-        wuerze_kochen = request.POST.get('json_wuerze')
-        gaerung = request.POST.get('json_gaerung')
-
-        recipe = brew_recipe(name=name, date=date, bier_sorte=bier_sorte, author=author, ausschlagwuerze=ausschlagwuerze, sudhausausbeute=sudhausausbeute, stamwuerze=stamwuerze, ibu=ibu, ebc=ebc, alcohol=alcohol, description=description, brauwasser=brau_wasser, schüttung=schuettung, maischplan=maischplan, wuerzekochen=wuerze_kochen, gärung=gaerung)
+        recipe.brau_wasser = request.POST.get('json_brauwasser')
+        recipe.schuettung = request.POST.get('json_schuettung')
+        recipe.maischplan = request.POST.get('json_maisch')
+        recipe.wuerze_kochen = request.POST.get('json_wuerze')
+        recipe.gaerung = request.POST.get('json_gaerung')
         recipe.save()
 
-        return render(request, 'brewing/edit.html')
+        return redirect('home')
     

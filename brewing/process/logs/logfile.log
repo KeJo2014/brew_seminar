@@ -10388,3 +10388,1463 @@ HTTP GET /static/js/create.js 200 [0.01, 127.0.0.1:53141]
 HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:53141]
 HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:53141]
 HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:53141]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:53141]
+HTTP GET /home 200 [0.02, 127.0.0.1:55712]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:55712]
+HTTP GET /home 200 [0.01, 127.0.0.1:55712]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:55712]
+HTTP GET / 200 [0.01, 127.0.0.1:52177]
+HTTP GET /home 200 [0.01, 127.0.0.1:55712]
+HTTP GET /brewing/3 200 [0.02, 127.0.0.1:55712]
+HTTP GET /brewing/3 200 [0.01, 127.0.0.1:55712]
+Not Found: /brewing/brewing/6
+HTTP GET /brewing/brewing/6 404 [0.04, 127.0.0.1:55712]
+HTTP GET /brewing/6 200 [0.02, 127.0.0.1:55712]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:60514]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:60514]
+Wed Mar 23 09:21:03 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:60514]
+HTTP GET /home 200 [0.01, 127.0.0.1:55712]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+Not Found: /home
+HTTP GET /home 404 [0.06, 127.0.0.1:54970]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:54970]
+Internal Server Error: /home/name
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 58, in home
+    return render(request, 'brewing/home.html',{
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' with no arguments not found. 1 pattern(s) tried: ['home/(?P<filter>[^/]+)\\Z']
+HTTP GET /home/name 500 [0.20, 127.0.0.1:54970]
+Internal Server Error: /home/name
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 58, in home
+    return render(request, 'brewing/home.html',{
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' with no arguments not found. 1 pattern(s) tried: ['home/(?P<filter>[^/]+)\\Z']
+HTTP GET /home/name 500 [0.08, 127.0.0.1:54970]
+HTTP GET /home/name 200 [0.01, 127.0.0.1:54970]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:54970]
+Not Found: /home/home/bier_sorte
+HTTP GET /home/home/bier_sorte 404 [0.01, 127.0.0.1:55176]
+Not Found: /home/home/bier_sorte
+HTTP GET /home/home/bier_sorte 404 [0.01, 127.0.0.1:55176]
+HTTP GET /home/bier_sorte 200 [0.01, 127.0.0.1:55176]
+Not Found: /date
+HTTP GET /date 404 [0.01, 127.0.0.1:55176]
+Not Found: /date
+HTTP GET /date 404 [0.01, 127.0.0.1:55176]
+Not Found: /date
+HTTP GET /date 404 [0.01, 127.0.0.1:55176]
+Not Found: /date
+HTTP GET /date 404 [0.01, 127.0.0.1:55176]
+Not Found: /home
+HTTP GET /home 404 [0.01, 127.0.0.1:55176]
+HTTP GET /home/name 200 [0.01, 127.0.0.1:55176]
+HTTP GET /home/bier_sorte 200 [0.01, 127.0.0.1:55176]
+HTTP GET /home/date 200 [0.01, 127.0.0.1:55176]
+HTTP GET /home/date 200 [0.01, 127.0.0.1:55176]
+HTTP GET /home/author 200 [0.01, 127.0.0.1:55176]
+HTTP GET /home/number_of_brews 200 [0.01, 127.0.0.1:55176]
+HTTP GET /home/name 200 [0.01, 127.0.0.1:55176]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /home/name
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 57, in home
+    recipes = brew_recipe.objects.all().order_by('"' + filter + '"');
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\query.py", line 1295, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\sql\query.py", line 2115, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\sql\query.py", line 1640, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '"name"' into field. Choices are: alcohol, ausschlagwuerze, author, bier_sorte, brauwasser, date, description, ebc, gärung, ibu, id, maischplan, name, number_of_brews, schüttung, stamwuerze, sudhausausbeute, wuerzekochen
+HTTP GET /home/name 500 [0.08, 127.0.0.1:49853]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /home/name 200 [0.03, 127.0.0.1:55167]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:55167]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /home/name
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 57, in home
+    recipes = brew_recipe.objects.all().order_by(-filter);
+TypeError: bad operand type for unary -: 'str'
+HTTP GET /home/name 500 [0.06, 127.0.0.1:55177]
+Not Found: /favicon.ico
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /home/name 200 [0.03, 127.0.0.1:58576]
+HTTP GET /static/css/create.css 200 [0.56, 127.0.0.1:58576]
+HTTP GET /static/js/home.js 304 [0.56, 127.0.0.1:58577]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:58577]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:58577]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:58577]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /home/name 200 [0.03, 127.0.0.1:58986]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:58984]
+HTTP GET /home/name 200 [0.01, 127.0.0.1:58986]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:58984]
+HTTP GET /home/-bier_sorte 200 [0.01, 127.0.0.1:58986]
+HTTP GET /home/-name 200 [0.01, 127.0.0.1:58986]
+HTTP GET /home/-date 200 [0.01, 127.0.0.1:58986]
+HTTP GET /home/-author 200 [0.01, 127.0.0.1:58986]
+HTTP GET /home/-number_of_brews 200 [0.01, 127.0.0.1:58986]
+HTTP GET /home/-author 200 [0.01, 127.0.0.1:58986]
+HTTP GET /home/-date 200 [0.01, 127.0.0.1:58986]
+HTTP GET /home/-bier_sorte 200 [0.01, 127.0.0.1:58986]
+HTTP GET /home/-name 200 [0.01, 127.0.0.1:58986]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /home/-name 200 [0.03, 127.0.0.1:62794]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:62794]
+HTTP GET /home/-bier_sorte 200 [0.01, 127.0.0.1:62797]
+HTTP GET /home/-bier_sorte 200 [0.01, 127.0.0.1:62797]
+HTTP GET /home/-bier_sorte 200 [0.01, 127.0.0.1:62797]
+HTTP GET /home/-bier_sorte 200 [0.01, 127.0.0.1:62797]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /home/-bier_sorte
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 57, in home
+    recipes = brew_recipe.objects.all().order_by("-" + filter);
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\query.py", line 1295, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\sql\query.py", line 2115, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\sql\query.py", line 1640, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '-bier_sorte' into field. Choices are: alcohol, ausschlagwuerze, author, bier_sorte, brauwasser, date, description, ebc, gärung, ibu, id, maischplan, name, number_of_brews, schüttung, stamwuerze, sudhausausbeute, wuerzekochen
+HTTP GET /home/-bier_sorte 500 [0.13, 127.0.0.1:64874]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:64874]
+HTTP GET /home/bier_sorte 200 [0.02, 127.0.0.1:64874]
+HTTP GET /static/js/home.js 200 [0.44, 127.0.0.1:64874]
+HTTP GET /home/bier_sorte 200 [0.01, 127.0.0.1:64874]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:64874]
+HTTP GET /home/bier_sorte 200 [0.01, 127.0.0.1:64874]
+HTTP GET /home/name 200 [0.01, 127.0.0.1:64874]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:64874]
+HTTP GET /home/name 200 [0.01, 127.0.0.1:64874]
+HTTP GET /home/name 200 [0.01, 127.0.0.1:63365]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:63365]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:63366]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:63366]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:63366]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:63366]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:63366]
+HTTP GET /home/bier_sorte 200 [0.01, 127.0.0.1:63366]
+HTTP GET /home/bier_sorte 200 [0.01, 127.0.0.1:63365]
+HTTP GET /home/bier_sorte 200 [0.01, 127.0.0.1:63365]
+HTTP GET /home/bier_sorte 200 [0.01, 127.0.0.1:63167]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:63167]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:63168]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:63168]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:63168]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:63168]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:63168]
+HTTP GET /home/bier_sorte 200 [0.01, 127.0.0.1:63168]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:63168]
+Internal Server Error: /home/-bier_sorte
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 57, in home
+    recipes = brew_recipe.objects.all().order_by("-" + filter);
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\query.py", line 1295, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\sql\query.py", line 2115, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\sql\query.py", line 1640, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '-bier_sorte' into field. Choices are: alcohol, ausschlagwuerze, author, bier_sorte, brauwasser, date, description, ebc, gärung, ibu, id, maischplan, name, number_of_brews, schüttung, stamwuerze, sudhausausbeute, wuerzekochen
+HTTP GET /home/-bier_sorte 500 [0.04, 127.0.0.1:63168]
+Not Found: /favicon.ico
+Internal Server Error: /home/-bier_sorte
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 57, in home
+    recipes = brew_recipe.objects.all().order_by("-" + filter);
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\query.py", line 1295, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\sql\query.py", line 2115, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\sql\query.py", line 1640, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '-bier_sorte' into field. Choices are: alcohol, ausschlagwuerze, author, bier_sorte, brauwasser, date, description, ebc, gärung, ibu, id, maischplan, name, number_of_brews, schüttung, stamwuerze, sudhausausbeute, wuerzekochen
+HTTP GET /home/-bier_sorte 500 [0.07, 127.0.0.1:63167]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /home/-bier_sorte 200 [0.03, 127.0.0.1:57842]
+HTTP GET /static/js/home.js 200 [0.47, 127.0.0.1:57842]
+HTTP GET /home/-bier_sorte 200 [0.01, 127.0.0.1:57842]
+HTTP GET /static/js/home.js 200 [0.00, 127.0.0.1:57842]
+HTTP GET /home/-name 200 [0.01, 127.0.0.1:57842]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:57842]
+HTTP GET /home/-name 200 [0.01, 127.0.0.1:57842]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:57842]
+HTTP GET /home/-bier_sorte 200 [0.01, 127.0.0.1:57842]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:57842]
+HTTP GET /home/-date 200 [0.01, 127.0.0.1:57842]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:57842]
+HTTP GET /home/-author 200 [0.01, 127.0.0.1:57842]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:57842]
+HTTP GET /home/-number_of_brews 200 [0.01, 127.0.0.1:57842]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:57842]
+HTTP GET /home/-number_of_brews 200 [0.01, 127.0.0.1:57842]
+HTTP GET /static/js/home.js 200 [0.00, 127.0.0.1:57842]
+HTTP GET /home/name 200 [0.01, 127.0.0.1:57842]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:57842]
+HTTP GET /home/bier_sorte 200 [0.01, 127.0.0.1:57842]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:57842]
+HTTP GET /home/date 200 [0.01, 127.0.0.1:57842]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:57842]
+HTTP GET /home/author 200 [0.01, 127.0.0.1:57842]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:57842]
+HTTP GET /home/number_of_brews 200 [0.01, 127.0.0.1:57842]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:57842]
+HTTP GET /home/number_of_brews 200 [0.01, 127.0.0.1:58108]
+HTTP GET /static/js/home.js 200 [0.00, 127.0.0.1:58108]
+HTTP GET /home/-name 200 [0.01, 127.0.0.1:58108]
+HTTP GET /home/-name 200 [0.01, 127.0.0.1:58110]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:58110]
+HTTP GET /home/-name 200 [0.01, 127.0.0.1:58110]
+HTTP GET /home/-bier_sorte 200 [0.01, 127.0.0.1:58110]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:58110]
+HTTP GET /home/-bier_sorte 200 [0.01, 127.0.0.1:58110]
+HTTP GET /home/-bier_sorte 200 [0.03, 127.0.0.1:49630]
+HTTP GET /static/js/home.js 200 [0.00, 127.0.0.1:49630]
+HTTP GET /home/-bier_sorte?order_by=name 200 [0.01, 127.0.0.1:49635]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:49635]
+HTTP GET /home/-bier_sorte?order_by=bier_sorte 200 [0.01, 127.0.0.1:49636]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:49636]
+HTTP GET /home/-bier_sorte?order_by=date 200 [0.01, 127.0.0.1:49636]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:49636]
+HTTP GET /home/-bier_sorte?order_by=author 200 [0.01, 127.0.0.1:49636]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:49636]
+Not Found: /home/
+HTTP GET /home/?order_by=author 404 [0.01, 127.0.0.1:49636]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+Not Found: /home/
+HTTP GET /home/?order_by=author 404 [0.02, 127.0.0.1:62352]
+Not Found: /home/
+HTTP GET /home/ 404 [0.01, 127.0.0.1:62352]
+Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 58, in home
+    recipes = brew_recipe.objects.all().order_by(order_by);
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\query.py", line 1295, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\sql\query.py", line 2115, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\sql\query.py", line 1640, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'defaultOrderField' into field. Choices are: alcohol, ausschlagwuerze, author, bier_sorte, brauwasser, date, description, ebc, gärung, ibu, id, maischplan, name, number_of_brews, schüttung, stamwuerze, sudhausausbeute, wuerzekochen
+HTTP GET /home 500 [0.06, 127.0.0.1:62352]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /home 200 [0.04, 127.0.0.1:53526]
+HTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:53528]
+HTTP GET /home?order_by=name 200 [0.01, 127.0.0.1:53526]
+HTTP GET /home?order_by=bier_sorte 200 [0.01, 127.0.0.1:53526]
+HTTP GET /home?order_by=bier_sorte 200 [0.02, 127.0.0.1:53526]
+HTTP GET /home?order_by=date 200 [0.01, 127.0.0.1:53526]
+HTTP GET /home?order_by=author 200 [0.01, 127.0.0.1:53526]
+HTTP GET /home?order_by=number_of_brews 200 [0.01, 127.0.0.1:53526]
+HTTP GET /home?order_by=number_of_brews 200 [0.01, 127.0.0.1:53526]
+HTTP GET /static/js/home.js 200 [0.44, 127.0.0.1:53528]
+HTTP GET /home?order_by=-bier_sorte 200 [0.01, 127.0.0.1:53526]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:53528]
+HTTP GET /home?order_by=-name 200 [0.01, 127.0.0.1:53526]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:53528]
+HTTP GET /home?order_by=-bier_sorte 200 [0.01, 127.0.0.1:53526]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:53528]
+HTTP GET /home?order_by=-bier_sorte 200 [0.01, 127.0.0.1:53526]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:53528]
+HTTP GET /home?order_by=-bier_sorte 200 [0.01, 127.0.0.1:53526]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:53528]
+HTTP GET /home?order_by=-bier_sorte 200 [0.01, 127.0.0.1:53526]
+HTTP GET /static/js/home.js 200 [0.00, 127.0.0.1:53528]
+HTTP GET /home?order_by=name 200 [0.01, 127.0.0.1:60141]
+HTTP GET /static/js/home.js 200 [0.00, 127.0.0.1:60141]
+HTTP GET /home?order_by=bier_sorte 200 [0.01, 127.0.0.1:60141]
+HTTP GET /home?order_by=date 200 [0.01, 127.0.0.1:60141]
+HTTP GET /home?order_by=author 200 [0.01, 127.0.0.1:60141]
+HTTP GET /home?order_by=number_of_brews 200 [0.01, 127.0.0.1:60141]
+HTTP GET /home?order_by=bier_sorte 200 [0.01, 127.0.0.1:52284]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:52284]
+HTTP GET /home?order_by=date 200 [0.01, 127.0.0.1:52284]
+HTTP GET /home?order_by=author 200 [0.01, 127.0.0.1:52284]
+HTTP GET /home?order_by=number_of_brews 200 [0.01, 127.0.0.1:52284]
+HTTP GET / 200 [0.02, 127.0.0.1:63361]
+HTTP GET /static/style.css 404 [0.07, 127.0.0.1:63361]
+HTTP GET /home 200 [0.02, 127.0.0.1:63361]
+HTTP GET /static/js/home.js 304 [0.54, 127.0.0.1:63380]
+HTTP GET /edit/11 200 [0.02, 127.0.0.1:63380]
+HTTP GET /static/js/edit.js 200 [0.00, 127.0.0.1:63380]
+Internal Server Error: /edit/11
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: brewing_brew_recipe.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 148, in edit
+    recipe.save()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: brewing_brew_recipe.name
+HTTP GET /edit/11 500 [0.13, 127.0.0.1:56519]
+HTTP GET /edit/11 200 [0.01, 127.0.0.1:54830]
+HTTP GET /static/js/edit.js 200 [0.00, 127.0.0.1:54830]
+HTTP GET /edit/11 200 [0.01, 127.0.0.1:56271]
+HTTP GET /static/js/edit.js 304 [0.00, 127.0.0.1:56272]
+HTTP GET /edit/11 200 [0.02, 127.0.0.1:64912]
+HTTP GET /static/css/create.css 304 [0.00, 127.0.0.1:64912]
+HTTP GET /static/js/edit.js 200 [0.01, 127.0.0.1:64913]
+HTTP GET /static/css/brewing.css 304 [0.00, 127.0.0.1:64913]
+HTTP GET /static/css/home.css 304 [0.00, 127.0.0.1:64913]
+HTTP GET /static/css/template.css 304 [0.00, 127.0.0.1:64913]
+HTTP GET /edit/11 200 [0.01, 127.0.0.1:64913]
+HTTP GET /static/js/edit.js 200 [0.00, 127.0.0.1:64913]
+HTTP GET /edit/11 200 [0.02, 127.0.0.1:60675]
+HTTP GET /static/js/edit.js 200 [0.00, 127.0.0.1:60677]
+HTTP GET /edit/11 200 [0.03, 127.0.0.1:50375]
+HTTP GET /static/js/edit.js 200 [0.00, 127.0.0.1:50377]
+HTTP GET /edit/11 200 [0.01, 127.0.0.1:50375]
+HTTP GET /static/js/edit.js 304 [0.00, 127.0.0.1:50375]
+HTTP GET /edit/11 200 [0.01, 127.0.0.1:61998]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:61998]
+HTTP GET /static/js/edit.js 200 [0.01, 127.0.0.1:61999]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61999]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:61999]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61999]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:61999]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /edit/11 200 [0.04, 127.0.0.1:54950]
+HTTP GET /static/js/edit.js 304 [0.00, 127.0.0.1:54948]
+Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 265, in _get_response_async
+    self.check_response(response, callback)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view brewing.views.home didn't return an HttpResponse object. It returned None instead.
+HTTP POST /home 500 [0.04, 127.0.0.1:54950]
+Not Found: /favicon.ico
+Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 265, in _get_response_async
+    self.check_response(response, callback)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view brewing.views.home didn't return an HttpResponse object. It returned None instead.
+HTTP POST /home 500 [0.04, 127.0.0.1:54950]
+HTTP GET /home 200 [0.01, 127.0.0.1:54950]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:54950]
+HTTP GET /edit/11 200 [0.01, 127.0.0.1:54950]
+HTTP GET /static/js/edit.js 304 [0.00, 127.0.0.1:54950]
+Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 265, in _get_response_async
+    self.check_response(response, callback)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view brewing.views.home didn't return an HttpResponse object. It returned None instead.
+HTTP POST /home 500 [0.03, 127.0.0.1:54950]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 265, in _get_response_async
+    self.check_response(response, callback)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view brewing.views.home didn't return an HttpResponse object. It returned None instead.
+HTTP POST /home 500 [0.05, 127.0.0.1:57290]
+HTTP GET /home 200 [0.02, 127.0.0.1:57290]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /home 200 [0.03, 127.0.0.1:65522]
+HTTP GET /static/css/create.css 200 [0.50, 127.0.0.1:65522]
+HTTP GET /static/js/home.js 200 [0.50, 127.0.0.1:65523]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:65523]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:65523]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:65523]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:65523]
+Internal Server Error: /edit/11
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 125, in edit
+    return render(request, 'brewing/edit.html',{
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'edit' with no arguments not found. 1 pattern(s) tried: ['edit/(?P<recipe_id>[0-9]+)\\Z']
+HTTP GET /edit/11 500 [0.08, 127.0.0.1:65523]
+HTTP GET /edit/11 200 [0.01, 127.0.0.1:65523]
+HTTP GET /static/js/edit.js 200 [0.00, 127.0.0.1:65523]
+Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 265, in _get_response_async
+    self.check_response(response, callback)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view brewing.views.home didn't return an HttpResponse object. It returned None instead.
+HTTP POST /home 500 [0.03, 127.0.0.1:65522]
+HTTP GET /home 200 [0.01, 127.0.0.1:65522]
+HTTP GET /home 200 [0.01, 127.0.0.1:65522]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:65522]
+HTTP GET /edit/11 200 [0.01, 127.0.0.1:65522]
+HTTP GET /static/js/edit.js 304 [0.00, 127.0.0.1:65522]
+HTTP POST /edit/11 200 [0.01, 127.0.0.1:65522]
+HTTP GET /home 200 [0.01, 127.0.0.1:65522]
+HTTP GET /edit/11 200 [0.01, 127.0.0.1:65522]
+HTTP POST /edit/11 200 [0.01, 127.0.0.1:65522]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /edit/11
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 150, in edit
+    return render(request, 'brewing/edit.html')
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'edit' with arguments '('',)' not found. 1 pattern(s) tried: ['edit/(?P<recipe_id>[0-9]+)\\Z']
+HTTP POST /edit/11 500 [0.13, 127.0.0.1:50791]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:50791]
+HTTP GET /home 200 [0.01, 127.0.0.1:50791]
+HTTP POST /home 200 [0.01, 127.0.0.1:50798]
+HTTP POST /home 200 [0.01, 127.0.0.1:50798]
+HTTP POST /home 200 [0.01, 127.0.0.1:50798]
+HTTP POST /home 200 [0.01, 127.0.0.1:50798]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /home 200 [0.03, 127.0.0.1:65509]
+HTTP GET /home 200 [0.01, 127.0.0.1:65509]
+HTTP GET /admin/ 200 [0.06, 127.0.0.1:65509]
+HTTP GET /static/admin/css/base.css 200 [0.42, 127.0.0.1:65509]
+HTTP GET /static/admin/css/nav_sidebar.css 200 [0.42, 127.0.0.1:65511]
+HTTP GET /static/admin/css/dashboard.css 200 [0.43, 127.0.0.1:65512]
+HTTP GET /static/admin/css/responsive.css 304 [0.43, 127.0.0.1:65513]
+HTTP GET /static/admin/js/nav_sidebar.js 304 [0.44, 127.0.0.1:65514]
+HTTP GET /static/admin/css/fonts.css 200 [0.03, 127.0.0.1:65509]
+HTTP GET /static/admin/img/icon-addlink.svg 200 [0.01, 127.0.0.1:65511]
+HTTP GET /static/admin/img/icon-changelink.svg 200 [0.02, 127.0.0.1:65512]
+HTTP GET /static/admin/img/icon-deletelink.svg 200 [0.03, 127.0.0.1:65513]
+HTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 200 [0.04, 127.0.0.1:65509]
+HTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 200 [0.05, 127.0.0.1:65514]
+HTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 200 [0.05, 127.0.0.1:65515]
+Not Found: /favicon.ico
+HTTP GET /admin/brewing/brew_recipe/ 200 [0.10, 127.0.0.1:65514]
+HTTP GET /static/admin/css/changelists.css 304 [0.00, 127.0.0.1:65514]
+HTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.01, 127.0.0.1:65513]
+HTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:65512]
+HTTP GET /static/admin/js/core.js 304 [0.02, 127.0.0.1:65509]
+HTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.02, 127.0.0.1:65516]
+HTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:65511]
+HTTP GET /static/admin/js/actions.js 304 [0.03, 127.0.0.1:65514]
+HTTP GET /static/admin/js/urlify.js 304 [0.03, 127.0.0.1:65513]
+HTTP GET /static/admin/js/prepopulate.js 304 [0.02, 127.0.0.1:65512]
+HTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.02, 127.0.0.1:65509]
+HTTP GET /static/admin/img/tooltag-add.svg 200 [0.01, 127.0.0.1:65514]
+Not Found: /favicon.ico
+HTTP GET /admin/brewing/brew_recipe/12/change/ 200 [0.13, 127.0.0.1:65509]
+HTTP GET /static/admin/css/forms.css 304 [0.00, 127.0.0.1:65513]
+HTTP GET /static/admin/js/change_form.js 304 [0.01, 127.0.0.1:65513]
+HTTP GET /static/admin/js/prepopulate_init.js 304 [0.01, 127.0.0.1:65512]
+HTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:65511]
+HTTP GET /static/admin/css/widgets.css 200 [0.01, 127.0.0.1:65511]
+HTTP GET /admin/brewing/brew_recipe/12/delete/ 200 [0.06, 127.0.0.1:65509]
+HTTP GET /static/admin/js/cancel.js 200 [0.01, 127.0.0.1:65511]
+HTTP POST /admin/brewing/brew_recipe/12/delete/ 302 [0.03, 127.0.0.1:65509]
+HTTP GET /admin/brewing/brew_recipe/ 200 [0.05, 127.0.0.1:65509]
+HTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:65511]
+HTTP GET /static/admin/img/icon-yes.svg 200 [0.01, 127.0.0.1:65511]
+HTTP GET /admin/brewing/brew_recipe/11/change/ 200 [0.10, 127.0.0.1:65509]
+HTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:65511]
+HTTP GET /admin/brewing/brew_recipe/11/delete/ 200 [0.03, 127.0.0.1:65509]
+HTTP POST /admin/brewing/brew_recipe/11/delete/ 302 [0.03, 127.0.0.1:65509]
+HTTP GET /admin/brewing/brew_recipe/ 200 [0.04, 127.0.0.1:65509]
+HTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:65511]
+HTTP GET /home 200 [0.01, 127.0.0.1:65509]
+HTTP POST /home 200 [0.01, 127.0.0.1:65509]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP POST /home 200 [0.03, 127.0.0.1:63023]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:63026]
+HTTP POST /home 200 [0.01, 127.0.0.1:63023]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP POST /home 200 [0.03, 127.0.0.1:62216]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:62220]
+HTTP POST /home 200 [0.01, 127.0.0.1:62216]
+HTTP GET /home 200 [0.01, 127.0.0.1:62223]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP POST /home 200 [0.04, 127.0.0.1:60465]
+HTTP GET /static/js/home.js 304 [0.02, 127.0.0.1:60468]
+HTTP POST /home 200 [0.01, 127.0.0.1:57562]
+HTTP GET /static/css/create.css 200 [0.43, 127.0.0.1:57562]
+HTTP GET /static/js/home.js 200 [0.43, 127.0.0.1:57563]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:57563]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:57563]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:57563]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:57563]
+HTTP GET /delete/6 200 [0.03, 127.0.0.1:57563]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:57563]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /delete/6
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+TypeError: delete() got multiple values for argument 'recipe_id'
+HTTP GET /delete/6 500 [0.06, 127.0.0.1:50566]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:50566]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /delete/6 302 [0.03, 127.0.0.1:50578]
+Not Found: /delete/brewing/home.html
+HTTP GET /delete/brewing/home.html 404 [0.02, 127.0.0.1:50578]
+HTTP GET /home 200 [0.02, 127.0.0.1:50578]
+HTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:50578]
+HTTP GET /create 200 [0.01, 127.0.0.1:50578]
+HTTP GET /static/js/create.js 200 [0.50, 127.0.0.1:50578]
+HTTP POST /create 200 [0.03, 127.0.0.1:54744]
+HTTP GET /home 200 [0.02, 127.0.0.1:54744]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:54744]
+HTTP GET /delete/13 302 [0.02, 127.0.0.1:54744]
+Not Found: /delete/brewing/home.html
+HTTP GET /delete/brewing/home.html 404 [0.01, 127.0.0.1:54744]
+Not Found: /favicon.ico
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+Not Found: /delete/brewing/home.html
+HTTP GET /delete/brewing/home.html 404 [0.02, 127.0.0.1:54754]
+Not Found: /favicon.ico
+HTTP GET /home 200 [0.02, 127.0.0.1:54753]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:54753]
+Not Found: /delete/undefined
+HTTP GET /delete/undefined 404 [0.01, 127.0.0.1:56387]
+HTTP GET /home 200 [0.01, 127.0.0.1:56387]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:56387]
+HTTP GET /create 200 [0.01, 127.0.0.1:56387]
+HTTP POST /create 200 [0.03, 127.0.0.1:56387]
+HTTP GET /home 200 [0.02, 127.0.0.1:56387]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:56387]
+HTTP GET /edit/14 200 [0.01, 127.0.0.1:56387]
+HTTP GET /static/js/edit.js 304 [0.00, 127.0.0.1:56387]
+Internal Server Error: /edit/14
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 143, in edit
+    return render(request, 'brewing/edit.html')
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'edit' with arguments '('',)' not found. 1 pattern(s) tried: ['edit/(?P<recipe_id>[0-9]+)\\Z']
+HTTP POST /edit/14 500 [0.09, 127.0.0.1:56387]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP POST /edit/14 200 [0.04, 127.0.0.1:59640]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:59640]
+HTTP GET /home 200 [0.02, 127.0.0.1:62439]
+HTTP GET /delete/15 302 [0.02, 127.0.0.1:62443]
+Not Found: /brewing/home.html
+HTTP GET /brewing/home.html 404 [0.02, 127.0.0.1:62443]
+Not Found: /home.html
+HTTP GET /home.html 404 [0.01, 127.0.0.1:62443]
+HTTP GET /home 200 [0.01, 127.0.0.1:62443]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /home 200 [0.03, 127.0.0.1:62463]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:62453]
+HTTP GET /delete/16 302 [0.02, 127.0.0.1:62463]
+HTTP GET /home 200 [0.01, 127.0.0.1:62463]
+HTTP GET /edit/14 200 [0.01, 127.0.0.1:62463]
+HTTP GET /static/js/edit.js 304 [0.00, 127.0.0.1:62453]
+HTTP POST /home 200 [0.01, 127.0.0.1:62463]
+HTTP GET /home 200 [0.01, 127.0.0.1:62463]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:62453]
+HTTP GET /edit/14 200 [0.01, 127.0.0.1:62463]
+HTTP POST /home 200 [0.01, 127.0.0.1:62463]
+HTTP POST /home 200 [0.01, 127.0.0.1:62463]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:62453]
+HTTP GET /home 200 [0.01, 127.0.0.1:63863]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP POST /home 200 [0.03, 127.0.0.1:64488]
+HTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:64487]
+HTTP GET /edit/14 200 [0.01, 127.0.0.1:64488]
+HTTP GET /static/js/edit.js 304 [0.00, 127.0.0.1:64490]
+HTTP POST /home 200 [0.01, 127.0.0.1:64488]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP POST /home 200 [0.03, 127.0.0.1:58641]
+HTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:58645]
+Internal Server Error: /edit/14
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 118, in edit
+    return render(request, 'brewing/edit.html',{
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\defaulttags.py", line 1390, in url
+    args.append(parser.compile_filter(value))
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\template\base.py", line 701, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{recipe.id}}' from '{{recipe.id}}'
+HTTP GET /edit/14 500 [0.10, 127.0.0.1:58641]
+Not Found: /favicon.ico
+HTTP GET /edit/14 200 [0.02, 127.0.0.1:58641]
+HTTP GET /static/js/edit.js 304 [0.00, 127.0.0.1:58645]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /edit/14 200 [0.05, 127.0.0.1:51316]
+HTTP GET /static/css/create.css 200 [0.41, 127.0.0.1:51316]
+HTTP GET /static/js/edit.js 200 [0.41, 127.0.0.1:51317]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:51317]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:51317]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:51317]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:51317]
+Internal Server Error: /edit/14
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 141, in edit
+    recipe.update()
+AttributeError: 'brew_recipe' object has no attribute 'update'
+HTTP POST /edit/14 500 [0.05, 127.0.0.1:51317]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /edit/14
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 141, in edit
+    recipe.update()
+UnboundLocalError: local variable 'recipe' referenced before assignment
+HTTP POST /edit/14 500 [0.06, 127.0.0.1:50823]
+HTTP GET /home 200 [0.02, 127.0.0.1:50823]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:50823]
+HTTP GET /edit/14 200 [0.01, 127.0.0.1:50823]
+HTTP GET /delete/14 302 [0.02, 127.0.0.1:50823]
+HTTP GET /home 200 [0.01, 127.0.0.1:50823]
+HTTP GET /create 200 [0.01, 127.0.0.1:50823]
+HTTP GET /static/js/create.js 304 [0.00, 127.0.0.1:50823]
+HTTP POST /create 200 [0.03, 127.0.0.1:50823]
+HTTP GET /home 200 [0.02, 127.0.0.1:50823]
+HTTP GET /edit/17 200 [0.01, 127.0.0.1:50823]
+Internal Server Error: /edit/17
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 141, in edit
+    recipe.update()
+UnboundLocalError: local variable 'recipe' referenced before assignment
+HTTP POST /edit/17 500 [0.04, 127.0.0.1:50823]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /edit/17
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py", line 141, in edit
+    recipe.update()
+UnboundLocalError: local variable 'recipe' referenced before assignment
+HTTP POST /edit/17 500 [0.06, 127.0.0.1:52573]
+HTTP GET /home 200 [0.02, 127.0.0.1:52573]
+HTTP GET /edit/17 200 [0.01, 127.0.0.1:52573]
+HTTP POST /home 200 [0.01, 127.0.0.1:52573]
+HTTP GET /edit/17 200 [0.01, 127.0.0.1:52573]
+HTTP POST /home 200 [0.01, 127.0.0.1:52573]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /edit/17 200 [0.03, 127.0.0.1:63784]
+HTTP POST /home 200 [0.01, 127.0.0.1:63784]
+HTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:63784]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /edit/17 200 [0.04, 127.0.0.1:63792]
+HTTP GET /static/js/edit.js 304 [0.01, 127.0.0.1:63792]
+HTTP POST /home 200 [0.01, 127.0.0.1:63792]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /home 200 [0.06, 127.0.0.1:53965]
+HTTP GET /static/js/home.js 304 [0.44, 127.0.0.1:53974]
+HTTP GET /edit/17 200 [0.01, 127.0.0.1:53965]
+HTTP GET /static/js/edit.js 200 [0.00, 127.0.0.1:53974]
+HTTP POST /home 200 [0.01, 127.0.0.1:53974]
+HTTP POST /home 200 [0.01, 127.0.0.1:63656]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:63656]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:63657]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:63657]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:63657]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:63657]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:63657]
+HTTP GET /admin/ 200 [0.04, 127.0.0.1:63657]
+HTTP GET /static/admin/img/icon-addlink.svg 200 [0.00, 127.0.0.1:63657]
+HTTP GET /static/admin/img/icon-changelink.svg 200 [0.01, 127.0.0.1:63656]
+HTTP GET /static/admin/img/icon-deletelink.svg 200 [0.02, 127.0.0.1:63666]
+HTTP GET /admin/brewing/brew_recipe/ 200 [0.05, 127.0.0.1:63657]
+HTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:63657]
+HTTP GET /static/admin/img/tooltag-add.svg 200 [0.00, 127.0.0.1:63657]
+HTTP GET /admin/brewing/brew_recipe/add/ 200 [0.09, 127.0.0.1:63657]
+HTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:63666]
+HTTP GET /admin/brewing/brew_recipe/ 200 [0.07, 127.0.0.1:63656]
+HTTP GET /admin/ 200 [0.03, 127.0.0.1:63656]
+HTTP GET / 200 [0.01, 127.0.0.1:63656]
+HTTP GET /static/style.css 404 [0.01, 127.0.0.1:63666]
+HTTP GET /home 200 [0.01, 127.0.0.1:63656]
+Application instance <Task pending name='Task-79' coro=<StaticFilesWrapper.__call__() running at C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py:44> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\futures.py:384, <TaskWakeupMethWrapper object at 0x000002560FDFE250>()]>> for connection <WebRequest at 0x2560f9b0c10 method=GET uri=/home clientproto=HTTP/1.1> took too long to shut down and was killed.
+HTTP GET /home 200 [0.05, 127.0.0.1:55809]
+HTTP GET /home 200 [0.03, 127.0.0.1:50181]
+HTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:50184]
+HTTP GET /edit/17 200 [0.01, 127.0.0.1:50181]
+HTTP GET /static/js/edit.js 304 [0.00, 127.0.0.1:50184]
+HTTP POST /home 200 [0.01, 127.0.0.1:50181]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP POST /home 200 [0.02, 127.0.0.1:58479]
+HTTP GET /home 200 [0.04, 127.0.0.1:60479]
+HTTP GET /home 200 [0.03, 127.0.0.1:60504]
+HTTP GET /edit/17 200 [0.01, 127.0.0.1:60504]
+HTTP GET /static/js/edit.js 304 [0.01, 127.0.0.1:60504]
+HTTP POST /home 200 [0.01, 127.0.0.1:60504]
+HTTP GET /home 200 [0.01, 127.0.0.1:55553]
+HTTP GET /edit/17 200 [0.01, 127.0.0.1:55553]
+HTTP GET /static/js/edit.js 200 [0.47, 127.0.0.1:55553]
+HTTP POST /edit/17 302 [0.03, 127.0.0.1:55553]
+HTTP GET /home 200 [0.02, 127.0.0.1:55553]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\views.py changed, reloading.
+HTTP GET /home 200 [0.04, 127.0.0.1:51149]
+HTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:51149]
+HTTP GET /edit/18 200 [0.01, 127.0.0.1:51149]
+HTTP GET /static/js/edit.js 304 [0.00, 127.0.0.1:51149]
+HTTP POST /edit/18 302 [0.02, 127.0.0.1:51149]
+HTTP GET /home 200 [0.02, 127.0.0.1:51149]
+HTTP GET /edit/17 200 [0.01, 127.0.0.1:51149]
+HTTP POST /edit/17 302 [0.02, 127.0.0.1:51149]
+HTTP GET /home 200 [0.02, 127.0.0.1:51149]
+HTTP GET /delete/18 302 [0.03, 127.0.0.1:51149]
+HTTP GET /home 200 [0.02, 127.0.0.1:51149]
+HTTP GET /brewing/3 200 [0.02, 127.0.0.1:51149]
+Not Found: /brewing/brewing/17
+HTTP GET /brewing/brewing/17 404 [0.02, 127.0.0.1:51149]
+HTTP GET /brewing/17 200 [0.02, 127.0.0.1:51149]
+HTTP GET /static/js/server_connection.js 304 [0.01, 127.0.0.1:51149]
+HTTP GET /static/img/brautopf.png 304 [0.01, 127.0.0.1:61829]
+HTTP GET /static/js/brewing.js 304 [0.01, 127.0.0.1:61830]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:61831]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:61831]
+Wed Mar 23 18:11:39 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:61831]
+HTTP GET /home 200 [0.01, 127.0.0.1:51149]
+HTTP GET /home?order_by=name 200 [0.01, 127.0.0.1:51149]
+HTTP GET /home?order_by=date 200 [0.01, 127.0.0.1:51149]
+HTTP GET /home?order_by=author 200 [0.01, 127.0.0.1:51149]
+HTTP GET /home?order_by=number_of_brews 200 [0.01, 127.0.0.1:51149]
+HTTP GET /home?order_by=date 200 [0.01, 127.0.0.1:51149]
+HTTP GET /home?order_by=date 200 [0.01, 127.0.0.1:51149]
+HTTP GET /home?order_by=-date 200 [0.01, 127.0.0.1:51149]
+HTTP GET / 200 [0.01, 127.0.0.1:52619]
+HTTP GET /static/style.css 404 [0.00, 127.0.0.1:52619]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:60881]
+HTTP GET /static/js/three.js 200 [0.43, 127.0.0.1:60881]
+HTTP GET / 200 [0.02, 127.0.0.1:56156]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:56156]
+HTTP GET / 200 [0.01, 127.0.0.1:56156]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:56156]
+HTTP GET / 200 [0.01, 127.0.0.1:56156]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:56156]
+HTTP GET / 200 [0.01, 127.0.0.1:50306]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:50306]
+HTTP GET / 200 [0.01, 127.0.0.1:50306]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:50306]
+HTTP GET / 200 [0.01, 127.0.0.1:50308]
+HTTP GET /static/js/three.js 200 [0.01, 127.0.0.1:50308]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:50308]
+HTTP GET / 200 [0.01, 127.0.0.1:50311]
+HTTP GET /static/js/three.js 200 [0.01, 127.0.0.1:50311]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:50311]
+HTTP GET / 200 [0.01, 127.0.0.1:50311]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:50311]
+HTTP GET / 200 [0.01, 127.0.0.1:50311]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:50311]
+HTTP GET / 200 [0.01, 127.0.0.1:50324]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:50324]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:50325]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:50325]
+HTTP GET / 200 [0.01, 127.0.0.1:50326]
+HTTP GET /static/js/three.js 200 [0.01, 127.0.0.1:50326]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:50326]
+HTTP GET / 200 [0.01, 127.0.0.1:50326]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:50326]
+HTTP GET / 200 [0.01, 127.0.0.1:50326]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:50326]
+HTTP GET / 200 [0.01, 127.0.0.1:50326]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:50326]
+HTTP GET / 200 [0.01, 127.0.0.1:50326]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:50326]
+HTTP GET / 200 [0.01, 127.0.0.1:51255]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:51255]
+HTTP GET / 200 [0.01, 127.0.0.1:51255]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:51255]
+HTTP GET / 200 [0.01, 127.0.0.1:64218]
+HTTP GET /static/js/three.js 304 [0.01, 127.0.0.1:64218]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:64221]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:64221]
+HTTP GET / 200 [0.01, 127.0.0.1:64221]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:64221]
+HTTP GET / 200 [0.01, 127.0.0.1:64222]
+HTTP GET /static/js/three.js 200 [0.01, 127.0.0.1:64222]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:64222]
+HTTP GET / 200 [0.01, 127.0.0.1:54904]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:54904]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:56076]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:56076]
+Not Found: /favicon.ico
+HTTP GET /home 200 [0.03, 127.0.0.1:51978]
+HTTP GET /static/js/home.js 200 [0.00, 127.0.0.1:51978]
+HTTP GET /home 200 [0.01, 127.0.0.1:65310]
+HTTP GET /static/js/home.js 304 [0.00, 127.0.0.1:65310]
+HTTP GET /brewing/17 200 [0.01, 127.0.0.1:65310]
+HTTP GET /static/js/three.js 304 [0.02, 127.0.0.1:65311]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:65312]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:65312]
+Wed Mar 23 18:50:36 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:65312]
+HTTP GET /brewing/17 200 [0.04, 127.0.0.1:64932]
+HTTP GET /static/js/server_connection.js 304 [0.01, 127.0.0.1:64932]
+HTTP GET /static/js/three.js 304 [0.01, 127.0.0.1:64933]
+HTTP GET /static/js/brewing.js 304 [0.01, 127.0.0.1:64935]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:64936]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:64936]
+Wed Mar 23 18:57:50 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:64936]
+HTTP GET /brewing/17 200 [0.01, 127.0.0.1:64938]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:64938]
+HTTP GET /static/js/server_connection.js 200 [0.01, 127.0.0.1:64939]
+HTTP GET /static/js/brewing.js 200 [0.01, 127.0.0.1:64940]
+HTTP GET /static/js/three.js 200 [0.02, 127.0.0.1:64941]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:64941]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:64941]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:64941]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:64945]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:64945]
+Wed Mar 23 18:57:55 2022: Another client connected
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:64941]
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:64945]
+HTTP GET /home 200 [0.01, 127.0.0.1:64941]
+HTTP GET /static/js/home.js 200 [0.00, 127.0.0.1:64941]
+HTTP GET /brewing/17 200 [0.01, 127.0.0.1:64941]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:56764]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:56764]
+Wed Mar 23 18:58:46 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:56764]
+HTTP GET /brewing/17 200 [0.01, 127.0.0.1:56765]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:56765]
+HTTP GET /static/js/server_connection.js 200 [0.01, 127.0.0.1:56766]
+HTTP GET /static/js/three.js 200 [0.02, 127.0.0.1:56767]
+HTTP GET /static/js/brewing.js 200 [0.03, 127.0.0.1:56768]
+HTTP GET /static/css/brewing.css 200 [0.02, 127.0.0.1:56766]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:56767]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:56767]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:56772]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:56772]
+Wed Mar 23 18:58:50 2022: Another client connected
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:56767]
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:56772]
+HTTP GET / 200 [0.01, 127.0.0.1:63910]
+Not Found: /favicon.ico
+HTTP GET / 200 [0.01, 127.0.0.1:57791]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:57791]
+HTTP GET /home 200 [0.01, 127.0.0.1:57791]
+HTTP GET /brewing/17 200 [0.01, 127.0.0.1:61880]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:61881]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:61881]
+Wed Mar 23 19:02:28 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:61881]
+HTTP GET /brewing/17 200 [0.01, 127.0.0.1:61517]
+HTTP GET /static/js/server_connection.js 200 [0.00, 127.0.0.1:61517]
+HTTP GET /static/js/three.js 304 [0.01, 127.0.0.1:61518]
+HTTP GET /static/js/brewing.js 304 [0.01, 127.0.0.1:61519]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:61520]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:61520]
+Wed Mar 23 19:03:53 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:61520]
+HTTP GET /brewing/17 200 [0.01, 127.0.0.1:60890]
+HTTP GET /static/js/server_connection.js 304 [0.00, 127.0.0.1:60890]
+HTTP GET /static/js/three.js 304 [0.00, 127.0.0.1:60891]
+HTTP GET /static/js/brewing.js 304 [0.00, 127.0.0.1:60890]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:60892]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:60892]
+Wed Mar 23 19:04:28 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:60892]
+HTTP GET /brewing/17 200 [0.03, 127.0.0.1:56624]
+HTTP GET /static/js/server_connection.js 200 [0.00, 127.0.0.1:56624]
+HTTP GET /static/js/three.js 304 [0.02, 127.0.0.1:56625]
+HTTP GET /static/js/brewing.js 200 [0.03, 127.0.0.1:56624]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:56627]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:56627]
+Wed Mar 23 19:07:13 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:56627]
+HTTP GET /brewing/17 200 [0.01, 127.0.0.1:56633]
+HTTP GET /static/js/server_connection.js 304 [0.00, 127.0.0.1:56633]
+HTTP GET /static/js/three.js 304 [0.01, 127.0.0.1:56634]
+HTTP GET /static/js/brewing.js 304 [0.01, 127.0.0.1:56635]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:56636]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:56636]
+Wed Mar 23 19:07:26 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:56636]

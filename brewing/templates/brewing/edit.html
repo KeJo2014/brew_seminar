@@ -3,7 +3,7 @@
 {% block title %}Bearbeiten{% endblock %}
 {% block maincontent %}    
 <main class="main-l">
-    <form action="{% url 'create' %}" method="post" id="form">
+    <form action="{% url 'edit' recipe.id %}" method="post" id="edit_form">
         {%csrf_token%}
     <h1>Rezept Bearbeiten</h1>
     <div class="inputBox">
@@ -63,17 +63,18 @@
     </div>
     <div class="inputBox">
         <h2>Würzekochen</h2>
+        <input type="text" id="kochen" style="display: none" value="{{recipe.wuerzekochen}}">
         <input type="number" class="input inputSpace" id="kochendur" name="kochendur" min="0" step="0.1"
             placeholder="Würzekochdauer [min]" title="WÜRZEKOCHDAUER">
         <div id="hopfenBox">
-            <input type="text" class="input" id="hopfen1" name="hopfen1" placeholder="1. Hopfensorte"
+            <!-- <input type="text" class="input" id="hopfen1" name="hopfen1" placeholder="1. Hopfensorte"
                 title="HOPFENSORTE">
             <input type="number" class="input" id="hopfenmenge1" name="hopfenmenge1" min="0" step="0.1"
                 placeholder="Hopfenmenge [g]" title="HOPFENMENGE">
             <input type="number" class="input" id="alpha1" name="alpha1" min="0" placeholder="α-Säure [%]" step="0.1"
                 title="ALPHASÄURE">
             <input type="text" class="input inputSpace" id="hopfentime1" name="hopfentime1"
-                placeholder="Hopfenzugabe vor Kochende [min]" title="HOPFENZUGABE">
+                placeholder="Hopfenzugabe vor Kochende [min]" title="HOPFENZUGABE"> -->
         </div>
         <div class="buttonBox">
             <button type="button" class="addDelButton" onclick="addHopfen()"><i class="fa-solid fa-plus"></i></button>
@@ -84,6 +85,7 @@
     </div>
     <div class="inputBox">
         <h2>Gärung und Reifung</h2>
+        <input type="text" id="gärung" style="display: none" value="{{recipe.gärung}}">
         <input type="text" class="input" id="hefe1" name="hefe1" placeholder="Hefesorte" title="HEFESORTE">
         <input type="number" class="input" id="gaertemp1" name="gaertemp1" min="0" step="0.1"placeholder="Gärtemperatur [°C]" title="GÄRTEMPERATUR">
         <input type="number" class="input" id="endgaergrad1" name="endgaergrad1" min="0" step="0.1"placeholder="Endvergärungsgrad [%]"
@@ -99,7 +101,7 @@
         <input type="text" style="display: none;" name="json_gaerung" id="json_gaerung">
     </div>
     <div class="inputBox">
-        <button onclick="handle_submit()" class="submitButton" id="createRecipeButton" >Übernehmen</button>
+        <button onclick="handle_update()" class="submitButton" id="createRecipeButton" >Übernehmen</button>
     </div>
 </main>
 <aside class="aside-m">
