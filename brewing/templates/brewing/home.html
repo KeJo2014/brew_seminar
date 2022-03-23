@@ -14,6 +14,7 @@
   <table id="selectRecipeTable">
     <thead>
       <tr>
+        <th onclick="SortTable(0, 'N')">Rezept-ID</th>
         <th onclick="SortTable(0, 'T')">Rezeptname</th>
         <th onclick="SortTable(1, 'T')">Biersorte</th>
         <th onclick="SortTable(2, 'D', 'dmy')">Datum</th>
@@ -24,6 +25,7 @@
     <tbody>
       {% for recipe in recipes %}
       <tr>
+          <td>{{recipe.id}}</td>
           <td>{{recipe.name}}</td> 
           <td>{{recipe.bier_sorte}}</td>
           <td>{{recipe.date}}</td>
@@ -43,7 +45,7 @@
       <input type="text" style="display: none;" name="recipe_name" id="recipe_name" value="">
       <button class="submitButton" id="delRecipe"><i class="fa-solid fa-trash-can"></i></button>
     </form>
-    <form id="edit_form" action="{% url 'edit' 'Mandarina Bavaria BM50+ LOB' %}" method="post">
+    <form id="edit_form" action="{% url 'edit' '0' %}" method="post">
       {% csrf_token %}
       <input type="text" style="display: none;" name="command" value="edit">
       <input type="text" style="display: none;" name="recipe_name" id="recipe_name" value="">

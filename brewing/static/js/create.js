@@ -106,7 +106,7 @@ function addMaischphase() {
     buttonAddRast.setAttribute('type', 'button');
     buttonAddRast.setAttribute('class', 'addDelButton smallerButton');
     buttonAddRast.setAttribute('id', 'buttonAddRast' + indexPhase);
-    buttonAddRast.setAttribute('onclick', 'addRast(indexPhase)');
+    buttonAddRast.setAttribute('onclick', 'addRast(' + indexPhase + ')');
 
     var iconAddRast = document.createElement('i');
     iconAddRast.setAttribute('class', 'fa-solid fa-plus');
@@ -115,7 +115,7 @@ function addMaischphase() {
     buttonDelRast.setAttribute('type', 'button');
     buttonDelRast.setAttribute('class', 'addDelButton smallerButton');
     buttonDelRast.setAttribute('id', 'buttonDelRast' + indexPhase);
-    buttonDelRast.setAttribute('onclick', 'delRast(indexPhase)');
+    buttonDelRast.setAttribute('onclick', 'delRast('+ indexPhase + ')');
 
     var iconDelRast = document.createElement('i');
     iconDelRast.setAttribute('class', 'fa-solid fa-minus');
@@ -137,8 +137,8 @@ function delMaischphase() {
     document.getElementById('maischtemp' + indexPhase).remove();
     document.getElementById('rastBox' + indexPhase).remove();
     document.getElementById('smallerButtonsBox' + indexPhase).remove();
+    indexRast[indexPhase] = 0;
     --indexPhase;
-
 }
 
 function addRast(index) {
@@ -166,7 +166,7 @@ function addRast(index) {
     inputRastDurNumber.setAttribute('placeholder', 'Rastdauer [min]');
     inputRastDurNumber.setAttribute('title', 'RASTDAUER');
 
-    var parent = document.querySelector('#' + 'rastBox' + indexPhase)
+    var parent = document.querySelector('#' + 'rastBox' + index)
     h3Rast.appendChild(h3RastText);
     parent.appendChild(h3Rast);
     parent.appendChild(inputRastTempNumber);

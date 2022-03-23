@@ -1,6 +1,6 @@
-var indexPhase = 1;
-var indexRast = [1, 1];
-var indexHopfen = 1;
+var indexPhase = 0;
+var indexRast = [0,0];
+var indexHopfen = 0;
 
 
 var brauwasserElement = document.getElementById('brauwasser');
@@ -27,14 +27,21 @@ for (let i = 0; i < schüttungArray.length; i++)
 
 var maischplanElement = document.getElementById('maischplan');
 var maischplanJson = maischplanElement.getAttribute('value'); 
-console.log(maischplanJson);
 var maischplanArray = JSON.parse(maischplanJson);
+var rastArray;
+
+console.log(maischplanJson);
 console.log(maischplanArray);
-var indexPhase = maischplanArray.length;
+
 
 for (let i = 0; i < maischplanArray.length; i++)
 {
     addMaischphase(maischplanArray[i][0], maischplanArray[i][1]); 
+    rastArray = maischplanArray[i][2];
+    for (let j = 0; j < rastArray.length; j++)
+    {
+        addRast(indexPhase, rastArray[j][0], rastArray[j][1]); 
+    }
 }
 
 var schüttung = [];
@@ -109,7 +116,7 @@ function delWater(id1, id2) {
 }
 
 function addMaischphase(inputName, inputNumber) {
-    ++indexPhase;
+    indexPhase += 1;
     indexRast.push(0);
 
     var inputPhaseText = document.createElement('input');
@@ -143,7 +150,7 @@ function addMaischphase(inputName, inputNumber) {
     buttonAddRast.setAttribute('type', 'button');
     buttonAddRast.setAttribute('class', 'addDelButton smallerButton');
     buttonAddRast.setAttribute('id', 'buttonAddRast' + indexPhase);
-    buttonAddRast.setAttribute('onclick', 'addRast(indexPhase)');
+    buttonAddRast.setAttribute("onclick", "addRast(indexPhase, '', '')");
 
     var iconAddRast = document.createElement('i');
     iconAddRast.setAttribute('class', 'fa-solid fa-plus');
@@ -178,7 +185,7 @@ function delMaischphase() {
 
 }
 
-function addRast(index) {
+function addRast(index, inputTemp, inputDur) {
     indexRast[index] += 1;
 
     var h3Rast = document.createElement('h3');
@@ -193,6 +200,7 @@ function addRast(index) {
     inputRastTempNumber.setAttribute('min', '0');
     inputRastTempNumber.setAttribute('placeholder', 'Rasttemperatur [°C]');
     inputRastTempNumber.setAttribute('title', 'RASTTEMPERATUR');
+    inputRastTempNumber.setAttribute('value', inputTemp);
 
     var inputRastDurNumber = document.createElement('input');
     inputRastDurNumber.setAttribute('type', 'number');
@@ -202,6 +210,7 @@ function addRast(index) {
     inputRastDurNumber.setAttribute('min', '0');
     inputRastDurNumber.setAttribute('placeholder', 'Rastdauer [min]');
     inputRastDurNumber.setAttribute('title', 'RASTDAUER');
+    inputRastDurNumber.setAttribute('value', inputDur);
 
     var parent = document.querySelector('#' + 'rastBox' + indexPhase)
     h3Rast.appendChild(h3RastText);

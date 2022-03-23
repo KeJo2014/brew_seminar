@@ -8,6 +8,6 @@ urlpatterns = [
     path("home", views.home, name="home"),
     path("brewing/<int:recipe_id>", views.brewing, name="brewing"),
     path("create", views.create, name="create"),
-    path("edit/<recipe_name>", views.edit, name="edit"),
+    path("edit/<int:recipe_id>", views.edit, name="edit"),
     path("template", views.template, name="template"),
 ]

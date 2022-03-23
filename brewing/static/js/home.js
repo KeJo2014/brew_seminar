@@ -98,28 +98,34 @@ return "" + String(y) + "" + String(m) + "" + String(d) + "";
 SortTable(2, 'D', 'dmy');
 SortTable(2, 'D', 'dmy');
 
+var selectedRowId;
 var selectedRowValue;
 
 $("#selectRecipeTable tbody tr").click(function(){
 	$(this).addClass('selected').siblings().removeClass('selected');    
-	selectedRowValue = $(this).find('td:first').html();    
+	selectedRowValue = $(this).find('td:nth(1)').html();  
+	selectedRowId = $(this).find('td:first').html();
  });
  
  $('#submitRecipe').on('click', function(e){
-	 alert("Brauen: " + $("#selectRecipeTable tbody tr.selected td:first").html());
+	if (confirm('Willst Du '+ selectedRowValue + ' wirklich brauen?')) {
+		location.href = 'brewing/' + selectedRowId;
+	  } else {
+		console.log('Ändern abgebrochen');
+	  }
  });
 
 $('#editRecipe').on('click', function(e){
-	if (confirm('Willst Du dieses Rezept wirklich ändern?')) {
-		location.href = 'edit/' + selectedRowValue;
+	if (confirm('Willst Du '+ selectedRowValue + ' wirklich bearbeiten?')) {
+		location.href = 'edit/' + selectedRowId;
 	  } else {
 		console.log('Ändern abgebrochen');
 	  }
 });
 
 $('#delRecipe').on('click', function(e){
-	if (confirm('Willst Du dieses Rezept wirklich löschen?')) {
-		document.getElementById("recipe_name").value = selectedRowValue;
+	if (confirm('Willst Du '+ selectedRowValue + ' wirklich löschen?')) {
+		document.getElementById("recipe_name").value = selectedRowId;
 		document.getElementById("delete_form").submit();
 		console.log('Rezept wurde gelöscht');
 	  } else {

@@ -112,11 +112,17 @@ def create(request):
 
         return render(request, 'brewing/create.html')
 
-def edit(request, recipe_name):
-    if(request.method == "GET"):
-        recipe_selected = brew_recipe.objects.filter(name=recipe_name)
+def edit(request, recipe_id):
+    if(request.user.is_authenticated):
+        try:
+            recipe = brew_recipe.objects.get(id=recipe_id)
+        except:
+            return render(request, 'brewing/home.html',{
+                "recipes": brew_recipe.objects.all(),
+                "msg": "Recipe not found",
+            })
         return render(request, 'brewing/edit.html',{
-            "recipes": recipe_selected,
+            "recipe": recipe,
         })
     else:
         name = request.POST.get('name')

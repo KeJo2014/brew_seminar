@@ -1,16 +1,7 @@
 {% extends "brewing/template.html" %}
 {% load static %}
 {% block title %}Bearbeiten{% endblock %}
-{% block maincontent %}
-{% for recipe in recipes %}
-      <!-- <tr>
-          <td>{{recipe.name}}</td> 
-          <td>{{recipe.bier_sorte}}</td>
-          <td>{{recipe.date}}</td>
-          <td>{{recipe.author}}</td> 
-          <td>{{recipe.number_of_brews}}</td>
-      </tr> -->
-      
+{% block maincontent %}    
 <main class="main-l">
     <form action="{% url 'create' %}" method="post" id="form">
         {%csrf_token%}
@@ -59,9 +50,9 @@
                     placeholder="Rastdauer [min]" required title="RASTDAUER">
             </div>
             <div class="align-items-end" id="smallerButtonsBox1">
-                <button type="button" class="addDelButton smallerButton" id="buttonAddRast1" onclick="addRast(1)"><i
+                <button type="button" class="addDelButton smallerButton" id="buttonAddRast1" onclick="addRast(1, '', '')"><i
                         class="fa-solid fa-plus"></i></button>
-                <button type="button" class="addDelButton smallerButton" id="buttonDelRast1" onclick="delRast(1)"><i
+                <button type="button" class="addDelButton smallerButton" id="buttonDelRast1" onclick="delRast(1, '', '')"><i
                         class="fa-solid fa-minus"></i></button>
             </div> -->
         </div>
@@ -140,6 +131,5 @@
     </div>
 </form>
 </aside>
-{% endfor %}
 <script src="{% static '/js/edit.js' %}" crossorigin="anonymous"></script>
 {% endblock %}
