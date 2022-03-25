@@ -11,7 +11,7 @@ class brew_server():
         current_time = time.time()
         self.status ={
             "status": "started",
-            "recipe": 0,
+            "recipe": None,
             "step": 0,
             "sensor_data": {
                 "temperature": 0,
@@ -39,6 +39,15 @@ class brew_server():
         self.status["recipe"] = rec
         self.recipe = json.loads(recipe.objects.get(id=recipe_id).recipe)
     
+    def get_recipe(self):
+        if(self.status["recipe"] != None):
+            return(self.status["recipe"])
+        else:
+            return(None)
+    
+    def set_recipe(self, recipe_id):
+        self.status["recipe"] = recipe_id
+
     def write_sensor_data(self):
        messurement.objects.create(self.status["sensor_data"]["temperature"], self.status["sensor_data"]["engine_mode"], self.status["sensor_data"]["plato"])
     

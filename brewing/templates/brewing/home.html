@@ -37,7 +37,12 @@
   </table>
 </div>
   <div class="recipeButtonBox">
-  <button type="button" class="submitButton" id="submitRecipe">Brauen</button>
+  <form action="{% url 'brewing' %}" id="submit_brewing_form" method="post">
+    {% csrf_token %}
+    <input type="number" style="display: block;" name="recipe_id" id="recipe_id" value="-1">
+    <input type="text" style="display: none;" value="set_recipe_id" name="command">
+    <button type="button" class="submitButton" id="submitRecipe" onclick="submit_button()">Brauen</button>
+  </form>
   <div class="recipeEditButtonBox">
     <button class="submitButton" id="delRecipe"><i class="fa-solid fa-trash-can"></i></button>
     <button type="button" class="submitButton" id="editRecipe"><i class="fa-solid fa-pen-to-square"></i></button>

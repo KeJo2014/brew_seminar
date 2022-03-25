@@ -12,11 +12,11 @@ $("#selectRecipeTable tbody tr").click(function () {
 });
 
 $('#submitRecipe').on('click', function (e) {
-	if (confirm('Willst Du ' + selectedRowValue + ' wirklich brauen?')) {
-		location.href = 'brewing/' + selectedRowId;
-	} else {
-		console.log('Ändern abgebrochen');
-	}
+	
+		console.log("hi");
+		document.getElementById('recipe_id').value = selectedRowId;
+		document.getElementById('submit_brewing_form').submit();
+	
 });
 
 $('#editRecipe').on('click', function (e) {
@@ -35,3 +35,9 @@ $('#delRecipe').on('click', function (e) {
 		console.log('Löschen abgebrochen');
 	}
 });
+
+function submit_button(){
+	console.log("hi");
+	document.getElementById('recipe_id').value = selectedRowId;
+	document.getElementById('submit_brewing_form').submit();
+}

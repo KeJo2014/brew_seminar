@@ -11848,3 +11848,772 @@ WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:56636]
 WebSocket CONNECT /ws/socket-server/ [127.0.0.1:56636]
 Wed Mar 23 19:07:26 2022: Another client connected
 WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:56636]
+[mHTTP GET /home 200 [0.10, 127.0.0.1:1220][0m
+[mHTTP GET /template 200 [0.03, 127.0.0.1:1242][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\urls.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+Not Found: /brewing/3
+[33mHTTP GET /brewing/3 404 [0.13, 127.0.0.1:1472][0m
+Not Found: /favicon.ico
+[33mHTTP GET /favicon.ico 404 [0.05, 127.0.0.1:1472][0m
+[32mHTTP GET /brewing 302 [0.08, 127.0.0.1:1472][0m
+Not Found: /login
+[33mHTTP GET /login 404 [0.04, 127.0.0.1:1472][0m
+[32mHTTP GET /admin/ 302 [0.07, 127.0.0.1:1482][0m
+[mHTTP GET /admin/login/?next=/admin/ 200 [0.22, 127.0.0.1:1482][0m
+[mHTTP GET /static/admin/css/login.css 200 [0.03, 127.0.0.1:1482][0m
+[36mHTTP GET /static/admin/css/base.css 304 [0.03, 127.0.0.1:1483][0m
+[36mHTTP GET /static/admin/css/dark_mode.css 304 [0.02, 127.0.0.1:1482][0m
+[36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.02, 127.0.0.1:1483][0m
+[36mHTTP GET /static/admin/css/responsive.css 304 [0.02, 127.0.0.1:1482][0m
+[36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.01, 127.0.0.1:1482][0m
+[36mHTTP GET /static/admin/css/fonts.css 304 [0.01, 127.0.0.1:1483][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 304 [0.01, 127.0.0.1:1483][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 304 [0.03, 127.0.0.1:1482][0m
+[32mHTTP POST /admin/login/?next=/admin/ 302 [0.75, 127.0.0.1:1494][0m
+[mHTTP GET /admin/ 200 [0.11, 127.0.0.1:1494][0m
+[36mHTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:1494][0m
+[36mHTTP GET /static/admin/css/dark_mode.css 304 [0.01, 127.0.0.1:1495][0m
+[36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.02, 127.0.0.1:1494][0m
+[36mHTTP GET /static/admin/css/responsive.css 304 [0.02, 127.0.0.1:1495][0m
+[36mHTTP GET /static/admin/css/dashboard.css 304 [0.02, 127.0.0.1:1494][0m
+[36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.01, 127.0.0.1:1494][0m
+[36mHTTP GET /static/admin/css/fonts.css 304 [0.01, 127.0.0.1:1495][0m
+[36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.01, 127.0.0.1:1495][0m
+[36mHTTP GET /static/admin/img/icon-changelink.svg 304 [0.02, 127.0.0.1:1494][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 304 [0.03, 127.0.0.1:1499][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 304 [0.04, 127.0.0.1:1500][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 304 [0.01, 127.0.0.1:1500][0m
+Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 59, in home
+    return render(request, 'brewing/home.html',{
+  File "c:\users\jonas\documents\django\django\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "c:\users\jonas\documents\django\django\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "c:\users\jonas\documents\django\django\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 963, in render_annotated
+    return self.render(context)
+  File "c:\users\jonas\documents\django\django\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "c:\users\jonas\documents\django\django\django\template\base.py", line 963, in render_annotated
+    return self.render(context)
+  File "c:\users\jonas\documents\django\django\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "c:\users\jonas\documents\django\django\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'brewing' with arguments '('3',)' not found. 1 pattern(s) tried: ['brewing\\Z']
+[35;1mHTTP GET /home 500 [0.30, 127.0.0.1:1500][0m
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 70, in brewing
+    if(brew_server.get_recipe() != None):
+TypeError: get_recipe() missing 1 required positional argument: 'self'
+[35;1mHTTP GET /brewing 500 [0.18, 127.0.0.1:1536][0m
+[mHTTP GET /home 200 [0.15, 127.0.0.1:6046][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 70, in brewing
+    if(brew_server.get_recipe() != None):
+TypeError: get_recipe() missing 1 required positional argument: 'self'
+[35;1mHTTP GET /brewing 500 [0.25, 127.0.0.1:1060][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing 200 [0.12, 127.0.0.1:1138][0m
+[mHTTP GET /brewing 200 [0.12, 127.0.0.1:1138][0m
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:1144][0m
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:1144][0m
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:1198][0m
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:1198][0m
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:1275][0m
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:1275][0m
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:12279][0m
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:12279][0m
+Application instance <Task pending name='Task-5' coro=<StaticFilesWrapper.__call__() running at C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py:44> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\futures.py:360, <TaskWakeupMethWrapper object at 0x000002ADDD8EF760>()]>> for connection <WebRequest at 0x2addd966910 method=GET uri=/brewing clientproto=HTTP/1.1> took too long to shut down and was killed.
+Application instance <Task pending name='Task-5' coro=<StaticFilesWrapper.__call__() running at C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py:44> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\futures.py:360, <TaskWakeupMethWrapper object at 0x000002ADDD8EF760>()]>> for connection <WebRequest at 0x2addd966910 method=GET uri=/brewing clientproto=HTTP/1.1> took too long to shut down and was killed.
+[mHTTP GET /brewing 200 [0.04, 127.0.0.1:12333][0m
+[mHTTP GET /brewing 200 [0.04, 127.0.0.1:12333][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:12365][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:12365][0m
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:12389][0m
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:12389][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:12433][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:12433][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:12455][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:12455][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing 200 [0.12, 127.0.0.1:12593][0m
+[mHTTP GET /brewing 200 [0.12, 127.0.0.1:12593][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing 200 [0.21, 127.0.0.1:12626][0m
+[mHTTP GET /brewing 200 [0.21, 127.0.0.1:12626][0m
+[mHTTP GET /home 200 [0.05, 127.0.0.1:12631][0m
+[mHTTP GET /home 200 [0.05, 127.0.0.1:12631][0m
+[mHTTP GET /home 200 [0.08, 127.0.0.1:12729][0m
+[mHTTP GET /home 200 [0.08, 127.0.0.1:12729][0m
+[mHTTP GET /home 200 [0.07, 127.0.0.1:12741][0m
+[mHTTP GET /home 200 [0.07, 127.0.0.1:12741][0m
+[mHTTP GET /home 200 [0.04, 127.0.0.1:12784][0m
+[mHTTP GET /home 200 [0.04, 127.0.0.1:12784][0m
+[mHTTP GET /home 200 [0.03, 127.0.0.1:12793][0m
+[mHTTP GET /home 200 [0.03, 127.0.0.1:12793][0m
+[mHTTP GET /home 200 [0.06, 127.0.0.1:12793][0m
+[mHTTP GET /home 200 [0.06, 127.0.0.1:12793][0m
+[mHTTP GET /static/css/create.css 200 [0.50, 127.0.0.1:12793][0m
+[mHTTP GET /static/css/create.css 200 [0.50, 127.0.0.1:12793][0m
+[mHTTP GET /static/js/home.js 200 [0.38, 127.0.0.1:12794][0m
+[mHTTP GET /static/js/home.js 200 [0.38, 127.0.0.1:12794][0m
+[mHTTP GET /static/css/brewing.css 200 [0.06, 127.0.0.1:12793][0m
+[mHTTP GET /static/css/brewing.css 200 [0.06, 127.0.0.1:12793][0m
+[mHTTP GET /static/css/home.css 200 [0.02, 127.0.0.1:12793][0m
+[mHTTP GET /static/css/home.css 200 [0.02, 127.0.0.1:12793][0m
+[mHTTP GET /static/css/template.css 200 [0.02, 127.0.0.1:12793][0m
+[mHTTP GET /static/css/template.css 200 [0.02, 127.0.0.1:12793][0m
+[mHTTP GET /static/img/favicon.ico 200 [0.03, 127.0.0.1:12793][0m
+[mHTTP GET /static/img/favicon.ico 200 [0.03, 127.0.0.1:12793][0m
+[mHTTP GET /static/img/favicon.ico 200 [0.02, 127.0.0.1:12793][0m
+[mHTTP GET /static/img/favicon.ico 200 [0.02, 127.0.0.1:12793][0m
+[mHTTP POST /brewing 200 [0.16, 127.0.0.1:12817][0m
+[mHTTP POST /brewing 200 [0.16, 127.0.0.1:12817][0m
+[36mHTTP GET /static/js/home.js 304 [0.02, 127.0.0.1:12817][0m
+[36mHTTP GET /static/js/home.js 304 [0.02, 127.0.0.1:12817][0m
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:12845][0m
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:12845][0m
+[36mHTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:12845][0m
+[36mHTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:12845][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:12845][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:12845][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:12886][0m
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:12886][0m
+[36mHTTP GET /static/js/home.js 304 [0.07, 127.0.0.1:12886][0m
+[36mHTTP GET /static/js/home.js 304 [0.07, 127.0.0.1:12886][0m
+[mHTTP POST /brewing 200 [0.10, 127.0.0.1:12890][0m
+[mHTTP POST /brewing 200 [0.10, 127.0.0.1:12890][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 74, in brewing
+    recipe = brew_recipe.objects.get(id=brew_system.get_recipe())
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 523, in get
+    raise self.model.DoesNotExist(
+brewing.models.brew_recipe.DoesNotExist: brew_recipe matching query does not exist.
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 74, in brewing
+    recipe = brew_recipe.objects.get(id=brew_system.get_recipe())
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 523, in get
+    raise self.model.DoesNotExist(
+brewing.models.brew_recipe.DoesNotExist: brew_recipe matching query does not exist.
+[35;1mHTTP GET /brewing 500 [0.25, 127.0.0.1:12917][0m
+[35;1mHTTP GET /brewing 500 [0.25, 127.0.0.1:12917][0m
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+[33mHTTP GET /favicon.ico 404 [0.06, 127.0.0.1:12917][0m
+[33mHTTP GET /favicon.ico 404 [0.06, 127.0.0.1:12917][0m
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 74, in brewing
+    recipe = brew_recipe.objects.get(id=brew_system.get_recipe())
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 523, in get
+    raise self.model.DoesNotExist(
+brewing.models.brew_recipe.DoesNotExist: brew_recipe matching query does not exist.
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 74, in brewing
+    recipe = brew_recipe.objects.get(id=brew_system.get_recipe())
+  File "c:\users\jonas\documents\django\django\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\users\jonas\documents\django\django\django\db\models\query.py", line 523, in get
+    raise self.model.DoesNotExist(
+brewing.models.brew_recipe.DoesNotExist: brew_recipe matching query does not exist.
+[35;1mHTTP GET /brewing 500 [0.35, 127.0.0.1:12950][0m
+[35;1mHTTP GET /brewing 500 [0.35, 127.0.0.1:12950][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /home 200 [0.08, 127.0.0.1:12991][0m
+[mHTTP GET /home 200 [0.08, 127.0.0.1:12991][0m
+[36mHTTP GET /static/js/home.js 304 [0.02, 127.0.0.1:12991][0m
+[36mHTTP GET /static/js/home.js 304 [0.02, 127.0.0.1:12991][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:12991][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:12991][0m
+[mHTTP GET /brewing 200 [8.15, 127.0.0.1:13011][0m
+[mHTTP GET /brewing 200 [8.15, 127.0.0.1:13011][0m
+[mHTTP GET /home 200 [0.06, 127.0.0.1:13011][0m
+[mHTTP GET /home 200 [0.06, 127.0.0.1:13011][0m
+[mHTTP POST /brewing 200 [0.07, 127.0.0.1:13022][0m
+[mHTTP POST /brewing 200 [0.07, 127.0.0.1:13022][0m
+[36mHTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:13022][0m
+[36mHTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:13022][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing 200 [0.18, 127.0.0.1:13082][0m
+[mHTTP GET /brewing 200 [0.18, 127.0.0.1:13082][0m
+[36mHTTP GET /static/js/home.js 304 [0.02, 127.0.0.1:13082][0m
+[36mHTTP GET /static/js/home.js 304 [0.02, 127.0.0.1:13082][0m
+[mHTTP GET /home 200 [0.05, 127.0.0.1:13082][0m
+[mHTTP GET /home 200 [0.05, 127.0.0.1:13082][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:13082][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:13082][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:13111][0m
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:13111][0m
+[mHTTP GET /home 200 [0.05, 127.0.0.1:13111][0m
+[mHTTP GET /home 200 [0.05, 127.0.0.1:13111][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:13111][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:13111][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing?order_by=number_of_brews 200 [0.16, 127.0.0.1:13136][0m
+[mHTTP GET /brewing?order_by=number_of_brews 200 [0.16, 127.0.0.1:13136][0m
+[36mHTTP GET /static/js/home.js 304 [0.02, 127.0.0.1:13136][0m
+[36mHTTP GET /static/js/home.js 304 [0.02, 127.0.0.1:13136][0m
+[mHTTP GET /home 200 [0.07, 127.0.0.1:13151][0m
+[mHTTP GET /home 200 [0.07, 127.0.0.1:13151][0m
+[mHTTP POST /brewing 200 [0.10, 127.0.0.1:13151][0m
+[mHTTP POST /brewing 200 [0.10, 127.0.0.1:13151][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing 200 [0.11, 127.0.0.1:13180][0m
+[mHTTP GET /brewing 200 [0.11, 127.0.0.1:13180][0m
+[36mHTTP GET /static/js/home.js 304 [0.08, 127.0.0.1:13180][0m
+[36mHTTP GET /static/js/home.js 304 [0.08, 127.0.0.1:13180][0m
+[mHTTP GET /home 200 [0.06, 127.0.0.1:13180][0m
+[mHTTP GET /home 200 [0.06, 127.0.0.1:13180][0m
+[mHTTP POST /brewing 200 [0.03, 127.0.0.1:13191][0m
+[mHTTP POST /brewing 200 [0.03, 127.0.0.1:13191][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing 200 [0.14, 127.0.0.1:13233][0m
+[mHTTP GET /brewing 200 [0.14, 127.0.0.1:13233][0m
+[mHTTP GET /home 200 [0.08, 127.0.0.1:13233][0m
+[mHTTP GET /home 200 [0.08, 127.0.0.1:13233][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:13233][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:13233][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:1047][0m
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:1047][0m
+[36mHTTP GET /static/js/home.js 304 [0.07, 127.0.0.1:1047][0m
+[36mHTTP GET /static/js/home.js 304 [0.07, 127.0.0.1:1047][0m
+[mHTTP GET /home 200 [0.08, 127.0.0.1:1059][0m
+[mHTTP GET /home 200 [0.08, 127.0.0.1:1059][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:1059][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:1059][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /home 200 [0.10, 127.0.0.1:1096][0m
+[mHTTP GET /home 200 [0.10, 127.0.0.1:1096][0m
+[mHTTP POST /brewing 200 [0.10, 127.0.0.1:1104][0m
+[mHTTP POST /brewing 200 [0.10, 127.0.0.1:1104][0m
+[mHTTP GET /home 200 [0.06, 127.0.0.1:1144][0m
+[mHTTP GET /home 200 [0.06, 127.0.0.1:1144][0m
+[36mHTTP GET /static/js/home.js 304 [0.05, 127.0.0.1:1144][0m
+[36mHTTP GET /static/js/home.js 304 [0.05, 127.0.0.1:1144][0m
+[mHTTP POST /brewing 200 [0.05, 127.0.0.1:1144][0m
+[mHTTP POST /brewing 200 [0.05, 127.0.0.1:1144][0m
+[mHTTP GET /brewing 200 [7.92, 127.0.0.1:1219][0m
+[mHTTP GET /brewing 200 [7.92, 127.0.0.1:1219][0m
+[36mHTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:1219][0m
+[36mHTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:1219][0m
+[mHTTP GET /home 200 [0.03, 127.0.0.1:1230][0m
+[mHTTP GET /home 200 [0.03, 127.0.0.1:1230][0m
+[mHTTP POST /brewing 200 [0.14, 127.0.0.1:1230][0m
+[mHTTP POST /brewing 200 [0.14, 127.0.0.1:1230][0m
+[mHTTP GET /home 200 [0.05, 127.0.0.1:1273][0m
+[mHTTP GET /home 200 [0.05, 127.0.0.1:1273][0m
+[mHTTP POST /brewing 200 [0.04, 127.0.0.1:1280][0m
+[mHTTP POST /brewing 200 [0.04, 127.0.0.1:1280][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /home 200 [0.05, 127.0.0.1:7250][0m
+[mHTTP GET /home 200 [0.05, 127.0.0.1:7250][0m
+[mHTTP GET /home 200 [0.11, 127.0.0.1:7282][0m
+[mHTTP GET /home 200 [0.11, 127.0.0.1:7282][0m
+[36mHTTP GET /static/js/home.js 304 [0.04, 127.0.0.1:7282][0m
+[36mHTTP GET /static/js/home.js 304 [0.04, 127.0.0.1:7282][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:7293][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:7293][0m
+[mHTTP GET /home 200 [0.07, 127.0.0.1:7363][0m
+[mHTTP GET /home 200 [0.07, 127.0.0.1:7363][0m
+Application instance <Task pending name='Task-6' coro=<StaticFilesWrapper.__call__() running at C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py:44> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\futures.py:360, <TaskWakeupMethWrapper object at 0x000002726CE23E20>()]>> for connection <WebRequest at 0x2726d314100 method=GET uri=/home clientproto=HTTP/1.1> took too long to shut down and was killed.
+Application instance <Task pending name='Task-6' coro=<StaticFilesWrapper.__call__() running at C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py:44> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\futures.py:360, <TaskWakeupMethWrapper object at 0x000002726CE23E20>()]>> for connection <WebRequest at 0x2726d314100 method=GET uri=/home clientproto=HTTP/1.1> took too long to shut down and was killed.
+[mHTTP GET /home 200 [0.05, 127.0.0.1:7381][0m
+[mHTTP GET /home 200 [0.05, 127.0.0.1:7381][0m
+[36mHTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:7381][0m
+[36mHTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:7381][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:7381][0m
+[mHTTP POST /brewing 200 [0.06, 127.0.0.1:7381][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 73, in brewing
+    print(request.Post)
+AttributeError: 'ASGIRequest' object has no attribute 'Post'
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 73, in brewing
+    print(request.Post)
+AttributeError: 'ASGIRequest' object has no attribute 'Post'
+[35;1mHTTP GET /brewing 500 [4.51, 127.0.0.1:1066][0m
+[35;1mHTTP GET /brewing 500 [4.51, 127.0.0.1:1066][0m
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 73, in brewing
+    print(request.Post)
+AttributeError: 'ASGIRequest' object has no attribute 'Post'
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 73, in brewing
+    print(request.Post)
+AttributeError: 'ASGIRequest' object has no attribute 'Post'
+[35;1mHTTP GET /brewing 500 [0.21, 127.0.0.1:1102][0m
+[35;1mHTTP GET /brewing 500 [0.21, 127.0.0.1:1102][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing 200 [0.11, 127.0.0.1:1098][0m
+[mHTTP GET /brewing 200 [0.11, 127.0.0.1:1098][0m
+[36mHTTP GET /static/js/home.js 304 [0.04, 127.0.0.1:1098][0m
+[36mHTTP GET /static/js/home.js 304 [0.04, 127.0.0.1:1098][0m
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 265, in _get_response_async
+    self.check_response(response, callback)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view brewing.views.brewing didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 265, in _get_response_async
+    self.check_response(response, callback)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view brewing.views.brewing didn't return an HttpResponse object. It returned None instead.
+[35;1mHTTP POST /brewing 500 [0.17, 127.0.0.1:1108][0m
+[35;1mHTTP POST /brewing 500 [0.17, 127.0.0.1:1108][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /home 200 [0.10, 127.0.0.1:1194][0m
+[mHTTP GET /home 200 [0.10, 127.0.0.1:1194][0m
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 265, in _get_response_async
+    self.check_response(response, callback)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view brewing.views.brewing didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 265, in _get_response_async
+    self.check_response(response, callback)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view brewing.views.brewing didn't return an HttpResponse object. It returned None instead.
+[35;1mHTTP POST /brewing 500 [0.14, 127.0.0.1:1205][0m
+[35;1mHTTP POST /brewing 500 [0.14, 127.0.0.1:1205][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /home 200 [0.11, 127.0.0.1:1259][0m
+[mHTTP GET /home 200 [0.11, 127.0.0.1:1259][0m
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 265, in _get_response_async
+    self.check_response(response, callback)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view brewing.views.brewing didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 265, in _get_response_async
+    self.check_response(response, callback)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view brewing.views.brewing didn't return an HttpResponse object. It returned None instead.
+[35;1mHTTP POST /brewing 500 [0.16, 127.0.0.1:1259][0m
+[35;1mHTTP POST /brewing 500 [0.16, 127.0.0.1:1259][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP POST /brewing 200 [0.09, 127.0.0.1:1314][0m
+[mHTTP POST /brewing 200 [0.09, 127.0.0.1:1314][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /home 200 [0.09, 127.0.0.1:1421][0m
+[mHTTP GET /home 200 [0.11, 127.0.0.1:1445][0m
+[mHTTP GET /home 200 [0.11, 127.0.0.1:1445][0m
+[36mHTTP GET /static/js/home.js 304 [0.03, 127.0.0.1:1445][0m
+[36mHTTP GET /static/js/home.js 304 [0.03, 127.0.0.1:1445][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:1468][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:1468][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:1647][0m
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:1647][0m
+[36mHTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:1647][0m
+[36mHTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:1647][0m
+[mHTTP GET /home 200 [0.05, 127.0.0.1:1647][0m
+[mHTTP GET /home 200 [0.05, 127.0.0.1:1647][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:1660][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:1660][0m
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 76, in brewing
+    return render(request, 'login.html')
+  File "c:\users\jonas\documents\django\django\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "c:\users\jonas\documents\django\django\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\users\jonas\documents\django\django\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: login.html
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 76, in brewing
+    return render(request, 'login.html')
+  File "c:\users\jonas\documents\django\django\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "c:\users\jonas\documents\django\django\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\users\jonas\documents\django\django\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: login.html
+[35;1mHTTP GET /brewing 500 [0.19, 127.0.0.1:1660][0m
+[35;1mHTTP GET /brewing 500 [0.19, 127.0.0.1:1660][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:1695][0m
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:1695][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:1695][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:1695][0m
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 76, in brewing
+    return render(request, 'brewing.html', {
+  File "c:\users\jonas\documents\django\django\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "c:\users\jonas\documents\django\django\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\users\jonas\documents\django\django\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: brewing.html
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 451, in thread_handler
+    raise exc_info[1]
+  File "c:\users\jonas\documents\django\django\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "c:\users\jonas\documents\django\django\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py", line 76, in brewing
+    return render(request, 'brewing.html', {
+  File "c:\users\jonas\documents\django\django\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "c:\users\jonas\documents\django\django\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\users\jonas\documents\django\django\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: brewing.html
+[35;1mHTTP GET /brewing 500 [0.17, 127.0.0.1:1695][0m
+[35;1mHTTP GET /brewing 500 [0.17, 127.0.0.1:1695][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:1716][0m
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:1716][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:1716][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:1716][0m
+[mHTTP GET /brewing 200 [0.05, 127.0.0.1:1716][0m
+[mHTTP GET /brewing 200 [0.05, 127.0.0.1:1716][0m
+[mHTTP GET /static/js/three.js 200 [0.08, 127.0.0.1:1716][0m
+[mHTTP GET /static/js/three.js 200 [0.08, 127.0.0.1:1716][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.08, 127.0.0.1:1717][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.08, 127.0.0.1:1717][0m
+[36mHTTP GET /static/js/brewing.js 304 [0.02, 127.0.0.1:1717][0m
+[36mHTTP GET /static/js/brewing.js 304 [0.02, 127.0.0.1:1717][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:1728]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:1728]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1728]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1728]
+Fri Mar 25 14:02:35 2022: Another client connected
+Fri Mar 25 14:02:35 2022: Another client connected
+[mHTTP GET /brewing 200 [0.05, 127.0.0.1:1743][0m
+[mHTTP GET /brewing 200 [0.05, 127.0.0.1:1743][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:1728]
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:1728]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:1747]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:1747]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1747]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1747]
+Fri Mar 25 14:02:53 2022: Another client connected
+Fri Mar 25 14:02:53 2022: Another client connected

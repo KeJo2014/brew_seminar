@@ -3,6 +3,9 @@ from django.db.models import Count
 from django.template import engines
 
 from .models import brew_recipe, messurement
+from .process.brew_server import brew_server
+
+brew_system = brew_server()
 # Create your views here.
 def index(request):
     return render(request, 'brewing/index.html')
@@ -49,8 +52,8 @@ def evaluate(request):
             "engine": engine,
         })
 
-def template(request):
-    return render(request, 'brewing/template.html')
+# def template(request):
+#     return render(request, 'brewing/template.html')
 
 def home(request):
     order_by = request.GET.get('order_by', 'name')
@@ -63,19 +66,27 @@ def delete(request, recipe_id):
     brew_recipe.objects.get(id=recipe_id).delete()
     return redirect('home')
 
-def brewing(request, recipe_id):
+def brewing(request):
     #check if user is authenticated
+    print(request)
     if(request.user.is_authenticated):
-        try:
-            recipe = brew_recipe.objects.get(id=recipe_id)
-        except:
-            return render(request, 'brewing/home.html',{
-                "recipes": brew_recipe.objects.all(),
-                "msg": "Recipe not found",
-            })
-        return render(request, 'brewing/brewing.html',{
-            "recipe": recipe,
-        })
+        if(request.method == "GET"):
+            if(brew_system.get_recipe() != None):
+                recipe = brew_recipe.objects.get(id=brew_system.get_recipe())
+                return render(request, 'brewing/brewing.html', {
+                    "recipe": recipe,
+                    "status": brew_system.get_status(),
+                })
+            else:
+                return render(request, 'brewing/home.html',{
+                    "recipes": brew_recipe.objects.all(),
+                    "msg": "You have to select a recipe first!",
+                })
+        else:
+            print(request.POST)
+            if(request.POST.get('command') == "set_recipe_id"):
+                brew_system.set_recipe(request.POST.get('recipe_id'))
+                return redirect('/brewing')
     else:
         return redirect('/login')
 
