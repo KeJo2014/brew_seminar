@@ -12617,3 +12617,356 @@ WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1747]
 WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1747]
 Fri Mar 25 14:02:53 2022: Another client connected
 Fri Mar 25 14:02:53 2022: Another client connected
+[mHTTP GET / 200 [0.09, 127.0.0.1:14149][0m
+[mHTTP GET / 200 [0.09, 127.0.0.1:14149][0m
+[36mHTTP GET /static/js/three.js 304 [0.01, 127.0.0.1:14154][0m
+[36mHTTP GET /static/js/three.js 304 [0.01, 127.0.0.1:14154][0m
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+[33mHTTP GET /favicon.ico 404 [0.06, 127.0.0.1:14154][0m
+[33mHTTP GET /favicon.ico 404 [0.06, 127.0.0.1:14154][0m
+[mHTTP GET /home 200 [0.09, 127.0.0.1:14171][0m
+[mHTTP GET /home 200 [0.09, 127.0.0.1:14171][0m
+[36mHTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:14177][0m
+[36mHTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:14177][0m
+[32mHTTP POST /brewing 302 [0.09, 127.0.0.1:14189][0m
+[32mHTTP POST /brewing 302 [0.09, 127.0.0.1:14189][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:14189][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:14189][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:14192]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:14192]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:14192]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:14192]
+Fri Mar 25 19:11:42 2022: Another client connected
+Fri Mar 25 19:11:42 2022: Another client connected
+[mHTTP GET /admin/ 200 [0.21, 127.0.0.1:14246][0m
+[mHTTP GET /admin/ 200 [0.21, 127.0.0.1:14246][0m
+[36mHTTP GET /static/admin/css/dark_mode.css 304 [0.02, 127.0.0.1:14256][0m
+[36mHTTP GET /static/admin/css/dark_mode.css 304 [0.02, 127.0.0.1:14256][0m
+[36mHTTP GET /static/admin/css/base.css 304 [0.02, 127.0.0.1:14255][0m
+[36mHTTP GET /static/admin/css/base.css 304 [0.02, 127.0.0.1:14255][0m
+[36mHTTP GET /static/admin/css/dashboard.css 304 [0.02, 127.0.0.1:14257][0m
+[36mHTTP GET /static/admin/css/dashboard.css 304 [0.02, 127.0.0.1:14257][0m
+[36mHTTP GET /static/admin/css/responsive.css 304 [0.03, 127.0.0.1:14258][0m
+[36mHTTP GET /static/admin/css/responsive.css 304 [0.03, 127.0.0.1:14258][0m
+[36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.04, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.04, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.01, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.01, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/css/fonts.css 304 [0.01, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/css/fonts.css 304 [0.01, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/img/icon-changelink.svg 304 [0.01, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/img/icon-changelink.svg 304 [0.01, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.02, 127.0.0.1:14258][0m
+[36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.02, 127.0.0.1:14258][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 304 [0.02, 127.0.0.1:14258][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 304 [0.02, 127.0.0.1:14258][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 304 [0.02, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 304 [0.02, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 304 [0.03, 127.0.0.1:14257][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 304 [0.03, 127.0.0.1:14257][0m
+[mHTTP GET /admin/brewing/brew_recipe/ 200 [0.34, 127.0.0.1:14257][0m
+[mHTTP GET /admin/brewing/brew_recipe/ 200 [0.34, 127.0.0.1:14257][0m
+[36mHTTP GET /static/admin/css/base.css 304 [0.02, 127.0.0.1:14257][0m
+[36mHTTP GET /static/admin/css/base.css 304 [0.02, 127.0.0.1:14257][0m
+[36mHTTP GET /static/admin/css/dark_mode.css 304 [0.04, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/css/dark_mode.css 304 [0.04, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.06, 127.0.0.1:14258][0m
+[36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.06, 127.0.0.1:14258][0m
+[36mHTTP GET /static/admin/css/changelists.css 304 [0.07, 127.0.0.1:14255][0m
+[36mHTTP GET /static/admin/css/changelists.css 304 [0.07, 127.0.0.1:14255][0m
+[36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.09, 127.0.0.1:14260][0m
+[36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.09, 127.0.0.1:14260][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.10, 127.0.0.1:14256][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.10, 127.0.0.1:14256][0m
+[36mHTTP GET /static/admin/css/responsive.css 304 [0.10, 127.0.0.1:14257][0m
+[36mHTTP GET /static/admin/css/responsive.css 304 [0.10, 127.0.0.1:14257][0m
+[36mHTTP GET /static/admin/js/core.js 304 [0.14, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/js/core.js 304 [0.14, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/js/jquery.init.js 304 [0.14, 127.0.0.1:14258][0m
+[36mHTTP GET /static/admin/js/jquery.init.js 304 [0.14, 127.0.0.1:14258][0m
+[36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.12, 127.0.0.1:14255][0m
+[36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.12, 127.0.0.1:14255][0m
+[36mHTTP GET /static/admin/js/actions.js 304 [0.11, 127.0.0.1:14260][0m
+[36mHTTP GET /static/admin/js/actions.js 304 [0.11, 127.0.0.1:14260][0m
+[36mHTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:14257][0m
+[36mHTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:14257][0m
+[36mHTTP GET /static/admin/js/prepopulate.js 304 [0.04, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/js/prepopulate.js 304 [0.04, 127.0.0.1:14259][0m
+[36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.05, 127.0.0.1:14258][0m
+[36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.05, 127.0.0.1:14258][0m
+[36mHTTP GET /static/admin/css/fonts.css 304 [0.02, 127.0.0.1:14267][0m
+[36mHTTP GET /static/admin/css/fonts.css 304 [0.02, 127.0.0.1:14267][0m
+[36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.02, 127.0.0.1:14267][0m
+[36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.02, 127.0.0.1:14267][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 304 [0.01, 127.0.0.1:14267][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 304 [0.01, 127.0.0.1:14267][0m
+[36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.02, 127.0.0.1:14268][0m
+[36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.02, 127.0.0.1:14268][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 304 [0.01, 127.0.0.1:14267][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 304 [0.01, 127.0.0.1:14267][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 304 [0.02, 127.0.0.1:14268][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 304 [0.02, 127.0.0.1:14268][0m
+[36mHTTP GET /static/admin/img/tooltag-add.svg 304 [0.02, 127.0.0.1:14267][0m
+[36mHTTP GET /static/admin/img/tooltag-add.svg 304 [0.02, 127.0.0.1:14267][0m
+[mHTTP GET /admin/brewing/brew_recipe/17/change/ 200 [0.53, 127.0.0.1:14284][0m
+[mHTTP GET /admin/brewing/brew_recipe/17/change/ 200 [0.53, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/css/dark_mode.css 304 [0.02, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/css/dark_mode.css 304 [0.02, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/css/forms.css 304 [0.02, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/css/forms.css 304 [0.02, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/css/responsive.css 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/css/responsive.css 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:14284][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.08, 127.0.0.1:14285][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.08, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/js/core.js 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/js/core.js 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.02, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.02, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/js/actions.js 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/js/actions.js 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/js/prepopulate.js 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/js/prepopulate.js 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.02, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.02, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/js/prepopulate_init.js 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/js/prepopulate_init.js 304 [0.02, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/css/fonts.css 304 [0.01, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/css/fonts.css 304 [0.01, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/css/widgets.css 304 [0.01, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/css/widgets.css 304 [0.01, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.01, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.01, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/js/change_form.js 304 [0.01, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/js/change_form.js 304 [0.01, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 304 [0.01, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 304 [0.01, 127.0.0.1:14284][0m
+[36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.01, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.01, 127.0.0.1:14285][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 304 [0.02, 127.0.0.1:14291][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 304 [0.02, 127.0.0.1:14291][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 304 [0.02, 127.0.0.1:14290][0m
+[36mHTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 304 [0.02, 127.0.0.1:14290][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /brewing 200 [0.40, 127.0.0.1:14938][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:14952][0m
+[mHTTP GET /brewing 200 [0.05, 127.0.0.1:14952][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:14956]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:14956]
+Fri Mar 25 19:26:28 2022: Another client connected
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:14979][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:14956]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:14983]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:14983]
+Fri Mar 25 19:27:12 2022: Another client connected
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:14991][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:14983]
+[mHTTP GET /static/css/create.css 200 [0.02, 127.0.0.1:14991][0m
+[mHTTP GET /static/js/three.js 200 [0.04, 127.0.0.1:14991][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.07, 127.0.0.1:14998][0m
+[mHTTP GET /static/js/brewing.js 200 [0.11, 127.0.0.1:14998][0m
+[mHTTP GET /static/css/brewing.css 200 [0.02, 127.0.0.1:14998][0m
+[mHTTP GET /static/css/home.css 200 [0.01, 127.0.0.1:14998][0m
+[mHTTP GET /static/css/template.css 200 [0.02, 127.0.0.1:14998][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:15005]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:15005]
+Fri Mar 25 19:27:25 2022: Another client connected
+[mHTTP GET /static/img/favicon.ico 200 [0.02, 127.0.0.1:14998][0m
+[mHTTP GET /static/img/favicon.ico 200 [0.02, 127.0.0.1:14998][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+[mHTTP GET /brewing 200 [0.17, 127.0.0.1:15162][0m
+[32mHTTP POST /brewing 302 [0.07, 127.0.0.1:15174][0m
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:15174][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.10, 127.0.0.1:15174][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:15180]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:15180]
+Fri Mar 25 19:30:22 2022: Another client connected
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:15242][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:15180]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:15242][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:15247]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:15247]
+Fri Mar 25 19:32:13 2022: Another client connected
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:15260][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:15247]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:15260][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:15264]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:15264]
+Fri Mar 25 19:32:27 2022: Another client connected
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:15292][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:15264]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:15292][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:15296]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:15296]
+Fri Mar 25 19:32:45 2022: Another client connected
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:24207][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:15296]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:24207][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24213]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24213]
+Fri Mar 25 19:33:41 2022: Another client connected
+[mHTTP GET /brewing 200 [0.11, 127.0.0.1:24224][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24213]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:24224][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24228]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24228]
+Fri Mar 25 19:33:54 2022: Another client connected
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:24331][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24228]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:24331][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24336]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24336]
+Fri Mar 25 19:36:04 2022: Another client connected
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:24350][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24336]
+[mHTTP GET /static/js/server_connection.js 200 [0.07, 127.0.0.1:24350][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24353]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24353]
+Fri Mar 25 19:36:17 2022: Another client connected
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:24373][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24353]
+[mHTTP GET /static/js/server_connection.js 200 [0.03, 127.0.0.1:24373][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24377]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24377]
+Fri Mar 25 19:36:51 2022: Another client connected
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:24393][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24377]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:24393][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24399]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24399]
+Fri Mar 25 19:37:16 2022: Another client connected
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:24417][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24399]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:24417][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24420]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24420]
+Fri Mar 25 19:37:42 2022: Another client connected
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:24438][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24420]
+[mHTTP GET /static/js/server_connection.js 200 [0.06, 127.0.0.1:24438][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24442]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24442]
+Fri Mar 25 19:38:11 2022: Another client connected
+[mHTTP GET /brewing 200 [0.24, 127.0.0.1:24476][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24442]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:24476][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24490]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24490]
+Fri Mar 25 19:38:52 2022: Another client connected
+[mHTTP GET /brewing 200 [0.15, 127.0.0.1:24514][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24490]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:24514][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24517]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24517]
+Fri Mar 25 19:39:20 2022: Another client connected
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:24532][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24517]
+[mHTTP GET /static/js/server_connection.js 200 [0.06, 127.0.0.1:24532][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24536]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24536]
+Fri Mar 25 19:39:41 2022: Another client connected
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:24564][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24536]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:24564][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24569]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24569]
+Fri Mar 25 19:40:13 2022: Another client connected
+[mHTTP GET /brewing 200 [0.11, 127.0.0.1:24613][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24569]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:24613][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24617]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24617]
+Fri Mar 25 19:41:08 2022: Another client connected
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:24631][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24617]
+[mHTTP GET /static/js/server_connection.js 200 [0.16, 127.0.0.1:24631][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24637]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24637]
+Fri Mar 25 19:41:27 2022: Another client connected
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:24674][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24637]
+[mHTTP GET /static/js/server_connection.js 200 [0.07, 127.0.0.1:24674][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24678]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24678]
+Fri Mar 25 19:42:03 2022: Another client connected
+[mHTTP GET /brewing 200 [0.12, 127.0.0.1:24879][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24678]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:24879][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24885]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24885]
+Fri Mar 25 19:46:29 2022: Another client connected
+[mHTTP GET /brewing 200 [0.12, 127.0.0.1:24899][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24885]
+[mHTTP GET /static/css/create.css 200 [0.03, 127.0.0.1:24899][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:24900][0m
+[mHTTP GET /static/js/three.js 200 [0.06, 127.0.0.1:24899][0m
+[mHTTP GET /static/js/brewing.js 200 [0.08, 127.0.0.1:24900][0m
+[mHTTP GET /static/css/brewing.css 200 [0.02, 127.0.0.1:24900][0m
+[mHTTP GET /static/css/home.css 200 [0.01, 127.0.0.1:24900][0m
+[mHTTP GET /static/css/template.css 200 [0.02, 127.0.0.1:24900][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24911]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24911]
+Fri Mar 25 19:46:48 2022: Another client connected
+[mHTTP GET /static/img/favicon.ico 200 [0.02, 127.0.0.1:24917][0m
+[mHTTP GET /static/img/favicon.ico 200 [0.02, 127.0.0.1:24917][0m
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:24934][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24911]
+[mHTTP GET /static/js/server_connection.js 200 [0.06, 127.0.0.1:24934][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:24938]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:24938]
+Fri Mar 25 19:47:14 2022: Another client connected
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:25007][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:24938]
+[mHTTP GET /static/js/server_connection.js 200 [0.07, 127.0.0.1:25007][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:25013]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:25013]
+Fri Mar 25 19:48:43 2022: Another client connected
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:25033][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:25013]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:25033][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:25036]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:25036]
+Fri Mar 25 19:49:07 2022: Another client connected
+[mHTTP GET /brewing 200 [0.05, 127.0.0.1:25074][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:25036]
+[mHTTP GET /static/js/server_connection.js 200 [0.06, 127.0.0.1:25074][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:25078]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:25078]
+Fri Mar 25 19:50:10 2022: Another client connected
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:25088][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:25078]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:25088][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:25093]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:25093]
+Fri Mar 25 19:50:24 2022: Another client connected
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:25107][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:25093]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:25107][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:25110]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:25110]
+Fri Mar 25 19:50:48 2022: Another client connected
+[mHTTP GET /home 200 [0.31, 127.0.0.1:25407][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:25110]
+[36mHTTP GET /static/js/home.js 304 [0.03, 127.0.0.1:25407][0m
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:25407][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.01, 127.0.0.1:25407][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:25412]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:25412]
+Fri Mar 25 19:57:38 2022: Another client connected
+[mHTTP GET /create 200 [0.09, 127.0.0.1:25415][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:25412]
+[mHTTP GET /static/js/create.js 200 [0.03, 127.0.0.1:25416][0m

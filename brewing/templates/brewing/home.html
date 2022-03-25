@@ -39,7 +39,7 @@
   <div class="recipeButtonBox">
   <form action="{% url 'brewing' %}" id="submit_brewing_form" method="post">
     {% csrf_token %}
-    <input type="number" style="display: block;" name="recipe_id" id="recipe_id" value="-1">
+    <input type="number" style="display: none;" name="recipe_id" id="recipe_id" value="-1">
     <input type="text" style="display: none;" value="set_recipe_id" name="command">
     <button type="button" class="submitButton" id="submitRecipe" onclick="submit_button()">Brauen</button>
   </form>

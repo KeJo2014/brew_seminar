@@ -1,9 +1,7 @@
 import json
 from channels.generic.websocket import WebsocketConsumer
 from asgiref.sync import async_to_sync
-from .process.brew_server import brew_server
-
-brew_server = brew_server()
+from .views import brew_system
 
 class ChatConsumer(WebsocketConsumer):
     def connect(self):
@@ -14,8 +12,8 @@ class ChatConsumer(WebsocketConsumer):
             self.channel_name
         )
         self.accept()
-        brew_server.write_to_log("Another client connected")
-        self.send_json({'type':'chat_message', 'message':json.dumps(brew_server.get_status())})
+        brew_system.write_to_log("Another client connected")
+        self.send_json({'type':'chat_message', 'message':json.dumps(brew_system.get_status(), indent=4)})
    
 
     def receive(self, text_data):
@@ -41,10 +39,10 @@ class ChatConsumer(WebsocketConsumer):
 
     def evaluate_response(self, command):
         if(command == "get_status"):
-            self.send_json({'type':'chat_message', 'message':json.dumps(brew_server.get_status())})
+            self.send_json({'type':'chat_message', 'message':json.dumps(brew_system.get_status())})
         elif(command == "load_test"):
-            brew_server.load_recipe(1)      #add real recipe id
-            self.send_json({'type':'chat_message', 'message':json.dumps(brew_server.get_status())})
+            brew_system.load_recipe(1)      #add real recipe id
+            self.send_json({'type':'chat_message', 'message':json.dumps(brew_system.get_status())})
         self.send_json({'type':'chat_message', 'message':'unauthorized'})
     
     def send_json(self, data):

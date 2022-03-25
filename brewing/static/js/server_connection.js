@@ -3,21 +3,20 @@ let url = `ws://${window.location.host}/ws/socket-server/`
         const chatSocket = new WebSocket(url)
 
         chatSocket.onmessage = function(e){
-            let data = JSON.parse(e.data)
-            
+            let data = JSON.parse(JSON.parse(e.data).message);
+            console.log(data);
 
-            if(data.type === 'chat'){
-                let message = JSON.parse(data.message)
-                switch (message.command) {
+
+                switch (data.command) {
                     case "update":
-                        update_site(message)
+                        update_site(data)
                         break;
                 
                     default:
                         console.log("that command is unknown")
                         break;
                 }
-            }
+            
         }
 
         // let form = document.getElementById('form')
@@ -43,8 +42,13 @@ let url = `ws://${window.location.host}/ws/socket-server/`
             let engine = document.getElementById("engine");
             let duration = document.getElementById("duration");
             let finish_time = document.getElementById("finish_time");
+            // steps
+            let current_title = document.getElementById("currentPhase");
+            let current_description = document.getElementById("currentContent");
+            let next_title = document.getElementById("nextPhase");
+            let next_description = document.getElementById("nextContent");
         
-            //assign values
+            //assign values terminal
             phase.innerHTML = data.step;
             temperature.innerHTML = data.sensor_data.temperature;
             if(data.sensor_data.engine_mode == true){
@@ -54,5 +58,11 @@ let url = `ws://${window.location.host}/ws/socket-server/`
             }
             duration.innerHTML = "I don't know";
             finish_time.innerHTML = "Can we say that?";
+            //assign values steps
+            console.log("HELLO?:"+data.roadmap[0][data.step])
+            current_title.innerHTML = data.roadmap[0][data.step];
+            current_description.innerHTML = data.roadmap[1][data.step];
+            next_title.innerHTML = data.roadmap[0][data.step+1];
+            next_description.innerHTML = data.roadmap[1][data.step+1];
         }
         

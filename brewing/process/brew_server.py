@@ -20,6 +20,19 @@ class brew_server():
             },
             "start_time": current_time,
         }
+        self.roadmap = [[
+            "Geräte überprüfen",
+            "Materialien überprüfen",
+            "Läutern",
+            "Kochen",
+            "Gären",
+        ],[
+            "You haven't createt a field to track notes ;-)",
+            "You haven't createt a field to track notes ;-)",
+            "You haven't createt a field to track notes ;-)",
+            "You haven't createt a field to track notes ;-)",
+            "You haven't createt a field to track notes ;-)",
+        ]]
         self.recipe = []
         self.logger = logging.getLogger()
         self.handler = logging.FileHandler('brewing/process/logs/logfile.log')
@@ -28,6 +41,7 @@ class brew_server():
     def get_status(self):
         s = self.status
         s["command"] = "update"
+        s["roadmap"] = self.roadmap
         return s
     
     def write_to_log(self, message):
