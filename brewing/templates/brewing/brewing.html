@@ -32,7 +32,7 @@
             </td>
         </tr>
         <tr>
-            <th class="labelGuidance">nächster Schritt</th>
+            <th class="labelGuidance" id="next_step_headline">nächster Schritt</th>
         </tr>
         <tr>
             <th class="phaseGuidance" id="nextPhase">Prozesstitel</th>
@@ -79,12 +79,12 @@
         </tr>
     </table>
     <div id="controlBar">
-        <button class="controlButton" id="but-undo" onclick="undo()"><i class="fas fa-arrow-left"></i></button>
+        <button class="controlButton" id="but-undo" onclick="prev()"><i class="fas fa-arrow-left"></i></button>
         <button class="controlButton" id="but-start" onclick="start()"><i class="fas fa-play"></i></button>
         <!-- <button class="controlButton" id="but-stop" onclick="stop()"><i class="fas fa-pause"></i></button> -->
         <button class="controlButton" id="but-reset" onclick="reset()"><i class="fas fa-stop"></i></button>
         <!-- <button class="controlButton" id="but-file" onclick="protocol()"><i class="fas fa-file"></i></button> -->
-        <button class="controlButton" id="but-next" onclick="next()"><i class="fas fa-arrow-right"></i></button>
+        <button class="controlButton" id="but-next" onclick="next()"><i class="fas fa-arrow-right"></i></button> 
     </div>
 </aside>
 <script src="{% static 'js/three.js' %}"></script>
@@ -120,5 +120,5 @@
 
 			animate();
 </script>
-<script src="{% static '/js/brewing.js' %}" crossorigin="anonymous"></script>
+<!-- <script src="{% static '/js/brewing.js' %}" crossorigin="anonymous"></script> -->
 {% endblock %}

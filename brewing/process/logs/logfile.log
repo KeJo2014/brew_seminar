@@ -12970,3 +12970,492 @@ Fri Mar 25 19:57:38 2022: Another client connected
 [mHTTP GET /create 200 [0.09, 127.0.0.1:25415][0m
 WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:25412]
 [mHTTP GET /static/js/create.js 200 [0.03, 127.0.0.1:25416][0m
+[mHTTP GET / 200 [0.48, 127.0.0.1:31359][0m
+[36mHTTP GET /static/js/three.js 304 [0.11, 127.0.0.1:31359][0m
+Not Found: /favicon.ico
+[33mHTTP GET /favicon.ico 404 [0.11, 127.0.0.1:31359][0m
+[mHTTP GET /home 200 [0.12, 127.0.0.1:31374][0m
+[36mHTTP GET /static/css/create.css 304 [0.01, 127.0.0.1:31374][0m
+[36mHTTP GET /static/js/home.js 304 [0.04, 127.0.0.1:31375][0m
+[36mHTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:31383][0m
+[36mHTTP GET /static/css/home.css 304 [0.01, 127.0.0.1:31383][0m
+[36mHTTP GET /static/css/template.css 304 [0.01, 127.0.0.1:31383][0m
+[36mHTTP GET /static/img/favicon.ico 304 [0.00, 127.0.0.1:31383][0m
+[32mHTTP GET /brewing 302 [0.08, 127.0.0.1:31397][0m
+Not Found: /login
+[33mHTTP GET /login 404 [0.07, 127.0.0.1:31397][0m
+[mHTTP GET /home 200 [0.04, 127.0.0.1:28091][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:28091][0m
+Not Found: /login
+[33mHTTP GET /login 404 [0.05, 127.0.0.1:28091][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\views.py changed, reloading.
+[mHTTP GET /brewing 200 [0.12, 127.0.0.1:28244][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:28244][0m
+[mHTTP GET /brewing 200 [0.05, 127.0.0.1:28244][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.03, 127.0.0.1:28244][0m
+[36mHTTP GET /static/js/brewing.js 304 [0.04, 127.0.0.1:28243][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:28258]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:28258]
+Sat Mar 26 19:34:54 2022: Another client connected
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+[mHTTP GET /brewing 200 [0.13, 127.0.0.1:28454][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:28473][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:28473][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.09, 127.0.0.1:28473][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:28477]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:28477]
+Sat Mar 26 19:38:40 2022: Another client connected
+Exception inside application: Incoming message has no 'type' attribute
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 123, in dispatch
+    handler = getattr(self, get_handler_name(message), None)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 19, in get_handler_name
+    raise ValueError("Incoming message has no 'type' attribute")
+ValueError: Incoming message has no 'type' attribute
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:28477]
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:28496][0m
+Application instance <Task pending name='Task-18' coro=<StaticFilesWrapper.__call__() running at C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py:44> wait_for=<Future finished result=None>> for connection <WebRequest at 0x1f16fc37af0 method=GET uri=/brewing clientproto=HTTP/1.1> took too long to shut down and was killed.
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:28507]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:28507]
+Sat Mar 26 19:39:14 2022: Another client connected
+Exception inside application: Incoming message has no 'type' attribute
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 123, in dispatch
+    handler = getattr(self, get_handler_name(message), None)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 19, in get_handler_name
+    raise ValueError("Incoming message has no 'type' attribute")
+ValueError: Incoming message has no 'type' attribute
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:28507]
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+[mHTTP GET /brewing 200 [0.16, 127.0.0.1:28558][0m
+[32mHTTP POST /brewing 302 [0.02, 127.0.0.1:28598][0m
+[mHTTP GET /brewing 200 [0.04, 127.0.0.1:28598][0m
+[mHTTP GET /brewing 200 [0.57, 127.0.0.1:28628][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.07, 127.0.0.1:28628][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:28633]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:28633]
+Sat Mar 26 19:41:38 2022: Another client connected
+Exception inside application: Incoming message has no 'type' attribute
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 123, in dispatch
+    handler = getattr(self, get_handler_name(message), None)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 19, in get_handler_name
+    raise ValueError("Incoming message has no 'type' attribute")
+ValueError: Incoming message has no 'type' attribute
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:28633]
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+[mHTTP GET /brewing 200 [0.16, 127.0.0.1:28663][0m
+[32mHTTP POST /brewing 302 [0.03, 127.0.0.1:28668][0m
+[mHTTP GET /brewing 200 [0.04, 127.0.0.1:28668][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:28672]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:28672]
+Sat Mar 26 19:42:21 2022: Another client connected
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+[mHTTP GET /brewing 200 [0.14, 127.0.0.1:28883][0m
+[32mHTTP POST /brewing 302 [0.03, 127.0.0.1:28883][0m
+[mHTTP GET /brewing 200 [0.04, 127.0.0.1:28883][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.06, 127.0.0.1:28883][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:28890]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:28890]
+Sat Mar 26 19:46:04 2022: Another client connected
+Exception inside application: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 21, in receive
+    self.evaluate_response(text_data_json)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 47, in evaluate_response
+    brew_system.next_step()
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py", line 70, in next_step
+    if(self.status["step"] != len(self.recipe["roadmap"]["points"])):
+TypeError: list indices must be integers or slices, not str
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:28890]
+[mHTTP GET /brewing 200 [0.05, 127.0.0.1:28903][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:28907]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:28907]
+Sat Mar 26 19:46:23 2022: Another client connected
+Exception inside application: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 21, in receive
+    self.evaluate_response(text_data_json)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 47, in evaluate_response
+    brew_system.next_step()
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py", line 70, in next_step
+    if(self.status["step"] != len(self.recipe["roadmap"]["points"])):
+TypeError: list indices must be integers or slices, not str
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:28907]
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+[mHTTP GET /brewing 200 [0.13, 127.0.0.1:28946][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:28946][0m
+[mHTTP GET /brewing 200 [0.04, 127.0.0.1:28946][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:28958]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:28958]
+Sat Mar 26 19:46:59 2022: Another client connected
+Exception inside application: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 21, in receive
+    self.evaluate_response(text_data_json)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 47, in evaluate_response
+    brew_system.next_step()
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py", line 70, in next_step
+    if(self.status["step"] != len(self.recipe["roadmap"]["points"])):
+TypeError: list indices must be integers or slices, not str
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:28958]
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:28978][0m
+[32mHTTP POST /brewing 302 [0.03, 127.0.0.1:28978][0m
+[mHTTP GET /brewing 200 [0.04, 127.0.0.1:28978][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:28985]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:28985]
+Sat Mar 26 19:47:25 2022: Another client connected
+Exception inside application: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 21, in receive
+    self.evaluate_response(text_data_json)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 48, in evaluate_response
+    brew_system.next_step()
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py", line 70, in next_step
+    if(self.status["step"] != len(self.recipe["roadmap"]["points"])):
+TypeError: list indices must be integers or slices, not str
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:28985]
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /brewing 200 [0.22, 127.0.0.1:29067][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:29067][0m
+[mHTTP GET /brewing 200 [0.04, 127.0.0.1:29067][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.07, 127.0.0.1:29067][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:29073]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:29073]
+Sat Mar 26 19:49:28 2022: Another client connected
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+[mHTTP GET /brewing 200 [0.15, 127.0.0.1:29166][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:29166][0m
+[mHTTP GET /brewing 200 [0.05, 127.0.0.1:29166][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:29173]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:29173]
+Sat Mar 26 19:51:14 2022: Another client connected
+Exception inside application: can only concatenate str (not "bool") to str
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 21, in receive
+    self.evaluate_response(text_data_json)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 47, in evaluate_response
+    print("loading next step: "+brew_system.next_step())
+TypeError: can only concatenate str (not "bool") to str
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:29173]
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+[mHTTP GET /brewing 200 [0.12, 127.0.0.1:29201][0m
+[32mHTTP POST /brewing 302 [0.05, 127.0.0.1:29201][0m
+[mHTTP GET /brewing 200 [0.05, 127.0.0.1:29201][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.07, 127.0.0.1:29201][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:29208]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:29208]
+Sat Mar 26 19:51:45 2022: Another client connected
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+[mHTTP GET /brewing 200 [0.14, 127.0.0.1:29252][0m
+[32mHTTP POST /brewing 302 [0.03, 127.0.0.1:29261][0m
+[mHTTP GET /brewing 200 [0.04, 127.0.0.1:29261][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:29266]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:29266]
+Sat Mar 26 19:52:52 2022: Another client connected
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py changed, reloading.
+[mHTTP GET /brewing 200 [0.20, 127.0.0.1:29581][0m
+[32mHTTP POST /brewing 302 [0.05, 127.0.0.1:29581][0m
+[mHTTP GET /brewing 200 [0.05, 127.0.0.1:29581][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.11, 127.0.0.1:29581][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:29593]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:29593]
+Sat Mar 26 19:59:06 2022: Another client connected
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:29658][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:29593]
+[mHTTP GET /brewing 200 [0.03, 127.0.0.1:29693][0m
+[32mHTTP POST /brewing 302 [0.02, 127.0.0.1:29699][0m
+[mHTTP GET /brewing 200 [0.03, 127.0.0.1:29699][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:29704]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:29704]
+Sat Mar 26 20:01:13 2022: Another client connected
+[mHTTP GET /brewing 200 [0.04, 127.0.0.1:29719][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:29704]
+[mHTTP GET /static/css/create.css 200 [0.04, 127.0.0.1:29719][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.06, 127.0.0.1:29723][0m
+[mHTTP GET /static/js/three.js 200 [0.09, 127.0.0.1:29719][0m
+[mHTTP GET /static/css/brewing.css 200 [0.02, 127.0.0.1:29719][0m
+[mHTTP GET /static/css/home.css 200 [0.04, 127.0.0.1:29719][0m
+[mHTTP GET /static/css/template.css 200 [0.04, 127.0.0.1:29719][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:29732]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:29732]
+Sat Mar 26 20:01:35 2022: Another client connected
+[mHTTP GET /static/img/favicon.ico 200 [0.02, 127.0.0.1:29719][0m
+[mHTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:29719][0m
+[mHTTP GET /brewing 200 [0.05, 127.0.0.1:29801][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:29732]
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:29801][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:29806]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:29806]
+Sat Mar 26 20:02:57 2022: Another client connected

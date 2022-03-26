@@ -29,10 +29,18 @@ let url = `ws://${window.location.host}/ws/socket-server/`
         //     form.reset()
         // })
 
-        function send_to_server(command){
-            chatSocket.send(JSON.stringify({
-            'message':command
-        }))
+        function send_to_server(command, msg){
+            if(msg == ""){
+                text = {
+                    'command':command,
+                }
+            }else{
+                text = {
+                    'command':command,
+                    'message':msg
+                }
+            }
+            chatSocket.send(JSON.stringify(text))
         }
 
         function update_site(data){
@@ -59,10 +67,31 @@ let url = `ws://${window.location.host}/ws/socket-server/`
             duration.innerHTML = "I don't know";
             finish_time.innerHTML = "Can we say that?";
             //assign values steps
-            console.log("HELLO?:"+data.roadmap[0][data.step])
             current_title.innerHTML = data.roadmap[0][data.step];
             current_description.innerHTML = data.roadmap[1][data.step];
-            next_title.innerHTML = data.roadmap[0][data.step+1];
-            next_description.innerHTML = data.roadmap[1][data.step+1];
+            if(data.roadmap[0][data.step+1] != undefined){  
+                next_title.innerHTML = data.roadmap[0][data.step+1];
+                next_description.innerHTML = data.roadmap[1][data.step+1];
+                document.getElementById("next_step_headline").style.display = "block";
+            }else{
+                next_title.innerHTML = "";
+                next_description.innerHTML = "";
+                document.getElementById("next_step_headline").style.display = "none";
+            }
         }
         
+function next(){
+    send_to_server("next","")
+}
+
+function prev(){
+    send_to_server("prev","")
+}
+
+function start(){
+    send_to_server("start","")
+}
+
+function reset(){
+    send_to_server("reset","")
+}

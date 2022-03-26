@@ -66,8 +66,8 @@ class brew_server():
        messurement.objects.create(self.status["sensor_data"]["temperature"], self.status["sensor_data"]["engine_mode"], self.status["sensor_data"]["plato"])
     
     def next_step(self):
-        if(self.recipe != 0):
-            if(self.status["step"] != len(self.recipe["roadmap"]["points"])):
+        if(self.recipe != None):
+            if(self.status["step"] != len(self.roadmap[0])-1):
                 self.status["step"] += 1
                 return(True)
             else:
@@ -79,3 +79,36 @@ class brew_server():
             return(True) 
         else:
             return(False)
+    
+    def start_process(self):
+        print("start process")
+        return(True)
+    
+    def stop_process(self):
+        current_time = time.time()
+        self.status ={
+            "status": "started",
+            "recipe": None,
+            "step": 0,
+            "sensor_data": {
+                "temperature": 0,
+                "engine_mode": False,
+                "plato": 0,
+            },
+            "start_time": current_time,
+        }
+        self.roadmap = [[
+            "Geräte überprüfen",
+            "Materialien überprüfen",
+            "Läutern",
+            "Kochen",
+            "Gären",
+        ],[
+            "You haven't createt a field to track notes ;-)",
+            "You haven't createt a field to track notes ;-)",
+            "You haven't createt a field to track notes ;-)",
+            "You haven't createt a field to track notes ;-)",
+            "You haven't createt a field to track notes ;-)",
+        ]]
+        self.recipe = []
+        return(True)

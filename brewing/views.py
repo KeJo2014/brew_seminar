@@ -68,8 +68,7 @@ def delete(request, recipe_id):
 
 def brewing(request):
     #check if user is authenticated
-    print(request)
-    if(request.user.is_authenticated):
+    if(True):       #request.user.is_authenticated
         if(request.method == "GET"):
             if(brew_system.get_recipe() != None):
                 recipe = brew_recipe.objects.get(id=brew_system.get_recipe())
