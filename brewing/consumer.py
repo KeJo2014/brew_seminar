@@ -2,11 +2,12 @@ import json
 from channels.generic.websocket import WebsocketConsumer
 from asgiref.sync import async_to_sync
 from .views import brew_system
+import asyncio
 
 class ChatConsumer(WebsocketConsumer):
     def connect(self):
         self.room_group_name = 'test'
-
+        self.task = []
         async_to_sync(self.channel_layer.group_add)(
             self.room_group_name,
             self.channel_name
@@ -40,8 +41,8 @@ class ChatConsumer(WebsocketConsumer):
         command = command['command']
         if(command == "get_status"):
             self.send_json({'type':'chat_message', 'message':json.dumps(brew_system.get_status())})
-        elif(command == "load_test"):
-            brew_system.load_recipe(1)      #add real recipe id
+        elif(command == "keep_maischen"):
+            brew_system.maischen_procedure()
             self.send_json({'type':'chat_message', 'message':json.dumps(brew_system.get_status())})
         elif(command == "next"):
             if(brew_system.next_step()):
@@ -72,7 +73,19 @@ class ChatConsumer(WebsocketConsumer):
         #     "message": "Unknown command",
         # }
         # self.send_json({'message':json.dumps(error)})
+    def stop(self):
+        """
+        stops the procedure
+        """
+        self.task.cancel()
+        self.reset()
     
+    def reset(self):
+        """
+        resets the timer
+        """
+        print('reseted')
+
     def send_json(self, data):
         async_to_sync(self.channel_layer.group_send)(
             self.room_group_name,

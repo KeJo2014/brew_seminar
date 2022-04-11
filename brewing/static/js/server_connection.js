@@ -10,6 +10,12 @@ let url = `ws://${window.location.host}/ws/socket-server/`
                 switch (data.command) {
                     case "update":
                         update_site(data)
+                        if(data.status == "maischen"){
+                            send_to_server("keep_maischen","")
+                        }
+                        else if(data.status == "warmingUp"){
+                            send_to_server("keep_maischen","")
+                        }
                         break;
                 
                     default:
@@ -44,6 +50,14 @@ let url = `ws://${window.location.host}/ws/socket-server/`
         }
 
         function update_site(data){
+            //controll buttons
+            if(data.status == "running"){
+                document.getElementById("but-start").style.display = "none"
+                document.getElementById("but-reset").style.display = "block"
+            }else{
+                document.getElementById("but-start").style.display = "block"
+                document.getElementById("but-reset").style.display = "none"
+            }
             // Data terminal
             let phase = document.getElementById("phase");
             let temperature = document.getElementById("temp");

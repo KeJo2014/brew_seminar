@@ -18,7 +18,7 @@ def evaluate(request):
         steps_number = messurement.objects.values('step').annotate(Count('step')).order_by('step')
         steps = []
         for i in range(steps_number.count()):
-            steps.append(i+1)
+            steps.append(i+2)
 
         engine = []
         for mode in messurement.objects.filter(step=1).values('engine'):
@@ -37,7 +37,7 @@ def evaluate(request):
         steps_number = messurement.objects.values('step').annotate(Count('step')).order_by('step')
         steps = []
         for i in range(steps_number.count()):
-            steps.append(i+1)
+            steps.append(i+2)
         
         engine = []
         for mode in messurement.objects.filter(step=step).values('engine'):
