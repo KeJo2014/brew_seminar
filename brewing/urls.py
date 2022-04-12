@@ -10,5 +10,7 @@ urlpatterns = [
     path("brewing", views.brewing, name="brewing"),
     path("create", views.create, name="create"),
     path("edit/<int:recipe_id>", views.edit, name="edit"),
+    path("login", views.login_view, name="login"),
+    path("logout", views.logout_view, name="logout"),
     #path("template", views.template, name="template"),     You shouldn't need this
 ]
