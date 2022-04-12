@@ -28,7 +28,7 @@ class brew_server():
             "Materialien überprüfen",
             "Maischen",
             "Läutern",
-            "Kochen",
+            "Würzekochen",
             "Gären",
         ], [
             "You haven't createt a field to track notes ;-)",
@@ -84,6 +84,8 @@ class brew_server():
             if(self.status["step"] != len(self.roadmap[0])-1):
                 if(self.roadmap[0][self.status["step"]+1] == "Maischen"):
                     self.initiate_maischen()
+                elif(self.roadmap[0][self.status["step"]+1] == "Würzekochen"):
+                    self.initiate_kochen()
                 self.status["step"] += 1
                 return(True)
             else:
@@ -97,6 +99,7 @@ class brew_server():
             self.status["sensor_data"]["engine_mode"] = False
             self.next_step()
         else:
+            self.status["status"] = "maischen"
             # DB get phases
             phases = [
                 [20, 50],
@@ -123,6 +126,45 @@ class brew_server():
             self.write_sensor_data()
             time.sleep(3)
 
+    def kochen_procedure(self):
+        if(time.time() > self.kochen["end"]):
+            print("finish")
+            self.status["status"] = "running"
+            self.next_step()
+        else:
+            self.status["status"] = "cooking"
+            # DB get phases
+            phases = [
+                [20, 50],
+                [35, 55],
+                [75, 64],
+                [95, 72],
+                [115, 78]
+            ]
+            # get current phase
+            delta = time.time() - self.maischen["start"]
+            for i in range(len(phases)):
+                if(delta > phases[i][0] and delta < phases[i][1]):
+                    self.heat(phases[i][0])
+                    break
+
+            obj = self.hardware.get_sensor_object()
+            print("here")
+            self.status["sensor_data"] = {
+                "temperature": obj[0],
+                "engine_mode": obj[1],
+                "heat_mode": obj[2],
+                "plato": self.status["sensor_data"]["plato"]
+            }
+            self.write_sensor_data()
+            time.sleep(3)
+
+    def keep_process(self):
+        if(self.roadmap[0][self.status["step"]] == "Maischen"):
+            self.maischen_procedure()
+        else:
+            self.kochen_procedure()
+
     def initiate_maischen(self):
         self.maischen = {
             "start": time.time(),
@@ -130,6 +172,13 @@ class brew_server():
         }
         self.status["status"] = "warmingUp"
         self.hardware.engine_on()
+
+    def initiate_kochen(self):
+        self.kochen = {
+            "start": time.time(),
+            "end": time.time()+20
+        }
+        self.status["status"] = "warmingUp"
 
     def heat(self, destination_temp):
         while(self.hardware.get_temp() < destination_temp):
@@ -169,7 +218,7 @@ class brew_server():
             "Materialien überprüfen",
             "Maischen",
             "Läutern",
-            "Kochen",
+            "Würzekochen",
             "Gären",
         ], [
             "You haven't createt a field to track notes ;-)",
