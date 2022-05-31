@@ -4,7 +4,8 @@ import logging
 import asyncio
 from .hardware import brew_server_hardware
 
-from ..models import recipe, messurement
+from ..models import brew_recipe, messurement
+from django.shortcuts import get_object_or_404
 
 
 class brew_server():
@@ -61,9 +62,9 @@ class brew_server():
         self.logger.error(timeStr+": " + message)
 
     def load_recipe(self, recipe_id):
-        rec = json.dumps(recipe.objects.get(id=recipe_id).recipe)
+        rec = json.dumps(brew_recipe.objects.get(id=recipe_id).recipe)
         self.status["recipe"] = rec
-        self.recipe = json.loads(recipe.objects.get(id=recipe_id).recipe)
+        self.recipe = json.loads(brew_recipe.objects.get(id=recipe_id).recipe)
 
     def get_recipe(self):
         if(self.status["recipe"] != None):
@@ -101,13 +102,10 @@ class brew_server():
         else:
             self.status["status"] = "maischen"
             # DB get phases
-            phases = [
-                [20, 50],
-                [35, 55],
-                [75, 64],
-                [95, 72],
-                [115, 78]
-            ]
+            print(self.get_recipe())
+            phases = self.load_phases(0)
+            print(phases)
+
             # get current phase
             delta = time.time() - self.maischen["start"]
             for i in range(len(phases)):
@@ -133,7 +131,7 @@ class brew_server():
             self.next_step()
         else:
             self.status["status"] = "cooking"
-            # DB get phases
+            # KOCHEN PROCEDURE ?!
             phases = [
                 [20, 50],
                 [35, 55],
@@ -158,6 +156,18 @@ class brew_server():
             }
             self.write_sensor_data()
             time.sleep(3)
+
+    # step 0 = maischen, step 1 = würzekochen
+    def load_phases(self, step):
+        recipe = brew_recipe.objects.get(id=self.status["recipe"])
+        if(step == 0):
+            temp = json.loads(recipe.maischplan)[0][2]
+        else:
+            temp = json.loads(recipe.wuerzekochen)[0][2]
+        phases = []
+        for i in range(len(temp)):
+            phases.append([int(temp[i][0]), int(temp[i][1])])
+        return phases
 
     def keep_process(self):
         if(self.roadmap[0][self.status["step"]] == "Maischen"):

@@ -65,8 +65,7 @@ function update_site(data) {
     let phase = document.getElementById("phase");
     let temperature = document.getElementById("temp");
     let engine = document.getElementById("engine");
-    let duration = document.getElementById("duration");
-    let finish_time = document.getElementById("finish_time");
+    let rast = document.getElementById("rast");
     // steps
     let current_title = document.getElementById("currentPhase");
     let current_description = document.getElementById("currentContent");
@@ -81,8 +80,7 @@ function update_site(data) {
     } else {
         engine.innerHTML = "OFF";
     }
-    duration.innerHTML = "I don't know";
-    finish_time.innerHTML = "Can we say that?";
+    rast.innerHTML = "working on it";
     //assign values steps
     current_title.innerHTML = data.roadmap[0][data.step];
     current_description.innerHTML = data.roadmap[1][data.step];
