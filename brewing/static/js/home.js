@@ -1,5 +1,5 @@
 function sortTable(filter) {
-		location.href = '?order_by=' + filter;
+	location.href = '?order_by=' + filter;
 }
 
 var selectedRowId;
@@ -12,11 +12,11 @@ $("#selectRecipeTable tbody tr").click(function () {
 });
 
 $('#submitRecipe').on('click', function (e) {
-	
-		console.log("hi");
-		document.getElementById('recipe_id').value = selectedRowId;
-		document.getElementById('submit_brewing_form').submit();
-	
+
+	console.log("hi");
+	document.getElementById('recipe_id').value = selectedRowId;
+	document.getElementById('submit_brewing_form').submit();
+
 });
 
 $('#editRecipe').on('click', function (e) {
@@ -36,8 +36,9 @@ $('#delRecipe').on('click', function (e) {
 	}
 });
 
-function submit_button(){
+function submit_button() {
 	console.log("hi");
 	document.getElementById('recipe_id').value = selectedRowId;
 	document.getElementById('submit_brewing_form').submit();
 }
+

@@ -1,5 +1,8 @@
 let url = `ws://${window.location.host}/ws/socket-server/`
 mode = false
+count = 0;
+createGraph()
+showGraph(false);
 
 const chatSocket = new WebSocket(url)
 
@@ -93,6 +96,19 @@ function update_site(data) {
         next_description.innerHTML = "";
         document.getElementById("next_step_headline").style.display = "none";
     }
+
+    if (data.roadmap[0][data.step] == "Maischen" || data.roadmap[0][data.step] == "Würzekochen") {
+        if (count % 3 == 0) {
+            showGraph(true);
+            addDatapoint(data.sensor_data.temperature);
+        }
+    } else {
+        showGraph(false);
+        clearChart();
+        count = 0;
+    }
+
+    count++;
 }
 
 function next() {
@@ -127,4 +143,57 @@ function reset() {
         window.alert("Please start the process first!")
     }
     mode = false;
+}
+
+function createGraph() {
+    ctx = document.getElementById("chart").getContext("2d");
+
+    chart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: [
+
+            ],
+            datasets: [
+                {
+                    label: "Temperature in degrees celcius",
+                    fill: false,
+                    backgroundColor: "#f38301",
+                    borderColor: "#f38301",
+                    data: [
+
+                    ]
+                }
+            ]
+        },
+        options: {
+            title: {
+                text: "Live Chart",
+                display: true
+            },
+            maintainAspectRatio: false,
+        }
+    });
+}
+
+function showGraph(mode) {
+    if (mode) {
+        document.getElementById('chart').style.display = 'block';
+    } else {
+        document.getElementById('chart').style.display = 'none';
+    }
+}
+
+function addDatapoint(temperature) {
+    // get current hours and minutes
+    let date = new Date();
+    chart.data.labels.push(date.getHours() + ":" + date.getMinutes());
+    chart.data.datasets[0].data.push(temperature);
+    chart.update();
+}
+
+function clearChart() {
+    chart.data.labels = [];
+    chart.data.datasets[0].data = [];
+    chart.update();
 }
