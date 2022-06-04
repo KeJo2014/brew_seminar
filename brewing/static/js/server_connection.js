@@ -57,7 +57,7 @@ function send_to_server(command, msg) {
 
 function update_site(data) {
     //controll buttons
-    if (data.status == "running") {
+    if (data.status != "waiting") {
         document.getElementById("but-start").style.display = "none"
         document.getElementById("but-reset").style.display = "block"
     } else {
@@ -83,7 +83,6 @@ function update_site(data) {
     } else {
         engine.innerHTML = "OFF";
     }
-    rast.innerHTML = "working on it";
     //assign values steps
     current_title.innerHTML = data.roadmap[0][data.step];
     current_description.innerHTML = data.roadmap[1][data.step];
@@ -98,13 +97,14 @@ function update_site(data) {
     }
 
     if (data.roadmap[0][data.step] == "Maischen" || data.roadmap[0][data.step] == "Würzekochen") {
+        document.getElementById("rast").parentElement.style.display = "contents";
+        calculateRastPhase(data);
         if (count % 3 == 0) {
             showGraph(true);
             addDatapoint(data.sensor_data.temperature);
         }
     } else {
-        showGraph(false);
-        clearChart();
+        document.getElementById("rast").parentElement.style.display = "none";
         count = 0;
     }
 
@@ -114,6 +114,11 @@ function update_site(data) {
 function next() {
     if (mode == true) {
         send_to_server("next", "")
+        if (document.getElementById("chart").style.display == "block") {
+            showGraph(false);
+        } else if (nextPhase.innerHTML == "Würzekochen" || nextPhase.innerHTML == "Maischen" & document.getElementById("chart").style.display == "none") {
+            showGraph(true);
+        }
     } else {
         window.alert("Please press start first!")
     }
@@ -139,6 +144,7 @@ function start() {
 function reset() {
     if (mode == true) {
         send_to_server("reset", "")
+        location.reload();
     } else {
         window.alert("Please start the process first!")
     }
@@ -181,6 +187,7 @@ function showGraph(mode) {
         document.getElementById('chart').style.display = 'block';
     } else {
         document.getElementById('chart').style.display = 'none';
+        clearChart();
     }
 }
 
@@ -196,4 +203,21 @@ function clearChart() {
     chart.data.labels = [];
     chart.data.datasets[0].data = [];
     chart.update();
+}
+
+function calculateRastPhase(data) {
+    let phases = data.phases;
+    console.log(phases);
+    startUnix = data.start_time;
+    currentUnix = Date.now() / 1000;
+    delta = currentUnix - startUnix;
+    console.log(currentUnix + "||" + startUnix + "||" + delta);
+    console.log(delta);
+    for (let i = 0; i < phases.length; i++) {
+        if (delta > phases[i][1]) {
+            document.getElementById("rast").innerHTML = "Phase: " + (i + 1);
+        } else if (delta < phases[0][1]) {
+            document.getElementById("rast").innerHTML = "Phase: 0";
+        }
+    }
 }

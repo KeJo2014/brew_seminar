@@ -55,6 +55,10 @@ class brew_server():
             "plato": self.status["sensor_data"]["plato"]
         }
         s["sensor_data"] = x
+        if(self.status["status"] == "maischen"):
+            s["phases"] = self.load_phases(0)
+        elif(self.status["status"] == "kochen"):
+            s["phases"] = self.load_phases(1)
         return s
 
     def write_to_log(self, message):
@@ -109,7 +113,7 @@ class brew_server():
             # get current phase
             delta = time.time() - self.maischen["start"]
             for i in range(len(phases)):
-                if(delta > phases[i][0] and delta < phases[i][1]):
+                if(delta < phases[i][1]):
                     self.heat(phases[i][0])
                     break
 
@@ -140,7 +144,7 @@ class brew_server():
                 [115, 78]
             ]
             # get current phase
-            delta = time.time() - self.maischen["start"]
+            delta = time.time() - self.kochen["start"]
             for i in range(len(phases)):
                 if(delta > phases[i][0] and delta < phases[i][1]):
                     self.heat(phases[i][0])
@@ -165,8 +169,10 @@ class brew_server():
         else:
             temp = json.loads(recipe.wuerzekochen)[0][2]
         phases = []
+        cache = 0
         for i in range(len(temp)):
-            phases.append([int(temp[i][0]), int(temp[i][1])])
+            phases.append([int(temp[i][0]), int(temp[i][1])+cache])
+            cache += int(temp[i][1])
         return phases
 
     def keep_process(self):
@@ -178,9 +184,10 @@ class brew_server():
     def initiate_maischen(self):
         self.maischen = {
             "start": time.time(),
-            "end": time.time()+20
+            "end": time.time()+50
         }
-        self.status["status"] = "warmingUp"
+        self.status["status"] = "maischen"
+        self.status["start_time"] = time.time()
         self.hardware.engine_on()
 
     def initiate_kochen(self):
@@ -188,7 +195,8 @@ class brew_server():
             "start": time.time(),
             "end": time.time()+20
         }
-        self.status["status"] = "warmingUp"
+        self.status["status"] = time.time()
+        self.status["start_time"] = "warmingUp"
 
     def heat(self, destination_temp):
         while(self.hardware.get_temp() < destination_temp):
