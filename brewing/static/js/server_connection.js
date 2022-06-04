@@ -1,6 +1,8 @@
 let url = `ws://${window.location.host}/ws/socket-server/`
 mode = false
 count = 0;
+temp_cache = [];
+temp_cache.currentPhase = 0;
 createGraph()
 showGraph(false);
 
@@ -116,6 +118,7 @@ function next() {
         send_to_server("next", "")
         if (document.getElementById("chart").style.display == "block") {
             showGraph(false);
+            temp_cache.currentPhase = 0;
         } else if (nextPhase.innerHTML == "Würzekochen" || nextPhase.innerHTML == "Maischen" & document.getElementById("chart").style.display == "none") {
             showGraph(true);
         }
@@ -178,8 +181,35 @@ function createGraph() {
                 display: true
             },
             maintainAspectRatio: false,
+            annotation: {
+                annotations: [
+
+                ]
+            }
         }
     });
+}
+
+function addChartLine() {
+    console.warn("New Phase:" + chart.data.labels.length - 1)
+    place = document.getElementById("rast").innerHTML
+    place = place.split(" ")
+    number = parseInt(place[1]) + 1
+    place = place[0] + " " + number
+    chart.config.options.annotation.annotations.push({
+        drawTime: "afterDatasetsDraw",
+        type: "line",
+        mode: "vertical",
+        scaleID: "x-axis-0",
+        value: chart.data.labels.length - 1,
+        borderWidth: 2,
+        borderColor: "gray",
+        label: {
+            content: place,
+            enabled: true,
+            position: "top"
+        }
+    })
 }
 
 function showGraph(mode) {
@@ -215,8 +245,13 @@ function calculateRastPhase(data) {
     console.log(delta);
     for (let i = 0; i < phases.length; i++) {
         if (delta > phases[i][1]) {
+            if (i != temp_cache.currentPhase) {
+                temp_cache.currentPhase = i;
+                addChartLine();
+            }
             document.getElementById("rast").innerHTML = "Phase: " + (i + 1);
         } else if (delta < phases[0][1]) {
+            temp_cache.currentPhase = -1;
             document.getElementById("rast").innerHTML = "Phase: 0";
         }
     }
