@@ -116,10 +116,10 @@ function update_site(data) {
 function next() {
     if (mode == true) {
         send_to_server("next", "")
-        if (document.getElementById("chart").style.display == "block") {
+        if (document.getElementById("chartContainer").style.display == "block") {
             showGraph(false);
             temp_cache.currentPhase = 0;
-        } else if (nextPhase.innerHTML == "Würzekochen" || nextPhase.innerHTML == "Maischen" & document.getElementById("chart").style.display == "none") {
+        } else if (nextPhase.innerHTML == "Würzekochen" || nextPhase.innerHTML == "Maischen" & document.getElementById("chartContainer").style.display == "none") {
             showGraph(true);
         }
     } else {
@@ -194,29 +194,38 @@ function addChartLine() {
     console.warn("New Phase:" + chart.data.labels.length - 1)
     place = document.getElementById("rast").innerHTML
     place = place.split(" ")
-    number = parseInt(place[1]) + 1
+    number = temp_cache.currentPhase + 1;
     place = place[0] + " " + number
-    chart.config.options.annotation.annotations.push({
-        drawTime: "afterDatasetsDraw",
-        type: "line",
-        mode: "vertical",
-        scaleID: "x-axis-0",
-        value: chart.data.labels.length - 1,
-        borderWidth: 2,
-        borderColor: "gray",
-        label: {
-            content: place,
-            enabled: true,
-            position: "top"
+
+    alreadyExising = false;
+    chart.config.options.annotation.annotations.forEach(element => {
+        if (element.label.content == place) {
+            alreadyExising = true;
         }
-    })
+    });
+    if (alreadyExising == false) {
+        chart.config.options.annotation.annotations.push({
+            drawTime: "afterDatasetsDraw",
+            type: "line",
+            mode: "vertical",
+            scaleID: "x-axis-0",
+            value: chart.data.labels.length - 1,
+            borderWidth: 2,
+            borderColor: "gray",
+            label: {
+                content: place,
+                enabled: true,
+                position: "top"
+            }
+        })
+    }
 }
 
 function showGraph(mode) {
     if (mode) {
-        document.getElementById('chart').style.display = 'block';
+        document.getElementById('chartContainer').style.display = 'block';
     } else {
-        document.getElementById('chart').style.display = 'none';
+        document.getElementById('chartContainer').style.display = 'none';
         clearChart();
     }
 }
@@ -255,4 +264,27 @@ function calculateRastPhase(data) {
             document.getElementById("rast").innerHTML = "Phase: 0";
         }
     }
+}
+
+function downloadChart() {
+    date = new Date();
+    day = date.toLocaleDateString();
+    day = day.replace(".", "_");
+    downloadName = day + "_" + document.getElementById("currentPhase").innerHTML + "_Chart.png";
+
+    var img_b64 = chart.toBase64Image();
+    var png = img_b64.split(',')[1];
+
+    var the_file = new Blob([window.atob(png)], { type: 'image/png', encoding: 'utf-8' });
+
+    var fr = new FileReader();
+    fr.onload = function (oFREvent) {
+        var v = oFREvent.target.result.split(',')[1]; // encoding is messed up here, so we fix it
+        v = atob(v);
+        var good_b64 = btoa(decodeURIComponent(escape(v)));
+        document.getElementById("download").href = "data:image/png;base64," + good_b64;
+        document.getElementById("download").download = downloadName;
+        document.getElementById("download").click();
+    };
+    fr.readAsDataURL(the_file);
 }

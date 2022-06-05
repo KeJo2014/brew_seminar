@@ -241,3 +241,229 @@ AttributeError: 'brew_server' object has no attribute 'kochen'
 WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:14372]
 WebSocket CONNECT /ws/socket-server/ [127.0.0.1:14372]
 Sat Jun  4 19:45:13 2022: Another client connected
+[mHTTP GET /brewing 200 [0.13, 127.0.0.1:14474][0m
+[32mHTTP POST /brewing 302 [0.06, 127.0.0.1:14474][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:14474][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.08, 127.0.0.1:14474][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:14478]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:14478]
+Sat Jun  4 19:49:02 2022: Another client connected
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:14490][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:14478]
+[mHTTP GET /home 200 [1.42, 127.0.0.1:1206][0m
+[36mHTTP GET /static/js/home.js 304 [0.03, 127.0.0.1:1206][0m
+[32mHTTP POST /brewing 302 [0.05, 127.0.0.1:1228][0m
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:1228][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.01, 127.0.0.1:1228][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:1236]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1236]
+Sun Jun  5 09:24:29 2022: Another client connected
+[mHTTP GET /brewing 200 [0.21, 127.0.0.1:1370][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:1236]
+[32mHTTP POST /brewing 302 [0.06, 127.0.0.1:1375][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:1375][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:1378]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1378]
+Sun Jun  5 09:26:51 2022: Another client connected
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:1412][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:1378]
+[32mHTTP POST /brewing 302 [0.05, 127.0.0.1:1412][0m
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:1412][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:1416]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1416]
+Sun Jun  5 09:28:00 2022: Another client connected
+[mHTTP GET /brewing 200 [0.11, 127.0.0.1:1712][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:1416]
+[32mHTTP POST /brewing 302 [0.06, 127.0.0.1:1712][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:1712][0m
+[33mHTTP GET /static/images/download.png 404 [0.17, 127.0.0.1:1718][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:1721]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1721]
+Sun Jun  5 09:37:07 2022: Another client connected
+[mHTTP GET /brewing 200 [0.12, 127.0.0.1:1814][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:1721]
+[32mHTTP POST /brewing 302 [0.10, 127.0.0.1:1822][0m
+[mHTTP GET /brewing 200 [0.18, 127.0.0.1:1822][0m
+[mHTTP GET /static/img/download.png 200 [0.03, 127.0.0.1:1822][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:1828]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1828]
+Sun Jun  5 09:39:37 2022: Another client connected
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:1868][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:1828]
+[mHTTP GET /static/css/create.css 200 [0.11, 127.0.0.1:1868][0m
+[mHTTP GET /static/css/brewing.css 200 [0.04, 127.0.0.1:1868][0m
+[mHTTP GET /static/js/three.js 200 [0.23, 127.0.0.1:1868][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.27, 127.0.0.1:1869][0m
+[mHTTP GET /static/css/home.css 200 [0.06, 127.0.0.1:1869][0m
+[mHTTP GET /static/css/template.css 200 [0.03, 127.0.0.1:1869][0m
+[mHTTP GET /static/img/download.png 200 [0.02, 127.0.0.1:1869][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:1881]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1881]
+Sun Jun  5 09:40:49 2022: Another client connected
+[mHTTP GET /static/img/favicon.ico 200 [0.03, 127.0.0.1:1869][0m
+[mHTTP GET /static/img/favicon.ico 200 [0.03, 127.0.0.1:1869][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:2190][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:1881]
+[32mHTTP POST /brewing 302 [0.05, 127.0.0.1:2190][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:2190][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:2190][0m
+[36mHTTP GET /static/img/download.png 304 [0.01, 127.0.0.1:2190][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:2195]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:2195]
+Sun Jun  5 09:49:48 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:2195]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:2257]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:2257]
+Sun Jun  5 09:52:14 2022: Another client connected
+[mHTTP GET /home 200 [0.13, 127.0.0.1:2292][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:2257]
+[32mHTTP POST /brewing 302 [0.06, 127.0.0.1:2292][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:2292][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.01, 127.0.0.1:2292][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:2302]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:2302]
+Sun Jun  5 09:52:55 2022: Another client connected
+[mHTTP GET /brewing 200 [0.13, 127.0.0.1:2342][0m
+[32mHTTP POST /brewing 302 [0.05, 127.0.0.1:2352][0m
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:2352][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.03, 127.0.0.1:2352][0m
+[36mHTTP GET /static/img/download.png 304 [0.04, 127.0.0.1:2353][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:2356]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:2356]
+Sun Jun  5 09:53:31 2022: Another client connected
+[mHTTP GET /brewing 200 [1.52, 127.0.0.1:2677][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:2356]
+[32mHTTP POST /brewing 302 [0.09, 127.0.0.1:2677][0m
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:2677][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.04, 127.0.0.1:2687][0m
+[36mHTTP GET /static/img/download.png 304 [0.04, 127.0.0.1:2687][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:2692]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:2692]
+Sun Jun  5 10:01:39 2022: Another client connected
+[mHTTP GET /brewing 200 [0.12, 127.0.0.1:3020][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:2692]
+[36mHTTP GET /static/img/download.png 304 [0.01, 127.0.0.1:3020][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:3020][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:3031]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:3031]
+Sun Jun  5 10:05:27 2022: Another client connected
+[mHTTP GET /brewing 200 [0.20, 127.0.0.1:3140][0m
+[32mHTTP POST /brewing 302 [0.12, 127.0.0.1:3140][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:3140][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.03, 127.0.0.1:3140][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:3150]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:3150]
+Sun Jun  5 10:07:56 2022: Another client connected
+[mHTTP GET /brewing 200 [0.16, 127.0.0.1:3155][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:3150]
+[mHTTP GET /static/css/create.css 200 [0.06, 127.0.0.1:3155][0m
+[mHTTP GET /static/css/brewing.css 200 [0.02, 127.0.0.1:3155][0m
+[mHTTP GET /static/js/three.js 200 [0.05, 127.0.0.1:3155][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.08, 127.0.0.1:3156][0m
+[mHTTP GET /static/css/home.css 200 [0.04, 127.0.0.1:3156][0m
+[mHTTP GET /static/css/template.css 200 [0.03, 127.0.0.1:3156][0m
+[mHTTP GET /static/img/download.png 200 [0.02, 127.0.0.1:3156][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:3170]
+[mHTTP GET /static/img/favicon.ico 200 [0.03, 127.0.0.1:3156][0m
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:3170]
+Sun Jun  5 10:08:03 2022: Another client connected
+[mHTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:3156][0m
+[mHTTP GET /brewing 200 [0.41, 127.0.0.1:3501][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:3170]
+[36mHTTP GET /static/css/brewing.css 304 [0.02, 127.0.0.1:3501][0m
+[32mHTTP POST /brewing 302 [0.08, 127.0.0.1:3513][0m
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:3513][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.05, 127.0.0.1:3519][0m
+[36mHTTP GET /static/img/download.png 304 [0.07, 127.0.0.1:3520][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:3525]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:3525]
+Sun Jun  5 10:14:52 2022: Another client connected
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:3653][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:3525]
+[36mHTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:3653][0m
+[32mHTTP POST /brewing 302 [0.05, 127.0.0.1:3666][0m
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:3666][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:3666][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:3670]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:3670]
+Sun Jun  5 10:18:10 2022: Another client connected
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:3994][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:3670]
+[36mHTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:4005][0m
+[32mHTTP POST /brewing 302 [0.06, 127.0.0.1:4005][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:4005][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.01, 127.0.0.1:4005][0m
+[36mHTTP GET /static/img/download.png 304 [0.01, 127.0.0.1:4005][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:4009]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:4009]
+Sun Jun  5 10:24:30 2022: Another client connected
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:4160][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:4009]
+[36mHTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:4160][0m
+[32mHTTP POST /brewing 302 [0.07, 127.0.0.1:4173][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:4173][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:4173][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:4180]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:4180]
+Sun Jun  5 10:28:01 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:4180]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:4216]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:4216]
+Sun Jun  5 10:29:03 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:4216]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:4382]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:4382]
+Sun Jun  5 10:33:13 2022: Another client connected
+[mHTTP GET /brewing 200 [0.21, 127.0.0.1:4445][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:4455][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:4455][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.25, 127.0.0.1:4460][0m
+[36mHTTP GET /static/img/download.png 304 [0.20, 127.0.0.1:4461][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:4465]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:4465]
+Sun Jun  5 10:34:38 2022: Another client connected
+[mHTTP GET /brewing 200 [0.13, 127.0.0.1:4621][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:4465]
+[36mHTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:4621][0m
+[32mHTTP POST /brewing 302 [0.09, 127.0.0.1:4621][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:4621][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:4621][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:4632]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:4632]
+Sun Jun  5 10:38:29 2022: Another client connected
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:4670][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:4632]
+[32mHTTP POST /brewing 302 [0.07, 127.0.0.1:4670][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:4670][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.01, 127.0.0.1:4670][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:4679]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:4679]
+Sun Jun  5 10:39:40 2022: Another client connected
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:4851][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:4679]
+[36mHTTP GET /static/css/brewing.css 304 [0.02, 127.0.0.1:4851][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:4861][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:4861][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:4861][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:4865]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:4865]
+Sun Jun  5 10:44:06 2022: Another client connected
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:5039][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:4865]
+[36mHTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:5047][0m
+[32mHTTP POST /brewing 302 [0.25, 127.0.0.1:5047][0m
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:5047][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:5047][0m
+[36mHTTP GET /static/img/download.png 304 [0.02, 127.0.0.1:5047][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:5056]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:5056]
+Sun Jun  5 10:48:06 2022: Another client connected
+[mHTTP GET /brewing 200 [0.12, 127.0.0.1:5337][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:5056]
+[36mHTTP GET /static/css/brewing.css 304 [0.02, 127.0.0.1:5337][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:5346][0m
+[mHTTP GET /brewing 200 [0.06, 127.0.0.1:5346][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:5346][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:5350]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:5350]
+Sun Jun  5 10:54:41 2022: Another client connected
