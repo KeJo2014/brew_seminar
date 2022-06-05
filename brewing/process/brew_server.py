@@ -1,4 +1,5 @@
 import json
+from linecache import cache
 import time
 import logging
 import asyncio
@@ -10,6 +11,7 @@ from django.shortcuts import get_object_or_404
 
 class brew_server():
     def __init__(self):
+        self.eye_of_agamotto = 1    # time 1 = time in seconds || 60 = time in minutes
         current_time = time.time()
         self.hardware = brew_server_hardware()
         self.status = {
@@ -57,7 +59,7 @@ class brew_server():
         s["sensor_data"] = x
         if(self.status["status"] == "maischen"):
             s["phases"] = self.load_phases(0)
-        elif(self.status["status"] == "kochen"):
+        elif(self.status["status"] == "Würzekochen" or self.status["status"] == "warmingUp" or self.status["status"] == "cooking"):
             s["phases"] = self.load_phases(1)
         return s
 
@@ -113,7 +115,7 @@ class brew_server():
             # get current phase
             delta = time.time() - self.maischen["start"]
             for i in range(len(phases)):
-                if(delta < phases[i][1]):
+                if(delta/self.eye_of_agamotto < phases[i][1]):
                     self.heat(phases[i][0])
                     break
 
@@ -129,25 +131,21 @@ class brew_server():
             time.sleep(3)
 
     def kochen_procedure(self):
+        print("I am here!")
         if(time.time() > self.kochen["end"]):
             print("finish")
             self.status["status"] = "running"
             self.next_step()
         else:
             self.status["status"] = "cooking"
-            # KOCHEN PROCEDURE ?!
-            phases = [
-                [20, 50],
-                [35, 55],
-                [75, 64],
-                [95, 72],
-                [115, 78]
-            ]
+            root = self.load_phases(1)
+            phases = root[1]
+            print(phases)
             # get current phase
             delta = time.time() - self.kochen["start"]
             for i in range(len(phases)):
-                if(delta > phases[i][0] and delta < phases[i][1]):
-                    self.heat(phases[i][0])
+                if(delta/self.eye_of_agamotto < (int(root[0]) - int(phases[i][3]))):
+                    self.heat(5)
                     break
 
             obj = self.hardware.get_sensor_object()
@@ -166,37 +164,56 @@ class brew_server():
         recipe = brew_recipe.objects.get(id=self.status["recipe"])
         if(step == 0):
             temp = json.loads(recipe.maischplan)[0][2]
+            phases = []
+            cache = 0
+            for i in range(len(temp)):
+                phases.append([int(temp[i][0]), int(temp[i][1])+cache])
+                cache += int(temp[i][1])
         else:
-            temp = json.loads(recipe.wuerzekochen)[0][2]
-        phases = []
-        cache = 0
-        for i in range(len(temp)):
-            phases.append([int(temp[i][0]), int(temp[i][1])+cache])
-            cache += int(temp[i][1])
+            temp = json.loads(recipe.wuerzekochen)
+            phases = []
+            phases.append(temp[0])
+            temp2 = []
+            for i in range(len(temp)):
+                if(i != 0):
+                    temp2.append([temp[i][0],temp[i][1],temp[i][2],temp[i][3]])
+            phases.append(temp2)
+
         return phases
 
     def keep_process(self):
+        print(f'current: {self.roadmap[0][self.status["step"]]}')
         if(self.roadmap[0][self.status["step"]] == "Maischen"):
             self.maischen_procedure()
         else:
             self.kochen_procedure()
 
     def initiate_maischen(self):
+        phases = self.load_phases(0)
+        duration = phases[len(phases)-1][1]
+        self.heat(int(json.loads(brew_recipe.objects.get(id=self.status["recipe"]).maischplan)[0][1]))
         self.maischen = {
             "start": time.time(),
-            "end": time.time()+50
+            "end": time.time()+(duration*self.eye_of_agamotto)
         }
+        print(self.maischen["end"])
         self.status["status"] = "maischen"
         self.status["start_time"] = time.time()
         self.hardware.engine_on()
 
     def initiate_kochen(self):
+        phases = self.load_phases(1)
+        print(phases)
+        duration = int(phases[0])
+        print("initiate kochen")
+        self.heat(int(95))
         self.kochen = {
             "start": time.time(),
-            "end": time.time()+20
+            "end": time.time()+(duration*self.eye_of_agamotto)
         }
-        self.status["status"] = time.time()
-        self.status["start_time"] = "warmingUp"
+        print(self.kochen["end"])
+        self.status["status"] = "warmingUp"
+        self.status["start_time"] = time.time()
 
     def heat(self, destination_temp):
         while(self.hardware.get_temp() < destination_temp):
