@@ -109,6 +109,7 @@ input[type="date"] {
     align-items: center;
     margin: 0.2rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .buttonBox {

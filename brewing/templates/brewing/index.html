@@ -1,73 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "brewing/template_clean.html" %}
+{% load static %}
+{% block title %}Getting Started{% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% load static %}
-    <title>Index</title>
-</head>
-
-<body>
-    <div id="scene3d"></div>
-    <script src="{% static 'js/three.js' %}"></script>
-    <script>
-        var scene3d = document.getElementById("scene3d");
-        var CANVAS_WIDTH = 300;
-        var CANVAS_HEIGHT = 300;
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, CANVAS_WIDTH / CANVAS_HEIGHT, 0.1, 1000);
-
-        const renderer = new THREE.WebGLRenderer({
-            alpha: true
-        });
-        const loader = new OBJLoader();
-        // load a resource
-        loader.load(
-            // resource URL
-            'bottle.obj',
-            // called when resource is loaded
-            function (object) {
-                scene.add(object);
-
-            },
-            // called when loading is in progresses
-            function (xhr) {
-
-                console.log((xhr.loaded / xhr.total * 100) + '% loaded');
-
-            },
-            // called when loading has errors
-            function (error) {
-
-                console.log('An error happened');
-
-            }
-        );
-
-        
-        renderer.setSize(CANVAS_WIDTH, CANVAS_HEIGHT);
-        scene3d.appendChild(renderer.domElement);
-
-        camera.position.z = 5;
-
-        function animate() {
-            requestAnimationFrame(animate);
-
-            object.rotation.x += 0.01;
-            object.rotation.y += 0.01;
-
-            renderer.render(scene, camera);
-        };
-
-        animate();
-
-        
-
-        
-    </script>
-</body>
-
-
-</html>
+{% block maincontent %}
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/9BnCP8OUpEI?controls=0&showinfo=0&&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+    <h1 id="text"><span class="auto-type"></span></h1>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".auto-type", {
+        strings: ["Hallo", "Willkommen zum Brau-Seminar", "Lass uns doch beginnen..."], 
+        typeSpeed: 80,
+        backSpeed: 30,
+        loop: false
+    });
+</script>
+{% endblock %}
