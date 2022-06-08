@@ -1,23 +1,28 @@
 @import "login.css";
 
-.video-container{
-    width: 100vw;
-    height: 100vh;
-  }
-      
-  iframe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-    transform: translate(-50%, -50%);
-  }
+#indexBackgroundVideo {
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 
-  #text{
-    position: absolute;
-    color: #FFFFFF;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+#indexBody {
+  padding: 0;
+  flex-direction: column !important;
+}
+
+video {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+#getStartedButton {
+  display: none;
+}

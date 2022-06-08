@@ -37,9 +37,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row !important;
-  padding: 3rem !important;
+  flex-direction: row;
+  padding: 3rem;
+  opacity: 1;
+  transition-duration: 2s;
+  transition-property: opacity;
 }
+
+body.fade {
+  opacity: 0;
+}
+
 
 .bg-shape-box {
   width: 100px;

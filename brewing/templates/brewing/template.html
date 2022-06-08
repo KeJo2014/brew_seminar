@@ -39,7 +39,14 @@
     {% endblock %}
     </div>
     <script src="https://kit.fontawesome.com/84d4e1a0a8.js" crossorigin="anonymous"></script>
-    
 </body>
+<script>
+    document.body.className = 'fade';
+    document.addEventListener("DOMContentLoaded", () => {
+      window.setTimeout(function() {
+        document.body.className = '';
+      }, 230);
+    });
+  </script>
 
 </html>

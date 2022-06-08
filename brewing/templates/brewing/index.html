@@ -3,10 +3,11 @@
 {% block title %}Getting Started{% endblock %}
 
 {% block maincontent %}
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/9BnCP8OUpEI?controls=0&showinfo=0&&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-    <h1 id="text"><span class="auto-type"></span></h1>
+<video autoplay muted id="indexBackgroundVideo">
+    <source src="{% static '/img/beer_background.webm' %}" type="video/webm">
+</video>
+<h1 id="text"><span class="auto-type"></span></h1>
+<button type="button" class="submitButton" id="getStartedButton" onclick="location.href='home'">Los geht's!</button>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
     var typed = new Typed(".auto-type", {
@@ -15,5 +16,8 @@
         backSpeed: 30,
         loop: false
     });
+    $(window).on('load', function() {
+        $('#getStartedButton').delay(11000).fadeIn()
+    })
 </script>
 {% endblock %}
