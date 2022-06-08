@@ -14,8 +14,28 @@
 
 * {
   box-sizing: border-box;
+  
 }
 
+@keyframes fade-out {
+  from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+@keyframes fade-in {
+  from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+html.fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+}
+
+html.fade-in {
+  opacity: 1;
+  animation-name: fade-in;
+}
 
 html {
   width: 100%;
@@ -24,6 +44,8 @@ html {
   margin: 0;
   overflow: hidden;
   font-family: 'Inter';
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
 }
 
 body {
@@ -39,13 +61,6 @@ body {
   justify-content: center;
   flex-direction: row;
   padding: 3rem;
-  opacity: 1;
-  transition-duration: 2s;
-  transition-property: opacity;
-}
-
-body.fade {
-  opacity: 0;
 }
 
 
