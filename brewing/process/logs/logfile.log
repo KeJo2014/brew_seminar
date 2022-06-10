@@ -1,779 +1,179 @@
-HTTP GET /home 302 [0.03, 127.0.0.1:56408]
-HTTP GET /login 200 [0.02, 127.0.0.1:56408]
-HTTP POST /login 302 [0.60, 127.0.0.1:56432]
-HTTP GET /home 200 [0.03, 127.0.0.1:56432]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:56432]
-Not Found: /brewing/19
-HTTP GET /brewing/19 404 [0.02, 127.0.0.1:56432]
-Not Found: /brewing/1
-HTTP GET /brewing/1 404 [0.01, 127.0.0.1:56432]
-Not Found: /brewing/2
-HTTP GET /brewing/2 404 [0.01, 127.0.0.1:56432]
-Not Found: /brewing/3
-HTTP GET /brewing/3 404 [0.01, 127.0.0.1:56432]
-Not Found: /brewing/4
-HTTP GET /brewing/4 404 [0.01, 127.0.0.1:56432]
-Not Found: /brewing/5
-HTTP GET /brewing/5 404 [0.01, 127.0.0.1:56432]
-Not Found: /brewing/6
-HTTP GET /brewing/6 404 [0.01, 127.0.0.1:56432]
-HTTP GET /home 200 [0.02, 127.0.0.1:56432]
-HTTP GET /login 200 [0.01, 127.0.0.1:56432]
-HTTP GET /login 200 [0.01, 127.0.0.1:56432]
-HTTP GET /login 200 [0.01, 127.0.0.1:56432]
-HTTP GET /login 200 [0.01, 127.0.0.1:56432]
-HTTP GET /login 200 [0.01, 127.0.0.1:56471]
-HTTP GET /login 200 [0.01, 127.0.0.1:56471]
-HTTP GET /login 200 [0.01, 127.0.0.1:56486]
-HTTP GET /login 200 [0.01, 127.0.0.1:56486]
-HTTP GET /login 200 [0.03, 127.0.0.1:56486]
-HTTP GET /login 200 [0.01, 127.0.0.1:56501]
-HTTP GET /login 200 [0.01, 127.0.0.1:56501]
-HTTP GET /login 200 [0.01, 127.0.0.1:56519]
-HTTP GET /login 200 [0.01, 127.0.0.1:56519]
-HTTP GET /login 200 [0.01, 127.0.0.1:56520]
-HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:56520]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:56520]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:56520]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:56520]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:56520]
-HTTP GET /login 200 [0.01, 127.0.0.1:56520]
-HTTP GET /login 200 [0.01, 127.0.0.1:56533]
-HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:56533]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:56533]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:56533]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:56533]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:56533]
-HTTP GET /login 200 [0.01, 127.0.0.1:56533]
-HTTP GET /login 200 [0.01, 127.0.0.1:56533]
-HTTP GET /login 200 [0.02, 127.0.0.1:56550]
-HTTP GET /login 200 [0.01, 127.0.0.1:56554]
-HTTP GET /login 200 [0.01, 127.0.0.1:56554]
-HTTP GET /login 200 [0.01, 127.0.0.1:56556]
-HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:56556]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:56556]
-HTTP GET /home 200 [0.02, 127.0.0.1:56556]
-HTTP GET /home 200 [0.01, 127.0.0.1:56556]
-HTTP GET /home 200 [0.02, 127.0.0.1:56556]
-HTTP GET /home 200 [0.02, 127.0.0.1:56556]
-HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:56556]
-HTTP GET /login 200 [0.01, 127.0.0.1:56556]
-HTTP GET /login 200 [0.02, 127.0.0.1:56556]
-HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:56556]
-HTTP GET /login 200 [0.01, 127.0.0.1:56556]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:56556]
-HTTP GET /login 200 [0.01, 127.0.0.1:56556]
-HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:56556]
-HTTP GET /login 200 [0.01, 127.0.0.1:56556]
-HTTP GET /login 200 [0.01, 127.0.0.1:56556]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:56556]
-HTTP GET /login 200 [0.01, 127.0.0.1:56556]
-HTTP GET /home 200 [0.02, 127.0.0.1:56556]
-HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:56556]
-HTTP GET /login 200 [0.01, 127.0.0.1:56556]
-HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:56556]
-HTTP POST /login 302 [0.27, 127.0.0.1:56556]
-HTTP GET /home 200 [0.02, 127.0.0.1:56556]
-HTTP GET /login 200 [0.01, 127.0.0.1:56556]
-HTTP GET /login 200 [0.01, 127.0.0.1:56556]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:56556]
-HTTP GET /login 200 [0.01, 127.0.0.1:56627]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:56627]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:56627]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:56627]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:56627]
-HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:56627]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:56627]
-HTTP GET /login 200 [0.02, 127.0.0.1:56627]
-HTTP GET /static/css/login.css 304 [0.01, 127.0.0.1:56627]
-HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:56627]
-HTTP POST /login 302 [0.28, 127.0.0.1:56627]
-HTTP GET /home 200 [0.02, 127.0.0.1:56627]
-HTTP GET / 200 [0.01, 127.0.0.1:56627]
-Not Found: /favicon.ico
-HTTP GET /admin/ 200 [0.14, 127.0.0.1:56654]
-HTTP GET /static/admin/css/base.css 200 [0.02, 127.0.0.1:56654]
-HTTP GET /static/admin/css/nav_sidebar.css 200 [0.04, 127.0.0.1:56657]
-HTTP GET /static/admin/js/nav_sidebar.js 200 [0.05, 127.0.0.1:56658]
-HTTP GET /static/admin/css/dashboard.css 200 [0.06, 127.0.0.1:56659]
-HTTP GET /static/admin/css/responsive.css 200 [0.07, 127.0.0.1:56660]
-HTTP GET /static/admin/css/fonts.css 200 [0.05, 127.0.0.1:56654]
-HTTP GET /static/admin/img/icon-addlink.svg 200 [0.01, 127.0.0.1:56660]
-HTTP GET /static/admin/img/icon-changelink.svg 200 [0.03, 127.0.0.1:56658]
-HTTP GET /static/admin/img/icon-deletelink.svg 200 [0.03, 127.0.0.1:56657]
-HTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 200 [0.04, 127.0.0.1:56654]
-HTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 200 [0.05, 127.0.0.1:56659]
-HTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 200 [0.06, 127.0.0.1:56661]
-HTTP GET /admin/brewing/brew_recipe/ 200 [0.12, 127.0.0.1:56661]
-HTTP GET /static/admin/css/changelists.css 200 [0.02, 127.0.0.1:56661]
-HTTP GET /static/admin/js/jquery.init.js 200 [0.02, 127.0.0.1:56658]
-HTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:56659]
-HTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [0.08, 127.0.0.1:56660]
-HTTP GET /static/admin/js/core.js 200 [0.09, 127.0.0.1:56657]
-HTTP GET /static/admin/js/admin/RelatedObjectLookups.js 200 [0.11, 127.0.0.1:56654]
-HTTP GET /static/admin/js/prepopulate.js 200 [0.10, 127.0.0.1:56659]
-HTTP GET /static/admin/js/vendor/xregexp/xregexp.js 200 [0.10, 127.0.0.1:56660]
-Exception inside application: Single thread executor already being used, would deadlock
-Traceback (most recent call last):
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 40, in __call__
-    return await self.staticfiles_handler_class()(
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 56, in __call__
-    return await super().__call__(scope, receive, send)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\http.py", line 198, in __call__
-    await self.handle(scope, async_to_sync(send), body_stream)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 382, in __call__
-    raise RuntimeError(
-RuntimeError: Single thread executor already being used, would deadlock
-HTTP GET /static/admin/js/actions.js 500 [0.78, 127.0.0.1:56661]
-Exception inside application: Single thread executor already being used, would deadlock
-Traceback (most recent call last):
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 40, in __call__
-    return await self.staticfiles_handler_class()(
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 56, in __call__
-    return await super().__call__(scope, receive, send)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\http.py", line 198, in __call__
-    await self.handle(scope, async_to_sync(send), body_stream)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 382, in __call__
-    raise RuntimeError(
-RuntimeError: Single thread executor already being used, would deadlock
-HTTP GET /static/admin/js/urlify.js 500 [0.76, 127.0.0.1:56658]
-HTTP GET /static/admin/js/urlify.js 200 [0.01, 127.0.0.1:56660]
-HTTP GET /static/admin/img/tooltag-add.svg 200 [0.01, 127.0.0.1:56660]
-HTTP GET /admin/brewing/brew_recipe/20/change/ 200 [0.15, 127.0.0.1:56660]
-HTTP GET /static/admin/css/forms.css 200 [0.02, 127.0.0.1:56660]
-HTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:56661]
-HTTP GET /static/admin/js/actions.js 200 [0.02, 127.0.0.1:56659]
-HTTP GET /static/admin/js/change_form.js 200 [0.04, 127.0.0.1:56660]
-HTTP GET /static/admin/js/prepopulate_init.js 200 [0.06, 127.0.0.1:56657]
-HTTP GET /static/admin/css/widgets.css 200 [0.03, 127.0.0.1:56661]
-Not Found: /brewing/Test_brew
-HTTP GET /brewing/Test_brew 404 [0.01, 127.0.0.1:56660]
-HTTP GET /home 200 [0.02, 127.0.0.1:56660]
-HTTP GET /static/css/login.css 304 [0.01, 127.0.0.1:56660]
-HTTP GET /static/css/create.css 304 [0.00, 127.0.0.1:56660]
-HTTP GET /static/css/brewing.css 304 [0.00, 127.0.0.1:56660]
-HTTP GET /home 200 [0.02, 127.0.0.1:56660]
-Not Found: /brewing/19
-HTTP GET /brewing/19 404 [0.01, 127.0.0.1:56660]
-Not Found: /brewing/19
-HTTP GET /brewing/19 404 [0.01, 127.0.0.1:50011]
-Not Found: /brewing/Pilsner
-HTTP GET /brewing/Pilsner 404 [0.01, 127.0.0.1:50011]
-HTTP GET / 200 [0.01, 127.0.0.1:50011]
-HTTP GET /home 200 [0.02, 127.0.0.1:50011]
-HTTP GET /static/css/login.css 304 [0.01, 127.0.0.1:50011]
-HTTP GET /static/css/create.css 304 [0.00, 127.0.0.1:50018]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:50018]
-HTTP GET /home 200 [0.02, 127.0.0.1:50011]
-HTTP GET /home 200 [0.02, 127.0.0.1:50011]
-HTTP GET / 200 [0.01, 127.0.0.1:50076]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:50076]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:50076]
-HTTP GET /login 200 [0.01, 127.0.0.1:50120]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:50120]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:50120]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:50120]
-HTTP GET /login 200 [0.02, 127.0.0.1:50120]
-HTTP GET /login 200 [0.01, 127.0.0.1:50120]
-HTTP GET /login 200 [0.02, 127.0.0.1:50120]
-HTTP GET /login 200 [0.01, 127.0.0.1:50120]
-HTTP GET /login 200 [0.02, 127.0.0.1:50120]
-HTTP GET /login 200 [0.01, 127.0.0.1:50120]
-HTTP GET /login 200 [0.01, 127.0.0.1:50120]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:50120]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:50120]
-HTTP GET /login 200 [0.01, 127.0.0.1:50120]
-HTTP GET /login 200 [0.01, 127.0.0.1:50120]
-HTTP GET /login 200 [0.02, 127.0.0.1:50120]
-HTTP GET /login 200 [0.01, 127.0.0.1:50120]
-HTTP GET /login 200 [0.02, 127.0.0.1:50120]
-HTTP GET /login 200 [0.01, 127.0.0.1:50120]
-HTTP POST /login 302 [0.28, 127.0.0.1:50120]
-HTTP GET /home 200 [0.02, 127.0.0.1:50120]
-HTTP GET / 200 [0.01, 127.0.0.1:50120]
-HTTP GET / 200 [0.03, 127.0.0.1:50151]
-HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:50151]
-HTTP GET / 200 [0.01, 127.0.0.1:50151]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:50151]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:50151]
-HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:50151]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:50151]
-HTTP GET / 200 [0.04, 127.0.0.1:50217]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:50217]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:50217]
-HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:50217]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:50217]
-HTTP GET / 200 [0.01, 127.0.0.1:50217]
-HTTP GET / 200 [0.01, 127.0.0.1:50217]
-HTTP GET / 200 [0.07, 127.0.0.1:50217]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:50217]
-HTTP GET / 200 [0.01, 127.0.0.1:50241]
-HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:50241]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:50241]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:50241]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:50241]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:50241]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:50241]
-HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:50241]
-HTTP GET / 200 [0.02, 127.0.0.1:50241]
-HTTP GET / 200 [0.01, 127.0.0.1:50254]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:50254]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:50254]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:50254]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:50254]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:50254]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:50254]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:50254]
-HTTP GET / 200 [0.03, 127.0.0.1:50254]
-HTTP GET / 200 [0.02, 127.0.0.1:50254]
-HTTP GET / 200 [0.03, 127.0.0.1:50583]
-HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:50583]
-HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:50583]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:50583]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:50583]
-HTTP GET / 200 [0.02, 127.0.0.1:50620]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:50620]
-HTTP GET / 200 [0.02, 127.0.0.1:50644]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:50644]
-HTTP GET / 200 [0.02, 127.0.0.1:50644]
-HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:50644]
-HTTP GET / 200 [0.01, 127.0.0.1:50652]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:50652]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:50652]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:50652]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:50652]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:50652]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:50652]
-HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:50652]
-HTTP GET / 200 [0.01, 127.0.0.1:50671]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:50671]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:50671]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:50671]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:50671]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:50671]
-HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:50671]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:50671]
-HTTP GET / 200 [0.03, 127.0.0.1:50742]
-HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:50742]
-HTTP GET / 200 [0.01, 127.0.0.1:50742]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:50742]
-HTTP GET / 200 [0.01, 127.0.0.1:50813]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:50813]
-HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:50813]
-HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:50813]
-HTTP GET /home 200 [0.06, 127.0.0.1:51285]
-HTTP GET /static/css/style.css 200 [0.81, 127.0.0.1:51285]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:51286]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:51286]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:51286]
-HTTP GET /home 200 [0.02, 127.0.0.1:51353]
-Not Found: /brewing/19
-HTTP GET /brewing/19 404 [0.02, 127.0.0.1:51353]
-Not Found: /favicon.ico
-Not Found: /brewing/20
-HTTP GET /brewing/20 404 [0.01, 127.0.0.1:51355]
-HTTP GET / 200 [0.01, 127.0.0.1:51355]
-HTTP GET / 200 [0.05, 127.0.0.1:53153]
-Not Found: /img/beer_background.webm
-HTTP GET /img/beer_background.webm 404 [0.01, 127.0.0.1:53153]
-HTTP GET / 200 [0.01, 127.0.0.1:53153]
-Not Found: /img/beer_background.webm
-HTTP GET /img/beer_background.webm 404 [0.02, 127.0.0.1:53153]
-HTTP GET / 200 [0.01, 127.0.0.1:53153]
-HTTP GET /static/img/beer_background.webm 200 [0.25, 127.0.0.1:53153]
-HTTP GET / 200 [0.01, 127.0.0.1:49447]
-HTTP GET / 200 [0.02, 127.0.0.1:49447]
-HTTP GET /static/img/beer_background.webm 200 [0.28, 127.0.0.1:49447]
-HTTP GET / 200 [0.02, 127.0.0.1:49447]
-HTTP GET / 200 [0.01, 127.0.0.1:49447]
-HTTP GET /static/img/beer_background.webm 200 [0.17, 127.0.0.1:49447]
-HTTP GET / 200 [0.01, 127.0.0.1:58734]
-HTTP GET / 200 [0.01, 127.0.0.1:56086]
-HTTP GET / 200 [0.01, 127.0.0.1:56086]
-HTTP GET / 200 [0.01, 127.0.0.1:60061]
-HTTP GET /static/img/beer_background.webm 200 [0.21, 127.0.0.1:60061]
-HTTP GET / 200 [0.01, 127.0.0.1:60061]
-HTTP GET / 200 [0.01, 127.0.0.1:49192]
-HTTP GET /static/img/beer_background.webm 200 [0.11, 127.0.0.1:49192]
-HTTP GET / 200 [0.07, 127.0.0.1:49192]
-HTTP GET / 200 [0.01, 127.0.0.1:49192]
-HTTP GET / 200 [0.01, 127.0.0.1:49192]
-HTTP GET /static/img/beer_background.webm 200 [0.22, 127.0.0.1:49192]
-HTTP GET / 200 [0.02, 127.0.0.1:49192]
-HTTP GET /home 200 [0.29, 127.0.0.1:54882]
-HTTP GET /static/css/style.css 200 [0.02, 127.0.0.1:54882]
-HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:54882]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:54882]
-HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:54882]
-HTTP GET / 200 [0.04, 127.0.0.1:54904]
-HTTP GET /static/img/beer_background.webm 200 [0.21, 127.0.0.1:54904]
-HTTP GET / 200 [0.01, 127.0.0.1:64775]
-HTTP GET / 200 [0.01, 127.0.0.1:64775]
-HTTP GET /static/img/beer_background.webm 200 [0.28, 127.0.0.1:64775]
-HTTP GET / 200 [0.01, 127.0.0.1:62791]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:62791]
-HTTP GET / 200 [0.01, 127.0.0.1:54449]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:54449]
-HTTP GET /static/img/beer_background.webm 200 [0.34, 127.0.0.1:54449]
-HTTP GET / 200 [0.01, 127.0.0.1:61921]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61921]
-HTTP GET / 200 [0.03, 127.0.0.1:61921]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61921]
-HTTP GET /static/img/beer_background.webm 200 [0.30, 127.0.0.1:61921]
-HTTP GET / 200 [0.01, 127.0.0.1:61921]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61921]
-HTTP GET / 200 [0.02, 127.0.0.1:61921]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61921]
-HTTP GET /static/img/beer_background.webm 200 [0.27, 127.0.0.1:61921]
-HTTP GET / 200 [0.05, 127.0.0.1:53377]
-HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:53377]
-HTTP GET / 200 [0.02, 127.0.0.1:53377]
-HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:53377]
-HTTP GET /static/img/beer_background.webm 200 [0.28, 127.0.0.1:53377]
-HTTP GET / 200 [0.03, 127.0.0.1:53377]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:53377]
-HTTP GET / 200 [0.01, 127.0.0.1:61570]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61570]
-HTTP GET /static/img/beer_background.webm 200 [0.25, 127.0.0.1:61570]
-HTTP GET /home 200 [0.02, 127.0.0.1:61570]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61570]
-HTTP GET / 200 [0.03, 127.0.0.1:61570]
-HTTP GET /static/css/style.css 304 [0.00, 127.0.0.1:61570]
-HTTP GET /static/img/beer_background.webm 200 [0.32, 127.0.0.1:61570]
-HTTP GET / 200 [0.05, 127.0.0.1:63872]
-HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:63872]
-HTTP GET / 200 [0.02, 127.0.0.1:63872]
-HTTP GET /static/css/style.css 304 [0.00, 127.0.0.1:63872]
-HTTP GET / 200 [0.01, 127.0.0.1:63872]
-HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:63872]
-HTTP GET /static/img/beer_background.webm 200 [0.24, 127.0.0.1:63872]
-HTTP GET / 200 [0.02, 127.0.0.1:63872]
-HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:63872]
-HTTP GET / 200 [0.03, 127.0.0.1:63872]
-HTTP GET /static/css/style.css 304 [0.00, 127.0.0.1:63872]
-HTTP GET /static/img/beer_background.webm 200 [0.28, 127.0.0.1:63872]
-HTTP GET /home 200 [0.02, 127.0.0.1:63872]
-HTTP GET /static/css/style.css 304 [0.00, 127.0.0.1:63872]
-HTTP GET /home 200 [0.03, 127.0.0.1:50788]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:50788]
-HTTP GET /home 200 [0.02, 127.0.0.1:50788]
-HTTP GET /home 200 [0.02, 127.0.0.1:50788]
-HTTP GET /home 200 [0.02, 127.0.0.1:50788]
-HTTP GET / 200 [0.01, 127.0.0.1:50788]
-HTTP GET /static/img/beer_background.webm 200 [0.28, 127.0.0.1:50788]
-HTTP GET /home 200 [0.02, 127.0.0.1:50788]
-HTTP GET /home 200 [0.02, 127.0.0.1:50788]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:50788]
-HTTP GET /create 200 [0.02, 127.0.0.1:50788]
-HTTP GET /static/css/style.css 304 [0.01, 127.0.0.1:50788]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:50788]
-HTTP GET /brewing?order_by=name 200 [0.02, 127.0.0.1:50788]
-Not Found: /brewing/19
-HTTP GET /brewing/19 404 [0.01, 127.0.0.1:50788]
-Not Found: /favicon.ico
-HTTP GET / 200 [0.04, 127.0.0.1:62844]
-HTTP GET /static/css/style.css 200 [0.74, 127.0.0.1:62844]
-HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:62844]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:62844]
-HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:62844]
-HTTP GET /static/img/beer_background.webm 200 [0.27, 127.0.0.1:62856]
-HTTP GET /home 200 [0.03, 127.0.0.1:62856]
-HTTP GET /home 200 [0.02, 127.0.0.1:49398]
-HTTP GET /home 200 [0.02, 127.0.0.1:49398]
-HTTP GET /home 200 [0.02, 127.0.0.1:49398]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:49398]
-HTTP GET /home 200 [0.02, 127.0.0.1:49398]
-HTTP GET /home 200 [0.07, 127.0.0.1:61968]
-HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:61968]
-HTTP GET /home 200 [0.02, 127.0.0.1:61968]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:61968]
-HTTP GET /home 200 [0.02, 127.0.0.1:61968]
-HTTP GET / 200 [0.02, 127.0.0.1:61968]
-HTTP GET /static/img/beer_background.webm 200 [0.23, 127.0.0.1:61982]
-HTTP GET /home 200 [0.02, 127.0.0.1:61982]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:61982]
-HTTP GET /create 200 [0.02, 127.0.0.1:61982]
-HTTP GET /home 200 [0.02, 127.0.0.1:60150]
-Not Found: /brewing/19
-HTTP GET /brewing/19 404 [0.02, 127.0.0.1:60150]
-Not Found: /favicon.ico
-HTTP GET /edit/19 200 [0.02, 127.0.0.1:60151]
-HTTP GET /static/js/edit.js 200 [0.01, 127.0.0.1:60151]
-HTTP GET /edit/20 200 [0.02, 127.0.0.1:60151]
-HTTP POST /edit/20 302 [0.03, 127.0.0.1:60151]
-HTTP GET /home 200 [0.03, 127.0.0.1:60151]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:60151]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:60151]
-Not Found: /brewing/20
-HTTP GET /brewing/20 404 [0.01, 127.0.0.1:60151]
-HTTP GET /brewing?order_by=number_of_brews 200 [0.02, 127.0.0.1:60151]
-HTTP GET /brewing?order_by=name 200 [0.02, 127.0.0.1:60151]
-HTTP GET /brewing?order_by=bier_sorte 200 [0.02, 127.0.0.1:60151]
-HTTP GET /brewing?order_by=date 200 [0.02, 127.0.0.1:60151]
-HTTP GET /brewing?order_by=author 200 [0.02, 127.0.0.1:60151]
-HTTP GET /brewing?order_by=author 200 [0.05, 127.0.0.1:60151]
-HTTP GET /brewing?order_by=date 200 [0.02, 127.0.0.1:60151]
-HTTP GET /brewing?order_by=date 200 [0.02, 127.0.0.1:60151]
-HTTP GET /brewing?order_by=date 200 [0.02, 127.0.0.1:60151]
-HTTP GET /brewing?order_by=date 200 [0.03, 127.0.0.1:60151]
-HTTP GET /brewing?order_by=date 200 [0.01, 127.0.0.1:60151]
-HTTP GET /brewing?order_by=date 200 [0.02, 127.0.0.1:52206]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:52206]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:52207]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:52207]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:52207]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:52207]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:52207]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:52207]
-HTTP GET /static/img/favicon.ico 200 [0.02, 127.0.0.1:52207]
-HTTP GET /brewing?order_by=date 200 [0.02, 127.0.0.1:52207]
-HTTP GET /brewing?order_by=date 200 [0.02, 127.0.0.1:52207]
-HTTP GET /brewing?order_by=date 200 [0.02, 127.0.0.1:52207]
-HTTP GET /brewing?order_by=date 200 [0.02, 127.0.0.1:52207]
-HTTP GET /brewing?order_by=date 200 [0.02, 127.0.0.1:52207]
-HTTP GET /brewing?order_by=date 200 [0.02, 127.0.0.1:52207]
-HTTP GET /brewing?order_by=date 200 [0.02, 127.0.0.1:54408]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:54408]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:54409]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:54409]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:54409]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:54409]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:54409]
-HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:54409]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:54409]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:54409]
-HTTP GET /home 200 [0.02, 127.0.0.1:54409]
-HTTP GET /home 200 [0.02, 127.0.0.1:54409]
-HTTP GET / 200 [0.01, 127.0.0.1:54409]
-HTTP GET /static/img/beer_background.webm 200 [0.26, 127.0.0.1:54409]
-HTTP GET /home 200 [0.02, 127.0.0.1:54409]
-HTTP GET /create 200 [0.01, 127.0.0.1:54409]
-HTTP GET /home 200 [0.02, 127.0.0.1:54409]
-HTTP GET /home 200 [0.02, 127.0.0.1:59644]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:59644]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:59645]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:59645]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:59645]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:59645]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:59645]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:59645]
-HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:59645]
-HTTP GET /create 200 [0.02, 127.0.0.1:59645]
-HTTP GET /home 200 [0.02, 127.0.0.1:59645]
-HTTP GET /home 200 [0.02, 127.0.0.1:59654]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:59654]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:59655]
-HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:59655]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:59655]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:59655]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:59655]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:59655]
-HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:59655]
-HTTP GET /home 200 [0.02, 127.0.0.1:59655]
-HTTP GET /create 200 [0.02, 127.0.0.1:59655]
-HTTP GET /home 200 [0.02, 127.0.0.1:59655]
-HTTP GET / 200 [0.01, 127.0.0.1:49534]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:49538]
-HTTP GET /static/img/beer_background.webm 200 [0.11, 127.0.0.1:49538]
-HTTP GET /home 200 [0.02, 127.0.0.1:49538]
-HTTP GET /create 200 [0.01, 127.0.0.1:56804]
-HTTP GET /home 200 [0.02, 127.0.0.1:56804]
-HTTP GET /home 200 [0.02, 127.0.0.1:56807]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:56807]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:56808]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:56808]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:56808]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:56808]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:56808]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:56808]
-HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:56808]
-HTTP GET /home 200 [0.02, 127.0.0.1:56808]
-HTTP GET /create 200 [0.01, 127.0.0.1:56808]
-HTTP GET /home 200 [0.02, 127.0.0.1:56808]
-HTTP GET /home 200 [0.02, 127.0.0.1:62110]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:62110]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:62112]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:62112]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:62112]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:62112]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:62112]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:62112]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:62112]
-HTTP GET /home 200 [0.02, 127.0.0.1:62112]
-HTTP GET /create 200 [0.02, 127.0.0.1:62112]
-HTTP GET /home 200 [0.02, 127.0.0.1:62112]
-HTTP GET /home 200 [0.03, 127.0.0.1:62112]
-HTTP GET /home 200 [0.02, 127.0.0.1:62120]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:62120]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:62121]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:62121]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:62121]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:62121]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:62121]
-HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:62121]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:62121]
-HTTP GET /home 200 [0.02, 127.0.0.1:62121]
-HTTP GET /home 200 [0.02, 127.0.0.1:62129]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:62129]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:62130]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:62130]
-HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:62130]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:62130]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:62130]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:62130]
-HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:62130]
-HTTP GET / 200 [0.01, 127.0.0.1:62130]
-HTTP GET /static/img/beer_background.webm 200 [0.30, 127.0.0.1:62130]
-HTTP GET /home 200 [0.02, 127.0.0.1:62130]
-HTTP GET /create 200 [0.01, 127.0.0.1:62130]
-HTTP GET /home 200 [0.02, 127.0.0.1:62130]
-HTTP GET /home 200 [0.02, 127.0.0.1:50287]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:50287]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:50288]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:50288]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:50288]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:50288]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:50288]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:50288]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:50288]
-HTTP GET /home 200 [0.02, 127.0.0.1:50288]
-HTTP GET / 200 [0.01, 127.0.0.1:50288]
-HTTP GET /static/img/beer_background.webm 200 [0.17, 127.0.0.1:50288]
-HTTP GET / 200 [0.01, 127.0.0.1:65490]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:65490]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:65490]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:65490]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:65490]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:65490]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:65490]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:65490]
-HTTP GET /home 200 [0.02, 127.0.0.1:65490]
-HTTP GET /home 200 [0.02, 127.0.0.1:61026]
-HTTP GET /home 200 [0.02, 127.0.0.1:61029]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61029]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:61030]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:61030]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:61030]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61030]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:61030]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61030]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:61030]
-HTTP GET /home 200 [0.02, 127.0.0.1:61030]
-HTTP GET /create 200 [0.01, 127.0.0.1:61030]
-HTTP GET /home 200 [0.02, 127.0.0.1:61030]
-HTTP GET /home 200 [0.02, 127.0.0.1:51600]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:51600]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:51601]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:51601]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:51601]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:51601]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:51601]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:51601]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:51601]
-HTTP GET /home 200 [0.02, 127.0.0.1:51601]
-HTTP GET /create 200 [0.01, 127.0.0.1:51601]
-HTTP GET /home 200 [0.02, 127.0.0.1:51601]
-HTTP GET /home 200 [0.02, 127.0.0.1:51601]
-HTTP GET /home 200 [0.02, 127.0.0.1:51601]
-HTTP GET /home 200 [0.02, 127.0.0.1:61595]
-HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:61595]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:61596]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:61596]
-HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:61596]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61596]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:61596]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61596]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:61596]
-HTTP GET /home 200 [0.02, 127.0.0.1:61596]
-HTTP GET /create 200 [0.01, 127.0.0.1:61596]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:61596]
-HTTP GET /home 200 [0.02, 127.0.0.1:61596]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:61596]
-HTTP GET /home 200 [0.02, 127.0.0.1:61596]
-HTTP GET /home 200 [0.02, 127.0.0.1:61607]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61607]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:61608]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:61608]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:61608]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61608]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:61608]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61608]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:61608]
-HTTP GET /home 200 [0.02, 127.0.0.1:61608]
-HTTP GET /home 200 [0.02, 127.0.0.1:61614]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61614]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:61615]
-HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:61615]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:61615]
-HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:61615]
-HTTP GET /static/css/home.css 200 [0.01, 127.0.0.1:61615]
-HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:61615]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:61615]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:61615]
-HTTP GET /home 200 [0.02, 127.0.0.1:61615]
-HTTP GET /create 200 [0.02, 127.0.0.1:61615]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:61615]
-HTTP GET /home 200 [0.02, 127.0.0.1:61615]
-HTTP GET /create 200 [0.01, 127.0.0.1:61615]
-HTTP GET /home 200 [0.02, 127.0.0.1:61615]
-HTTP GET /home 200 [0.06, 127.0.0.1:61968]
-HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:61968]
-HTTP GET /static/js/home.js 200 [0.02, 127.0.0.1:61969]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:61969]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:61969]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61969]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:61969]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61969]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:61969]
-HTTP GET /home 200 [0.02, 127.0.0.1:61969]
-HTTP GET /create 200 [0.01, 127.0.0.1:61969]
-HTTP GET /home 200 [0.02, 127.0.0.1:61969]
-HTTP GET /home 200 [0.02, 127.0.0.1:62527]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:62527]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:62528]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:62528]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:62528]
-HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:62528]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:62528]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:62528]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:62528]
-HTTP GET /home 200 [0.02, 127.0.0.1:62528]
-HTTP GET /create 200 [0.02, 127.0.0.1:62528]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:62528]
-HTTP GET /home 200 [0.01, 127.0.0.1:62528]
-HTTP GET /home 200 [0.02, 127.0.0.1:62528]
-HTTP GET /home 200 [0.02, 127.0.0.1:62541]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:62541]
-HTTP GET /static/js/home.js 200 [0.02, 127.0.0.1:62542]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:62542]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:62542]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:62542]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:62542]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:62542]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:62542]
-HTTP GET /home 200 [0.02, 127.0.0.1:62542]
-HTTP GET /brewing 200 [0.01, 127.0.0.1:62542]
-HTTP GET /create 200 [0.01, 127.0.0.1:62542]
-HTTP GET /create 200 [0.02, 127.0.0.1:60365]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:60365]
-HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:60366]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:60366]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:60366]
-HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:60366]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:60366]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:60366]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:60366]
-HTTP GET /home 200 [0.02, 127.0.0.1:60366]
-HTTP GET /home 200 [0.02, 127.0.0.1:58783]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:58783]
-HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:58784]
-HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:58784]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:58784]
-HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:58784]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:58784]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:58784]
-HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:58784]
-HTTP GET /home 200 [0.02, 127.0.0.1:58784]
-HTTP GET /create 200 [0.01, 127.0.0.1:58784]
-HTTP GET /home 200 [0.02, 127.0.0.1:58784]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:58784]
-HTTP GET /home 200 [0.01, 127.0.0.1:58784]
-HTTP GET / 200 [0.01, 127.0.0.1:58784]
-HTTP GET /static/img/beer_background.webm 200 [0.20, 127.0.0.1:58784]
-HTTP GET /home 200 [0.02, 127.0.0.1:58784]
-HTTP POST /brewing 302 [0.01, 127.0.0.1:58784]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:58784]
-HTTP GET /static/img/download.png 200 [0.01, 127.0.0.1:58784]
-HTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:58783]
-WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:58796]
-WebSocket CONNECT /ws/socket-server/ [127.0.0.1:58796]
-Wed Jun  8 23:25:53 2022: Another client connected
-WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:58796]
-HTTP GET /home 200 [0.02, 127.0.0.1:58784]
-HTTP POST /brewing 302 [0.01, 127.0.0.1:58784]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:58784]
-WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:54070]
-WebSocket CONNECT /ws/socket-server/ [127.0.0.1:54070]
-Wed Jun  8 23:26:13 2022: Another client connected
+[mHTTP GET / 200 [0.78, 127.0.0.1:17016][0m
+[mHTTP GET /static/css/style.css 200 [0.07, 127.0.0.1:17016][0m
+[mHTTP GET /static/css/login.css 200 [0.02, 127.0.0.1:17026][0m
+[mHTTP GET /static/css/create.css 200 [0.03, 127.0.0.1:17026][0m
+[mHTTP GET /static/css/brewing.css 200 [0.02, 127.0.0.1:17026][0m
+[mHTTP GET /static/css/home.css 200 [0.04, 127.0.0.1:17026][0m
+[mHTTP GET /static/css/template.css 200 [0.02, 127.0.0.1:17026][0m
+[mHTTP GET /static/img/beer_background.webm 200 [1.11, 127.0.0.1:17026][0m
+[mHTTP GET /static/img/favicon.ico 200 [1.12, 127.0.0.1:17027][0m
+[mHTTP GET /home 200 [0.23, 127.0.0.1:17036][0m
+[mHTTP GET /static/js/home.js 200 [0.81, 127.0.0.1:17039][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:17044][0m
+[mHTTP GET /brewing 200 [0.18, 127.0.0.1:17044][0m
+[mHTTP GET /static/js/three.js 200 [0.18, 127.0.0.1:17044][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.22, 127.0.0.1:17045][0m
+[mHTTP GET /static/img/download.png 200 [0.07, 127.0.0.1:17044][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:17052]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:17052]
+Fri Jun 10 09:59:59 2022: Another client connected
 Exception inside application: Expecting value: line 1 column 1 (char 0)
 Traceback (most recent call last):
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 44, in __call__
     return await self.application(scope, receive, send)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\routing.py", line 71, in __call__
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 71, in __call__
     return await application(scope, receive, send)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\sessions.py", line 47, in __call__
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 47, in __call__
     return await self.inner(dict(scope, cookies=cookies), receive, send)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\sessions.py", line 263, in __call__
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\sessions.py", line 263, in __call__
     return await self.inner(wrapper.scope, receive, wrapper.send)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\auth.py", line 185, in __call__
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\auth.py", line 185, in __call__
     return await super().__call__(scope, receive, send)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\middleware.py", line 26, in __call__
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\middleware.py", line 26, in __call__
     return await self.inner(scope, receive, send)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\routing.py", line 150, in __call__
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\routing.py", line 150, in __call__
     return await application(
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\consumer.py", line 94, in app
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 94, in app
     return await consumer(scope, receive, send)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\consumer.py", line 58, in __call__
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 58, in __call__
     await await_many_dispatch(
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\utils.py", line 51, in await_many_dispatch
     await dispatch(result)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 414, in __call__
     ret = await asyncio.wait_for(future, timeout=None)
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 455, in wait_for
     return await fut
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 57, in run
     result = self.fn(*self.args, **self.kwargs)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\db.py", line 13, in thread_handler
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\db.py", line 13, in thread_handler
     return super().thread_handler(loop, *args, **kwargs)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 455, in thread_handler
     return func(*args, **kwargs)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\consumer.py", line 125, in dispatch
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\consumer.py", line 125, in dispatch
     handler(message)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
     self.receive(text_data=message["text"])
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\consumer.py", line 23, in receive
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 23, in receive
     self.evaluate_response(text_data_json)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\consumer.py", line 51, in evaluate_response
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 51, in evaluate_response
     if(brew_system.next_step()):
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\process\brew_server.py", line 93, in next_step
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py", line 93, in next_step
     self.initiate_maischen()
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\process\brew_server.py", line 192, in initiate_maischen
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py", line 192, in initiate_maischen
     phases = self.load_phases(0)
-  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\process\brew_server.py", line 166, in load_phases
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py", line 166, in load_phases
     temp = json.loads(recipe.maischplan)[0][2]
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 357, in loads
     return _default_decoder.decode(s)
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
     raise JSONDecodeError("Expecting value", s, err.value) from None
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:54070]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:58784]
-WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:54071]
-WebSocket CONNECT /ws/socket-server/ [127.0.0.1:54071]
-Wed Jun  8 23:26:35 2022: Another client connected
-WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:54071]
-HTTP GET /brewing 200 [0.02, 127.0.0.1:54072]
-HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:54072]
-HTTP GET /static/js/three.js 200 [0.02, 127.0.0.1:54073]
-HTTP GET /static/js/server_connection.js 200 [0.03, 127.0.0.1:54074]
-HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:54073]
-HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:54073]
-HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:54073]
-HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:54073]
-HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:54073]
-HTTP GET /static/img/download.png 200 [0.00, 127.0.0.1:54073]
-WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:54081]
-WebSocket CONNECT /ws/socket-server/ [127.0.0.1:54081]
-Wed Jun  8 23:26:45 2022: Another client connected
-HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:54073]
-WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:54081]
-HTTP GET /home 200 [0.02, 127.0.0.1:54073]
-HTTP POST /brewing 302 [0.01, 127.0.0.1:54073]
-HTTP GET /brewing 200 [0.01, 127.0.0.1:54073]
-WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:54083]
-WebSocket CONNECT /ws/socket-server/ [127.0.0.1:54083]
-Wed Jun  8 23:26:50 2022: Another client connected
-WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:54083]
-HTTP GET /home 200 [0.03, 127.0.0.1:54073]
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:17052]
+[32mHTTP GET /admin 301 [0.06, 127.0.0.1:17147][0m
+[mHTTP GET /admin/ 200 [0.71, 127.0.0.1:17147][0m
+[mHTTP GET /static/admin/css/base.css 200 [0.10, 127.0.0.1:17147][0m
+[mHTTP GET /static/admin/css/dark_mode.css 200 [0.16, 127.0.0.1:17148][0m
+[mHTTP GET /static/admin/css/nav_sidebar.css 200 [0.05, 127.0.0.1:17147][0m
+[mHTTP GET /static/admin/css/dashboard.css 200 [0.03, 127.0.0.1:17148][0m
+[mHTTP GET /static/admin/css/responsive.css 200 [0.05, 127.0.0.1:17147][0m
+[mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.02, 127.0.0.1:17147][0m
+[mHTTP GET /static/admin/css/fonts.css 200 [0.03, 127.0.0.1:17147][0m
+[mHTTP GET /static/admin/img/icon-addlink.svg 200 [0.02, 127.0.0.1:17147][0m
+[mHTTP GET /static/admin/img/icon-changelink.svg 200 [0.02, 127.0.0.1:17147][0m
+[mHTTP GET /static/admin/img/icon-deletelink.svg 200 [0.02, 127.0.0.1:17147][0m
+[mHTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 200 [0.02, 127.0.0.1:17147][0m
+[mHTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 200 [0.06, 127.0.0.1:17160][0m
+[mHTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 200 [0.09, 127.0.0.1:17161][0m
+Not Found: /favicon.ico
+[33mHTTP GET /favicon.ico 404 [0.11, 127.0.0.1:17161][0m
+[mHTTP GET /admin/brewing/brew_recipe/ 200 [0.45, 127.0.0.1:17168][0m
+[mHTTP GET /static/admin/css/changelists.css 200 [0.05, 127.0.0.1:17168][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.14, 127.0.0.1:17169][0m
+[mHTTP GET /static/admin/js/jquery.init.js 200 [0.04, 127.0.0.1:17169][0m
+[mHTTP GET /static/admin/js/core.js 200 [0.07, 127.0.0.1:17176][0m
+[mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 200 [0.16, 127.0.0.1:17177][0m
+[mHTTP GET /static/admin/js/actions.js 200 [0.21, 127.0.0.1:17178][0m
+[mHTTP GET /static/admin/js/urlify.js 200 [0.25, 127.0.0.1:17179][0m
+Exception inside application: Single thread executor already being used, would deadlock
+Traceback (most recent call last):
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 40, in __call__
+    return await self.staticfiles_handler_class()(
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\staticfiles.py", line 56, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\channels\http.py", line 198, in __call__
+    await self.handle(scope, async_to_sync(send), body_stream)
+  File "C:\Users\Jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\asgiref\sync.py", line 382, in __call__
+    raise RuntimeError(
+RuntimeError: Single thread executor already being used, would deadlock
+[35;1mHTTP GET /static/admin/js/vendor/jquery/jquery.js 500 [0.55, 127.0.0.1:17168][0m
+[mHTTP GET /static/admin/js/prepopulate.js 200 [0.22, 127.0.0.1:17169][0m
+[mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 200 [0.30, 127.0.0.1:17176][0m
+[mHTTP GET /static/admin/img/tooltag-add.svg 200 [0.01, 127.0.0.1:17176][0m
+[mHTTP GET /admin/brewing/brew_recipe/20/change/ 200 [0.55, 127.0.0.1:17176][0m
+[mHTTP GET /static/admin/css/forms.css 200 [0.05, 127.0.0.1:17176][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.12, 127.0.0.1:17169][0m
+[mHTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [0.24, 127.0.0.1:17168][0m
+[mHTTP GET /static/admin/js/prepopulate_init.js 200 [0.29, 127.0.0.1:17179][0m
+[mHTTP GET /static/admin/css/widgets.css 200 [0.04, 127.0.0.1:17179][0m
+[mHTTP GET /static/admin/js/change_form.js 200 [0.03, 127.0.0.1:17179][0m
+[32mHTTP POST /admin/brewing/brew_recipe/20/change/ 302 [0.10, 127.0.0.1:17261][0m
+[mHTTP GET /admin/brewing/brew_recipe/20/change/ 200 [0.82, 127.0.0.1:17261][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.10, 127.0.0.1:17261][0m
+[mHTTP GET /static/admin/img/icon-yes.svg 200 [0.02, 127.0.0.1:17268][0m
+[mHTTP GET /home 200 [0.09, 127.0.0.1:17275][0m
+[32mHTTP POST /brewing 302 [0.06, 127.0.0.1:17275][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:17275][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:17283]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:17283]
+Fri Jun 10 10:03:09 2022: Another client connected
+[mHTTP GET /home 200 [0.35, 127.0.0.1:17370][0m
+[32mHTTP POST /brewing 302 [0.06, 127.0.0.1:17381][0m
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:17381][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:17386]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:17386]
+Fri Jun 10 10:04:30 2022: Another client connected
+[32mHTTP POST /admin/brewing/brew_recipe/20/change/ 302 [0.10, 127.0.0.1:17431][0m
+[mHTTP GET /admin/brewing/brew_recipe/20/change/ 200 [0.52, 127.0.0.1:17431][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.22, 127.0.0.1:17431][0m
+[mHTTP GET /brewing 200 [0.12, 127.0.0.1:17431][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:17386]
+[32mHTTP POST /brewing 302 [0.12, 127.0.0.1:17440][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:17440][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:17444]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:17444]
+Fri Jun 10 10:05:39 2022: Another client connected
+[mHTTP GET /brewing 200 [0.55, 127.0.0.1:17847][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:17444]
+[32mHTTP POST /brewing 302 [0.05, 127.0.0.1:17941][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:17941][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:17947]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:17947]
+Fri Jun 10 10:14:26 2022: Another client connected
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:17953][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:17947]
+[mHTTP GET /static/css/style.css 200 [0.26, 127.0.0.1:17953][0m
+[mHTTP GET /static/css/login.css 200 [0.02, 127.0.0.1:17953][0m
+[mHTTP GET /static/js/three.js 200 [0.06, 127.0.0.1:17953][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.07, 127.0.0.1:17954][0m
+[mHTTP GET /static/css/create.css 200 [0.06, 127.0.0.1:17954][0m
+[mHTTP GET /static/css/brewing.css 200 [0.02, 127.0.0.1:17954][0m
+[mHTTP GET /static/img/download.png 200 [0.04, 127.0.0.1:17954][0m
+[mHTTP GET /static/css/home.css 200 [0.06, 127.0.0.1:17953][0m
+[mHTTP GET /static/css/template.css 200 [0.03, 127.0.0.1:17953][0m
+[mHTTP GET /static/img/favicon.ico 200 [0.08, 127.0.0.1:17953][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:17965]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:17965]
+Fri Jun 10 10:14:32 2022: Another client connected
+[mHTTP GET /static/img/favicon.ico 200 [0.03, 127.0.0.1:17968][0m
+[mHTTP GET /brewing 200 [0.38, 127.0.0.1:18272][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:17965]
+[32mHTTP POST /brewing 302 [0.05, 127.0.0.1:18280][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:18280][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.06, 127.0.0.1:18280][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:18286]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:18286]
+Fri Jun 10 10:21:08 2022: Another client connected
+[mHTTP GET /brewing 200 [0.16, 127.0.0.1:18405][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:18286]

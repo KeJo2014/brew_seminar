@@ -97,7 +97,7 @@ function update_site(data) {
             showGraph(true);
             addDatapoint(data.sensor_data.temperature);
         }
-    } else if (data.roadmap[0][data.step] == "Würzekochen") {
+    } else if (data.status == "cooking") {
         document.getElementById("rast").parentElement.style.display = "contents";
         calculateRastPhase(data, 1);
         if (count % 3 == 0) {
@@ -242,6 +242,7 @@ function addDatapoint(temperature) {
 function clearChart() {
     chart.data.labels = [];
     chart.data.datasets[0].data = [];
+    chart.config.options.annotation.annotations = [];
     chart.update();
 }
 
@@ -274,7 +275,7 @@ function calculateRastPhase(data, step) {
                     document.getElementById("important_notes").style.color = "red"
                     document.getElementById("important_notes").innerHTML = "Jetzt Hopfen " + phases[1][i - 1][0] + " hinzugeben!";
                 }
-                document.getElementById("rast").innerHTML = "Hopfen: " + phases[1][i][0];
+                document.getElementById("rast").innerHTML = "Hopfen: " + phases[1][i - 1][0];
                 document.getElementById("important_notes").style.color = "red"
                 try {
                     document.getElementById("important_notes").innerHTML = "Jetzt Hopfen " + phases[1][i - 1][0] + " hinzugeben!";
@@ -285,7 +286,7 @@ function calculateRastPhase(data, step) {
                 temp_cache.currentPhase = -1;
                 document.getElementById("rast").innerHTML = "zur Hopfenbeigabe bereitmachen";
                 document.getElementById("important_notes").style.color = "#f38301"
-                document.getElementById("important_notes").innerHTML = "Nächster Hopfen: " + phases[1][0][0] + " (In " + (parseInt(phases[1][0][3]) - (delta / temp_cache.eye_of_agamotto)) + " Minuten)";
+                document.getElementById("important_notes").innerHTML = "Nächster Hopfen: " + phases[1][0][0] + " (In " +  Math.round(parseInt(phases[1][0][3]) - (delta / temp_cache.eye_of_agamotto)) + " Minuten)";
             }
         }
     }
