@@ -25,4 +25,11 @@ video {
 
 #getStartedButton {
   display: none;
+  color: white;
+  background: var(--gradient);
+}
+
+#getStartedButton:hover {
+  color: white;
+  background: var(--gradientReverse);
 }

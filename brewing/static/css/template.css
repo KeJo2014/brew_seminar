@@ -9,6 +9,7 @@
   --trans05: rgba(255, 255, 255, 0.5);
   --trans07: rgba(255, 255, 255, 0.7);
   --gradient: linear-gradient(135deg, #902504 0%, #FB8B01 36%, #FDD400 70%, #FDEE00 100%);
+  --gradientReverse: linear-gradient(135deg, #FDEE00 0%, #FDD400 36%, #FB8B01 70%, #902504 100%);
   --gradientWhite: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 100%);
 }
 

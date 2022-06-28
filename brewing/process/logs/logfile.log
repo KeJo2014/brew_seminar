@@ -777,3 +777,366 @@ WebSocket CONNECT /ws/socket-server/ [127.0.0.1:54083]
 Wed Jun  8 23:26:50 2022: Another client connected
 WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:54083]
 HTTP GET /home 200 [0.03, 127.0.0.1:54073]
+HTTP GET / 200 [0.08, 127.0.0.1:60963]
+HTTP GET /static/css/style.css 304 [0.09, 127.0.0.1:60963]
+HTTP GET /static/css/login.css 200 [1.55, 127.0.0.1:60963]
+HTTP GET /static/css/create.css 304 [0.00, 127.0.0.1:60963]
+HTTP GET /static/css/brewing.css 304 [0.00, 127.0.0.1:60963]
+HTTP GET /static/css/template.css 304 [0.00, 127.0.0.1:60963]
+HTTP GET /static/img/beer_background.webm 200 [0.29, 127.0.0.1:60963]
+HTTP GET / 200 [0.01, 127.0.0.1:61007]
+HTTP GET / 200 [0.01, 127.0.0.1:61021]
+HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:61021]
+HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:61021]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:61021]
+HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:61021]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:61021]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61021]
+HTTP GET /static/img/beer_background.webm 200 [0.25, 127.0.0.1:61021]
+HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:61031]
+HTTP GET / 200 [0.01, 127.0.0.1:61077]
+HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61077]
+HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:61077]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:61077]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61077]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:61077]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61077]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:61077]
+HTTP GET / 200 [0.02, 127.0.0.1:61086]
+HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:61086]
+HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:61086]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:61086]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61086]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:61086]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61086]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:61086]
+HTTP GET / 200 [0.01, 127.0.0.1:61110]
+HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61110]
+HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:61110]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:61110]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61110]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:61110]
+HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:61110]
+HTTP GET /static/img/beer_background.webm 200 [0.21, 127.0.0.1:61110]
+HTTP GET /static/img/favicon.ico 200 [0.02, 127.0.0.1:61117]
+HTTP GET / 200 [0.01, 127.0.0.1:61123]
+HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:61123]
+HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:61123]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:61123]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61123]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:61123]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61123]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:61123]
+HTTP GET / 200 [0.01, 127.0.0.1:61131]
+HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61131]
+HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:61131]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:61131]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61131]
+HTTP GET /static/css/home.css 200 [0.01, 127.0.0.1:61131]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61131]
+HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:61131]
+HTTP GET / 200 [0.01, 127.0.0.1:61143]
+HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61143]
+HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:61143]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:61143]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61143]
+HTTP GET /static/css/home.css 200 [0.01, 127.0.0.1:61143]
+HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:61143]
+HTTP GET /static/img/beer_background.webm 200 [0.23, 127.0.0.1:61143]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:61150]
+HTTP GET /home 200 [0.03, 127.0.0.1:61143]
+HTTP GET /static/css/style.css 304 [0.00, 127.0.0.1:61150]
+HTTP GET /static/js/home.js 304 [0.01, 127.0.0.1:61143]
+HTTP GET /home 200 [0.01, 127.0.0.1:61143]
+HTTP GET /static/css/style.css 304 [0.00, 127.0.0.1:61150]
+HTTP GET /home 200 [0.02, 127.0.0.1:61143]
+HTTP GET /static/css/style.css 304 [0.00, 127.0.0.1:61150]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:61143]
+HTTP GET /static/css/style.css 304 [0.01, 127.0.0.1:61150]
+HTTP GET /create 200 [0.02, 127.0.0.1:61143]
+HTTP GET /home 200 [0.02, 127.0.0.1:61143]
+HTTP GET /static/css/style.css 304 [0.01, 127.0.0.1:61143]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:61143]
+HTTP POST /brewing 302 [0.01, 127.0.0.1:61143]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:61143]
+HTTP GET /static/css/style.css 304 [0.00, 127.0.0.1:61143]
+HTTP GET /static/js/server_connection.js 304 [0.01, 127.0.0.1:61154]
+HTTP GET /static/img/download.png 304 [0.01, 127.0.0.1:61155]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:61157]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:61157]
+Thu Jun  9 10:37:46 2022: Another client connected
+Exception inside application: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\env\lib\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\consumer.py", line 23, in receive
+    self.evaluate_response(text_data_json)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\consumer.py", line 51, in evaluate_response
+    if(brew_system.next_step()):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\process\brew_server.py", line 93, in next_step
+    self.initiate_maischen()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\process\brew_server.py", line 192, in initiate_maischen
+    phases = self.load_phases(0)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\process\brew_server.py", line 166, in load_phases
+    temp = json.loads(recipe.maischplan)[0][2]
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:61157]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:61143]
+HTTP GET /static/css/style.css 304 [0.00, 127.0.0.1:61154]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:61170]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:61170]
+Thu Jun  9 10:38:19 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:61170]
+HTTP GET /home 200 [0.02, 127.0.0.1:61143]
+HTTP POST /brewing 302 [0.01, 127.0.0.1:61143]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:61143]
+HTTP GET /static/css/style.css 304 [0.00, 127.0.0.1:61155]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:61172]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:61172]
+Thu Jun  9 10:38:28 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:61172]
+HTTP GET /home 200 [0.02, 127.0.0.1:61143]
+HTTP POST /brewing 302 [0.01, 127.0.0.1:61143]
+HTTP GET /brewing 200 [0.01, 127.0.0.1:61143]
+HTTP GET /static/css/style.css 304 [0.00, 127.0.0.1:61154]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:61173]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:61173]
+Thu Jun  9 10:38:36 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:61173]
+HTTP GET /home 200 [0.02, 127.0.0.1:61143]
+HTTP GET /home 200 [0.03, 127.0.0.1:61289]
+HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61289]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:61290]
+HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:61290]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:61290]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61290]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:61290]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61290]
+HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:61290]
+HTTP GET /home 200 [0.02, 127.0.0.1:61290]
+HTTP GET /home 200 [0.02, 127.0.0.1:61290]
+HTTP GET /home 200 [0.01, 127.0.0.1:61290]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:61290]
+HTTP GET /home 200 [0.02, 127.0.0.1:61290]
+HTTP GET /home 200 [0.02, 127.0.0.1:61290]
+HTTP GET /home 200 [0.04, 127.0.0.1:61290]
+HTTP GET /home 200 [0.02, 127.0.0.1:61289]
+HTTP GET /home 200 [0.02, 127.0.0.1:61302]
+HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61302]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:61303]
+HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:61303]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:61303]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61303]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:61303]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61303]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:61303]
+HTTP GET /home 200 [0.02, 127.0.0.1:61303]
+HTTP GET /home 200 [0.02, 127.0.0.1:61303]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:61303]
+HTTP GET /home 200 [0.02, 127.0.0.1:61303]
+HTTP GET /home 200 [0.03, 127.0.0.1:61302]
+HTTP GET /brewing 200 [0.03, 127.0.0.1:61303]
+HTTP GET /home 200 [0.01, 127.0.0.1:61303]
+HTTP GET /home 200 [0.02, 127.0.0.1:61303]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:61303]
+HTTP GET /create 200 [0.02, 127.0.0.1:61303]
+HTTP GET /home 200 [0.02, 127.0.0.1:61303]
+HTTP GET /create 200 [0.02, 127.0.0.1:61302]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:61302]
+HTTP GET /home 200 [0.02, 127.0.0.1:61302]
+HTTP GET /home 200 [0.02, 127.0.0.1:61302]
+HTTP GET /home 200 [0.02, 127.0.0.1:61302]
+HTTP GET /home 200 [0.02, 127.0.0.1:61302]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:61302]
+HTTP GET /create 200 [0.02, 127.0.0.1:61311]
+HTTP GET /home 200 [0.02, 127.0.0.1:61302]
+HTTP GET /create 200 [0.02, 127.0.0.1:61311]
+HTTP GET /home 200 [0.02, 127.0.0.1:61312]
+HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:61312]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:61313]
+HTTP GET /static/css/login.css 200 [0.00, 127.0.0.1:61313]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:61313]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61313]
+HTTP GET /static/css/home.css 200 [0.00, 127.0.0.1:61313]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61313]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:61313]
+HTTP GET /create 200 [0.02, 127.0.0.1:61313]
+HTTP GET /home 200 [0.02, 127.0.0.1:61312]
+HTTP GET /home 200 [0.02, 127.0.0.1:61321]
+HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:61321]
+HTTP GET /static/js/home.js 200 [0.02, 127.0.0.1:61322]
+HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:61322]
+HTTP GET /static/css/create.css 200 [0.00, 127.0.0.1:61322]
+HTTP GET /static/css/brewing.css 200 [0.00, 127.0.0.1:61322]
+HTTP GET /static/css/home.css 200 [0.01, 127.0.0.1:61322]
+HTTP GET /static/css/template.css 200 [0.00, 127.0.0.1:61322]
+HTTP GET /static/img/favicon.ico 200 [0.00, 127.0.0.1:61322]
+HTTP GET /create 200 [0.02, 127.0.0.1:61322]
+HTTP GET /home 200 [0.03, 127.0.0.1:61322]
+HTTP GET /create 200 [0.01, 127.0.0.1:61322]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:61322]
+HTTP GET /home 200 [0.02, 127.0.0.1:61322]
+HTTP GET /home 200 [0.02, 127.0.0.1:61322]
+HTTP GET /home 200 [0.04, 127.0.0.1:61322]
+HTTP GET / 200 [0.03, 127.0.0.1:61464]
+HTTP GET /static/css/style.css 200 [0.00, 127.0.0.1:61464]
+HTTP GET /static/img/beer_background.webm 200 [0.25, 127.0.0.1:61464]
+HTTP GET /home 200 [0.02, 127.0.0.1:61464]
+HTTP GET /home 200 [0.02, 127.0.0.1:61470]
+HTTP GET /brewing 200 [0.02, 127.0.0.1:61470]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:61473]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:61473]
+Thu Jun  9 10:52:29 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:61473]
+HTTP GET /create 200 [0.02, 127.0.0.1:61474]
+HTTP GET /home 200 [0.02, 127.0.0.1:61474]
+HTTP GET /home 200 [0.02, 127.0.0.1:61474]
+HTTP GET / 200 [0.28, 127.0.0.1:51969]
+HTTP GET /static/css/style.css 200 [0.48, 127.0.0.1:51969]
+HTTP GET /static/css/login.css 200 [0.02, 127.0.0.1:51969]
+HTTP GET /static/css/create.css 200 [0.02, 127.0.0.1:51969]
+HTTP GET /static/css/brewing.css 200 [0.02, 127.0.0.1:51969]
+HTTP GET /static/css/home.css 200 [0.03, 127.0.0.1:51969]
+HTTP GET /static/css/template.css 200 [0.02, 127.0.0.1:51969]
+HTTP GET /static/img/beer_background.webm 200 [0.46, 127.0.0.1:51969]
+HTTP GET /static/img/favicon.ico 200 [0.16, 127.0.0.1:51982]
+HTTP GET /home 302 [0.02, 127.0.0.1:51969]
+HTTP GET /login 200 [0.07, 127.0.0.1:51969]
+HTTP POST /login 302 [0.55, 127.0.0.1:51969]
+HTTP GET /home 200 [0.13, 127.0.0.1:51969]
+HTTP GET /static/js/home.js 200 [0.06, 127.0.0.1:51982]
+HTTP GET /home 200 [0.03, 127.0.0.1:51969]
+HTTP POST /brewing 302 [0.02, 127.0.0.1:51969]
+HTTP GET /brewing 200 [0.05, 127.0.0.1:51969]
+HTTP GET /static/img/download.png 200 [0.03, 127.0.0.1:51982]
+HTTP GET /static/js/three.js 200 [0.72, 127.0.0.1:51969]
+HTTP GET /static/js/server_connection.js 200 [0.81, 127.0.0.1:51983]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:51985]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:51985]
+Tue Jun 28 13:51:30 2022: Another client connected
+Exception inside application: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\asgiref\sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 408, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\asgiref\sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\consumer.py", line 23, in receive
+    self.evaluate_response(text_data_json)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\consumer.py", line 51, in evaluate_response
+    if(brew_system.next_step()):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\process\brew_server.py", line 93, in next_step
+    self.initiate_maischen()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\process\brew_server.py", line 192, in initiate_maischen
+    phases = self.load_phases(0)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\process\brew_server.py", line 166, in load_phases
+    temp = json.loads(recipe.maischplan)[0][2]
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:51985]
+HTTP GET /brewing 200 [0.05, 127.0.0.1:51988]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:51989]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:51989]
+Tue Jun 28 13:52:34 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:51989]
+HTTP GET /home 200 [0.04, 127.0.0.1:51988]
+HTTP POST /brewing 302 [0.03, 127.0.0.1:51988]
+HTTP GET /brewing 200 [0.03, 127.0.0.1:51988]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:51990]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:51990]
+Tue Jun 28 13:52:52 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:51990]
+HTTP GET /home 200 [0.03, 127.0.0.1:51988]
+HTTP POST /brewing 302 [0.02, 127.0.0.1:51988]
+HTTP GET /brewing 200 [0.03, 127.0.0.1:51988]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:51992]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:51992]
+Tue Jun 28 13:53:05 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:51992]
+HTTP GET / 200 [0.02, 127.0.0.1:51998]
+HTTP GET /static/img/beer_background.webm 200 [0.58, 127.0.0.1:51998]
+HTTP GET /home 200 [0.05, 127.0.0.1:51998]
+HTTP GET / 200 [0.03, 127.0.0.1:51998]
+HTTP GET /static/img/beer_background.webm 200 [0.52, 127.0.0.1:51998]
+HTTP GET /home 200 [0.06, 127.0.0.1:51998]
+HTTP GET /create 200 [0.04, 127.0.0.1:51998]
+HTTP GET /static/js/create.js 200 [0.06, 127.0.0.1:51998]
+HTTP GET /home 200 [0.03, 127.0.0.1:51998]
+HTTP POST /brewing 302 [0.03, 127.0.0.1:51998]
+HTTP GET /brewing 200 [0.03, 127.0.0.1:51998]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:52003]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:52003]
+Tue Jun 28 13:57:11 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:52003]

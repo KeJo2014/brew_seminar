@@ -14,7 +14,7 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 
-<body>
+<body data-barba="wrapper">
     <!-- <div class="bg-shape-circle"></div>
     <div class="bg-shape-box"></div> -->
     <nav class="menu">
@@ -30,7 +30,7 @@
                 </a></li>
         </ul>
     </nav>
-    <div id="content">
+    <div id="content" data-barba="container" data-barba-namespace="home">
     {% block maincontent %}
 
     {% endblock %}
@@ -40,21 +40,4 @@
     </div>
     <script src="https://kit.fontawesome.com/84d4e1a0a8.js" crossorigin="anonymous"></script>
 </body>
-<script>
-$(document).ready(function() {
-  $('body').css('display', 'none');
-  $('body').fadeIn(1000);
-
-  $('.link').click(function() {
-    event.preventDefault();
-
-    newLocation = this.href;
-    $('body').fadeOut(1000, newPage);
-  });
-
-  function newPage() {
-    window.location = newLocation;
-  }
-});
-</script>
 </html>
