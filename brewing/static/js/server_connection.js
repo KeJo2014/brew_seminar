@@ -58,6 +58,12 @@ function update_site(data) {
         document.getElementById("but-start").style.display = "block"
         document.getElementById("but-reset").style.display = "none"
     }
+    // check if export icon should be displayed
+    if (document.getElementById("#currentPhase").innerHTML == "Gären") {
+        //change icon to checklist
+    } else {
+        //change icon back to right arrow
+    }
     // Data terminal
     let phase = document.getElementById("phase");
     let temperature = document.getElementById("temp");
@@ -286,7 +292,7 @@ function calculateRastPhase(data, step) {
                 temp_cache.currentPhase = -1;
                 document.getElementById("rast").innerHTML = "zur Hopfenbeigabe bereitmachen";
                 document.getElementById("important_notes").style.color = "#f38301"
-                document.getElementById("important_notes").innerHTML = "Nächster Hopfen: " + phases[1][0][0] + " (In " +  Math.round(parseInt(phases[1][0][3]) - (delta / temp_cache.eye_of_agamotto)) + " Minuten)";
+                document.getElementById("important_notes").innerHTML = "Nächster Hopfen: " + phases[1][0][0] + " (In " + Math.round(parseInt(phases[1][0][3]) - (delta / temp_cache.eye_of_agamotto)) + " Minuten)";
             }
         }
     }
@@ -313,4 +319,13 @@ function downloadChart() {
         document.getElementById("download").click();
     };
     fr.readAsDataURL(the_file);
+}
+
+//create a pdf
+function get_logs_from_Server() {
+    return "";
+}
+
+function get_recipe_content() {
+    return "";
 }

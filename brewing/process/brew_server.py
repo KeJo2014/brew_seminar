@@ -164,6 +164,7 @@ class brew_server():
         recipe = brew_recipe.objects.get(id=self.status["recipe"])
         if(step == 0):
             temp = json.loads(recipe.maischplan)[0][2]
+            print(temp)
             phases = []
             cache = 0
             for i in range(len(temp)):

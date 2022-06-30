@@ -53,6 +53,8 @@ class ChatConsumer(WebsocketConsumer):
                 self.send_json(
                     {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
             else:
+                self.send_json(
+                    {'type': 'chat_message', 'message': '{"error": "error encaunterd while loading next step"}'})
                 print("error encaunterd while loading next step")
 
         elif(command == "start"):
