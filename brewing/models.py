@@ -1,3 +1,4 @@
+import json
 from django.db import models
 
 # Create your models here.
@@ -22,6 +23,7 @@ class recipe(models.Model):
     
     def __str__(self):
         return f"{self.name}: {self.bier_sorte}"
+    
 
 class brew_recipe(models.Model):
     id = models.AutoField(primary_key=True)
@@ -45,6 +47,15 @@ class brew_recipe(models.Model):
     
     def __str__(self):
         return f"{self.name}: {self.description}"
+    
+    def getRecipe(self):
+        return {
+            "name": self.name,
+            "brauwasser":   json.dumps(self.brauwasser),
+            "schuettung":   json.dumps(self.schüttung),
+            "wuerzekochen": json.dumps(self.wuerzekochen),
+            "command":      "recipe"
+        }
 
 class messurement(models.Model):
     time = models.DateTimeField(auto_now=True)

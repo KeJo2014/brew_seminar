@@ -25,6 +25,7 @@ class brew_server():
                 "plato": 0,
             },
             "start_time": current_time,
+            "brewing_up_time": current_time
         }
         self.roadmap = [[
             "Geräte überprüfen",

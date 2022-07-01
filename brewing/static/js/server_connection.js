@@ -4,6 +4,9 @@ count = 0;
 temp_cache = [];
 temp_cache.eye_of_agamotto = 1;
 temp_cache.currentPhase = 0;
+recipeID = -1;
+server_up_time = -1;
+recipe = {}
 createGraph()
 showGraph(false);
 
@@ -16,6 +19,8 @@ chatSocket.onmessage = function (e) {
 
     switch (data.command) {
         case "update":
+            recipeID = data.recipe;
+            server_up_time = data.brewing_up_time;
             update_site(data)
             if (data.status == "warmingUp") {
                 send_to_server("keep_process", "")
@@ -25,6 +30,13 @@ chatSocket.onmessage = function (e) {
                 send_to_server("keep_process", "")
             }
             break;
+        case "recipe":
+            recipe = {
+                "name": data.name,
+                "brauwasser":   JSON.parse(JSON.parse(data.brauwasser)),
+                "wuerzekochen": JSON.parse(JSON.parse(data.wuerzekochen)),
+                "schuettung":   JSON.parse(JSON.parse(data.schuettung))
+            }
 
         default:
             console.log("that command is unknown")
@@ -59,8 +71,9 @@ function update_site(data) {
         document.getElementById("but-reset").style.display = "none"
     }
     // check if export icon should be displayed
-    if (document.getElementById("#currentPhase").innerHTML == "Gären") {
+    if (document.getElementById("currentPhase").innerHTML == "Gären") {
         //change icon to checklist
+        loadRecipe();
     } else {
         //change icon back to right arrow
     }
@@ -322,10 +335,15 @@ function downloadChart() {
 }
 
 //create a pdf
-function get_logs_from_Server() {
-    return "";
+
+function loadRecipe() {
+    send_to_server("getRecipe", recipeID);
 }
 
-function get_recipe_content() {
-    return "";
+function getRecipe(){
+    return recipe;
+}
+
+function getServerUpTime(){
+    return server_up_time;
 }
