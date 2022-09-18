@@ -1,5 +1,4 @@
 import random
-from tkinter import S
 
 class brew_server_hardware():
     def __init__(self):
