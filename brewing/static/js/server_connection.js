@@ -4,6 +4,9 @@ count = 0;
 temp_cache = [];
 temp_cache.eye_of_agamotto = 1;
 temp_cache.currentPhase = 0;
+recipeID = -1;
+server_up_time = -1;
+recipe = {}
 createGraph()
 showGraph(false);
 
@@ -16,6 +19,8 @@ chatSocket.onmessage = function (e) {
 
     switch (data.command) {
         case "update":
+            recipeID = data.recipe;
+            server_up_time = data.brewing_up_time;
             update_site(data)
             if (data.status == "warmingUp") {
                 send_to_server("keep_process", "")
@@ -25,6 +30,13 @@ chatSocket.onmessage = function (e) {
                 send_to_server("keep_process", "")
             }
             break;
+        case "recipe":
+            recipe = {
+                "name": data.name,
+                "brauwasser":   JSON.parse(JSON.parse(data.brauwasser)),
+                "wuerzekochen": JSON.parse(JSON.parse(data.wuerzekochen)),
+                "schuettung":   JSON.parse(JSON.parse(data.schuettung))
+            }
 
         default:
             console.log("that command is unknown")
@@ -57,6 +69,13 @@ function update_site(data) {
     } else {
         document.getElementById("but-start").style.display = "block"
         document.getElementById("but-reset").style.display = "none"
+    }
+    // check if export icon should be displayed
+    if (document.getElementById("currentPhase").innerHTML == "Gären") {
+        //change icon to checklist
+        loadRecipe();
+    } else {
+        //change icon back to right arrow
     }
     // Data terminal
     let phase = document.getElementById("phase");
@@ -286,7 +305,7 @@ function calculateRastPhase(data, step) {
                 temp_cache.currentPhase = -1;
                 document.getElementById("rast").innerHTML = "zur Hopfenbeigabe bereitmachen";
                 document.getElementById("important_notes").style.color = "#f38301"
-                document.getElementById("important_notes").innerHTML = "Nächster Hopfen: " + phases[1][0][0] + " (In " +  Math.round(parseInt(phases[1][0][3]) - (delta / temp_cache.eye_of_agamotto)) + " Minuten)";
+                document.getElementById("important_notes").innerHTML = "Nächster Hopfen: " + phases[1][0][0] + " (In " + Math.round(parseInt(phases[1][0][3]) - (delta / temp_cache.eye_of_agamotto)) + " Minuten)";
             }
         }
     }
@@ -313,4 +332,18 @@ function downloadChart() {
         document.getElementById("download").click();
     };
     fr.readAsDataURL(the_file);
+}
+
+//create a pdf
+
+function loadRecipe() {
+    send_to_server("getRecipe", recipeID);
+}
+
+function getRecipe(){
+    return recipe;
+}
+
+function getServerUpTime(){
+    return server_up_time;
 }

@@ -1,4 +1,5 @@
 import json
+from brewing.models import brew_recipe
 from channels.generic.websocket import WebsocketConsumer
 from asgiref.sync import async_to_sync
 from .views import brew_system
@@ -38,8 +39,8 @@ class ChatConsumer(WebsocketConsumer):
             'message': message
         }))
 
-    def evaluate_response(self, command):
-        command = command['command']
+    def evaluate_response(self, msg):
+        command = msg['command']
         if(command == "get_status"):
             self.send_json(
                 {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
@@ -53,6 +54,8 @@ class ChatConsumer(WebsocketConsumer):
                 self.send_json(
                     {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
             else:
+                self.send_json(
+                    {'type': 'chat_message', 'message': '{"error": "error encaunterd while loading next step"}'})
                 print("error encaunterd while loading next step")
 
         elif(command == "start"):
@@ -69,6 +72,11 @@ class ChatConsumer(WebsocketConsumer):
                     {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
             else:
                 print("error encaunterd while reseting the process")
+        elif(command == "getRecipe"):
+            print(int(msg["message"]))
+            rec = brew_recipe.objects.get(id=int(msg["message"]))
+            self.send_json(
+                    {'type': 'chat_message', 'message': json.dumps(rec.getRecipe())})
         elif(command == "prev"):
             if(brew_system.step_back()):
                 print("loaded previous step")

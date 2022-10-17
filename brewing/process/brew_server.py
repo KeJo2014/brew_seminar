@@ -25,6 +25,7 @@ class brew_server():
                 "plato": 0,
             },
             "start_time": current_time,
+            "brewing_up_time": current_time
         }
         self.roadmap = [[
             "Geräte überprüfen",
@@ -164,6 +165,7 @@ class brew_server():
         recipe = brew_recipe.objects.get(id=self.status["recipe"])
         if(step == 0):
             temp = json.loads(recipe.maischplan)[0][2]
+            print(temp)
             phases = []
             cache = 0
             for i in range(len(temp)):
