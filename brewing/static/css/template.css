@@ -61,7 +61,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 
@@ -162,8 +162,8 @@ aside {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: 1rem;
   overflow-y: auto;
   overflow-x: hidden;

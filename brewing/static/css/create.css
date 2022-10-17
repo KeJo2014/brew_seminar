@@ -7,6 +7,7 @@
 
 .aside-m {
     width: 35%;
+    justify-content: center;
 }
 
 h1 {
@@ -28,7 +29,7 @@ h3 {
 }
 
 .inputBox {
-    margin: 1rem 0 0 0;
+    /* margin: 1rem 0 0 0; */
     padding: 0 1rem 0 1rem;
 } 
 
@@ -179,7 +180,6 @@ input[type="date"] {
     
     .aside-m {
         width: 35%;
-        justify-content: center;
     }
 }
 
