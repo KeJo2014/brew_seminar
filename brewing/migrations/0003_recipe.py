@@ -30,6 +30,7 @@ class Migration(migrations.Migration):
                 ('maischplan', models.CharField(max_length=800)),
                 ('wuerzekochen', models.CharField(max_length=800)),
                 ('gärung', models.CharField(max_length=800)),
+                ('phase', models.CharField(max_length=8000)),
             ],
         ),
     ]
