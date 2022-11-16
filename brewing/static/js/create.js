@@ -259,6 +259,12 @@ function addPhase() {
 
 }
 
+function delPhase(id1, id2, id3, id4) {
+    document.getElementById(id1).remove();
+    document.getElementById(id2).remove();
+    --indexHopfen;
+}
+
 function handle_submit(){
     //brauwasser
     for (let index = 1; index <= indexWater; index++) {

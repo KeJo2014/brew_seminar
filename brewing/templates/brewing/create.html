@@ -128,14 +128,15 @@
             title="BESCHREIBUNG"></textarea>
     </div>
     <div class="inputBox">
+        <h2>Phasen</h2>
         <div id="phaseBox">
             <input type="text" class="input" id="phasenTitel" name="phasenTitel" placeholder="Titel der Phase" title="PHASENTITEL">
             <textarea id="phasenBeschreibung" class="input" name="phasenBeschreibung" placeholder="Beschreibung der Phase..." title="PHASENBESCHREIBUNG"
             title="PHASENBESCHREIBUNG"></textarea>
         </div>
         <div class="buttonBox">
-            <button type="button" class="addDelButton" onclick="addPhaseDescr()"><i class="fa-solid fa-plus"></i></button>
-            <button type="button" class="addDelButton" onclick="delPhaseDescr('hopfen' + indexHopfen, 'hopfenmenge' + indexHopfen, 'alpha' + indexHopfen, 'hopfentime' + indexHopfen)"><i class="fa-solid fa-minus"></i></button>
+            <button type="button" class="addDelButton" onclick="addPhase()"><i class="fa-solid fa-plus"></i></button>
+            <button type="button" class="addDelButton" onclick="delPhase('phasenTitel' + indexPhase, 'phasenBeschreibung' + indexPhase)"><i class="fa-solid fa-minus"></i></button>
         </div>
     </div>
 </form>
