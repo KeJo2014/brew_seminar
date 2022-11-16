@@ -1063,3 +1063,19 @@ Not Found: /edit
 HTTP GET /edit 404 [0.39, 127.0.0.1:54895]
 Not Found: /favicon.ico
 HTTP GET /favicon.ico 404 [0.05, 127.0.0.1:54895]
+HTTP GET / 200 [0.10, 127.0.0.1:54963]
+HTTP GET /static/img/beer_background.webm 200 [0.64, 127.0.0.1:54967]
+HTTP GET /home 200 [0.24, 127.0.0.1:54967]
+HTTP GET /edit/21 200 [0.16, 127.0.0.1:54971]
+HTTP GET /static/js/edit.js 200 [0.01, 127.0.0.1:54971]
+HTTP GET /create 200 [0.07, 127.0.0.1:54971]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:54971]
+HTTP POST /create 200 [0.13, 127.0.0.1:54974]
+HTTP GET /static/js/create.js 304 [0.01, 127.0.0.1:54974]
+HTTP GET /home 200 [0.07, 127.0.0.1:54974]
+HTTP GET /edit/22 200 [0.07, 127.0.0.1:54974]
+HTTP GET /static/js/edit.js 304 [0.01, 127.0.0.1:54974]
+HTTP GET /edit/22 200 [0.06, 127.0.0.1:54993]
+HTTP GET /static/js/edit.js 304 [0.01, 127.0.0.1:54993]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\models.py changed, reloading.
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\models.py changed, reloading.

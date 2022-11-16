@@ -43,6 +43,7 @@ class brew_recipe(models.Model):
     maischplan = models.CharField(max_length=800)
     wuerzekochen = models.CharField(max_length=800)
     gärung = models.CharField(max_length=800)
+    phase = models.CharField(max_length=80000)
     number_of_brews = models.IntegerField(default=0)
     
     def __str__(self):
@@ -54,6 +55,7 @@ class brew_recipe(models.Model):
             "brauwasser":   json.dumps(self.brauwasser),
             "schuettung":   json.dumps(self.schüttung),
             "wuerzekochen": json.dumps(self.wuerzekochen),
+            "phase":        json.dumps(self.phase),
             "command":      "recipe"
         }
 
