@@ -20,6 +20,7 @@ class recipe(models.Model):
     maischplan = models.CharField(max_length=800)
     wuerzekochen = models.CharField(max_length=800)
     gärung = models.CharField(max_length=800)
+    phase = models.CharField(max_length=8000)
     
     def __str__(self):
         return f"{self.name}: {self.bier_sorte}"

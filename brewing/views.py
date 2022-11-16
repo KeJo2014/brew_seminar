@@ -133,9 +133,10 @@ def create(request):
             maischplan = request.POST.get('json_maisch')
             wuerze_kochen = request.POST.get('json_wuerze')
             gaerung = request.POST.get('json_gaerung')
+            phase = request.POST.get('json_phase')
 
             recipe = brew_recipe(name=name, date=date, bier_sorte=bier_sorte, author=author, ausschlagwuerze=ausschlagwuerze, sudhausausbeute=sudhausausbeute, stamwuerze=stamwuerze,
-                                 ibu=ibu, ebc=ebc, alcohol=alcohol, description=description, brauwasser=brau_wasser, schüttung=schuettung, maischplan=maischplan, wuerzekochen=wuerze_kochen, gärung=gaerung)
+                                 ibu=ibu, ebc=ebc, alcohol=alcohol, description=description, brauwasser=brau_wasser, schüttung=schuettung, maischplan=maischplan, wuerzekochen=wuerze_kochen, gärung=gaerung, phase=phase,)
             recipe.save()
 
             return render(request, 'brewing/create.html')
