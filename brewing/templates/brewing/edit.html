@@ -10,9 +10,9 @@
         <h2>Brauwasser</h2>
         <div id="waterBox">
             <input type="text" id="brauwasser" style="display: none" value="{{recipe.brauwasser}}">
-            <!-- <input type="text" class="input" id="guss1" name="guss1" placeholder="1. Guss" required title="GUSS">
+            <input type="text" class="input" id="guss1" name="guss1" placeholder="1. Guss" required title="GUSS">
             <input type="number" class="input inputSpace" id="gussvol1" name="gussvol1" min="0" step="0.1"
-                placeholder="Gussvolumen [l]" required title="GUSSVOLUMEN"> -->
+                placeholder="Gussvolumen [l]" required title="GUSSVOLUMEN">
         </div>
         <div class="buttonBox">
             <button type="button" class="addDelButton" onclick="addWater('','')"><i class="fa-solid fa-plus"></i></button>
@@ -24,9 +24,9 @@
         <h2>Schüttung</h2>
         <div id="maltBox">
             <input type="text" id="schüttung" style="display: none" value="{{recipe.schüttung}}">
-            <!-- <input type="text" class="input" id="malz1" name="malz1" placeholder="1. Malzsorte" title="MALZSORTE">
+            <input type="text" class="input" id="malz1" name="malz1" placeholder="1. Malzsorte" title="MALZSORTE">
             <input type="number" class="input inputSpace" id="malzmenge1" name="malzmenge1" min="0" step="0.1"
-                placeholder="Malzmenge [g]" title="MALZMENGE"> -->
+                placeholder="Malzmenge [g]" title="MALZMENGE">
         </div>
         <div class="buttonBox">
             <button type="button" class="addDelButton" onclick="addMalt('', '')"><i class="fa-solid fa-plus"></i></button>
@@ -38,7 +38,7 @@
         <h2>Maischplan</h2>
         <div id="maischBox">
             <input type="text" id="maischplan" style="display: none" value="{{recipe.maischplan}}">
-            <!-- <input type="text" class="input" id="maisch1" name="maisch1" placeholder="1. Maischphase"
+            <input type="text" class="input" id="maisch1" name="maisch1" placeholder="1. Maischphase"
                 title="MAISCHPHASE">
             <input type="number" class="input inputSpace" id="maischtemp1" name="maischtemp1" min="0" step="0.1"
                 placeholder="Maischtemperatur [°C]" title="MAISCHTEMPERATUR">
@@ -54,7 +54,7 @@
                         class="fa-solid fa-plus"></i></button>
                 <button type="button" class="addDelButton smallerButton" id="buttonDelRast1" onclick="delRast(1, '', '')"><i
                         class="fa-solid fa-minus"></i></button>
-            </div> -->
+            </div>
         </div>
         <div class="buttonBox">
             <button type="button" class="addDelButton" onclick="addMaischphase('', '')"><i class="fa-solid fa-plus"></i></button>
@@ -67,14 +67,14 @@
         <input type="number" class="input inputSpace" id="kochendur" name="kochendur" min="0" step="0.1"
             placeholder="Würzekochdauer [min]" title="WÜRZEKOCHDAUER">
         <div id="hopfenBox">
-            <!-- <input type="text" class="input" id="hopfen1" name="hopfen1" placeholder="1. Hopfensorte"
+            <input type="text" class="input" id="hopfen1" name="hopfen1" placeholder="1. Hopfensorte"
                 title="HOPFENSORTE">
             <input type="number" class="input" id="hopfenmenge1" name="hopfenmenge1" min="0" step="0.1"
                 placeholder="Hopfenmenge [g]" title="HOPFENMENGE">
             <input type="number" class="input" id="alpha1" name="alpha1" min="0" placeholder="α-Säure [%]" step="0.1"
                 title="ALPHASÄURE">
             <input type="text" class="input inputSpace" id="hopfentime1" name="hopfentime1"
-                placeholder="Hopfenzugabe vor Kochende [min]" title="HOPFENZUGABE"> -->
+                placeholder="Hopfenzugabe vor Kochende [min]" title="HOPFENZUGABE">
         </div>
         <div class="buttonBox">
             <button type="button" class="addDelButton" onclick="addHopfen()"><i class="fa-solid fa-plus"></i></button>
@@ -130,6 +130,18 @@
     <div class="inputBox">
         <textarea id="beschreibung" class="input" name="beschreibung" rows="4" cols="50" placeholder="Beschreibung..."
             title="BESCHREIBUNG">{{recipe.description}}</textarea>
+    </div>
+    <div class="inputBox">
+        <h2>Phasen</h2>
+        <div id="phaseBox">
+            <input type="text" class="input" id="phasenTitel" name="phasenTitel" placeholder="Titel der Phase" title="PHASENTITEL" value="{{recipe.phase}}">
+            <textarea id="phasenBeschreibung" class="input" name="phasenBeschreibung" placeholder="Beschreibung der Phase..." title="PHASENBESCHREIBUNG"
+            title="PHASENBESCHREIBUNG">{{recipe.phaseDesc}}</textarea>
+        </div>
+        <div class="buttonBox">
+            <button type="button" class="addDelButton" onclick="addPhase()"><i class="fa-solid fa-plus"></i></button>
+            <button type="button" class="addDelButton" onclick="delPhase('phasenTitel' + indexPhase, 'phasenBeschreibung' + indexPhase)"><i class="fa-solid fa-minus"></i></button>
+        </div>
     </div>
 </form>
 </aside>
