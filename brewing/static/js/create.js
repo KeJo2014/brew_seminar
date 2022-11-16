@@ -11,6 +11,7 @@ var schüttung = [];
 var maisch = [];
 var würze = [];
 var gärung = [];
+var phase = [];
 
 function addMalt() {
     ++indexMalt;

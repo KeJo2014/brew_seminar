@@ -3,6 +3,7 @@ var indexWater = 0;
 var indexPhase = 0;
 var indexRast = [0,0];
 var indexHopfen = 0;
+var indexPhase = 0;
 
 
 var brauwasserElement = document.getElementById('brauwasser');
@@ -12,6 +13,15 @@ var brauwasserArray = JSON.parse(brauwasserJson);
 for (let i = 0; i < brauwasserArray.length; i++)
 {
     addWater(brauwasserArray[i][0], brauwasserArray[i][1]); 
+}
+
+var phaseElement = document.getElementById('phase');
+var phaseJson = phaseElement.getAttribute('value'); 
+var phaseArray = JSON.parse(phaseJson);
+
+for (let i = 0; i < phaseArray.length; i++)
+{
+    addPhase(phaseArray[i][0], phaseArray[i][1]); 
 }
 
 var schüttungElement = document.getElementById('schüttung');
@@ -307,6 +317,36 @@ function delHopfen(id1, id2, id3, id4) {
     --indexHopfen;
 }
 
+function addPhase() {
+    ++indexPhase;
+
+    var inputPhaseTitleText = document.createElement('input');
+    inputPhaseTitleText.setAttribute('type', 'text');
+    inputPhaseTitleText.setAttribute('class', 'input');
+    inputPhaseTitleText.setAttribute('id', 'phasenTitel' + indexPhase);
+    inputPhaseTitleText.setAttribute('name', 'phasenTitel' + indexPhase);
+    inputPhaseTitleText.setAttribute('placeholder', indexPhase + '. Titel der Phase');
+    inputPhaseTitleText.setAttribute('title', 'PHASENTITEL');
+
+    var inputPhaseDescrText = document.createElement('textarea');
+    inputPhaseDescrText.setAttribute('class', 'input');
+    inputPhaseDescrText.setAttribute('id', 'phasenBeschreibung' + indexPhase);
+    inputPhaseDescrText.setAttribute('name', 'phasenBeschreibung' + indexPhase);
+    inputPhaseDescrText.setAttribute('placeholder', 'Beschreibung der Phase...');
+    inputPhaseDescrText.setAttribute('title', 'BESCHREIBUNG DER PHASE...');
+
+    var parent = document.querySelector('#phaseBox')
+    parent.appendChild(inputPhaseTitleText);
+    parent.appendChild(inputPhaseDescrText);
+
+}
+
+function delPhase(id1, id2) {
+    document.getElementById(id1).remove();
+    document.getElementById(id2).remove();
+    --indexPhase;
+}
+
 function handle_update(){
     //brauwasser
     for (let index = 1; index <= indexWater; index++) {
@@ -363,7 +403,15 @@ function handle_update(){
     gärung.push(entry);
     var json = JSON.stringify(gärung);
     document.getElementById("json_gaerung").value = json;
-
+    //phase
+    for (let index = 1; index <= indexPhase; index++) {
+        var title = document.getElementById('phasenTitel' + index).value;
+        var descr = document.getElementById('phasenBeschreibung' + index).value;
+        var entry = [title, descr];
+        phase.push(entry);
+    }
+    var json = JSON.stringify(phase);
+    document.getElementById("json_phase").value = json;
     //submit
     document.getElementById("edit_form").submit();
 }
