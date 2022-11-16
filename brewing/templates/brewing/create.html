@@ -124,8 +124,19 @@
             required min="0" title="ALKOHOL">
     </div>
     <div class="inputBox">
-        <textarea id="beschreibung" class="input" name="beschreibung" rows="4" cols="50" placeholder="Beschreibung..."
+        <textarea id="beschreibung" class="input" name="beschreibung" placeholder="Beschreibung..."
             title="BESCHREIBUNG"></textarea>
+    </div>
+    <div class="inputBox">
+        <div id="phaseBox">
+            <input type="text" class="input" id="phasenTitel" name="phasenTitel" placeholder="Titel der Phase" title="PHASENTITEL">
+            <textarea id="phasenBeschreibung" class="input" name="phasenBeschreibung" placeholder="Beschreibung der Phase..." title="PHASENBESCHREIBUNG"
+            title="PHASENBESCHREIBUNG"></textarea>
+        </div>
+        <div class="buttonBox">
+            <button type="button" class="addDelButton" onclick="addPhaseDescr()"><i class="fa-solid fa-plus"></i></button>
+            <button type="button" class="addDelButton" onclick="delPhaseDescr('hopfen' + indexHopfen, 'hopfenmenge' + indexHopfen, 'alpha' + indexHopfen, 'hopfentime' + indexHopfen)"><i class="fa-solid fa-minus"></i></button>
+        </div>
     </div>
 </form>
 </aside>

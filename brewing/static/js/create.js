@@ -3,6 +3,7 @@ var indexWater = 1;
 var indexPhase = 1;
 var indexRast = [1, 1];
 var indexHopfen = 1;
+var indexPhase = 1;
 
 //json
 var brauwasser = [];
@@ -233,6 +234,29 @@ function delHopfen(id1, id2, id3, id4) {
     document.getElementById(id3).remove();
     document.getElementById(id4).remove();
     --indexHopfen;
+}
+function addPhase() {
+    ++indexPhase;
+
+    var inputPhaseTitleText = document.createElement('input');
+    inputPhaseTitleText.setAttribute('type', 'text');
+    inputPhaseTitleText.setAttribute('class', 'input');
+    inputPhaseTitleText.setAttribute('id', 'phasenTitel' + indexPhase);
+    inputPhaseTitleText.setAttribute('name', 'phasenTitel' + indexPhase);
+    inputPhaseTitleText.setAttribute('placeholder', indexPhase + '. Titel der Phase');
+    inputPhaseTitleText.setAttribute('title', 'PHASENTITEL');
+
+    var inputPhaseDescrText = document.createElement('textarea');
+    inputPhaseDescrText.setAttribute('class', 'input');
+    inputPhaseDescrText.setAttribute('id', 'phasenBeschreibung' + indexPhase);
+    inputPhaseDescrText.setAttribute('name', 'phasenBeschreibung' + indexPhase);
+    inputPhaseDescrText.setAttribute('placeholder', 'Beschreibung der Phase...');
+    inputPhaseDescrText.setAttribute('title', 'BESCHREIBUNG DER PHASE...');
+
+    var parent = document.querySelector('#phaseBox')
+    parent.appendChild(inputPhaseTitleText);
+    parent.appendChild(inputPhaseDescrText);
+
 }
 
 function handle_submit(){
