@@ -321,7 +321,15 @@ function handle_submit(){
     gärung.push(entry);
     var json = JSON.stringify(gärung);
     document.getElementById("json_gaerung").value = json;
-
+    //phase
+    for (let index = 1; index <= indexPhase; index++) {
+        var title = document.getElementById('phasenTitel' + index).value;
+        var descr = document.getElementById('phasenBeschreibung' + index).value;
+        var entry = [title, descr];
+        phase.push(entry);
+    }
+    var json = JSON.stringify(phase);
+    document.getElementById("json_phase").value = json;
     //submit
     document.getElementById("form").submit();
 }
