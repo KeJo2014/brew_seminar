@@ -10,9 +10,9 @@
         <h2>Brauwasser</h2>
         <div id="waterBox">
             <input type="text" id="brauwasser" style="display: none" value="{{recipe.brauwasser}}">
-            <input type="text" class="input" id="guss1" name="guss1" placeholder="1. Guss" required title="GUSS">
+            <!-- <input type="text" class="input" id="guss1" name="guss1" placeholder="1. Guss" required title="GUSS">
             <input type="number" class="input inputSpace" id="gussvol1" name="gussvol1" min="0" step="0.1"
-                placeholder="Gussvolumen [l]" required title="GUSSVOLUMEN">
+                placeholder="Gussvolumen [l]" required title="GUSSVOLUMEN"> -->
         </div>
         <div class="buttonBox">
             <button type="button" class="addDelButton" onclick="addWater('','')"><i class="fa-solid fa-plus"></i></button>
@@ -21,12 +21,12 @@
         </div>
     </div>
     <div class="inputBox">
-        <h2>Schüttung</h2>
+        <h2>schuettung</h2>
         <div id="maltBox">
-            <input type="text" id="schüttung" style="display: none" value="{{recipe.schüttung}}">
-            <input type="text" class="input" id="malz1" name="malz1" placeholder="1. Malzsorte" title="MALZSORTE">
+            <input type="text" id="schuettung" style="display: none" value="{{recipe.schuettung}}">
+            <!-- <input type="text" class="input" id="malz1" name="malz1" placeholder="1. Malzsorte" title="MALZSORTE">
             <input type="number" class="input inputSpace" id="malzmenge1" name="malzmenge1" min="0" step="0.1"
-                placeholder="Malzmenge [g]" title="MALZMENGE">
+                placeholder="Malzmenge [g]" title="MALZMENGE"> -->
         </div>
         <div class="buttonBox">
             <button type="button" class="addDelButton" onclick="addMalt('', '')"><i class="fa-solid fa-plus"></i></button>
@@ -84,12 +84,12 @@
         </div>
     </div>
     <div class="inputBox">
-        <h2>Gärung und Reifung</h2>
-        <input type="text" id="gärung" style="display: none" value="{{recipe.gärung}}">
+        <h2>gaerung und Reifung</h2>
+        <input type="text" id="gaerung" style="display: none" value="{{recipe.gaerung}}">
         <input type="text" class="input" id="hefe1" name="hefe1" placeholder="Hefesorte" title="HEFESORTE">
         <input type="number" class="input" id="gaertemp1" name="gaertemp1" min="0" step="0.1"placeholder="Gärtemperatur [°C]" title="GÄRTEMPERATUR">
-        <input type="number" class="input" id="endgaergrad1" name="endgaergrad1" min="0" step="0.1"placeholder="Endvergärungsgrad [%]"
-            title="ENDVERGÄRUNGSGRAD">
+        <input type="number" class="input" id="endgaergrad1" name="endgaergrad1" min="0" step="0.1"placeholder="Endvergaerungsgrad [%]"
+            title="ENDVERgaerungSGRAD">
         <input type="number" class="input" id="karbon1" name="karbon1" min="0" step="0.1"placeholder="Karbonisierung [g/l]"
             title="KARBONISIERUNG">
     </div>
@@ -134,9 +134,10 @@
     <div class="inputBox">
         <h2>Phasen</h2>
         <div id="phaseBox">
-            <input type="text" class="input" id="phasenTitel" name="phasenTitel" placeholder="Titel der Phase" title="PHASENTITEL" value="{{recipe.phase}}">
+            <input type="text" id="phase" style="display: none" value="{{recipe.phase}}">
+            <!-- <input type="text" class="input" id="phasenTitel" name="phasenTitel" placeholder="Titel der Phase" title="PHASENTITEL">
             <textarea id="phasenBeschreibung" class="input" name="phasenBeschreibung" placeholder="Beschreibung der Phase..." title="PHASENBESCHREIBUNG"
-            title="PHASENBESCHREIBUNG">{{recipe.phase}}</textarea>
+            title="PHASENBESCHREIBUNG"></textarea> -->
         </div>
         <div class="buttonBox">
             <button type="button" class="addDelButton" onclick="addPhase()"><i class="fa-solid fa-plus"></i></button>

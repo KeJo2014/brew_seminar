@@ -3,14 +3,14 @@ var indexWater = 1;
 var indexPhase = 1;
 var indexRast = [1, 1];
 var indexHopfen = 1;
-var indexPhase = 1;
+var indexPhaseDesc = 1;
 
 //json
 var brauwasser = [];
-var schüttung = [];
+var schuettung = [];
 var maisch = [];
 var würze = [];
-var gärung = [];
+var gaerung = [];
 var phase = [];
 
 function addMalt() {
@@ -237,20 +237,20 @@ function delHopfen(id1, id2, id3, id4) {
     --indexHopfen;
 }
 function addPhase() {
-    ++indexPhase;
+    ++indexPhaseDesc;
 
     var inputPhaseTitleText = document.createElement('input');
     inputPhaseTitleText.setAttribute('type', 'text');
     inputPhaseTitleText.setAttribute('class', 'input');
-    inputPhaseTitleText.setAttribute('id', 'phasenTitel' + indexPhase);
-    inputPhaseTitleText.setAttribute('name', 'phasenTitel' + indexPhase);
-    inputPhaseTitleText.setAttribute('placeholder', indexPhase + '. Titel der Phase');
+    inputPhaseTitleText.setAttribute('id', 'phasenTitel' + indexPhaseDesc);
+    inputPhaseTitleText.setAttribute('name', 'phasenTitel' + indexPhaseDesc);
+    inputPhaseTitleText.setAttribute('placeholder', indexPhaseDesc + '. Titel der Phase');
     inputPhaseTitleText.setAttribute('title', 'PHASENTITEL');
 
     var inputPhaseDescrText = document.createElement('textarea');
     inputPhaseDescrText.setAttribute('class', 'input');
-    inputPhaseDescrText.setAttribute('id', 'phasenBeschreibung' + indexPhase);
-    inputPhaseDescrText.setAttribute('name', 'phasenBeschreibung' + indexPhase);
+    inputPhaseDescrText.setAttribute('id', 'phasenBeschreibung' + indexPhaseDesc);
+    inputPhaseDescrText.setAttribute('name', 'phasenBeschreibung' + indexPhaseDesc);
     inputPhaseDescrText.setAttribute('placeholder', 'Beschreibung der Phase...');
     inputPhaseDescrText.setAttribute('title', 'BESCHREIBUNG DER PHASE...');
 
@@ -263,7 +263,7 @@ function addPhase() {
 function delPhase(id1, id2) {
     document.getElementById(id1).remove();
     document.getElementById(id2).remove();
-    --indexPhase;
+    --indexPhaseDesc;
 }
 
 function handle_submit(){
@@ -276,14 +276,14 @@ function handle_submit(){
     }
     var json = JSON.stringify(brauwasser);
     document.getElementById("json_brauwasser").value = json;
-    //schüttung
+    //schuettung
     for (let index = 1; index <= indexMalt; index++) {
         var malt = document.getElementById('malz' + index).value;
         var amount = document.getElementById('malzmenge' + index).value;
         var entry = [malt, amount];
-        schüttung.push(entry);
+        schuettung.push(entry);
     }
-    var json = JSON.stringify(schüttung);
+    var json = JSON.stringify(schuettung);
     document.getElementById("json_schuettung").value = json;
     //Maisch
     for (let index = 1; index <= indexPhase; index++) {
@@ -313,14 +313,14 @@ function handle_submit(){
     }
     var json = JSON.stringify(würze);
     document.getElementById("json_wuerze").value = json;
-    //gärung
+    //gaerung
     var sort = document.getElementById('hefe1').value;
     var temp = document.getElementById('gaertemp1').value;
     var end = document.getElementById('endgaergrad1').value;
     var carbon = document.getElementById('karbon1').value;
     var entry = [sort, temp, end, carbon];
-    gärung.push(entry);
-    var json = JSON.stringify(gärung);
+    gaerung.push(entry);
+    var json = JSON.stringify(gaerung);
     document.getElementById("json_gaerung").value = json;
     //phase
     for (let index = 1; index <= indexPhase; index++) {

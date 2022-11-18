@@ -3,7 +3,7 @@ var indexWater = 0;
 var indexPhase = 0;
 var indexRast = [0,0];
 var indexHopfen = 0;
-var indexPhase = 0;
+var indexPhaseDesc = 0;
 
 
 var brauwasserElement = document.getElementById('brauwasser');
@@ -17,20 +17,21 @@ for (let i = 0; i < brauwasserArray.length; i++)
 
 var phaseElement = document.getElementById('phase');
 var phaseJson = phaseElement.getAttribute('value'); 
-var phaseArray = JSON.parse(phaseJson);
+var phaseArray = JSON.parse(phaseJson); 
 
 for (let i = 0; i < phaseArray.length; i++)
 {
     addPhase(phaseArray[i][0], phaseArray[i][1]); 
 }
 
-var schüttungElement = document.getElementById('schüttung');
-var schüttungJson = schüttungElement.getAttribute('value'); 
-var schüttungArray = JSON.parse(schüttungJson);
+var schuettungElement = document.getElementById('schuettung');
+var schuettungJson = schuettungElement.getAttribute('value'); 
+console.log(schuettungJson);
+var schuettungArray = JSON.parse(schuettungJson);
 
-for (let i = 0; i < schüttungArray.length; i++)
+for (let i = 0; i < schuettungArray.length; i++)
 {
-    addMalt(schüttungArray[i][0], schüttungArray[i][1]); 
+    addMalt(schuettungArray[i][0], schuettungArray[i][1]); 
 }
 
 var maischplanElement = document.getElementById('maischplan');
@@ -60,28 +61,28 @@ for (let i = 1; i < kochenArray.length; i++)
     addHopfen(kochenArray[i][0], kochenArray[i][1], kochenArray[i][2], kochenArray[i][3]); 
 }
 
-var gärungElement = document.getElementById('gärung');
-var gärungJson = gärungElement.getAttribute('value'); 
-var gärungArray = JSON.parse(gärungJson);
+var gaerungElement = document.getElementById('gaerung');
+var gaerungJson = gaerungElement.getAttribute('value'); 
+var gaerungArray = JSON.parse(gaerungJson);
 
-var gärungHefeElement = document.getElementById('hefe1');
-gärungHefeElement.setAttribute('value', gärungArray[0][0]);
+var gaerungHefeElement = document.getElementById('hefe1');
+gaerungHefeElement.setAttribute('value', gaerungArray[0][0]);
 
-var gärungTempElement = document.getElementById('gaertemp1');
-gärungTempElement.setAttribute('value', gärungArray[0][1]);
+var gaerungTempElement = document.getElementById('gaertemp1');
+gaerungTempElement.setAttribute('value', gaerungArray[0][1]);
 
-var gärungGradElement = document.getElementById('endgaergrad1');
-gärungGradElement.setAttribute('value', gärungArray[0][2]);
+var gaerungGradElement = document.getElementById('endgaergrad1');
+gaerungGradElement.setAttribute('value', gaerungArray[0][2]);
 
-var gärungKarbonElement = document.getElementById('karbon1');
-gärungKarbonElement.setAttribute('value', gärungArray[0][3]);
+var gaerungKarbonElement = document.getElementById('karbon1');
+gaerungKarbonElement.setAttribute('value', gaerungArray[0][3]);
 
-var schüttung = [];
+var schuettung = [];
 var maisch = [];
 var würze = [];
-var gärung = [];
+var gaerung = [];
 
-function addMalt(inputName, inputNumber) {
+function addMalt() {
     ++indexMalt;
     var inputMaltText = document.createElement('input');
     inputMaltText.setAttribute('type', 'text');
@@ -90,7 +91,6 @@ function addMalt(inputName, inputNumber) {
     inputMaltText.setAttribute('name', 'malz' + indexMalt);
     inputMaltText.setAttribute('placeholder', indexMalt + '. Malzsorte');
     inputMaltText.setAttribute('title', 'MALZSORTE');
-    inputMaltText.setAttribute('value', inputName);
 
     var inputMaltNumber = document.createElement('input');
     inputMaltNumber.setAttribute('type', 'number');
@@ -100,7 +100,6 @@ function addMalt(inputName, inputNumber) {
     inputMaltNumber.setAttribute('min', '0');
     inputMaltNumber.setAttribute('placeholder', 'Malzmenge [g]');
     inputMaltNumber.setAttribute('title', 'MALZMENGE');
-    inputMaltNumber.setAttribute('value', inputNumber);
 
     var parent = document.querySelector('#maltBox')
     parent.appendChild(inputMaltText);
@@ -114,7 +113,7 @@ function delMalt(id1, id2) {
     --indexMalt;
 }
 
-function addWater(inputName, inputNumber) {
+function addWater(waterName, waterAmount) {
     ++indexWater;
     var inputWaterText = document.createElement('input');
     inputWaterText.setAttribute('type', 'text');
@@ -123,7 +122,7 @@ function addWater(inputName, inputNumber) {
     inputWaterText.setAttribute('name', 'guss' + indexWater);
     inputWaterText.setAttribute('placeholder', indexWater + '. Guss');
     inputWaterText.setAttribute('title', 'GUSS');
-    inputWaterText.setAttribute('value', inputName);
+    inputWaterText.setAttribute('value', waterName);
 
     var inputWaterNumber = document.createElement('input');
     inputWaterNumber.setAttribute('type', 'number');
@@ -133,7 +132,7 @@ function addWater(inputName, inputNumber) {
     inputWaterNumber.setAttribute('min', '0');
     inputWaterNumber.setAttribute('placeholder', 'Gussvolumen [l]');
     inputWaterNumber.setAttribute('title', 'GUSSVOLUMEN');
-    inputWaterNumber.setAttribute('value', inputNumber);
+    inputWaterNumber.setAttribute('value', waterAmount);
 
     var parent = document.querySelector('#waterBox')
     parent.appendChild(inputWaterText);
@@ -147,7 +146,7 @@ function delWater(id1, id2) {
     --indexWater;
 }
 
-function addMaischphase(inputName, inputNumber) {
+function addMaischphase(maltName) {
     ++indexPhase;
     indexRast.push(0);
 
@@ -158,7 +157,6 @@ function addMaischphase(inputName, inputNumber) {
     inputPhaseText.setAttribute('name', 'maisch' + indexPhase);
     inputPhaseText.setAttribute('placeholder', indexPhase + '. Maischphase');
     inputPhaseText.setAttribute('title', 'MAISCHPHASE');
-    inputPhaseText.setAttribute('value', inputName);
 
     var inputPhaseNumber = document.createElement('input');
     inputPhaseNumber.setAttribute('type', 'number');
@@ -167,8 +165,7 @@ function addMaischphase(inputName, inputNumber) {
     inputPhaseNumber.setAttribute('name', 'maischtemp' + indexPhase);
     inputPhaseNumber.setAttribute('min', '0');
     inputPhaseNumber.setAttribute('placeholder', 'Maischtemperatur [°C]');
-    inputPhaseNumber.setAttribute('title', 'MAISCHTEMPERATUR');
-    inputPhaseNumber.setAttribute('value', inputNumber);
+    inputPhaseNumber.setAttribute('title', 'MAISCHTEMPERATUR')
 
     var rastBox = document.createElement('div');
     rastBox.setAttribute('class', 'rastBox');
@@ -182,7 +179,7 @@ function addMaischphase(inputName, inputNumber) {
     buttonAddRast.setAttribute('type', 'button');
     buttonAddRast.setAttribute('class', 'addDelButton smallerButton');
     buttonAddRast.setAttribute('id', 'buttonAddRast' + indexPhase);
-    buttonAddRast.setAttribute("onclick", "addRast(" + indexPhase + ", '', '')");
+    buttonAddRast.setAttribute('onclick', 'addRast(' + indexPhase + ')');
 
     var iconAddRast = document.createElement('i');
     iconAddRast.setAttribute('class', 'fa-solid fa-plus');
@@ -191,7 +188,7 @@ function addMaischphase(inputName, inputNumber) {
     buttonDelRast.setAttribute('type', 'button');
     buttonDelRast.setAttribute('class', 'addDelButton smallerButton');
     buttonDelRast.setAttribute('id', 'buttonDelRast' + indexPhase);
-    buttonDelRast.setAttribute('onclick', 'delRast(' + indexPhase + ')');
+    buttonDelRast.setAttribute('onclick', 'delRast('+ indexPhase + ')');
 
     var iconDelRast = document.createElement('i');
     iconDelRast.setAttribute('class', 'fa-solid fa-minus');
@@ -217,32 +214,30 @@ function delMaischphase() {
     --indexPhase;
 }
 
-function addRast(index, inputTemp, inputDur) {
+function addRast(index) {
     indexRast[index] += 1;
 
     var h3Rast = document.createElement('h3');
-    h3Rast.setAttribute('id', 'h3Rast' + index + indexRast[index]);
+    h3Rast.setAttribute('id', 'h3Rast' + indexPhase + indexRast[index]);
     var h3RastText = document.createTextNode(indexRast[index] + '. Rast');
 
     var inputRastTempNumber = document.createElement('input');
     inputRastTempNumber.setAttribute('type', 'number');
     inputRastTempNumber.setAttribute('class', 'rastInput');
-    inputRastTempNumber.setAttribute('id', 'rasttemp' + index + indexRast[index]);
-    inputRastTempNumber.setAttribute('name', 'rasttemp' + index + indexRast[index]);
+    inputRastTempNumber.setAttribute('id', 'rasttemp' + indexPhase + indexRast[index]);
+    inputRastTempNumber.setAttribute('name', 'rasttemp' + indexPhase + indexRast[index]);
     inputRastTempNumber.setAttribute('min', '0');
     inputRastTempNumber.setAttribute('placeholder', 'Rasttemperatur [°C]');
     inputRastTempNumber.setAttribute('title', 'RASTTEMPERATUR');
-    inputRastTempNumber.setAttribute('value', inputTemp);
 
     var inputRastDurNumber = document.createElement('input');
     inputRastDurNumber.setAttribute('type', 'number');
     inputRastDurNumber.setAttribute('class', 'rastInput inputSpace');
-    inputRastDurNumber.setAttribute('id', 'rastdur' + index + indexRast[index]);
-    inputRastDurNumber.setAttribute('name', 'rastdur' + index + indexRast[index]);
+    inputRastDurNumber.setAttribute('id', 'rastdur' + indexPhase + indexRast[index]);
+    inputRastDurNumber.setAttribute('name', 'rastdur' + indexPhase + indexRast[index]);
     inputRastDurNumber.setAttribute('min', '0');
     inputRastDurNumber.setAttribute('placeholder', 'Rastdauer [min]');
     inputRastDurNumber.setAttribute('title', 'RASTDAUER');
-    inputRastDurNumber.setAttribute('value', inputDur);
 
     var parent = document.querySelector('#' + 'rastBox' + index)
     h3Rast.appendChild(h3RastText);
@@ -260,7 +255,7 @@ function delRast(index) {
 
 }
 
-function addHopfen(inputHopfen, inputHopfenMenge, inputAlpha, inputZugabe) {
+function addHopfen() {
     ++indexHopfen;
 
     var inputHopfenText = document.createElement('input');
@@ -270,7 +265,6 @@ function addHopfen(inputHopfen, inputHopfenMenge, inputAlpha, inputZugabe) {
     inputHopfenText.setAttribute('name', 'hopfen' + indexHopfen);
     inputHopfenText.setAttribute('placeholder', indexHopfen + '. Hopfensorte');
     inputHopfenText.setAttribute('title', 'HOPFENSORTE');
-    inputHopfenText.setAttribute('value', inputHopfen);
 
     var inputHopfenMengeNumber = document.createElement('input');
     inputHopfenMengeNumber.setAttribute('type', 'number');
@@ -280,7 +274,6 @@ function addHopfen(inputHopfen, inputHopfenMenge, inputAlpha, inputZugabe) {
     inputHopfenMengeNumber.setAttribute('min', '0');
     inputHopfenMengeNumber.setAttribute('placeholder', 'Hopfenmenge [g]');
     inputHopfenMengeNumber.setAttribute('title', 'HOPFENMENGE');
-    inputHopfenMengeNumber.setAttribute('value', inputHopfenMenge);
 
     var inputHopfenAlphaNumber = document.createElement('input');
     inputHopfenAlphaNumber.setAttribute('type', 'number');
@@ -290,7 +283,6 @@ function addHopfen(inputHopfen, inputHopfenMenge, inputAlpha, inputZugabe) {
     inputHopfenAlphaNumber.setAttribute('min', '0');
     inputHopfenAlphaNumber.setAttribute('placeholder', 'α-Säure [%]');
     inputHopfenAlphaNumber.setAttribute('title', 'ALPHASÄURE');
-    inputHopfenAlphaNumber.setAttribute('value', inputAlpha);
 
     var inputHopfenTimeNumber = document.createElement('input');
     inputHopfenTimeNumber.setAttribute('type', 'text');
@@ -299,7 +291,6 @@ function addHopfen(inputHopfen, inputHopfenMenge, inputAlpha, inputZugabe) {
     inputHopfenTimeNumber.setAttribute('name', 'hopfentime' + indexHopfen);
     inputHopfenTimeNumber.setAttribute('placeholder', 'Hopfenzugabe vor Kochende [min]');
     inputHopfenTimeNumber.setAttribute('title', 'HOPFENZUGABE');
-    inputHopfenTimeNumber.setAttribute('value', inputZugabe);
 
     var parent = document.querySelector('#hopfenBox')
     parent.appendChild(inputHopfenText);
@@ -316,22 +307,21 @@ function delHopfen(id1, id2, id3, id4) {
     document.getElementById(id4).remove();
     --indexHopfen;
 }
-
 function addPhase() {
-    ++indexPhase;
+    ++indexPhaseDesc;
 
     var inputPhaseTitleText = document.createElement('input');
     inputPhaseTitleText.setAttribute('type', 'text');
     inputPhaseTitleText.setAttribute('class', 'input');
-    inputPhaseTitleText.setAttribute('id', 'phasenTitel' + indexPhase);
-    inputPhaseTitleText.setAttribute('name', 'phasenTitel' + indexPhase);
-    inputPhaseTitleText.setAttribute('placeholder', indexPhase + '. Titel der Phase');
+    inputPhaseTitleText.setAttribute('id', 'phasenTitel' + indexPhaseDesc);
+    inputPhaseTitleText.setAttribute('name', 'phasenTitel' + indexPhaseDesc);
+    inputPhaseTitleText.setAttribute('placeholder', indexPhaseDesc + '. Titel der Phase');
     inputPhaseTitleText.setAttribute('title', 'PHASENTITEL');
 
     var inputPhaseDescrText = document.createElement('textarea');
     inputPhaseDescrText.setAttribute('class', 'input');
-    inputPhaseDescrText.setAttribute('id', 'phasenBeschreibung' + indexPhase);
-    inputPhaseDescrText.setAttribute('name', 'phasenBeschreibung' + indexPhase);
+    inputPhaseDescrText.setAttribute('id', 'phasenBeschreibung' + indexPhaseDesc);
+    inputPhaseDescrText.setAttribute('name', 'phasenBeschreibung' + indexPhaseDesc);
     inputPhaseDescrText.setAttribute('placeholder', 'Beschreibung der Phase...');
     inputPhaseDescrText.setAttribute('title', 'BESCHREIBUNG DER PHASE...');
 
@@ -344,7 +334,7 @@ function addPhase() {
 function delPhase(id1, id2) {
     document.getElementById(id1).remove();
     document.getElementById(id2).remove();
-    --indexPhase;
+    --indexPhaseDesc;
 }
 
 function handle_update(){
@@ -357,14 +347,14 @@ function handle_update(){
     }
     var json = JSON.stringify(brauwasser);
     document.getElementById("json_brauwasser").value = json;
-    //schüttung
+    //schuettung
     for (let index = 1; index <= indexMalt; index++) {
         var malt = document.getElementById('malz' + index).value;
         var amount = document.getElementById('malzmenge' + index).value;
         var entry = [malt, amount];
-        schüttung.push(entry);
+        schuettung.push(entry);
     }
-    var json = JSON.stringify(schüttung);
+    var json = JSON.stringify(schuettung);
     document.getElementById("json_schuettung").value = json;
     //Maisch
     for (let index = 1; index <= indexPhase; index++) {
@@ -394,14 +384,14 @@ function handle_update(){
     }
     var json = JSON.stringify(würze);
     document.getElementById("json_wuerze").value = json;
-    //gärung
+    //gaerung
     var sort = document.getElementById('hefe1').value;
     var temp = document.getElementById('gaertemp1').value;
     var end = document.getElementById('endgaergrad1').value;
     var carbon = document.getElementById('karbon1').value;
     var entry = [sort, temp, end, carbon];
-    gärung.push(entry);
-    var json = JSON.stringify(gärung);
+    gaerung.push(entry);
+    var json = JSON.stringify(gaerung);
     document.getElementById("json_gaerung").value = json;
     //phase
     for (let index = 1; index <= indexPhase; index++) {

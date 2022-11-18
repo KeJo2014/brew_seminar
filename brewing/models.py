@@ -16,10 +16,10 @@ class recipe(models.Model):
     alcohol = models.FloatField(default=0)
     description = models.TextField(max_length=1000)
     brauwasser = models.CharField(max_length=800)
-    schüttung = models.CharField(max_length=800)
+    schuettung = models.CharField(max_length=800)
     maischplan = models.CharField(max_length=800)
     wuerzekochen = models.CharField(max_length=800)
-    gärung = models.CharField(max_length=800)
+    gaerung = models.CharField(max_length=800)
     phase = models.CharField(max_length=8000)
     
     def __str__(self):
@@ -40,10 +40,10 @@ class brew_recipe(models.Model):
     alcohol = models.FloatField(default=0)
     description = models.TextField(max_length=1000)
     brauwasser = models.CharField(max_length=800)
-    schüttung = models.CharField(max_length=800)
+    schuettung = models.CharField(max_length=800)
     maischplan = models.CharField(max_length=800)
     wuerzekochen = models.CharField(max_length=800)
-    gärung = models.CharField(max_length=800)
+    gaerung = models.CharField(max_length=800)
     phase = models.CharField(max_length=8000)
     number_of_brews = models.IntegerField(default=0)
     
@@ -54,7 +54,7 @@ class brew_recipe(models.Model):
         return {
             "name": self.name,
             "brauwasser":   json.dumps(self.brauwasser),
-            "schuettung":   json.dumps(self.schüttung),
+            "schuettung":   json.dumps(self.schuettung),
             "wuerzekochen": json.dumps(self.wuerzekochen),
             "phase":        json.dumps(self.phase),
             "command":      "recipe"
