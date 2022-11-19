@@ -11,7 +11,7 @@ from django.shortcuts import get_object_or_404
 
 class brew_server():
     def __init__(self):
-        self.eye_of_agamotto = 1    # time 1 = time in seconds || 60 = time in minutes
+        self.eye_of_agamotto = 60    # time 1 = time in seconds || 60 = time in minutes
         current_time = time.time()
         self.hardware = brew_server_hardware()
         self.status = {
