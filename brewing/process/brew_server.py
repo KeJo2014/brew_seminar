@@ -164,6 +164,7 @@ class brew_server():
     def load_phases(self, step):
         recipe = brew_recipe.objects.get(id=self.status["recipe"])
         if(step == 0):
+            print(recipe.maischplan)
             temp = json.loads(recipe.maischplan)[0][2]
             print(temp)
             phases = []

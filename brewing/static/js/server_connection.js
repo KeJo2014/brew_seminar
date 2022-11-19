@@ -58,6 +58,7 @@ function send_to_server(command, msg) {
             'message': msg
         }
     }
+    console.log("SEND: "+JSON.stringify(text));
     chatSocket.send(JSON.stringify(text))
 }
 
