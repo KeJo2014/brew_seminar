@@ -74,12 +74,18 @@ function manualEngine(mode){
 
 function update_site(data) {
     //controll buttons
+    console.log(data.status);
+    if(data.step == 0){
     if (data.status != "waiting") {
         document.getElementById("but-start").style.display = "none"
         document.getElementById("but-reset").style.display = "block"
     } else {
         document.getElementById("but-start").style.display = "block"
         document.getElementById("but-reset").style.display = "none"
+    }}else{
+        document.getElementById("but-start").style.display = "none"
+        document.getElementById("but-reset").style.display = "block"
+        mode = true;
     }
     // check if export icon should be displayed
     if (document.getElementById("currentPhase").innerHTML == "Gären") {
