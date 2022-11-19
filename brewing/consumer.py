@@ -68,8 +68,9 @@ class ChatConsumer(WebsocketConsumer):
         elif(command == "reset"):
             if(brew_system.stop_process()):
                 print("process reset")
-                self.send_json(
-                    {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
+                exit()
+                # self.send_json(
+                #     {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
             else:
                 print("error encaunterd while reseting the process")
         elif(command == "getRecipe"):
