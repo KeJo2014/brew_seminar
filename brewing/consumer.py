@@ -68,6 +68,8 @@ class ChatConsumer(WebsocketConsumer):
         elif(command == "reset"):
             if(brew_system.stop_process()):
                 print("process reset")
+                brew_system.manual_engine("off")
+                brew_system.heat(0)
                 exit()
                 # self.send_json(
                 #     {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
