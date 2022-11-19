@@ -62,6 +62,16 @@ function send_to_server(command, msg) {
     chatSocket.send(JSON.stringify(text))
 }
 
+function manualEngine(mode){
+    if(mode == "on"){
+        send_to_server("manual_engine", "on");
+    }else if(mode == "off"){
+        send_to_server("manual_engine", "off");
+    }else{
+        console.error("wrong mode");
+    }
+}
+
 function update_site(data) {
     //controll buttons
     if (data.status != "waiting") {

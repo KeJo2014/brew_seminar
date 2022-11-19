@@ -99,6 +99,13 @@ class brew_server():
             else:
                 return(False)
 
+    def manual_engine(self, data):
+        if(data == "on"):
+            self.hardware.engine_on()
+        else:
+            self.hardware.engine_off()
+        
+
     def maischen_procedure(self):
         if(time.time() > self.maischen["end"]):
             print("finish")
