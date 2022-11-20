@@ -68,8 +68,11 @@ class ChatConsumer(WebsocketConsumer):
         elif(command == "reset"):
             if(brew_system.stop_process()):
                 print("process reset")
-                self.send_json(
-                    {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
+                brew_system.manual_engine("off")
+                brew_system.heat(0)
+                exit()
+                # self.send_json(
+                #     {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
             else:
                 print("error encaunterd while reseting the process")
         elif(command == "getRecipe"):
@@ -77,6 +80,14 @@ class ChatConsumer(WebsocketConsumer):
             rec = brew_recipe.objects.get(id=int(msg["message"]))
             self.send_json(
                     {'type': 'chat_message', 'message': json.dumps(rec.getRecipe())})
+        elif(command == "manual_engine"):
+            brew_system.manual_engine(msg['message'])
+            self.send_json(
+                    {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
+        elif(command == "manual_temp"):
+            brew_system.heat(float(msg['message']))
+            self.send_json(
+                    {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
         elif(command == "prev"):
             if(brew_system.step_back()):
                 print("loaded previous step")

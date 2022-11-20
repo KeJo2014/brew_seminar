@@ -11,7 +11,7 @@ from django.shortcuts import get_object_or_404
 
 class brew_server():
     def __init__(self):
-        self.eye_of_agamotto = 1    # time 1 = time in seconds || 60 = time in minutes
+        self.eye_of_agamotto = 60    # time 1 = time in seconds || 60 = time in minutes
         current_time = time.time()
         self.hardware = brew_server_hardware()
         self.status = {
@@ -99,6 +99,13 @@ class brew_server():
             else:
                 return(False)
 
+    def manual_engine(self, data):
+        if(data == "on"):
+            self.hardware.engine_on()
+        else:
+            self.hardware.engine_off()
+        
+
     def maischen_procedure(self):
         if(time.time() > self.maischen["end"]):
             print("finish")
@@ -164,6 +171,7 @@ class brew_server():
     def load_phases(self, step):
         recipe = brew_recipe.objects.get(id=self.status["recipe"])
         if(step == 0):
+            print(recipe.maischplan)
             temp = json.loads(recipe.maischplan)[0][2]
             print(temp)
             phases = []
@@ -220,7 +228,8 @@ class brew_server():
     def heat(self, destination_temp):
         while(self.hardware.get_temp() < destination_temp):
             self.hardware.heat_on()
-            time.sleep(1)
+            print(f'temp: {self.hardware.get_temp()}')
+            time.sleep(2)
         self.hardware.heat_off()
 
     def step_back(self):

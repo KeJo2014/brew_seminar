@@ -2,15 +2,20 @@ let url = `ws://${window.location.host}/ws/socket-server/`
 mode = false
 count = 0;
 temp_cache = [];
-temp_cache.eye_of_agamotto = 1;
+temp_cache.eye_of_agamotto = 60;
 temp_cache.currentPhase = 0;
 recipeID = -1;
 server_up_time = -1;
 recipe = {}
+done = false;
 createGraph()
 showGraph(false);
 
 const chatSocket = new WebSocket(url)
+
+chatSocket.onopen = function () {
+    delay(1000).then(() => loadRecipe())
+}
 
 chatSocket.onmessage = function (e) {
     let data = JSON.parse(JSON.parse(e.data).message);
@@ -33,9 +38,9 @@ chatSocket.onmessage = function (e) {
         case "recipe":
             recipe = {
                 "name": data.name,
-                "brauwasser":   JSON.parse(JSON.parse(data.brauwasser)),
+                "brauwasser": JSON.parse(JSON.parse(data.brauwasser)),
                 "wuerzekochen": JSON.parse(JSON.parse(data.wuerzekochen)),
-                "schuettung":   JSON.parse(JSON.parse(data.schuettung))
+                "schuettung": JSON.parse(JSON.parse(data.schuettung))
             }
 
         default:
@@ -46,6 +51,9 @@ chatSocket.onmessage = function (e) {
 
 }
 
+function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+}
 
 function send_to_server(command, msg) {
     if (msg == "") {
@@ -58,17 +66,44 @@ function send_to_server(command, msg) {
             'message': msg
         }
     }
+    console.log("SEND: " + JSON.stringify(text));
     chatSocket.send(JSON.stringify(text))
 }
 
+function manualEngine(mode) {
+    if (mode == "on") {
+        send_to_server("manual_engine", "on");
+    } else if (mode == "off") {
+        send_to_server("manual_engine", "off");
+    } else {
+        console.error("wrong mode");
+    }
+}
+
+function manualTemperature(temperature) {
+    send_to_server("manual_temp", temperature);
+}
+
 function update_site(data) {
+    // check if done
+    if (data.step == data.roadmap.length - 1) {
+        done = true;
+    }
+    process_done();
     //controll buttons
-    if (data.status != "waiting") {
+    console.log(data.status);
+    if (data.step == 0) {
+        if (data.status != "waiting") {
+            document.getElementById("but-start").style.display = "none"
+            document.getElementById("but-reset").style.display = "block"
+        } else {
+            document.getElementById("but-start").style.display = "block"
+            document.getElementById("but-reset").style.display = "none"
+        }
+    } else {
         document.getElementById("but-start").style.display = "none"
         document.getElementById("but-reset").style.display = "block"
-    } else {
-        document.getElementById("but-start").style.display = "block"
-        document.getElementById("but-reset").style.display = "none"
+        mode = true;
     }
     // check if export icon should be displayed
     if (document.getElementById("currentPhase").innerHTML == "Gären") {
@@ -340,10 +375,20 @@ function loadRecipe() {
     send_to_server("getRecipe", recipeID);
 }
 
-function getRecipe(){
+function getRecipe() {
     return recipe;
 }
 
-function getServerUpTime(){
+function getServerUpTime() {
     return server_up_time;
+}
+
+function process_done() {
+    // adjust controll buttons
+    document.querySelector("#but-down").style = "display: block;";
+    document.querySelector("#but-start").style = "display: none;";
+    document.querySelector("#but-reset").style = "display: none;";
+    document.querySelector("#but-undo").style = "display: none;";
+    document.querySelector("#but-next").style = "display: none;";
+
 }
