@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-e1axw13u-di203zj*+__1od&-p*$l^(p%c9^=h)d+8#7s(!t@b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://kejo2014-solid-tribble-xxg5j9r97p9c97vx-8000.preview.app.github.dev", "localhost"]
 
 
 # Application definition

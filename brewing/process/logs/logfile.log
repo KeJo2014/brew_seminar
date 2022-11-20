@@ -1,0 +1,31 @@
+Forbidden (Origin checking failed - https://kejo2014-solid-tribble-xxg5j9r97p9c97vx-8000.preview.app.github.dev does not match any trusted origins.): /login
+Not Found: /favicon.ico
+/workspaces/brew_seminar/brew_system/settings.py changed, reloading.
+/workspaces/brew_seminar/brew_system/settings.py changed, reloading.
+/workspaces/brew_seminar/brew_system/settings.py changed, reloading.
+Forbidden (Origin checking failed - https://kejo2014-solid-tribble-xxg5j9r97p9c97vx-8000.preview.app.github.dev does not match any trusted origins.): /login
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+/workspaces/brew_seminar/brew_system/settings.py changed, reloading.
