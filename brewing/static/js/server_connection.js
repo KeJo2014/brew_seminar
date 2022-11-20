@@ -178,7 +178,7 @@ function next() {
             clearChart();
             document.getElementById("important_notes").innerHTML = "";
             temp_cache.currentPhase = 0;
-        } else if (nextPhase.innerHTML == "Würzekochen" || nextPhase.innerHTML == "Maischen" & document.getElementById("chartContainer").style.display == "none") {
+        } else if (nextPhase.innerHTML == "wuerzekochen" || nextPhase.innerHTML == "Maischen" & document.getElementById("chartContainer").style.display == "none") {
             showGraph(true);
         }
     } else {

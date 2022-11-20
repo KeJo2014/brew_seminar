@@ -36,22 +36,16 @@
     <div class="inputBox">
         <h2>Maischplan</h2>
         <div id="maischBox">
-            <input type="text" class="input" id="maisch1" name="maisch1" placeholder="1. Maischphase"
-                title="MAISCHPHASE">
-            <input type="number" class="input inputSpace" id="maischtemp1" name="maischtemp1" min="0" step="0.1"
-                placeholder="Maischtemperatur [°C]" title="MAISCHTEMPERATUR">
+            <input type="text" class="input" id="maisch1" name="maisch1" placeholder="1. Maischphase" title="MAISCHPHASE">
+            <input type="number" class="input inputSpace" id="maischtemp1" name="maischtemp1" min="1" step="0.1" placeholder="Maischtemperatur [°C]" title="MAISCHTEMPERATUR">
             <div class="rastBox" id="rastBox1">
                 <h3 id="h3Rast11">1.Rast</h3>
-                <input type="number" class="rastInput" id="rasttemp11" name="rasttemp11" min="0" step="0.1"
-                    placeholder="Rasttemperatur [°C]" required title="RASTTEMPERATUR">
-                <input type="number" class="rastInput inputSpace" id="rastdur11" name="rastdur11" min="0" step="0.1"
-                    placeholder="Rastdauer [min]" required title="RASTDAUER">
+                <input type="number" class="rastInput" id="rasttemp11" name="rasttemp11" min="0" step="0.1" placeholder="Rasttemperatur [°C]" required title="RASTTEMPERATUR">
+                <input type="number" class="rastInput inputSpace" id="rastdur11" name="rastdur11" min="0" step="0.1" placeholder="Rastdauer [min]" required title="RASTDAUER">
             </div>
             <div class="align-items-end" id="smallerButtonsBox1">
-                <button type="button" class="addDelButton smallerButton" id="buttonAddRast1" onclick="addRast(1)"><i
-                        class="fa-solid fa-plus"></i></button>
-                <button type="button" class="addDelButton smallerButton" id="buttonDelRast1" onclick="delRast(1)"><i
-                        class="fa-solid fa-minus"></i></button>
+                <button type="button" class="addDelButton smallerButton" id="buttonAddRast1" onclick="addRast(0)"><i class="fa-solid fa-plus"></i></button>
+                <button type="button" class="addDelButton smallerButton" id="buttonDelRast1" onclick="delRast(0)"><i class="fa-solid fa-minus"></i></button>
             </div>
         </div>
         <div class="buttonBox">
