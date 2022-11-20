@@ -4,6 +4,7 @@ import time
 import logging
 import asyncio
 from .hardware import brew_server_hardware
+from .process_logging import process_logger
 
 from ..models import brew_recipe, messurement
 from django.shortcuts import get_object_or_404
@@ -43,6 +44,7 @@ class brew_server():
             "You haven't createt a field to track notes ;-)",
         ]]
         self.recipe = []
+        self.proccess_logger = process_logger()
         self.logger = logging.getLogger()
         self.handler = logging.FileHandler('brewing/process/logs/logfile.log')
         self.logger.addHandler(self.handler)
@@ -244,7 +246,12 @@ class brew_server():
     def start_process(self):
         print("start process")
         self.status["status"] = "running"
+        self.proccess_logger.new()
+        self.proccess_logger.insert("FieldID_DATUM",time.time())
         return(True)
+    
+    def getProtocolData(self):
+        return {"command": "getProcessData", "data": self.proccess_logger.read()}
 
     def stop_process(self):
         current_time = time.time()
