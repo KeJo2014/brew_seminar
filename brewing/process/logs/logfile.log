@@ -2,3 +2,9 @@ Not Found: /ws/socket-server/
 Not Found: /ws/socket-server/
 Not Found: /ws/socket-server/
 Not Found: /ws/socket-server/
+[mHTTP GET /brewing 200 [0.52, 127.0.0.1:1788][0m
+[32mHTTP POST /brewing 302 [0.37, 127.0.0.1:1793][0m
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:1793][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:1796]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:1796]
+Sun Nov 20 18:02:39 2022: Another client connected
