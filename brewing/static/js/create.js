@@ -5,44 +5,11 @@ var indexPhase = [];
 var indexHopfen = 0;
 var indexPhaseDesc = 0;
 
-//json
-var brauwasser;
-var schuettung;
-var maisch;
-var wuerze;
-var gaerung;
-var phase;
-
-function addMalt() {
-    ++indexMalt;
-    var inputMaltText = document.createElement('input');
-    inputMaltText.setAttribute('type', 'text');
-    inputMaltText.setAttribute('class', 'input');
-    inputMaltText.setAttribute('id', 'malz' + indexMalt);
-    inputMaltText.setAttribute('name', 'malz' + indexMalt);
-    inputMaltText.setAttribute('placeholder', indexMalt + '. Malzsorte');
-    inputMaltText.setAttribute('title', 'MALZSORTE');
-
-    var inputMaltNumber = document.createElement('input');
-    inputMaltNumber.setAttribute('type', 'number');
-    inputMaltNumber.setAttribute('class', 'input inputSpace');
-    inputMaltNumber.setAttribute('id', 'malzmenge' + indexMalt);
-    inputMaltNumber.setAttribute('name', 'malzmenge' + indexMalt);
-    inputMaltNumber.setAttribute('min', '0');
-    inputMaltNumber.setAttribute('placeholder', 'Malzmenge [g]');
-    inputMaltNumber.setAttribute('title', 'MALZMENGE');
-
-    var parent = document.querySelector('#maltBox')
-    parent.appendChild(inputMaltText);
-    parent.appendChild(inputMaltNumber);
-
-}
-
-function delMalt(id1, id2) {
-    document.getElementById(id1).remove();
-    document.getElementById(id2).remove();
-    --indexMalt;
-}
+var delButtonWater = document.getElementById('delButtonWater');
+var delButtonMalt = document.getElementById('delButtonMalt');
+var delButtonMaisch = document.getElementById('delButtonMaisch');
+var delButtonHopfen = document.getElementById('delButtonHopfen');
+var delButtonPhase = document.getElementById('delButtonPhase');
 
 function addWater() {
     ++indexWater;
@@ -66,13 +33,46 @@ function addWater() {
     var parent = document.querySelector('#waterBox')
     parent.appendChild(inputWaterText);
     parent.appendChild(inputWaterNumber);
-
+    if(indexWater > 0) {delButtonWater.style.display = 'block';}  
 }
 
-function delWater(id1, id2) {
-    document.getElementById(id1).remove();
-    document.getElementById(id2).remove();
+function delWater() {
+    document.getElementById('guss' + indexWater).remove();
+    document.getElementById('gussvol' + indexWater).remove();
     --indexWater;
+    if(indexWater < 1) {delButtonWater.style.display = 'none';}
+}
+
+function addMalt() {
+    ++indexMalt;
+    var inputMaltText = document.createElement('input');
+    inputMaltText.setAttribute('type', 'text');
+    inputMaltText.setAttribute('class', 'input');
+    inputMaltText.setAttribute('id', 'malz' + indexMalt);
+    inputMaltText.setAttribute('name', 'malz' + indexMalt);
+    inputMaltText.setAttribute('placeholder', indexMalt + '. Malzsorte');
+    inputMaltText.setAttribute('title', 'MALZSORTE');
+
+    var inputMaltNumber = document.createElement('input');
+    inputMaltNumber.setAttribute('type', 'number');
+    inputMaltNumber.setAttribute('class', 'input inputSpace');
+    inputMaltNumber.setAttribute('id', 'malzmenge' + indexMalt);
+    inputMaltNumber.setAttribute('name', 'malzmenge' + indexMalt);
+    inputMaltNumber.setAttribute('min', '0');
+    inputMaltNumber.setAttribute('placeholder', 'Malzmenge [g]');
+    inputMaltNumber.setAttribute('title', 'MALZMENGE');
+
+    var parent = document.querySelector('#maltBox')
+    parent.appendChild(inputMaltText);
+    parent.appendChild(inputMaltNumber);
+    if(indexMalt > 0) {delButtonMalt.style.display = 'block';}  
+}
+
+function delMalt() {
+    document.getElementById('malz' + indexMalt).remove();
+    document.getElementById('malzmenge' + indexMalt).remove();
+    --indexMalt;
+    if(indexMalt < 1) {delButtonMalt.style.display = 'none';}
 }
 
 function addMaischphase() {
@@ -129,8 +129,8 @@ function addMaischphase() {
     parent.appendChild(inputPhaseNumber);
     parent.appendChild(rastBox);
     parent.appendChild(smallerButtonsBox);
-    addRast(1);
-    console.log(indexPhase);
+    addRast((indexPhase.length-1));
+    if(indexPhase > 0) {delButtonMaisch.style.display = 'block';}  
 }
 
 function delMaischphase() {
@@ -139,7 +139,7 @@ function delMaischphase() {
     document.getElementById('rastBox' + indexPhase.length).remove();
     document.getElementById('smallerButtonsBox' + indexPhase.length).remove();
     indexPhase.pop();
-    console.log(indexPhase);
+    if(indexPhase < 1) {delButtonMaisch.style.display = 'none';}
 }
 
 function addRast(index) {
@@ -226,15 +226,16 @@ function addHopfen() {
     parent.appendChild(inputHopfenMengeNumber);
     parent.appendChild(inputHopfenAlphaNumber);
     parent.appendChild(inputHopfenTimeNumber );
-
+    if(indexHopfen > 0) {delButtonHopfen.style.display = 'block';}  
 }
 
-function delHopfen(id1, id2, id3, id4) {
-    document.getElementById(id1).remove();
-    document.getElementById(id2).remove();
-    document.getElementById(id3).remove();
-    document.getElementById(id4).remove();
+function delHopfen() {
+    document.getElementById('hopfen' + indexHopfen).remove();
+    document.getElementById('hopfenmenge' + indexHopfen).remove();
+    document.getElementById('alpha' + indexHopfen).remove();
+    document.getElementById('hopfentime' + indexHopfen).remove();
     --indexHopfen;
+    if(indexHopfen < 1) {delButtonHopfen.style.display = 'none';}
 }
 function addPhase() {
     ++indexPhaseDesc;
@@ -257,17 +258,19 @@ function addPhase() {
     var parent = document.querySelector('#phaseBox')
     parent.appendChild(inputPhaseTitleText);
     parent.appendChild(inputPhaseDescrText);
-
+    if(indexPhaseDesc > 0) {delButtonPhase.style.display = 'block';}  
 }
 
-function delPhase(id1, id2) {
-    document.getElementById(id1).remove();
-    document.getElementById(id2).remove();
+function delPhase() {
+    document.getElementById('phasenTitel' + indexPhaseDesc).remove();
+    document.getElementById('phasenBeschreibung' + indexPhaseDesc).remove();
     --indexPhaseDesc;
+    if(indexPhaseDesc < 1) {delButtonPhase.style.display = 'none';}
 }
 
 function handle_submit(){
     //brauwasser
+    var brauwasser;
     for (let index = 1; index <= indexWater; index++) {
         var guss = document.getElementById('guss' + index).value;
         var volume = document.getElementById('gussvol' + index).value;
@@ -275,58 +278,62 @@ function handle_submit(){
     }
     var json = JSON.stringify(brauwasser);
     document.getElementById("json_brauwasser").value = json;
+
     //schuettung
+    var schuettung;
     for (let index = 1; index <= indexMalt; index++) {
         var malt = document.getElementById('malz' + index).value;
         var amount = document.getElementById('malzmenge' + index).value;
-        var entry = [malt, amount];
-        schuettung.push(entry);
+        schuettung.push([malt, amount]);
     }
     var json = JSON.stringify(schuettung);
     document.getElementById("json_schuettung").value = json;
+
     //Maisch
-    for (let index = 1; index <= indexPhase; index++) {
-        var maischi = document.getElementById('maisch' + index).value;
+    var maisch;
+    for (let index = 1; index <= indexPhase.length; index++) {
+        var maischI = document.getElementById('maisch' + index).value;
         var temp = document.getElementById('maischtemp' + index).value;
         var sub = [];
-        for (let index2 = 1; index2 <= indexRast[1]; index2++) {
+        for (let index2 = 1; index2 <= indexPhase[index]; index2++) {
             var rasttemp = document.getElementById('rasttemp' + index + index2).value;
             var rastdur = document.getElementById('rastdur' + index + index2).value;
-            var micro_entry = [rasttemp, rastdur];
-            sub.push(micro_entry);
+            sub.push([rasttemp, rastdur]);
         }
-        var entry = [maischi, temp, sub];
-        maisch.push(entry);
+        maisch.push([maischI, temp, sub]);
     }
     var json = JSON.stringify(maisch);
     document.getElementById("json_maisch").value = json;
+
     //Würzekochen
+    var wuerze; 
     wuerze.push(document.getElementById('kochendur').value);
     for (let index = 1; index <= indexHopfen; index++) {
         var hop = document.getElementById('hopfen' + index).value;
         var amount = document.getElementById('hopfenmenge' + index).value;
         var acid = document.getElementById('alpha' + index).value;
         var time = document.getElementById('hopfentime' + index).value;
-        var entry = [hop, amount, acid, time];
-        wuerze.push(entry);
+        wuerze.push([hop, amount, acid, time]);
     }
     var json = JSON.stringify(wuerze);
     document.getElementById("json_wuerze").value = json;
+
     //gaerung
+    var gaerung;
     var sort = document.getElementById('hefe1').value;
     var temp = document.getElementById('gaertemp1').value;
     var end = document.getElementById('endgaergrad1').value;
     var carbon = document.getElementById('karbon1').value;
-    var entry = [sort, temp, end, carbon];
-    gaerung.push(entry);
+    gaerung.push([sort, temp, end, carbon]);
     var json = JSON.stringify(gaerung);
     document.getElementById("json_gaerung").value = json;
+
     //phase
+    var phase
     for (let index = 1; index <= indexPhase; index++) {
         var title = document.getElementById('phasenTitel' + index).value;
         var descr = document.getElementById('phasenBeschreibung' + index).value;
-        var entry = [title, descr];
-        phase.push(entry);
+        phase.push([title, descr]);
     }
     var json = JSON.stringify(phase);
     document.getElementById("json_phase").value = json;
