@@ -1,9 +1,9 @@
 //indices
-var indexMalt = 1;
-var indexWater = 1;
-var indexPhase = [1];
-var indexHopfen = 1;
-var indexPhaseDesc = 1;
+var indexMalt = 0;
+var indexWater = 0;
+var indexPhase = [];
+var indexHopfen = 0;
+var indexPhaseDesc = 0;
 
 //json
 var brauwasser;
@@ -76,7 +76,7 @@ function delWater(id1, id2) {
 }
 
 function addMaischphase() {
-    indexPhase.push(1);
+    indexPhase.push(0);
     var inputPhaseText = document.createElement('input');
     inputPhaseText.setAttribute('type', 'text');
     inputPhaseText.setAttribute('class', 'input');
@@ -106,7 +106,7 @@ function addMaischphase() {
     buttonAddRast.setAttribute('type', 'button');
     buttonAddRast.setAttribute('class', 'addDelButton smallerButton');
     buttonAddRast.setAttribute('id', 'buttonAddRast' + indexPhase.length);
-    buttonAddRast.setAttribute('onclick', 'addRast(' + indexPhase.length + ')');
+    buttonAddRast.setAttribute('onclick', 'addRast(' + (indexPhase.length-1)+ ')');
 
     var iconAddRast = document.createElement('i');
     iconAddRast.setAttribute('class', 'fa-solid fa-plus');
@@ -115,7 +115,7 @@ function addMaischphase() {
     buttonDelRast.setAttribute('type', 'button');
     buttonDelRast.setAttribute('class', 'addDelButton smallerButton');
     buttonDelRast.setAttribute('id', 'buttonDelRast' + indexPhase.length);
-    buttonDelRast.setAttribute('onclick', 'delRast('+ indexPhase.length + ')');
+    buttonDelRast.setAttribute('onclick', 'delRast('+ (indexPhase.length-1) + ')');
 
     var iconDelRast = document.createElement('i');
     iconDelRast.setAttribute('class', 'fa-solid fa-minus');
@@ -129,7 +129,8 @@ function addMaischphase() {
     parent.appendChild(inputPhaseNumber);
     parent.appendChild(rastBox);
     parent.appendChild(smallerButtonsBox);
-
+    addRast(1);
+    console.log(indexPhase);
 }
 
 function delMaischphase() {
@@ -138,6 +139,7 @@ function delMaischphase() {
     document.getElementById('rastBox' + indexPhase.length).remove();
     document.getElementById('smallerButtonsBox' + indexPhase.length).remove();
     indexPhase.pop();
+    console.log(indexPhase);
 }
 
 function addRast(index) {
@@ -170,7 +172,7 @@ function addRast(index) {
     parent.appendChild(h3Rast);
     parent.appendChild(inputRastTempNumber);
     parent.appendChild(inputRastDurNumber);
-
+    console.log(indexPhase);
 }
 
 function delRast(index) {
@@ -179,6 +181,7 @@ function delRast(index) {
     document.getElementById('rasttemp' + indexId + indexPhase[index]).remove();
     document.getElementById('rastdur' + indexId + indexPhase[index]).remove();
     indexPhase[index] -= 1;
+    console.log(indexPhase);
 }
 
 function addHopfen() {
