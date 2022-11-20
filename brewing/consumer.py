@@ -84,6 +84,10 @@ class ChatConsumer(WebsocketConsumer):
             brew_system.manual_engine(msg['message'])
             self.send_json(
                     {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
+        elif(command == "manual_temp"):
+            brew_system.heat(float(msg['message']))
+            self.send_json(
+                    {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
         elif(command == "prev"):
             if(brew_system.step_back()):
                 print("loaded previous step")

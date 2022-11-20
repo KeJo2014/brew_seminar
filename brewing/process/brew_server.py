@@ -228,7 +228,8 @@ class brew_server():
     def heat(self, destination_temp):
         while(self.hardware.get_temp() < destination_temp):
             self.hardware.heat_on()
-            time.sleep(1)
+            print(f'temp: {self.hardware.get_temp()}')
+            time.sleep(2)
         self.hardware.heat_off()
 
     def step_back(self):

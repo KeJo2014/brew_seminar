@@ -72,6 +72,10 @@ function manualEngine(mode){
     }
 }
 
+function manualTemperature(temperature){
+    send_to_server("manual_temp", temperature);
+}
+
 function update_site(data) {
     //controll buttons
     console.log(data.status);
