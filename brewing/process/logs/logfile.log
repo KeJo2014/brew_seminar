@@ -6,3 +6,7 @@ Bad Request: /
 HTTP GET / 400 [0.09, 127.0.0.1:61468]
 C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brew_system\settings.py changed, reloading.
 C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brew_system\settings.py changed, reloading.
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /
+HTTP GET / 400 [0.25, 127.0.0.1:61562]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brew_system\settings.py changed, reloading.
