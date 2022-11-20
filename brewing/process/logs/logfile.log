@@ -2280,3 +2280,184 @@ HTTP GET /edit/1 200 [0.05, 127.0.0.1:55554]
 HTTP GET /static/js/edit.js 200 [0.01, 127.0.0.1:55554]
 HTTP GET /edit/1 200 [0.05, 127.0.0.1:55559]
 HTTP GET /static/js/edit.js 200 [0.01, 127.0.0.1:55559]
+HTTP GET / 200 [1.25, 127.0.0.1:49860]
+HTTP GET /static/img/beer_background.webm 200 [2.76, 127.0.0.1:49861]
+HTTP GET /home 200 [0.22, 127.0.0.1:49861]
+HTTP GET /edit/1 200 [0.04, 127.0.0.1:49861]
+HTTP GET /static/js/edit.js 200 [0.02, 127.0.0.1:49861]
+HTTP GET /edit/1 200 [0.05, 127.0.0.1:49904]
+HTTP GET /static/js/edit.js 304 [0.02, 127.0.0.1:49904]
+HTTP GET /edit/1 200 [0.06, 127.0.0.1:49904]
+HTTP GET /edit/1 200 [0.07, 127.0.0.1:49904]
+HTTP GET /edit/1 200 [0.03, 127.0.0.1:49904]
+HTTP GET /edit/1 200 [0.04, 127.0.0.1:49904]
+HTTP GET /static/js/edit.js 200 [0.02, 127.0.0.1:49904]
+HTTP GET /edit/1 200 [0.10, 127.0.0.1:49904]
+HTTP GET /static/js/edit.js 200 [0.01, 127.0.0.1:49904]
+HTTP GET /edit/1 200 [0.05, 127.0.0.1:49904]
+HTTP GET /static/js/edit.js 200 [0.02, 127.0.0.1:49904]
+HTTP GET /edit/1 200 [0.04, 127.0.0.1:49904]
+HTTP GET /static/js/edit.js 200 [0.02, 127.0.0.1:49904]
+HTTP GET /edit/1 200 [0.04, 127.0.0.1:49904]
+HTTP GET /static/js/edit.js 200 [0.00, 127.0.0.1:49904]
+HTTP GET /edit/1 200 [0.06, 127.0.0.1:49920]
+HTTP GET /static/js/edit.js 200 [0.01, 127.0.0.1:49920]
+HTTP GET /edit/1 200 [0.08, 127.0.0.1:49932]
+HTTP GET /static/js/edit.js 304 [0.02, 127.0.0.1:49932]
+HTTP GET /edit/1 200 [0.08, 127.0.0.1:49947]
+HTTP GET /static/js/edit.js 304 [0.02, 127.0.0.1:49947]
+HTTP GET /home 200 [0.03, 127.0.0.1:49947]
+HTTP GET /delete/1 302 [0.05, 127.0.0.1:49947]
+HTTP GET /home 200 [0.05, 127.0.0.1:49947]
+HTTP GET /create 200 [0.03, 127.0.0.1:49947]
+HTTP GET /static/js/create.js 200 [0.35, 127.0.0.1:49947]
+HTTP POST /create 200 [0.08, 127.0.0.1:49981]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:49981]
+HTTP GET /home 200 [0.07, 127.0.0.1:49981]
+HTTP GET /create 200 [0.02, 127.0.0.1:49981]
+HTTP GET /create 200 [0.04, 127.0.0.1:49989]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:49989]
+HTTP GET /create 200 [0.05, 127.0.0.1:49994]
+HTTP GET /static/js/create.js 304 [0.00, 127.0.0.1:49994]
+HTTP GET /create 200 [0.05, 127.0.0.1:50021]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:50021]
+HTTP GET /create 200 [0.04, 127.0.0.1:50021]
+HTTP GET /static/js/create.js 200 [0.00, 127.0.0.1:50021]
+HTTP GET /create 200 [0.05, 127.0.0.1:50021]
+HTTP GET /static/js/create.js 304 [0.00, 127.0.0.1:50021]
+HTTP GET /create 200 [0.05, 127.0.0.1:50042]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:50042]
+HTTP GET /create 200 [0.02, 127.0.0.1:50055]
+HTTP GET /static/js/create.js 200 [0.00, 127.0.0.1:50055]
+HTTP GET /create 200 [0.05, 127.0.0.1:50055]
+HTTP GET /static/js/create.js 200 [0.01, 127.0.0.1:50055]
+HTTP GET /create 200 [0.03, 127.0.0.1:50076]
+HTTP GET /static/js/create.js 200 [0.00, 127.0.0.1:50076]
+HTTP GET /create 200 [0.05, 127.0.0.1:50098]
+HTTP GET /static/js/create.js 304 [0.00, 127.0.0.1:50098]
+HTTP GET /create 200 [0.05, 127.0.0.1:50116]
+HTTP GET /static/js/create.js 200 [0.00, 127.0.0.1:50116]
+HTTP GET /create 200 [0.03, 127.0.0.1:50124]
+HTTP GET /static/js/create.js 200 [0.00, 127.0.0.1:50124]
+HTTP GET /create 200 [0.02, 127.0.0.1:50124]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:50124]
+HTTP GET /create 200 [0.04, 127.0.0.1:50129]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:50129]
+HTTP GET /create 200 [0.05, 127.0.0.1:50133]
+HTTP GET /static/js/create.js 304 [0.02, 127.0.0.1:50133]
+HTTP GET /create 200 [0.05, 127.0.0.1:50142]
+HTTP GET /static/js/create.js 304 [0.07, 127.0.0.1:50142]
+HTTP GET /create 200 [0.05, 127.0.0.1:50151]
+HTTP GET /static/js/create.js 304 [0.00, 127.0.0.1:50151]
+HTTP GET /create 200 [0.05, 127.0.0.1:50157]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:50157]
+HTTP GET /create 200 [0.05, 127.0.0.1:50163]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:50163]
+HTTP GET /create 200 [0.05, 127.0.0.1:50168]
+HTTP GET /static/js/create.js 200 [0.00, 127.0.0.1:50168]
+HTTP GET /create 200 [0.04, 127.0.0.1:50180]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:50180]
+HTTP GET /create 200 [0.04, 127.0.0.1:50184]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:50184]
+HTTP GET /create 200 [0.03, 127.0.0.1:50184]
+HTTP GET /static/js/create.js 200 [0.00, 127.0.0.1:50184]
+HTTP GET /create 200 [0.05, 127.0.0.1:50184]
+HTTP GET /static/js/create.js 200 [0.01, 127.0.0.1:50184]
+HTTP GET /create 200 [0.05, 127.0.0.1:50194]
+HTTP GET /static/js/create.js 200 [0.00, 127.0.0.1:50194]
+HTTP GET /create 200 [0.05, 127.0.0.1:50194]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:50194]
+HTTP GET /create 200 [0.03, 127.0.0.1:50198]
+HTTP GET /static/js/create.js 200 [0.00, 127.0.0.1:50198]
+HTTP GET /create 200 [0.03, 127.0.0.1:50201]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:50201]
+HTTP GET /create 200 [0.16, 127.0.0.1:50205]
+HTTP GET /static/js/create.js 304 [0.01, 127.0.0.1:50205]
+HTTP GET /create 200 [0.05, 127.0.0.1:50211]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:50211]
+HTTP GET /create 200 [0.04, 127.0.0.1:50211]
+HTTP GET /static/js/create.js 200 [0.02, 127.0.0.1:50211]
+HTTP GET / 200 [0.69, 127.0.0.1:60746]
+HTTP GET /static/css/create.css 304 [0.04, 127.0.0.1:60747]
+HTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:60747]
+HTTP GET /static/img/beer_background.webm 200 [3.23, 127.0.0.1:60747]
+HTTP GET /home 200 [0.58, 127.0.0.1:60747]
+HTTP POST /brewing 302 [0.04, 127.0.0.1:60747]
+HTTP GET /brewing 200 [0.08, 127.0.0.1:60747]
+HTTP GET /static/img/download.png 200 [0.03, 127.0.0.1:60747]
+HTTP GET /static/js/three.js 200 [0.82, 127.0.0.1:60746]
+HTTP GET /static/js/server_connection.js 200 [0.90, 127.0.0.1:60769]
+HTTP GET /static/js/createPDF.js 200 [1.12, 127.0.0.1:60770]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:60773]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:60773]
+Sat Nov 19 16:50:31 2022: Another client connected
+Exception inside application: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\asgiref\sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2288.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 408, in wait_for
+    return await fut
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2288.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\asgiref\sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\consumer.py", line 24, in receive
+    self.evaluate_response(text_data_json)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\consumer.py", line 52, in evaluate_response
+    if(brew_system.next_step()):
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\process\brew_server.py", line 94, in next_step
+    self.initiate_maischen()
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\process\brew_server.py", line 194, in initiate_maischen
+    phases = self.load_phases(0)
+  File "C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brewing\process\brew_server.py", line 167, in load_phases
+    temp = json.loads(recipe.maischplan)[0][2]
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2288.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2288.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2288.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:60773]
+HTTP GET /create 200 [0.13, 127.0.0.1:60958]
+HTTP GET /static/js/create.js 200 [0.40, 127.0.0.1:60958]
+HTTP GET /create 200 [0.05, 127.0.0.1:60958]
+HTTP GET /static/js/create.js 304 [0.02, 127.0.0.1:60958]
+HTTP GET /create 200 [0.04, 127.0.0.1:60977]
+HTTP GET /static/js/create.js 200 [0.07, 127.0.0.1:60977]
+HTTP GET /create 200 [0.03, 127.0.0.1:60977]
+HTTP GET /static/js/create.js 200 [0.09, 127.0.0.1:60977]
+HTTP GET /create 200 [0.05, 127.0.0.1:60977]
+HTTP GET /static/js/create.js 304 [0.00, 127.0.0.1:60977]
+HTTP GET /create 200 [0.04, 127.0.0.1:60977]
+HTTP GET /static/js/create.js 200 [0.06, 127.0.0.1:60977]
+HTTP GET /create 200 [0.11, 127.0.0.1:61002]
+HTTP GET /static/js/create.js 200 [0.17, 127.0.0.1:61002]
+HTTP GET /create 200 [0.03, 127.0.0.1:61002]
+HTTP GET /static/js/create.js 304 [0.02, 127.0.0.1:61002]
