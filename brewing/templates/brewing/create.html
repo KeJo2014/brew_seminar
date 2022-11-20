@@ -4,7 +4,7 @@
 {% block maincontent %}
 
 <main class="main-l">
-    <form action="{% url 'create' %}" method="post" id="form">
+    <form action="{% url 'create' %}" id="form">
         {%csrf_token%}
     <h1>Rezept Erstellen</h1>
     <div class="inputBox">
@@ -83,12 +83,12 @@
             title="KARBONISIERUNG">
     </div>
     <div>
-        <input type="text" style="display: none;" name="json_brauwasser" id="json_brauwasser">
-        <input type="text" style="display: none;" name="json_schuettung" id="json_schuettung">
-        <input type="text" style="display: none;" name="json_maisch" id="json_maisch">
-        <input type="text" style="display: none;" name="json_wuerze" id="json_wuerze">
-        <input type="text" style="display: none;" name="json_gaerung" id="json_gaerung">
-        <input type="text" style="display: none;" name="json_phase" id="json_phase">
+        <input type="text" name="json_brauwasser" id="json_brauwasser">
+        <input type="text" name="json_schuettung" id="json_schuettung">
+        <input type="text" name="json_maisch" id="json_maisch">
+        <input type="text" name="json_wuerze" id="json_wuerze">
+        <input type="text" name="json_gaerung" id="json_gaerung">
+        <input type="text" name="json_phase" id="json_phase">
     </div>
     <div class="inputBox">
         <button onclick="handle_submit()" class="submitButton" id="createRecipeButton" >Erstellen</button>

@@ -270,7 +270,7 @@ function delPhase() {
 
 function handle_submit(){
     //brauwasser
-    var brauwasser;
+    var brauwasser = [];
     for (let index = 1; index <= indexWater; index++) {
         var guss = document.getElementById('guss' + index).value;
         var volume = document.getElementById('gussvol' + index).value;
@@ -280,7 +280,7 @@ function handle_submit(){
     document.getElementById("json_brauwasser").value = json;
 
     //schuettung
-    var schuettung;
+    var schuettung = [];
     for (let index = 1; index <= indexMalt; index++) {
         var malt = document.getElementById('malz' + index).value;
         var amount = document.getElementById('malzmenge' + index).value;
@@ -290,7 +290,7 @@ function handle_submit(){
     document.getElementById("json_schuettung").value = json;
 
     //Maisch
-    var maisch;
+    var maisch = [];
     for (let index = 1; index <= indexPhase.length; index++) {
         var maischI = document.getElementById('maisch' + index).value;
         var temp = document.getElementById('maischtemp' + index).value;
@@ -306,7 +306,7 @@ function handle_submit(){
     document.getElementById("json_maisch").value = json;
 
     //Würzekochen
-    var wuerze; 
+    var wuerze = [];
     wuerze.push(document.getElementById('kochendur').value);
     for (let index = 1; index <= indexHopfen; index++) {
         var hop = document.getElementById('hopfen' + index).value;
@@ -319,7 +319,7 @@ function handle_submit(){
     document.getElementById("json_wuerze").value = json;
 
     //gaerung
-    var gaerung;
+    var gaerung = [];
     var sort = document.getElementById('hefe1').value;
     var temp = document.getElementById('gaertemp1').value;
     var end = document.getElementById('endgaergrad1').value;
@@ -329,7 +329,7 @@ function handle_submit(){
     document.getElementById("json_gaerung").value = json;
 
     //phase
-    var phase
+    var phase = [];
     for (let index = 1; index <= indexPhase; index++) {
         var title = document.getElementById('phasenTitel' + index).value;
         var descr = document.getElementById('phasenBeschreibung' + index).value;
@@ -338,5 +338,6 @@ function handle_submit(){
     var json = JSON.stringify(phase);
     document.getElementById("json_phase").value = json;
     //submit
-    document.getElementById("form").submit();
+    console.log(json)
+    //document.getElementById("form").submit();
 }

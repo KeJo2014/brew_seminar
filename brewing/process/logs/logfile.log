@@ -20,3 +20,9 @@ HTTP GET /create 400 [0.17, 127.0.0.1:61773]
 C:\Users\joni0\OneDrive\Desktop\brew_seminar\brew_seminar\brew_system\settings.py changed, reloading.
 HTTP GET /create 200 [0.27, 127.0.0.1:61787]
 HTTP GET /static/js/create.js 200 [0.46, 127.0.0.1:61788]
+Not Found: /favicon.ico
+Not Found: /creatze
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /ws/socket-server/
+Not Found: /ws/socket-server/
