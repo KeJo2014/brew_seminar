@@ -1,4 +1,5 @@
 import random
+import os
 
 class brew_server_hardware():
     def __init__(self):
@@ -12,9 +13,11 @@ class brew_server_hardware():
     def heat_on(self):
         print("heating...")
         self.heat = True
+        os.system("echo Hello from the other side!")
     
     def heat_off(self):
         self.heat = False
+        os.system("echo Hello from the other side!")
 
     def get_engine_mode(self):
         return self.engine
@@ -25,10 +28,12 @@ class brew_server_hardware():
     def engine_on(self):
         self.engine = True
         print("engine mode set to: True")
+        os.system("echo Hello from the other side!")
     
     def engine_off(self):
         self.engine = False
         print("engine mode set to: False")
+        os.system("echo Hello from the other side!")
     
     def get_sensor_object(self):
         ## temp, engine, heating
