@@ -10,7 +10,7 @@ from ..models import brew_recipe, messurement
 from django.shortcuts import get_object_or_404
 
 
-class brew_server():
+class brew_server():    # Übergabe this (Consumer)
     def __init__(self):
         self.eye_of_agamotto = 60    # time 1 = time in seconds || 60 = time in minutes
         current_time = time.time()
@@ -126,7 +126,8 @@ class brew_server():
             delta = time.time() - self.maischen["start"]
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < phases[i][1]):
-                    self.heat(phases[i][0])
+                    heating_duration = self.heat(phases[i][0])     # returns heating time
+                    self.maischen["start"] = self.maischen["start"] - heating_duration
                     break
 
             obj = self.hardware.get_sensor_object()
@@ -228,11 +229,13 @@ class brew_server():
         self.status["start_time"] = time.time()
 
     def heat(self, destination_temp):
+        start_time = time.time()
         while(self.hardware.get_temp() < destination_temp):
-            self.hardware.heat_on()
+            self.hardware.heat_on()                             #-> send Update data
             print(f'temp: {self.hardware.get_temp()}')
             time.sleep(2)
         self.hardware.heat_off()
+        return (time.time()-start_time)
 
     def step_back(self):
         if(self.status["step"] != 0):

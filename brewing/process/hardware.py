@@ -7,13 +7,17 @@ class brew_server_hardware():
         self.heat = False
 
     def get_temp(self):
-        tempfile = open("/sys/bus/w1/devices/28-00000d5d9de2/w1_slave")
-        inhalt = tempfile.read()
-        tempfile.close()
-        tempdata = inhalt.split("\n")[1].split(" ")[9]
-        temperatur = float(tempdata[2:])
-        temperatur = temperatur/1000
-        return(temperatur)
+        try:
+            tempfile = open("/sys/bus/w1/devices/28-00000d5d9de2/w1_slave")
+            inhalt = tempfile.read()
+            tempfile.close()
+            tempdata = inhalt.split("\n")[1].split(" ")[9]
+            temperatur = float(tempdata[2:])
+            temperatur = temperatur/1000
+            return(temperatur)
+        except:
+            print("ACHTUNG: SENSOR DEFEKT")
+            return(50)
 
 
     def heat_on(self):
@@ -43,5 +47,5 @@ class brew_server_hardware():
         print("engine mode set to: False")
     
     def get_sensor_object(self):
-        ## temp, engine, heating
+        # temp, engine, heating
         return([self.get_temp(), self.get_engine_mode(), self.get_heat_mode()])
