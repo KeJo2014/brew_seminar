@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body id="indexBody">
+    {% block maincontent %}
+
+    {% endblock %}
+    {% block sidecontent %}
+
+    {% endblock %}
+    <script src="https://kit.fontawesome.com/84d4e1a0a8.js" crossorigin="anonymous"></script>
+</body>
+<script>
+    $(document).ready(function() {
+      $('body').css('display', 'none');
+      $('body').fadeIn(1000);
+    
+      $('.link').click(function() {
+        event.preventDefault();
+    
+        newLocation = this.href;
+        $('body').fadeOut(1000, newPage);
+      });
+    
+      function newPage() {
+        window.location = newLocation;
+      }
+    });
+    </script>
+</html>

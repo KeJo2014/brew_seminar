@@ -1,0 +1,23 @@
+{% extends "brewing/template_clean.html" %}
+{% block title %}Login{% endblock %}
+{% load static %}
+{% block maincontent %}
+<main class="box">
+    <h1>Login</h1>
+
+    {% if message %}
+        <div>{{ message }}</div>
+    {% endif %}
+
+    <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <input autofocus class="input" type="text" name="username" placeholder="Benutzername">
+        </div>
+        <div class="form-group">
+            <input class="input" type="password" name="password" placeholder="Password">
+        </div>
+        <input class="submitButton" type="submit" value="Login">
+    </form>
+</main>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "brewing/template_clean.html" %}
+{% load static %}
+{% block title %}Getting Started{% endblock %}
+
+{% block maincontent %}
+<video autoplay muted id="indexBackgroundVideo">
+    <source src="{% static '/img/beer_background.webm' %}" type="video/webm">
+</video>
+<h1 id="text"><span class="auto-type"></span></h1>
+<button type="button" class="submitButton" id="getStartedButton" onclick="location.href='home'">Los geht's!</button>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".auto-type", {
+        strings: ["Hallo", "Willkommen zum Brau-Seminar", "Lass uns doch beginnen..."], 
+        typeSpeed: 80,
+        backSpeed: 30,
+        loop: false
+    });
+    $(window).on('load', function() {
+        $('#getStartedButton').delay(11000).fadeIn()
+    })
+</script>
+{% endblock %}

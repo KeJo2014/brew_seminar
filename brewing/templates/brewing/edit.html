@@ -1,0 +1,150 @@
+{% extends "brewing/template.html" %}
+{% load static %}
+{% block title %}Bearbeiten{% endblock %}
+{% block maincontent %}    
+<main class="main-l">
+    <form action="{% url 'edit' recipe.id %}" method="post" id="edit_form">
+        {%csrf_token%}
+    <h1>Rezept Bearbeiten</h1>
+    <div class="inputBox">
+        <h2>Brauwasser</h2>
+        <div id="waterBox">
+            <input type="text" id="brauwasser" style="display: none" value="{{recipe.brauwasser}}">
+            <!-- <input type="text" class="input" id="guss1" name="guss1" placeholder="1. Guss" required title="GUSS">
+            <input type="number" class="input inputSpace" id="gussvol1" name="gussvol1" min="0" step="0.1"
+                placeholder="Gussvolumen [l]" required title="GUSSVOLUMEN"> -->
+        </div>
+        <div class="buttonBox">
+            <button type="button" class="addDelButton" onclick="addWater('','')"><i class="fa-solid fa-plus"></i></button>
+            <button type="button" class="addDelButton" onclick="delWater('guss' + indexWater, 'gussvol' + indexWater)"><i
+                    class="fa-solid fa-minus"></i></button>
+        </div>
+    </div>
+    <div class="inputBox">
+        <h2>schuettung</h2>
+        <div id="maltBox">
+            <input type="text" id="schuettung" style="display: none" value="{{recipe.schuettung}}">
+            <!-- <input type="text" class="input" id="malz1" name="malz1" placeholder="1. Malzsorte" title="MALZSORTE">
+            <input type="number" class="input inputSpace" id="malzmenge1" name="malzmenge1" min="0" step="0.1"
+                placeholder="Malzmenge [g]" title="MALZMENGE"> -->
+        </div>
+        <div class="buttonBox">
+            <button type="button" class="addDelButton" onclick="addMalt('', '')"><i class="fa-solid fa-plus"></i></button>
+            <button type="button" class="addDelButton" onclick="delMalt('malz' + indexMalt, 'malzmenge' + indexMalt)"><i
+                    class="fa-solid fa-minus"></i></button>
+        </div>
+    </div>
+    <div class="inputBox">
+        <h2>Maischplan</h2>
+        <div id="maischBox">
+            <input type="text" id="maischplan" value="{{recipe.maischplan}}">
+            <input type="text" class="input" id="maisch1" name="maisch1" placeholder="1. Maischphase"
+                title="MAISCHPHASE">
+            <input type="number" class="input inputSpace" id="maischtemp1" name="maischtemp1" min="0" step="0.1"
+                placeholder="Maischtemperatur [°C]" title="MAISCHTEMPERATUR">
+            <div class="rastBox" id="rastBox1">
+                <h3 id="h3Rast11">1.Rast</h3>
+                <input type="number" class="rastInput" id="rasttemp11" name="rasttemp11" min="0" step="0.1"
+                    placeholder="Rasttemperatur [°C]" required title="RASTTEMPERATUR">
+                <input type="number" class="rastInput inputSpace" id="rastdur11" name="rastdur11" min="0" step="0.1"
+                    placeholder="Rastdauer [min]" required title="RASTDAUER">
+            </div>
+            <div class="align-items-end" id="smallerButtonsBox1">
+                <button type="button" class="addDelButton smallerButton" id="buttonAddRast1" onclick="addRast(1, '', '')"><i
+                        class="fa-solid fa-plus"></i></button>
+                <button type="button" class="addDelButton smallerButton" id="buttonDelRast1" onclick="delRast(1, '', '')"><i
+                        class="fa-solid fa-minus"></i></button>
+            </div>
+        </div>
+        <div class="buttonBox">
+            <button type="button" class="addDelButton" onclick="addMaischphase('', '')"><i class="fa-solid fa-plus"></i></button>
+            <button type="button" class="addDelButton" onclick="delMaischphase('', '')"><i class="fa-solid fa-minus"></i></button>
+        </div>
+    </div>
+    <div class="inputBox">
+        <h2>Würzekochen</h2>
+        <input type="text" id="kochen" value="{{recipe.wuerzekochen}}">
+        <input type="number" class="input inputSpace" id="kochendur" name="kochendur" min="0" step="0.1"
+            placeholder="Würzekochdauer [min]" title="WÜRZEKOCHDAUER">
+        <div id="hopfenBox">
+            <input type="text" class="input" id="hopfen1" name="hopfen1" placeholder="1. Hopfensorte"
+                title="HOPFENSORTE">
+            <input type="number" class="input" id="hopfenmenge1" name="hopfenmenge1" min="0" step="0.1"
+                placeholder="Hopfenmenge [g]" title="HOPFENMENGE">
+            <input type="number" class="input" id="alpha1" name="alpha1" min="0" placeholder="α-Säure [%]" step="0.1"
+                title="ALPHASÄURE">
+            <input type="text" class="input inputSpace" id="hopfentime1" name="hopfentime1"
+                placeholder="Hopfenzugabe vor Kochende [min]" title="HOPFENZUGABE">
+        </div>
+        <div class="buttonBox">
+            <button type="button" class="addDelButton" onclick="addHopfen()"><i class="fa-solid fa-plus"></i></button>
+            <button type="button" class="addDelButton" 
+                onclick="delHopfen('hopfen' + indexHopfen, 'hopfenmenge' + indexHopfen, 'alpha' + indexHopfen, 'hopfentime' + indexHopfen)"><i
+                    class="fa-solid fa-minus"></i></button>
+        </div>
+    </div>
+    <div class="inputBox">
+        <h2>gaerung und Reifung</h2>
+        <input type="text" id="gaerung" value="{{recipe.gaerung}}">
+        <input type="text" class="input" id="hefe1" name="hefe1" placeholder="Hefesorte" title="HEFESORTE">
+        <input type="number" class="input" id="gaertemp1" name="gaertemp1" min="0" step="0.1"placeholder="Gärtemperatur [°C]" title="GÄRTEMPERATUR">
+        <input type="number" class="input" id="endgaergrad1" name="endgaergrad1" min="0" step="0.1"placeholder="Endvergaerungsgrad [%]"
+            title="ENDVERgaerungSGRAD">
+        <input type="number" class="input" id="karbon1" name="karbon1" min="0" step="0.1"placeholder="Karbonisierung [g/l]"
+            title="KARBONISIERUNG">
+    </div>
+    <div>
+        <input type="text" style="display: none;" name="json_brauwasser" id="json_brauwasser">
+        <input type="text" style="display: none;" name="json_schuettung" id="json_schuettung">
+        <input type="text" style="display: none;" name="json_maisch" id="json_maisch">
+        <input type="text" style="display: none;" name="json_wuerze" id="json_wuerze">
+        <input type="text" style="display: none;" name="json_gaerung" id="json_gaerung">
+    </div>
+    <div class="inputBox">
+        <button onclick="handle_update()" class="submitButton" id="createRecipeButton" >Übernehmen</button>
+    </div>
+</main>
+<aside class="aside-m">
+    <div class="inputBox">
+        <h2>Allgemein</h2>
+        <input type="text" class="input" id="name" name="name" placeholder="Name" required title="NAME" value="{{recipe.name}}">
+        <input type="text" class="input" id="sort" name="sort" placeholder="Biersorte" required title="BIERSORTE" value="{{recipe.bier_sorte}}">
+        <input type="text" class="input" id="author" name="author" placeholder="Autor" required title="AUTOR" value="{{recipe.author}}">
+    </div>
+    <div class="inputBox">
+        <input type="number" class="input" id="ausschlagswuerze" name="ausschlagswuerze" 
+            placeholder="Ausschlagswürze [l]" required min="0" step="0.1"title="AUSSCHLAGWÜRZE" value="{{recipe.ausschlagwuerze}}">
+        <input type="number" class="input" id="sudhausausbeute" name="sudhausausbeute"
+            placeholder="Sudhausausbeute [l]" required min="0" step="0.1"title="SUDHAUSAUSBEUTE" value="{{recipe.sudhausausbeute}}">
+    </div>
+    <div class="inputBox">
+        <input type="number" class="input"  step="0.1" id="stammwuerze" name="stammwuerze"
+            placeholder="Stammwürze [%]" required min="0" title="STAMMWÜRZE" value="{{recipe.stamwuerze}}">
+        <input type="number" class="input" id="bittere" name="bittere" placeholder="Bittere [IBU]" required
+            min="0" title="BITTERE" value="{{recipe.ibu}}">
+        <input type="number" class="input" id="farbe" name="farbe" placeholder="Farbe [EBC]" required
+            min="0" title="FARBE" value="{{recipe.ebc}}">
+        <input type="number" class="input" id="alkohol" step="0.1" name="alkohol" placeholder="Alkohol [‰]"
+            required min="0" title="ALKOHOL" value="{{recipe.alcohol}}">
+    </div>
+    <div class="inputBox">
+        <textarea id="beschreibung" class="input" name="beschreibung" rows="4" cols="50" placeholder="Beschreibung..."
+            title="BESCHREIBUNG">{{recipe.description}}</textarea>
+    </div>
+    <div class="inputBox">
+        <h2>Phasen</h2>
+        <div id="phaseBox">
+            <input type="text" id="phase" value="{{recipe.phase}}">
+            <!-- <input type="text" class="input" id="phasenTitel" name="phasenTitel" placeholder="Titel der Phase" title="PHASENTITEL">
+            <textarea id="phasenBeschreibung" class="input" name="phasenBeschreibung" placeholder="Beschreibung der Phase..." title="PHASENBESCHREIBUNG"
+            title="PHASENBESCHREIBUNG"></textarea> -->
+        </div>
+        <div class="buttonBox">
+            <button type="button" class="addDelButton" onclick="addPhase()"><i class="fa-solid fa-plus"></i></button>
+            <button type="button" class="addDelButton" onclick="delPhase('phasenTitel' + indexPhase, 'phasenBeschreibung' + indexPhase)"><i class="fa-solid fa-minus"></i></button>
+        </div>
+    </div>
+</form>
+</aside>
+<script src="{% static '/js/edit.js' %}" crossorigin="anonymous"></script>
+{% endblock %}
