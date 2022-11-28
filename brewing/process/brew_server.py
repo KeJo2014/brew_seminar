@@ -156,7 +156,7 @@ class brew_server():    # Übergabe this (Consumer)
             delta = time.time() - self.kochen["start"]
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < (int(root[0]) - int(phases[i][3]))):
-                    self.heat(5)
+                    self.heat(5)            # QUESTION 5
                     break
 
             obj = self.hardware.get_sensor_object()
@@ -219,7 +219,7 @@ class brew_server():    # Übergabe this (Consumer)
         print(phases)
         duration = int(phases[0])
         print("initiate kochen")
-        self.heat(int(95))
+        self.heat(int(95))              # QUESTION TEMP
         self.kochen = {
             "start": time.time(),
             "end": time.time()+(duration*self.eye_of_agamotto)
