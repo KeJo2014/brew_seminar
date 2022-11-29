@@ -229,9 +229,13 @@ class brew_server():    # Übergabe this (Consumer)
         self.status["start_time"] = time.time()
 
     def heat(self, destination_temp):
+        #heat = self.hardware.get_heat_mode()
+        heat = False
         start_time = time.time()
         while(self.hardware.get_temp() < destination_temp):
-            self.hardware.heat_on()                             #-> send Update data
+            if(heat is False):
+                self.hardware.heat_on()  
+                #heat = True                           #-> send Update data
             print(f'temp: {self.hardware.get_temp()}')
             time.sleep(2)
         self.hardware.heat_off()
