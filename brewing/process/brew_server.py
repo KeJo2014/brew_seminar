@@ -89,11 +89,11 @@ class brew_server():    # Übergabe this (Consumer)
                            ["plato"], engine=self.status["sensor_data"]["engine_mode"], step=self.status["step"])
         data.save()
 
-    def next_step(self):
+    def next_step(self, consumer):
         if(self.recipe != None):
             if(self.status["step"] != len(self.roadmap[0])-1):
                 if(self.roadmap[0][self.status["step"]+1] == "Maischen"):
-                    self.initiate_maischen()
+                    self.initiate_maischen(consumer)
                 elif(self.roadmap[0][self.status["step"]+1] == "Würzekochen"):
                     self.initiate_kochen()
                 self.status["step"] += 1
@@ -106,7 +106,6 @@ class brew_server():    # Übergabe this (Consumer)
             self.hardware.engine_on()
         else:
             self.hardware.engine_off()
-        
 
     def maischen_procedure(self):
         if(time.time() > self.maischen["end"]):
@@ -126,9 +125,12 @@ class brew_server():    # Übergabe this (Consumer)
             delta = time.time() - self.maischen["start"]
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < phases[i][1]):
-                    heating_duration = self.heat(phases[i][0])     # returns heating time
-                    self.maischen["end"] = self.maischen["end"] + heating_duration
-                    print(f'adding {heating_duration}: new end time: {self.maischen["end"]}')
+                    heating_duration = self.heat(
+                        phases[i][0], "")     # returns heating time
+                    self.maischen["end"] = self.maischen["end"] + \
+                        heating_duration
+                    print(
+                        f'adding {heating_duration}: new end time: {self.maischen["end"]}')
                     break
 
             obj = self.hardware.get_sensor_object()
@@ -157,7 +159,7 @@ class brew_server():    # Übergabe this (Consumer)
             delta = time.time() - self.kochen["start"]
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < (int(root[0]) - int(phases[i][3]))):
-                    self.heat(5)            # QUESTION 5
+                    self.heat(5, "")            # QUESTION 5
                     break
 
             obj = self.hardware.get_sensor_object()
@@ -190,7 +192,8 @@ class brew_server():    # Übergabe this (Consumer)
             temp2 = []
             for i in range(len(temp)):
                 if(i != 0):
-                    temp2.append([temp[i][0],temp[i][1],temp[i][2],temp[i][3]])
+                    temp2.append(
+                        [temp[i][0], temp[i][1], temp[i][2], temp[i][3]])
             phases.append(temp2)
 
         return phases
@@ -202,10 +205,12 @@ class brew_server():    # Übergabe this (Consumer)
         else:
             self.kochen_procedure()
 
-    def initiate_maischen(self):
+    def initiate_maischen(self, consumer):
         phases = self.load_phases(0)
         duration = phases[len(phases)-1][1]
-        print(self.heat(int(json.loads(brew_recipe.objects.get(id=self.status["recipe"]).maischplan)[0][1])))
+        print(consumer)
+        print(self.heat(int(json.loads(brew_recipe.objects.get(
+            id=self.status["recipe"]).maischplan)[0][1]), consumer))
         self.maischen = {
             "start": time.time(),
             "end": time.time()+(duration*self.eye_of_agamotto)
@@ -220,7 +225,7 @@ class brew_server():    # Übergabe this (Consumer)
         print(phases)
         duration = int(phases[0])
         print("initiate kochen")
-        self.heat(int(95))              # QUESTION TEMP
+        self.heat(int(95), "")              # QUESTION TEMP
         self.kochen = {
             "start": time.time(),
             "end": time.time()+(duration*self.eye_of_agamotto)
@@ -229,18 +234,40 @@ class brew_server():    # Übergabe this (Consumer)
         self.status["status"] = "warmingUp"
         self.status["start_time"] = time.time()
 
-    def heat(self, destination_temp):
-        #heat = self.hardware.get_heat_mode()
-        heat = False
-        start_time = time.time()
-        while(self.hardware.get_temp() < destination_temp):
-            if(heat is False):
-                self.hardware.heat_on()  
-                #heat = True                           #-> send Update data
-            print(f'temp: {self.hardware.get_temp()}')
-            time.sleep(2)
-        self.hardware.heat_off()
-        return (time.time()-start_time)
+    def heat(self, destination_temp, consumer):
+        print(consumer)
+        print(consumer != "")
+        if(consumer != ""):
+            #heat = self.hardware.get_heat_mode()
+            heat = False
+            start_time = time.time()
+            while(self.hardware.get_temp() < destination_temp):
+                if(heat is False):
+                    self.hardware.heat_on()
+                    # heat = True                           #-> send Update data
+                print(f'temp: {self.hardware.get_temp()}')
+                print(f'send {json.dumps(self.get_status())}')
+                # consumer.send_json(
+                #     {'type': 'chat_message', 'message': json.dumps(self.get_status())})
+                consumer.send(text_data=json.dumps({
+                    'type': 'chat_message',
+                    'message': json.dumps({"message":self.get_status()})
+                }))
+                time.sleep(2)
+            self.hardware.heat_off()
+            return (time.time()-start_time)
+        else:
+            #heat = self.hardware.get_heat_mode()
+            heat = False
+            start_time = time.time()
+            while(self.hardware.get_temp() < destination_temp):
+                if(heat is False):
+                    self.hardware.heat_on()
+                    # heat = True                           #-> send Update data
+                print(f'temp: {self.hardware.get_temp()}')
+                time.sleep(2)
+                self.hardware.heat_off()
+            return (time.time()-start_time)
 
     def step_back(self):
         if(self.status["step"] != 0):
@@ -255,9 +282,9 @@ class brew_server():    # Übergabe this (Consumer)
         print("start process")
         self.status["status"] = "running"
         self.proccess_logger.new()
-        self.proccess_logger.insert("FieldID_DATUM",time.time())
+        self.proccess_logger.insert("FieldID_DATUM", time.time())
         return(True)
-    
+
     def getProtocolData(self):
         return {"command": "getProcessData", "data": self.proccess_logger.read()}
 

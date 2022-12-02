@@ -49,7 +49,7 @@ class ChatConsumer(WebsocketConsumer):
             self.send_json(
                 {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
         elif(command == "next"):
-            if(brew_system.next_step()):
+            if(brew_system.next_step(self)):
                 print("loaded next step")
                 self.send_json(
                     {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
@@ -117,6 +117,7 @@ class ChatConsumer(WebsocketConsumer):
         print('reseted')
 
     def send_json(self, data):
+        print(self.channel_layer.group_send)
         async_to_sync(self.channel_layer.group_send)(
             self.room_group_name,
             data

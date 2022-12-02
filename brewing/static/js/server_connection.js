@@ -1,4 +1,4 @@
-let url = 'ws://${window.location.host}/ws/socket-server/';
+let url = 'ws://'+window.location.host+'/ws/socket-server/';
 mode = false
 count = 0;
 temp_cache = [];
@@ -21,7 +21,10 @@ chatSocket.onopen = function () {
 chatSocket.onmessage = function (e) {
     let data = JSON.parse(JSON.parse(e.data).message);
     console.log(data);
-
+    if(data.message != null){
+        console.log("here")
+        data = data.message
+    }
 
     switch (data.command) {
         case "update":
@@ -59,6 +62,7 @@ function delay(time) {
 }
 
 function send_to_server(command, msg) {
+    console.log("sending:"+msg)
     if (msg == "") {
         text = {
             'command': command,
@@ -89,6 +93,9 @@ function manualTemperature(temperature) {
 
 function update_site(data) {
     // check if done
+    if(data.roadmap[0] == null){
+        data = data.message
+    }
     if (data.step == data.roadmap[0].length - 1) {
         done = true;
         send_to_server("protocol_data", "-1");
