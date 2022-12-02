@@ -1,4 +1,4 @@
-let url = `ws://${window.location.host}/ws/socket-server/`
+let url = 'ws://${window.location.host}/ws/socket-server/';
 mode = false
 count = 0;
 temp_cache = [];
