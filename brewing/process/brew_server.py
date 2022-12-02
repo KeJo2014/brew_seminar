@@ -127,7 +127,8 @@ class brew_server():    # Übergabe this (Consumer)
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < phases[i][1]):
                     heating_duration = self.heat(phases[i][0])     # returns heating time
-                    self.maischen["start"] = self.maischen["start"] - heating_duration
+                    self.maischen["end"] = self.maischen["end"] + heating_duration
+                    print(f'adding {heating_duration}: new end time: {self.maischen["end"]}')
                     break
 
             obj = self.hardware.get_sensor_object()
@@ -204,7 +205,7 @@ class brew_server():    # Übergabe this (Consumer)
     def initiate_maischen(self):
         phases = self.load_phases(0)
         duration = phases[len(phases)-1][1]
-        self.heat(int(json.loads(brew_recipe.objects.get(id=self.status["recipe"]).maischplan)[0][1]))
+        print(self.heat(int(json.loads(brew_recipe.objects.get(id=self.status["recipe"]).maischplan)[0][1])))
         self.maischen = {
             "start": time.time(),
             "end": time.time()+(duration*self.eye_of_agamotto)
