@@ -10,7 +10,7 @@ from ..models import brew_recipe, messurement
 from django.shortcuts import get_object_or_404
 
 
-class brew_server():
+class brew_server():    # Übergabe this (Consumer)
     def __init__(self):
         self.eye_of_agamotto = 60    # time 1 = time in seconds || 60 = time in minutes
         current_time = time.time()
@@ -126,7 +126,9 @@ class brew_server():
             delta = time.time() - self.maischen["start"]
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < phases[i][1]):
-                    self.heat(phases[i][0])
+                    heating_duration = self.heat(phases[i][0])     # returns heating time
+                    self.maischen["end"] = self.maischen["end"] + heating_duration
+                    print(f'adding {heating_duration}: new end time: {self.maischen["end"]}')
                     break
 
             obj = self.hardware.get_sensor_object()
@@ -155,7 +157,7 @@ class brew_server():
             delta = time.time() - self.kochen["start"]
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < (int(root[0]) - int(phases[i][3]))):
-                    self.heat(5)
+                    self.heat(5)            # QUESTION 5
                     break
 
             obj = self.hardware.get_sensor_object()
@@ -203,7 +205,7 @@ class brew_server():
     def initiate_maischen(self):
         phases = self.load_phases(0)
         duration = phases[len(phases)-1][1]
-        self.heat(int(json.loads(brew_recipe.objects.get(id=self.status["recipe"]).maischplan)[0][1]))
+        print(self.heat(int(json.loads(brew_recipe.objects.get(id=self.status["recipe"]).maischplan)[0][1])))
         self.maischen = {
             "start": time.time(),
             "end": time.time()+(duration*self.eye_of_agamotto)
@@ -218,7 +220,7 @@ class brew_server():
         print(phases)
         duration = int(phases[0])
         print("initiate kochen")
-        self.heat(int(95))
+        self.heat(int(95))              # QUESTION TEMP
         self.kochen = {
             "start": time.time(),
             "end": time.time()+(duration*self.eye_of_agamotto)
@@ -228,11 +230,17 @@ class brew_server():
         self.status["start_time"] = time.time()
 
     def heat(self, destination_temp):
+        #heat = self.hardware.get_heat_mode()
+        heat = False
+        start_time = time.time()
         while(self.hardware.get_temp() < destination_temp):
-            self.hardware.heat_on()
+            if(heat is False):
+                self.hardware.heat_on()  
+                #heat = True                           #-> send Update data
             print(f'temp: {self.hardware.get_temp()}')
             time.sleep(2)
         self.hardware.heat_off()
+        return (time.time()-start_time)
 
     def step_back(self):
         if(self.status["step"] != 0):
