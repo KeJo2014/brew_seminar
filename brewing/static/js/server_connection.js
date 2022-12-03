@@ -1,4 +1,4 @@
-let url = 'ws://'+window.location.host+'/ws/socket-server/';
+let url = 'ws://' + window.location.host + '/ws/socket-server/';
 mode = false
 count = 0;
 temp_cache = [];
@@ -21,7 +21,7 @@ chatSocket.onopen = function () {
 chatSocket.onmessage = function (e) {
     let data = JSON.parse(JSON.parse(e.data).message);
     console.log(data);
-    if(data.message != null){
+    if (data.message != null) {
         console.log("here")
         data = data.message
     }
@@ -62,7 +62,7 @@ function delay(time) {
 }
 
 function send_to_server(command, msg) {
-    console.log("sending:"+msg)
+    console.log("sending:" + msg)
     if (msg == "") {
         text = {
             'command': command,
@@ -92,10 +92,13 @@ function manualTemperature(temperature) {
 }
 
 function update_site(data) {
-    // check if done
-    if(data.roadmap[0] == null){
-        data = data.message
+    if (data.roadmap[0][data.step] == "Maischen") {
+        if (count % 3 == 0) {
+            showGraph(true);
+            addDatapoint(data.sensor_data.temperature);
+        }
     }
+    // check if done
     if (data.step == data.roadmap[0].length - 1) {
         done = true;
         send_to_server("protocol_data", "-1");
@@ -312,46 +315,48 @@ function clearChart() {
 }
 
 function calculateRastPhase(data, step) {
-    let phases = data.phases;
-    console.log(phases);
-    startUnix = data.start_time;
-    currentUnix = Date.now() / 1000;
-    delta = currentUnix - startUnix;
-    console.log(delta / temp_cache.eye_of_agamotto);
-    if (step == 0) {
-        for (let i = 0; i < phases.length; i++) {
-            if (delta / temp_cache.eye_of_agamotto > phases[i][1]) {
-                if (i != temp_cache.currentPhase) {
-                    temp_cache.currentPhase = i;
-                    addChartLine();
+    if (data.phases != null) {
+        let phases = data.phases;
+        console.log(phases);
+        startUnix = data.start_time;
+        currentUnix = Date.now() / 1000;
+        delta = currentUnix - startUnix;
+        console.log(delta / temp_cache.eye_of_agamotto);
+        if (step == 0) {
+            for (let i = 0; i < phases.length; i++) {
+                if (delta / temp_cache.eye_of_agamotto > phases[i][1]) {
+                    if (i != temp_cache.currentPhase) {
+                        temp_cache.currentPhase = i;
+                        addChartLine();
+                    }
+                    document.getElementById("rast").innerHTML = "Phase: " + (i + 1);
+                } else if (delta < phases[0][1]) {
+                    temp_cache.currentPhase = -1;
+                    document.getElementById("rast").innerHTML = "Phase: 0";
                 }
-                document.getElementById("rast").innerHTML = "Phase: " + (i + 1);
-            } else if (delta < phases[0][1]) {
-                temp_cache.currentPhase = -1;
-                document.getElementById("rast").innerHTML = "Phase: 0";
             }
-        }
-    } else if (step == 1) {
-        for (let i = 1; i < phases.length; i++) {
-            if (delta / temp_cache.eye_of_agamotto > phases[i][0][3]) {
-                if (i != temp_cache.currentPhase) {
-                    temp_cache.currentPhase = i;
-                    addChartLine();
+        } else if (step == 1) {
+            for (let i = 1; i < phases.length; i++) {
+                if (delta / temp_cache.eye_of_agamotto > phases[i][0][3]) {
+                    if (i != temp_cache.currentPhase) {
+                        temp_cache.currentPhase = i;
+                        addChartLine();
+                        document.getElementById("important_notes").style.color = "red"
+                        document.getElementById("important_notes").innerHTML = "Jetzt Hopfen " + phases[1][i - 1][0] + " hinzugeben!";
+                    }
+                    document.getElementById("rast").innerHTML = "Hopfen: " + phases[1][i - 1][0];
                     document.getElementById("important_notes").style.color = "red"
-                    document.getElementById("important_notes").innerHTML = "Jetzt Hopfen " + phases[1][i - 1][0] + " hinzugeben!";
+                    try {
+                        document.getElementById("important_notes").innerHTML = "Jetzt Hopfen " + phases[1][i - 1][0] + " hinzugeben!";
+                    } catch (e) {
+                        document.getElementById("important_notes").innerHTML = "";
+                    }
+                } else {
+                    temp_cache.currentPhase = -1;
+                    document.getElementById("rast").innerHTML = "zur Hopfenbeigabe bereitmachen";
+                    document.getElementById("important_notes").style.color = "#f38301"
+                    document.getElementById("important_notes").innerHTML = "Nächster Hopfen: " + phases[1][0][0] + " (In " + Math.round(parseInt(phases[1][0][3]) - (delta / temp_cache.eye_of_agamotto)) + " Minuten)";
                 }
-                document.getElementById("rast").innerHTML = "Hopfen: " + phases[1][i - 1][0];
-                document.getElementById("important_notes").style.color = "red"
-                try {
-                    document.getElementById("important_notes").innerHTML = "Jetzt Hopfen " + phases[1][i - 1][0] + " hinzugeben!";
-                } catch (e) {
-                    document.getElementById("important_notes").innerHTML = "";
-                }
-            } else {
-                temp_cache.currentPhase = -1;
-                document.getElementById("rast").innerHTML = "zur Hopfenbeigabe bereitmachen";
-                document.getElementById("important_notes").style.color = "#f38301"
-                document.getElementById("important_notes").innerHTML = "Nächster Hopfen: " + phases[1][0][0] + " (In " + Math.round(parseInt(phases[1][0][3]) - (delta / temp_cache.eye_of_agamotto)) + " Minuten)";
             }
         }
     }

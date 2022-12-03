@@ -45,7 +45,7 @@ class ChatConsumer(WebsocketConsumer):
             self.send_json(
                 {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
         elif(command == "keep_process"):
-            brew_system.keep_process()
+            brew_system.keep_process(self)
             self.send_json(
                 {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
         elif(command == "next"):

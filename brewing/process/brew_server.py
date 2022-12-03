@@ -107,7 +107,8 @@ class brew_server():    # Übergabe this (Consumer)
         else:
             self.hardware.engine_off()
 
-    def maischen_procedure(self):
+    def maischen_procedure(self, consumer):
+        print(f'DAUER: {self.maischen["end"]-time.time()}')
         if(time.time() > self.maischen["end"]):
             print("finish")
             self.status["status"] = "running"
@@ -126,9 +127,8 @@ class brew_server():    # Übergabe this (Consumer)
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < phases[i][1]):
                     heating_duration = self.heat(
-                        phases[i][0], "")     # returns heating time
-                    self.maischen["end"] = self.maischen["end"] + \
-                        heating_duration
+                        phases[i][0], consumer)     # returns heating time
+                    self.maischen["end"] = self.maischen["end"] + heating_duration
                     print(
                         f'adding {heating_duration}: new end time: {self.maischen["end"]}')
                     break
@@ -198,10 +198,10 @@ class brew_server():    # Übergabe this (Consumer)
 
         return phases
 
-    def keep_process(self):
+    def keep_process(self, consumer):
         print(f'current: {self.roadmap[0][self.status["step"]]}')
         if(self.roadmap[0][self.status["step"]] == "Maischen"):
-            self.maischen_procedure()
+            self.maischen_procedure(consumer)
         else:
             self.kochen_procedure()
 
@@ -209,6 +209,7 @@ class brew_server():    # Übergabe this (Consumer)
         phases = self.load_phases(0)
         duration = phases[len(phases)-1][1]
         print(consumer)
+        self.status["step"] = 2
         print(self.heat(int(json.loads(brew_recipe.objects.get(
             id=self.status["recipe"]).maischplan)[0][1]), consumer))
         self.maischen = {

@@ -599,3 +599,332 @@ WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:36666]
 WebSocket CONNECT /ws/socket-server/ [127.0.0.1:36666]
 Fri Dec  2 21:22:51 2022: Another client connected
 WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:36666]
+[mHTTP GET / 200 [2.81, 127.0.0.1:50120][0m
+[mHTTP GET /home 200 [1.12, 127.0.0.1:50148][0m
+[32mHTTP POST /brewing 302 [0.05, 127.0.0.1:50159][0m
+[mHTTP GET /brewing 200 [0.81, 127.0.0.1:50163][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.03, 127.0.0.1:50163][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:50166]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:50166]
+Sat Dec  3 10:48:55 2022: Another client connected
+Exception inside application: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\django\core\handlers\asgi.py", line 149, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\django\core\handlers\asgi.py", line 162, in handle
+    await sync_to_async(signals.request_started.send, thread_sensitive=True)(sender=self.__class__, scope=scope)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\asgiref\sync.py", line 402, in __call__
+    future = loop.run_in_executor(
+  File "C:\Users\Jonas\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 814, in run_in_executor
+    executor.submit(func, *args), loop=self)
+  File "C:\Users\Jonas\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 163, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+[35;1mHTTP GET /brewing 500 [1.07, 127.0.0.1:50262][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:50166]
+[mHTTP GET /brewing 200 [0.32, 127.0.0.1:50534][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:50550][0m
+[mHTTP GET /brewing 200 [0.22, 127.0.0.1:50550][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:50555]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:50555]
+Sat Dec  3 10:55:25 2022: Another client connected
+[32mHTTP GET /admin 301 [0.02, 127.0.0.1:51054][0m
+[mHTTP GET /admin/ 200 [0.34, 127.0.0.1:51054][0m
+[mHTTP GET /static/admin/css/base.css 200 [3.48, 127.0.0.1:51054][0m
+[mHTTP GET /static/admin/css/nav_sidebar.css 200 [3.52, 127.0.0.1:51055][0m
+[mHTTP GET /static/admin/css/dashboard.css 200 [3.26, 127.0.0.1:51059][0m
+[mHTTP GET /static/admin/css/responsive.css 200 [3.29, 127.0.0.1:51060][0m
+[mHTTP GET /static/admin/js/nav_sidebar.js 200 [2.73, 127.0.0.1:51062][0m
+[mHTTP GET /static/admin/css/fonts.css 200 [0.20, 127.0.0.1:51054][0m
+[mHTTP GET /static/admin/img/icon-addlink.svg 200 [3.13, 127.0.0.1:51054][0m
+[mHTTP GET /static/admin/img/icon-changelink.svg 200 [3.17, 127.0.0.1:51062][0m
+[mHTTP GET /static/admin/img/icon-deletelink.svg 200 [3.23, 127.0.0.1:51060][0m
+[mHTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 200 [2.97, 127.0.0.1:51059][0m
+[mHTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 200 [2.99, 127.0.0.1:51055][0m
+[mHTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 200 [2.71, 127.0.0.1:51066][0m
+[mHTTP GET /admin/brewing/brew_recipe/ 200 [0.64, 127.0.0.1:51054][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.08, 127.0.0.1:51066][0m
+[mHTTP GET /static/admin/css/changelists.css 200 [2.73, 127.0.0.1:51054][0m
+[mHTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [2.79, 127.0.0.1:51055][0m
+[mHTTP GET /static/admin/js/jquery.init.js 200 [2.84, 127.0.0.1:51059][0m
+[mHTTP GET /static/admin/js/core.js 200 [2.80, 127.0.0.1:51066][0m
+[mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 200 [2.65, 127.0.0.1:51071][0m
+[mHTTP GET /static/admin/js/actions.js 200 [2.66, 127.0.0.1:51072][0m
+[mHTTP GET /static/admin/js/urlify.js 200 [0.31, 127.0.0.1:51054][0m
+[mHTTP GET /static/admin/js/prepopulate.js 200 [0.34, 127.0.0.1:51055][0m
+[mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 200 [0.40, 127.0.0.1:51059][0m
+[mHTTP GET /static/admin/img/tooltag-add.svg 200 [3.02, 127.0.0.1:51059][0m
+Not Found: /favicon.ico
+[33mHTTP GET /favicon.ico 404 [0.16, 127.0.0.1:51059][0m
+[mHTTP GET /admin/brewing/brew_recipe/5/change/ 200 [0.72, 127.0.0.1:51059][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:51084][0m
+[mHTTP GET /static/admin/css/forms.css 200 [2.83, 127.0.0.1:51059][0m
+[mHTTP GET /static/admin/js/prepopulate_init.js 200 [2.56, 127.0.0.1:51083][0m
+[mHTTP GET /static/admin/js/change_form.js 200 [0.06, 127.0.0.1:51059][0m
+[mHTTP GET /static/admin/css/widgets.css 200 [0.08, 127.0.0.1:51084][0m
+[32mHTTP POST /admin/brewing/brew_recipe/5/change/ 302 [0.13, 127.0.0.1:51099][0m
+[mHTTP GET /admin/brewing/brew_recipe/ 200 [0.25, 127.0.0.1:51099][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.14, 127.0.0.1:51099][0m
+[mHTTP GET /static/admin/img/icon-yes.svg 200 [0.17, 127.0.0.1:51099][0m
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /admin/brewing/brew_recipe/5/change/ 200 [0.84, 127.0.0.1:51195][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.14, 127.0.0.1:51195][0m
+[32mHTTP POST /admin/brewing/brew_recipe/5/change/ 302 [0.90, 127.0.0.1:51212][0m
+[mHTTP GET /admin/brewing/brew_recipe/5/change/ 200 [0.94, 127.0.0.1:51212][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.12, 127.0.0.1:51212][0m
+[mHTTP GET /brewing 200 [0.35, 127.0.0.1:51221][0m
+[32mHTTP POST /brewing 302 [0.21, 127.0.0.1:51234][0m
+[mHTTP GET /brewing 200 [0.16, 127.0.0.1:51234][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:51242]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:51242]
+Sat Dec  3 11:09:55 2022: Another client connected
+Exception inside application: cannot schedule new futures after shutdown
+Traceback (most recent call last):
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\asgiref\sync.py", line 402, in __call__
+    future = loop.run_in_executor(
+  File "C:\Users\Jonas\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 814, in run_in_executor
+    executor.submit(func, *args), loop=self)
+  File "C:\Users\Jonas\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 161, in submit
+    raise RuntimeError('cannot schedule new futures after shutdown')
+RuntimeError: cannot schedule new futures after shutdown
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:51242]
+[mHTTP GET /brewing 200 [0.44, 127.0.0.1:51470][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:51479][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:51479][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:51484]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:51484]
+Sat Dec  3 11:14:27 2022: Another client connected
+Exception inside application: can only concatenate str (not "float") to str
+Traceback (most recent call last):
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Users\Jonas\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Users\Jonas\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 24, in receive
+    self.evaluate_response(text_data_json)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 48, in evaluate_response
+    brew_system.keep_process(self)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py", line 205, in keep_process
+    self.maischen_procedure(consumer)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py", line 111, in maischen_procedure
+    print("DAUER:"+self.maischen["end"]-time.time())
+TypeError: can only concatenate str (not "float") to str
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:51484]
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /brewing 200 [0.25, 127.0.0.1:51535][0m
+[32mHTTP POST /brewing 302 [0.04, 127.0.0.1:51567][0m
+[mHTTP GET /brewing 200 [0.11, 127.0.0.1:51567][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:51571]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:51571]
+Sat Dec  3 11:16:12 2022: Another client connected
+Exception inside application: next_step() missing 1 required positional argument: 'consumer'
+Traceback (most recent call last):
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Users\Jonas\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Users\Jonas\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 24, in receive
+    self.evaluate_response(text_data_json)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 48, in evaluate_response
+    brew_system.keep_process(self)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py", line 205, in keep_process
+    self.maischen_procedure(consumer)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py", line 117, in maischen_procedure
+    self.next_step()
+TypeError: next_step() missing 1 required positional argument: 'consumer'
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:51571]
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\hardware.py changed, reloading.
+[mHTTP GET /brewing 200 [0.26, 127.0.0.1:51952][0m
+[32mHTTP POST /brewing 302 [0.10, 127.0.0.1:51952][0m
+[mHTTP GET /brewing 200 [0.13, 127.0.0.1:51952][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:51961]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:51961]
+Sat Dec  3 11:24:43 2022: Another client connected
+[mHTTP GET /brewing 200 [1.02, 127.0.0.1:52270][0m
+[32mHTTP POST /brewing 302 [0.05, 127.0.0.1:52279][0m
+[mHTTP GET /brewing 200 [0.10, 127.0.0.1:52279][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:52284]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:52284]
+Sat Dec  3 11:31:45 2022: Another client connected
+Exception inside application: 'dict' object has no attribute 'step'
+Traceback (most recent call last):
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Users\Jonas\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 442, in wait_for
+    return await fut
+  File "C:\Users\Jonas\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\generic\websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 24, in receive
+    self.evaluate_response(text_data_json)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\consumer.py", line 52, in evaluate_response
+    if(brew_system.next_step(self)):
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py", line 96, in next_step
+    self.initiate_maischen(consumer)
+  File "C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py", line 212, in initiate_maischen
+    self.status.step = 2
+AttributeError: 'dict' object has no attribute 'step'
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:52284]
+C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
+[mHTTP GET /brewing 200 [0.54, 127.0.0.1:52361][0m
+[32mHTTP POST /brewing 302 [0.05, 127.0.0.1:52361][0m
+[mHTTP GET /brewing 200 [0.11, 127.0.0.1:52361][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:52373]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:52373]
+Sat Dec  3 11:33:11 2022: Another client connected
+[mHTTP GET /brewing 200 [0.63, 127.0.0.1:52500][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:52373]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:52508]
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:52508]
+Application instance <Task pending name='Task-4' coro=<StaticFilesWrapper.__call__() running at C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\staticfiles.py:44> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Jonas\AppData\Local\Programs\Python\Python39\lib\asyncio\futures.py:384, <TaskWakeupMethWrapper object at 0x0000016DC893F2B0>()]>> for connection <WebSocketProtocol client=['127.0.0.1', 52373] path=b'/ws/socket-server/'> took too long to shut down and was killed.
+[mHTTP GET /brewing 200 [0.53, 127.0.0.1:52544][0m
+[32mHTTP POST /brewing 302 [0.06, 127.0.0.1:52544][0m
+[mHTTP GET /brewing 200 [0.08, 127.0.0.1:52544][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:52551]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:52551]
+Sat Dec  3 11:36:56 2022: Another client connected
+[mHTTP GET /brewing 200 [0.14, 127.0.0.1:52562][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:52551]
+Application instance <Task pending name='Task-4' coro=<StaticFilesWrapper.__call__() running at C:\Users\Jonas\Documents\django\django_virtual\lib\site-packages\channels\staticfiles.py:44> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Jonas\AppData\Local\Programs\Python\Python39\lib\asyncio\futures.py:384, <TaskWakeupMethWrapper object at 0x00000198FDB3D160>()]>> for connection <WebSocketProtocol client=['127.0.0.1', 52551] path=b'/ws/socket-server/'> took too long to shut down and was killed.
+[mHTTP GET /brewing 200 [0.13, 127.0.0.1:52621][0m
+[mHTTP GET /static/css/style.css 200 [1.88, 127.0.0.1:52621][0m
+[mHTTP GET /static/img/favicon.ico 200 [0.02, 127.0.0.1:52621][0m
+[32mHTTP POST /brewing 302 [0.05, 127.0.0.1:52621][0m
+[mHTTP GET /brewing 200 [0.07, 127.0.0.1:52621][0m
+[mHTTP GET /static/js/three.js 200 [0.26, 127.0.0.1:52621][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.16, 127.0.0.1:52622][0m
+[mHTTP GET /static/js/protocol_csv.js 200 [0.10, 127.0.0.1:52622][0m
+[mHTTP GET /static/js/createPDF.js 200 [0.16, 127.0.0.1:52634][0m
+[mHTTP GET /static/img/download.png 200 [0.22, 127.0.0.1:52633][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:52637]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:52637]
+Sat Dec  3 11:38:00 2022: Another client connected
+[mHTTP GET /brewing 200 [0.09, 127.0.0.1:52633][0m
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:52637]
+[mHTTP GET /static/css/style.css 200 [0.03, 127.0.0.1:52633][0m
+[mHTTP GET /static/css/login.css 200 [0.19, 127.0.0.1:52633][0m
+[mHTTP GET /static/js/three.js 200 [0.04, 127.0.0.1:52633][0m
+[mHTTP GET /static/css/create.css 200 [0.08, 127.0.0.1:52643][0m
+[mHTTP GET /static/css/brewing.css 200 [0.06, 127.0.0.1:52643][0m
+[mHTTP GET /static/js/server_connection.js 200 [0.02, 127.0.0.1:52643][0m
+[mHTTP GET /static/css/home.css 200 [0.06, 127.0.0.1:52633][0m
+[mHTTP GET /static/js/protocol_csv.js 200 [0.02, 127.0.0.1:52633][0m
+[mHTTP GET /static/css/template.css 200 [0.09, 127.0.0.1:52643][0m
+[mHTTP GET /static/js/createPDF.js 200 [0.06, 127.0.0.1:52633][0m
+[mHTTP GET /static/img/download.png 200 [0.03, 127.0.0.1:52633][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:52648]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:52648]
+Sat Dec  3 11:38:07 2022: Another client connected
+[mHTTP GET /static/img/favicon.ico 200 [0.02, 127.0.0.1:52633][0m
