@@ -98,6 +98,13 @@ function update_site(data) {
             addDatapoint(data.sensor_data.temperature);
         }
     }
+    if (data.roadmap[0][data.step] == "Würzekochen") {
+        console.log(data.roadmap[0][data.step])
+        showGraph(true);
+        if (count % 3 == 0) {
+            addDatapoint(data.sensor_data.temperature);
+        }
+    }
     // check if done
     if (data.step == data.roadmap[0].length - 1) {
         done = true;

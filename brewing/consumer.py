@@ -117,7 +117,6 @@ class ChatConsumer(WebsocketConsumer):
         print('reseted')
 
     def send_json(self, data):
-        print(self.channel_layer.group_send)
         async_to_sync(self.channel_layer.group_send)(
             self.room_group_name,
             data
