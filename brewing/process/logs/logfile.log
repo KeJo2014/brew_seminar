@@ -1,45 +1,5 @@
-[mHTTP GET / 200 [2.26, 127.0.0.1:31251][0m
-[mHTTP GET /static/css/style.css 200 [2.64, 127.0.0.1:31259][0m
-[mHTTP GET /static/css/login.css 200 [0.06, 127.0.0.1:31259][0m
-[mHTTP GET /static/css/create.css 200 [0.03, 127.0.0.1:31259][0m
-[mHTTP GET /static/css/brewing.css 200 [0.03, 127.0.0.1:31259][0m
-[mHTTP GET /static/css/home.css 200 [0.02, 127.0.0.1:31259][0m
-[mHTTP GET /static/css/template.css 200 [0.05, 127.0.0.1:31259][0m
-[mHTTP GET /static/img/beer_background.webm 200 [0.67, 127.0.0.1:31259][0m
-[mHTTP GET /static/img/favicon.ico 200 [0.06, 127.0.0.1:31268][0m
-[32mHTTP GET /home 302 [0.19, 127.0.0.1:31276][0m
-[mHTTP GET /login 200 [0.53, 127.0.0.1:31276][0m
-[32mHTTP POST /login 302 [1.46, 127.0.0.1:31286][0m
-[mHTTP GET /home 200 [0.25, 127.0.0.1:31286][0m
-[mHTTP GET /static/js/home.js 200 [0.10, 127.0.0.1:31286][0m
-[32mHTTP POST /brewing 302 [0.07, 127.0.0.1:31295][0m
-[mHTTP GET /brewing 200 [0.15, 127.0.0.1:31295][0m
-[mHTTP GET /static/img/download.png 200 [0.12, 127.0.0.1:31295][0m
-[mHTTP GET /static/js/three.js 200 [0.50, 127.0.0.1:31296][0m
-[mHTTP GET /static/js/server_connection.js 200 [0.39, 127.0.0.1:31295][0m
-[mHTTP GET /static/js/protocol_csv.js 200 [0.37, 127.0.0.1:31301][0m
-[mHTTP GET /static/js/createPDF.js 200 [0.58, 127.0.0.1:31302][0m
-WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:31305]
-WebSocket CONNECT /ws/socket-server/ [127.0.0.1:31305]
-Fri Dec  2 17:42:12 2022: Another client connected
-C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
-[mHTTP GET /brewing 200 [0.27, 127.0.0.1:31462][0m
-[32mHTTP POST /brewing 302 [0.07, 127.0.0.1:31470][0m
-[mHTTP GET /brewing 200 [0.15, 127.0.0.1:31470][0m
-WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:31473]
-WebSocket CONNECT /ws/socket-server/ [127.0.0.1:31473]
-Fri Dec  2 17:46:04 2022: Another client connected
-C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
-[mHTTP GET /brewing 200 [0.30, 127.0.0.1:31781][0m
-[32mHTTP POST /brewing 302 [0.05, 127.0.0.1:31790][0m
-[mHTTP GET /brewing 200 [0.10, 127.0.0.1:31790][0m
-WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:31793]
-WebSocket CONNECT /ws/socket-server/ [127.0.0.1:31793]
-Fri Dec  2 17:49:19 2022: Another client connected
-C:\Users\Jonas\Documents\django\brew_seminar\brewing\process\brew_server.py changed, reloading.
-[mHTTP GET /brewing 200 [0.40, 127.0.0.1:31955][0m
-[32mHTTP POST /brewing 302 [0.06, 127.0.0.1:31965][0m
-[mHTTP GET /brewing 200 [0.10, 127.0.0.1:31965][0m
-WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:31970]
-WebSocket CONNECT /ws/socket-server/ [127.0.0.1:31970]
-Fri Dec  2 17:52:34 2022: Another client connected
+[mHTTP GET /brewing 200 [1.28, 127.0.0.1:60803][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.15, 127.0.0.1:60803][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:60812]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:60812]
+Sat Dec  3 14:49:23 2022: Another client connected

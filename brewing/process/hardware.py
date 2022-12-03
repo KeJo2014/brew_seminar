@@ -20,6 +20,7 @@ class brew_server_hardware():
         except:
             print("ACHTUNG: SENSOR DEFEKT")
             return (random.randint(0,110))
+            # return 10
 
     def heat_on(self):
         #os.system("brewing/process/RPi_utils/codesend 1397077")
