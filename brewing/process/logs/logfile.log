@@ -3,3 +3,181 @@
 WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:60812]
 WebSocket CONNECT /ws/socket-server/ [127.0.0.1:60812]
 Sat Dec  3 14:49:23 2022: Another client connected
+/home/pi/brew_seminar/brewing/models.py changed, reloading.
+HTTP GET /home 302 [0.05, 192.168.2.152:62491]
+HTTP GET /login 200 [0.03, 192.168.2.152:62491]
+HTTP POST /login 302 [0.69, 192.168.2.152:62491]
+HTTP GET /home 200 [0.04, 192.168.2.152:62491]
+HTTP POST /brewing 302 [0.02, 192.168.2.152:62491]
+HTTP GET /brewing 200 [0.03, 192.168.2.152:62491]
+WebSocket HANDSHAKING /ws/socket-server/ [192.168.2.152:62551]
+WebSocket CONNECT /ws/socket-server/ [192.168.2.152:62551]
+Sun Dec  4 18:42:42 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [192.168.2.152:62551]
+Exception inside application: heat() missing 1 required positional argument: 'consumer'
+Traceback (most recent call last):
+  File "/home/pi/env/lib/python3.9/site-packages/channels/staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/pi/env/lib/python3.9/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/pi/env/lib/python3.9/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 442, in wait_for
+    return await fut
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/generic/websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "/home/pi/brew_seminar/brewing/consumer.py", line 24, in receive
+    self.evaluate_response(text_data_json)
+  File "/home/pi/brew_seminar/brewing/consumer.py", line 72, in evaluate_response
+    brew_system.heat(0)
+TypeError: heat() missing 1 required positional argument: 'consumer'
+HTTP GET /brewing 200 [0.12, 192.168.2.152:62637]
+HTTP GET /home 200 [0.08, 192.168.2.152:62648]
+HTTP POST /brewing 302 [0.03, 192.168.2.152:62648]
+HTTP GET /brewing 200 [0.11, 192.168.2.152:62648]
+WebSocket HANDSHAKING /ws/socket-server/ [192.168.2.152:62653]
+WebSocket CONNECT /ws/socket-server/ [192.168.2.152:62653]
+Sun Dec  4 18:53:24 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [192.168.2.152:62653]
+HTTP GET /home 200 [0.03, 192.168.2.152:62723]
+HTTP GET /home 200 [0.07, 192.168.2.152:62766]
+HTTP POST /brewing 302 [0.02, 192.168.2.152:62766]
+HTTP GET /brewing 200 [0.03, 192.168.2.152:62766]
+WebSocket HANDSHAKING /ws/socket-server/ [192.168.2.152:62770]
+WebSocket CONNECT /ws/socket-server/ [192.168.2.152:62770]
+Sun Dec  4 18:53:57 2022: Another client connected
+WebSocket HANDSHAKING /ws/socket-server/ [192.168.2.152:62774]
+WebSocket CONNECT /ws/socket-server/ [192.168.2.152:62774]
+Sun Dec  4 18:54:26 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [192.168.2.152:62774]
+HTTP GET /brewing 200 [0.03, 192.168.2.152:62775]
+WebSocket HANDSHAKING /ws/socket-server/ [192.168.2.152:62776]
+WebSocket CONNECT /ws/socket-server/ [192.168.2.152:62776]
+Sun Dec  4 18:54:34 2022: Another client connected
+WebSocket HANDSHAKING /ws/socket-server/ [192.168.2.152:62777]
+WebSocket CONNECT /ws/socket-server/ [192.168.2.152:62777]
+Sun Dec  4 18:54:37 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [192.168.2.152:62776]
+WebSocket DISCONNECT /ws/socket-server/ [192.168.2.152:62770]
+WebSocket DISCONNECT /ws/socket-server/ [192.168.2.152:62777]
+HTTP GET /brewing 200 [0.06, 192.168.2.152:62808]
+HTTP GET /static/css/style.css 200 [0.01, 192.168.2.152:62808]
+HTTP GET /static/js/three.js 200 [0.05, 192.168.2.152:62808]
+HTTP GET /static/js/server_connection.js 200 [0.02, 192.168.2.152:62809]
+HTTP GET /static/js/protocol_csv.js 200 [0.03, 192.168.2.152:62810]
+HTTP GET /static/js/createPDF.js 200 [0.05, 192.168.2.152:62811]
+HTTP GET /static/css/login.css 200 [0.06, 192.168.2.152:62812]
+HTTP GET /static/img/download.png 200 [0.01, 192.168.2.152:62810]
+HTTP GET /static/css/create.css 200 [0.01, 192.168.2.152:62812]
+HTTP GET /static/css/brewing.css 200 [0.01, 192.168.2.152:62809]
+HTTP GET /static/css/home.css 200 [0.01, 192.168.2.152:62809]
+HTTP GET /static/css/template.css 200 [0.01, 192.168.2.152:62809]
+HTTP GET /static/img/favicon.ico 200 [0.01, 192.168.2.152:62811]
+WebSocket HANDSHAKING /ws/socket-server/ [192.168.2.152:62819]
+WebSocket CONNECT /ws/socket-server/ [192.168.2.152:62819]
+Sun Dec  4 18:55:49 2022: Another client connected
+/home/pi/brew_seminar/brewing/process/hardware.py changed, reloading.
+HTTP GET /home 200 [0.15, 192.168.2.152:62865]
+HTTP GET /static/css/style.css 304 [0.01, 192.168.2.152:62865]
+HTTP GET /static/js/home.js 200 [0.03, 192.168.2.152:62865]
+HTTP GET /static/css/login.css 304 [0.01, 192.168.2.152:62866]
+HTTP GET /static/css/create.css 304 [0.00, 192.168.2.152:62865]
+HTTP GET /static/css/brewing.css 304 [0.00, 192.168.2.152:62865]
+HTTP GET /static/css/home.css 304 [0.00, 192.168.2.152:62865]
+HTTP GET /static/css/template.css 304 [0.00, 192.168.2.152:62865]
+HTTP POST /brewing 302 [0.02, 192.168.2.152:62865]
+HTTP GET /brewing 200 [0.97, 192.168.2.152:62865]
+HTTP GET /static/img/download.png 304 [0.01, 192.168.2.152:62865]
+HTTP GET /static/js/three.js 304 [0.03, 192.168.2.152:62866]
+HTTP GET /static/js/server_connection.js 304 [0.03, 192.168.2.152:62871]
+HTTP GET /static/js/protocol_csv.js 304 [0.02, 192.168.2.152:62872]
+HTTP GET /static/js/createPDF.js 304 [0.03, 192.168.2.152:62873]
+WebSocket HANDSHAKING /ws/socket-server/ [192.168.2.152:62874]
+WebSocket CONNECT /ws/socket-server/ [192.168.2.152:62874]
+Sun Dec  4 19:01:59 2022: Another client connected
+HTTP GET /brewing 302 [0.01, 192.168.2.152:62875]
+HTTP GET /login 200 [0.02, 192.168.2.152:62875]
+HTTP GET /home 200 [0.14, 192.168.2.152:63367]
+HTTP GET /static/css/style.css 200 [0.03, 192.168.2.152:63367]
+HTTP GET /static/js/home.js 200 [0.02, 192.168.2.152:63367]
+HTTP GET /static/css/login.css 200 [0.01, 192.168.2.152:63367]
+HTTP GET /static/css/create.css 200 [0.01, 192.168.2.152:63367]
+HTTP GET /static/css/brewing.css 200 [0.01, 192.168.2.152:63367]
+HTTP GET /static/css/home.css 200 [0.01, 192.168.2.152:63367]
+HTTP GET /static/css/template.css 200 [0.01, 192.168.2.152:63367]
+HTTP POST /brewing 302 [0.02, 192.168.2.152:63367]
+HTTP GET /brewing 200 [0.97, 192.168.2.152:63367]
+HTTP GET /static/js/three.js 304 [0.02, 192.168.2.152:63367]
+HTTP GET /static/js/server_connection.js 304 [0.01, 192.168.2.152:63368]
+HTTP GET /static/js/protocol_csv.js 304 [0.02, 192.168.2.152:63374]
+HTTP GET /static/js/createPDF.js 304 [0.02, 192.168.2.152:63375]
+HTTP GET /static/img/download.png 200 [0.03, 192.168.2.152:63376]
+WebSocket HANDSHAKING /ws/socket-server/ [192.168.2.152:63377]
+WebSocket CONNECT /ws/socket-server/ [192.168.2.152:63377]
+Sun Dec  4 19:18:50 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [192.168.2.152:63377]
+HTTP GET /brewing 200 [1.01, 192.168.2.152:63628]
+Application instance <Task pending name='Task-48' coro=<StaticFilesWrapper.__call__() running at /home/pi/env/lib/python3.9/site-packages/channels/staticfiles.py:44> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/lib/python3.9/asyncio/futures.py:384, <TaskWakeupMethWrapper object at 0xb37dfa60>()]>> for connection <WebSocketProtocol client=['192.168.2.152', 63377] path=b'/ws/socket-server/'> took too long to shut down and was killed.
+HTTP GET / 200 [0.03, 127.0.0.1:57186]
+HTTP GET /home 302 [0.02, 127.0.0.1:59070]
+HTTP GET /login 200 [0.04, 127.0.0.1:59070]
+Application instance <Task pending name='Task-204' coro=<StaticFilesWrapper.__call__() running at /home/pi/env/lib/python3.9/site-packages/channels/staticfiles.py:40> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/lib/python3.9/asyncio/futures.py:384, <TaskWakeupMethWrapper object at 0xb4045970>()]>> for connection <WebRequest at 0xb405c898 method=GET uri=/static/css/style.css clientproto=HTTP/1.1> took too long to shut down and was killed.
+HTTP GET / 200 [0.09, 127.0.0.1:47264]
+HTTP GET /static/css/style.css 200 [0.04, 127.0.0.1:47264]
+HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:47264]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:47264]
+HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:47264]
+HTTP GET /static/css/home.css 200 [0.01, 127.0.0.1:47264]
+HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:47264]
+HTTP GET /static/img/beer_background.webm 200 [1.71, 127.0.0.1:47264]
+HTTP GET /home 302 [0.10, 127.0.0.1:48458]
+HTTP GET /login 200 [0.05, 127.0.0.1:48458]
+HTTP GET /static/css/create.css 304 [0.01, 127.0.0.1:48458]
+HTTP GET /static/css/brewing.css 304 [0.00, 127.0.0.1:48458]
+HTTP POST /login 302 [0.83, 127.0.0.1:48458]
+HTTP GET /home 200 [0.09, 127.0.0.1:48458]
+HTTP GET /static/js/home.js 200 [0.01, 127.0.0.1:48458]
+HTTP POST /brewing 302 [0.03, 127.0.0.1:48458]
+HTTP GET /brewing 200 [0.95, 127.0.0.1:48458]
+HTTP GET /static/css/create.css 304 [0.01, 127.0.0.1:48458]
+HTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:48458]
+HTTP GET /static/js/three.js 200 [0.06, 127.0.0.1:34698]
+HTTP GET /static/js/server_connection.js 200 [0.03, 127.0.0.1:48458]
+HTTP GET /static/js/protocol_csv.js 200 [0.03, 127.0.0.1:34704]
+HTTP GET /static/js/createPDF.js 200 [0.05, 127.0.0.1:34712]
+HTTP GET /static/img/download.png 200 [0.05, 127.0.0.1:34726]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:34740]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:34740]
+Sun Dec  4 19:33:16 2022: Another client connected
+HTTP GET /brewing 200 [0.93, 127.0.0.1:48886]
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:34740]
+HTTP GET /static/css/create.css 304 [0.00, 127.0.0.1:48886]
+HTTP GET /static/css/brewing.css 304 [0.00, 127.0.0.1:48886]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:48892]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:48892]
+Sun Dec  4 19:34:50 2022: Another client connected
+HTTP GET /static/img/favicon.ico 200 [0.79, 127.0.0.1:48886]
