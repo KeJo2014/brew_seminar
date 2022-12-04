@@ -10,7 +10,7 @@ class brew_server_hardware():
 
     def get_temp(self):
         try:
-            tempfile = open("/sys/bus/w1/devices/28-00000d5d9de2/w1_slave")
+            tempfile = open("/sys/bus/w1/devices/28-00000d5e12e5/w1_slave")
             inhalt = tempfile.read()
             tempfile.close()
             tempdata = inhalt.split("\n")[1].split(" ")[9]
