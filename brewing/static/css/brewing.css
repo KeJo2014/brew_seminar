@@ -111,7 +111,6 @@
 }
 
 #downloadChart{
-    position: absolute;
     padding-top: 3vh;
     padding-left: 38vh;
     z-index: 10
