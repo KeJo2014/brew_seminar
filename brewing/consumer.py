@@ -7,6 +7,7 @@ import asyncio
 
 
 class ChatConsumer(WebsocketConsumer):
+    
     def connect(self):
         self.room_group_name = 'test'
         self.task = []

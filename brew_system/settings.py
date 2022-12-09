@@ -46,8 +46,8 @@ INSTALLED_APPS = [
 ASGI_APPLICATION = 'brew_system.asgi.application'
 
 CHANNEL_LAYERS = {
-    'default':{
-        'BACKEND':'channels.layers.InMemoryChannelLayer'
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
     }
 }
 

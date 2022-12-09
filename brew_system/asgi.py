@@ -20,5 +20,5 @@ application = ProtocolTypeRouter({
         URLRouter(
             brewing.routing.websocket_urlpatterns
         )
-    )
+    ),
 })
