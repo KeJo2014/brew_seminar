@@ -156,7 +156,6 @@ input[type="date"] {
     .aside-m {
         width: 100%;
         margin-bottom: 1rem;
-        justify-content: flex-start;
         height: 50%;
     }
 }
@@ -169,7 +168,6 @@ input[type="date"] {
     
     .aside-m {
         width: 100%;
-        justify-content: flex-start;
     }
 }
 
