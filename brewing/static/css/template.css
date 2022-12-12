@@ -2,9 +2,9 @@
   --brown: rgb(144, 37, 4);
   --orange: rgb(243, 131, 1);
   --yellow: rgb(253, 237, 0);
-  --white: rgb(255, 255, 255);
-  --dark-grey: rgb(80, 80, 80);
-  --light-grey: rgb(170, 170, 170);
+  --white: #e8e8e8;
+  --dark-grey: #505050;
+  --light-grey: #aaaaaa;
   --trans03: rgba(255, 255, 255, 0.3);
   --trans05: rgba(255, 255, 255, 0.5);
   --trans07: rgba(255, 255, 255, 0.7);

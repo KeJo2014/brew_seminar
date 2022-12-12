@@ -1,0 +1,50 @@
+[mHTTP GET /brewing 200 [1.28, 127.0.0.1:60803][0m
+[36mHTTP GET /static/js/server_connection.js 304 [0.15, 127.0.0.1:60803][0m
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:60812]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:60812]
+Sat Dec  3 14:49:23 2022: Another client connected
+HTTP GET / 200 [0.67, 127.0.0.1:50952]
+HTTP GET /static/css/style.css 200 [0.97, 127.0.0.1:50952]
+C:\Users\joni0\OneDrive\Desktop\brew_seminar\brewing\routing.py changed, reloading.
+HTTP GET /static/img/favicon.ico 200 [0.45, 127.0.0.1:50979]
+HTTP GET /static/img/beer_background.webm 200 [0.91, 127.0.0.1:50978]
+HTTP GET /home 302 [0.09, 127.0.0.1:50978]
+HTTP GET /login 200 [0.24, 127.0.0.1:50978]
+HTTP GET /static/css/login.css 200 [0.02, 127.0.0.1:50978]
+HTTP GET /static/css/create.css 200 [0.03, 127.0.0.1:50978]
+HTTP GET /static/css/brewing.css 200 [0.05, 127.0.0.1:50978]
+HTTP GET /static/css/home.css 200 [0.05, 127.0.0.1:50978]
+HTTP GET /static/css/template.css 200 [0.03, 127.0.0.1:50978]
+HTTP POST /login 302 [2.71, 127.0.0.1:50978]
+HTTP GET /home 200 [0.15, 127.0.0.1:50978]
+HTTP GET /static/js/home.js 200 [0.08, 127.0.0.1:50978]
+HTTP POST /brewing 302 [0.05, 127.0.0.1:50978]
+HTTP GET /brewing 200 [0.11, 127.0.0.1:50978]
+HTTP GET /static/img/download.png 200 [0.11, 127.0.0.1:50978]
+HTTP GET /static/js/three.js 200 [1.21, 127.0.0.1:50979]
+HTTP GET /static/js/server_connection.js 200 [1.30, 127.0.0.1:50990]
+HTTP GET /static/js/protocol_csv.js 200 [1.36, 127.0.0.1:50991]
+HTTP GET /static/js/createPDF.js 200 [1.54, 127.0.0.1:50992]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:50993]
+Exception inside application: No route found for path 'ws/socket-server/'.
+Traceback (most recent call last):
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\joni0\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\channels\routing.py", line 168, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'ws/socket-server/'.
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:50993]
+HTTP GET /brewing 302 [0.04, 127.0.0.1:50996]
+HTTP GET /login 200 [0.03, 127.0.0.1:50996]
+HTTP GET /create 200 [0.13, 127.0.0.1:50978]
+HTTP GET /static/js/create.js 200 [0.09, 127.0.0.1:50978]
