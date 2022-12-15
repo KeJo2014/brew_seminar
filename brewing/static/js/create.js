@@ -339,5 +339,5 @@ function handle_submit(){
     document.getElementById("json_phase").value = json;
     //submit
     console.log(json)
-    document.getElementById("form").submit();
+    //document.getElementById("form").submit();
 }

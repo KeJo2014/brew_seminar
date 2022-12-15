@@ -7,7 +7,6 @@ import asyncio
 
 
 class ChatConsumer(WebsocketConsumer):
-    
     def connect(self):
         self.room_group_name = 'test'
         self.task = []
@@ -46,11 +45,11 @@ class ChatConsumer(WebsocketConsumer):
             self.send_json(
                 {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
         elif(command == "keep_process"):
-            brew_system.keep_process(self)
+            brew_system.keep_process()
             self.send_json(
                 {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})
         elif(command == "next"):
-            if(brew_system.next_step(self)):
+            if(brew_system.next_step()):
                 print("loaded next step")
                 self.send_json(
                     {'type': 'chat_message', 'message': json.dumps(brew_system.get_status())})

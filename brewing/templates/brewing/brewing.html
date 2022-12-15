@@ -51,10 +51,10 @@
     </table>
     <h2 id="important_notes" ></h2>
     <div id="chartContainer">
-        <div class="chart-container context">
-            <canvas id="chart"></canvas>
-        </div>
     <img id="downloadChart" onclick="downloadChart()" src="{% static 'img/download.png' %}" alt="downloadChart">
+    <div class="chart-container context" style="margin: auto; position: relative; height:35vh; width:35vw; padding-top: 4%;">
+        <canvas id="chart"></canvas>
+    </div>
     </div>
     <a download="FILENAME.png" href="" id="download" style="display: none"></a>
 </main>
@@ -63,7 +63,7 @@
 
 {% block sidecontent %}
 <aside class="aside-m">
-    <!-- <div id="scene3d"></div> -->
+    <div id="scene3d"></div>
     <table id="modelInfo">
         <tr>
             <th>Phase</th>

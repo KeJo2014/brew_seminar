@@ -110,19 +110,11 @@
 
 }
 
-#chartContainer {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-
 #downloadChart{
-    z-index: 10;
-    padding-top: 2rem;
+    position: absolute;
+    padding-top: 3vh;
+    padding-left: 38vh;
+    z-index: 10
 }
 
 #downloadChart:hover {

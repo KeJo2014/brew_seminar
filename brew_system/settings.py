@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-e1axw13u-di203zj*+__1od&-p*$l^(p%c9^=h)d+8#7s(!t@b
 # SECURITY WARNING: don't run with debug turned on in production! 
 DEBUG = True
 
-ALLOWED_HOSTS = ["10.31.150.207", "localhost", "192.168.2.206"]
+ALLOWED_HOSTS = ["10.31.150.207", "localhost"]
 
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
@@ -46,8 +46,8 @@ INSTALLED_APPS = [
 ASGI_APPLICATION = 'brew_system.asgi.application'
 
 CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "channels.layers.InMemoryChannelLayer"
+    'default':{
+        'BACKEND':'channels.layers.InMemoryChannelLayer'
     }
 }
 
