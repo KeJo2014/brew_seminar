@@ -1,5 +1,6 @@
 import os
 import time
+import random
 
 class brew_server_hardware():
     def __init__(self):
@@ -7,13 +8,16 @@ class brew_server_hardware():
         self.heat = False
 
     def get_temp(self):
-        tempfile = open("/sys/bus/w1/devices/28-00000d5d9de2/w1_slave")
-        inhalt = tempfile.read()
-        tempfile.close()
-        tempdata = inhalt.split("\n")[1].split(" ")[9]
-        temperatur = float(tempdata[2:])
-        temperatur = temperatur/1000
-        return(temperatur)
+        try:
+            tempfile = open("/sys/bus/w1/devices/28-00000d5d9de2/w1_slave")
+            inhalt = tempfile.read()
+            tempfile.close()
+            tempdata = inhalt.split("\n")[1].split(" ")[9]
+            temperatur = float(tempdata[2:])
+            temperatur = temperatur/1000
+            return(temperatur)
+        except:
+            return(random.randint(0,120))
 
 
     def heat_on(self):

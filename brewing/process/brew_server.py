@@ -164,7 +164,7 @@ class brew_server():
                     if(self.last_phase != i):
                         self.proccess_logger.insert(f'cook{i}', time.time())
                         self.last_phase = i
-                    self.heat(5)
+                    self.heat(95)
                     break
 
             obj = self.hardware.get_sensor_object()
