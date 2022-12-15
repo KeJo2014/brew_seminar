@@ -48,6 +48,7 @@ class brew_server():
         self.logger = logging.getLogger()
         self.handler = logging.FileHandler('brewing/process/logs/logfile.log')
         self.logger.addHandler(self.handler)
+        self.last_phase = 0
 
     def get_status(self):
         s = self.status
@@ -111,6 +112,7 @@ class brew_server():
     def maischen_procedure(self):
         if(time.time() > self.maischen["end"]):
             print("finish")
+            self.proccess_logger.insert(f'rast{self.last_phase+1}', time.time())
             self.status["status"] = "running"
             self.hardware.engine_off()
             self.status["sensor_data"]["engine_mode"] = False
@@ -126,6 +128,9 @@ class brew_server():
             delta = time.time() - self.maischen["start"]
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < phases[i][1]):
+                    if(self.last_phase != i):
+                        self.proccess_logger.insert(f'rast{i}', time.time())
+                        self.last_phase = i
                     self.heat(phases[i][0])
                     break
 
@@ -144,6 +149,7 @@ class brew_server():
         print("I am here!")
         if(time.time() > self.kochen["end"]):
             print("finish")
+            self.proccess_logger.insert(f'rast{self.last_phase+1}', time.time())
             self.status["status"] = "running"
             self.next_step()
         else:
@@ -155,6 +161,9 @@ class brew_server():
             delta = time.time() - self.kochen["start"]
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < (int(root[0]) - int(phases[i][3]))):
+                    if(self.last_phase != i):
+                        self.proccess_logger.insert(f'cook{i}', time.time())
+                        self.last_phase = i
                     self.heat(5)
                     break
 
@@ -211,6 +220,8 @@ class brew_server():
         print(self.maischen["end"])
         self.status["status"] = "maischen"
         self.status["start_time"] = time.time()
+        self.last_phase = 0
+        self.proccess_logger.insert(f'rast{0}', time.time())
         self.hardware.engine_on()
 
     def initiate_kochen(self):
@@ -225,6 +236,8 @@ class brew_server():
         }
         print(self.kochen["end"])
         self.status["status"] = "warmingUp"
+        self.proccess_logger.insert(f'cook{0}', time.time())
+        self.last_phase = 0
         self.status["start_time"] = time.time()
 
     def heat(self, destination_temp):

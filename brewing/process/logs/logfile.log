@@ -440,3 +440,44 @@ HTTP GET /admin/jsi18n/ 200 [0.02, 10.31.0.44:64036]
 HTTP POST /admin/brewing/brew_recipe/5/change/ 302 [0.05, 10.31.0.44:64072]
 HTTP GET /admin/brewing/brew_recipe/5/change/ 200 [0.34, 10.31.0.44:64072]
 HTTP GET /admin/jsi18n/ 200 [0.02, 10.31.0.44:64072]
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Internal Server Error: /brewing
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/codespace/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/brew_seminar/brewing/views.py", line 98, in brewing
+    "status": brew_system.get_status(),
+  File "/workspaces/brew_seminar/brewing/process/brew_server.py", line 57, in get_status
+    "temperature": self.hardware.get_temp(),
+  File "/workspaces/brew_seminar/brewing/process/hardware.py", line 10, in get_temp
+    tempfile = open("/sys/bus/w1/devices/28-00000d5d9de2/w1_slave")
+FileNotFoundError: [Errno 2] No such file or directory: '/sys/bus/w1/devices/28-00000d5d9de2/w1_slave'
+Not Found: /favicon.ico
+/workspaces/brew_seminar/brewing/process/brew_server.py changed, reloading.
+/workspaces/brew_seminar/brewing/process/brew_server.py changed, reloading.
+/workspaces/brew_seminar/brewing/process/brew_server.py changed, reloading.

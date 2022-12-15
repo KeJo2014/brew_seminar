@@ -8,6 +8,7 @@ recipeID = -1;
 server_up_time = -1;
 recipe = {}
 done = false;
+server_protocoll_response = {}
 process_data = {}
 createGraph()
 showGraph(false);
@@ -44,8 +45,7 @@ chatSocket.onmessage = function (e) {
                 "schuettung": JSON.parse(JSON.parse(data.schuettung))
             }
         case "getProcessData":
-            process_data = data.data
-
+            server_protocoll_response = data.data
         default:
             console.log("that command is unknown")
             console.log(data)
@@ -399,30 +399,37 @@ function process_done() {
 
 function protocol_download() {
     console.log(process_data)
+    // get server log data
+    send_to_server("protocol_data", "")
+    getRecipe()
     // create protocol
-    let date = new Date();
-    let data = [
-        ["FieldID_DATUM", date.getUTCDate() + "." + (parseInt(date.getUTCMonth()) + 1) + "." + date.getFullYear()],
-        ["FieldID_SUD", document.querySelector("#brewCount").innerHTML],
-        ["FieldID_BIERNAME", getRecipe().name],
-        ["FieldID_PUMPEUMPUMPEN", "30?"],
-        ["FieldID_PUMPEUMPUMPEN_VORGABE", "30?"],
-        ["FieldID_PUMPEABLÄUTERN_VORGABE", "30?"],
-        ["FieldID_GETRIEBE", "20?"],
-        ["FieldID_1GETRIEBE_VORGABE", "20?"],
-        ["FieldID_EINWEIßRAST_ZEIT", "20"],
-        ["FieldID_MALTOSERAST_ZEIT", "30"],
-        ["FieldID_VERZUCKERUNGSRAST_ZEIT", "10"],
-        ["FieldID_ABMAISCHEN_ZEIT", "40"],
-        ["FieldID_KOCHEN_START_ZEIT", "12:40"],
-        ["FieldID_KOCHEN_1HOPFEN", "12:50"],
-        ["FieldID_KOCHEN_2HOPFEN", "13:00"],
-        ["FieldID_KOCHEN_3HOPFEN", "13:20"],
-        ["FieldID_KOCHEN_END_ZEIT", "13:30"],
-        ["FieldID_AUSSCHLAGWUERZE_LITER", "20"],
-        ["FieldID_STAMMWUERZE_PLATO", "5"],
-        ["FieldID_KOCHWUERZE_LITER", "10"],
-        ["FieldID_NACHGUSS_LITER", "30"]
-    ]
-    prepareProtocol(data);
+    setTimeout(function () {
+        console.log(server_protocoll_response)
+        console.log(loadRecipe())
+        let date = new Date();
+        let data = [
+            ["FieldID_DATUM", date.getUTCDate() + "." + (parseInt(date.getUTCMonth()) + 1) + "." + date.getFullYear()],
+            ["FieldID_SUD", document.querySelector("#brewCount").innerHTML],
+            ["FieldID_BIERNAME", getRecipe().name],
+            ["FieldID_EINWEIßRAST_ZEIT", "20"],
+            ["FieldID_MALTOSERAST_ZEIT", "30"],
+            ["FieldID_VERZUCKERUNGSRAST_ZEIT", "10"],
+            ["FieldID_ABMAISCHEN_ZEIT", "40"],
+            ["FieldID_EINMAISCHEN_TEMP", "40"],
+            ["FieldID_EINWEIß_TEMP", "40"],
+            ["FieldID_MALTOSE_TEMP", "40"],
+            ["FieldID_VERZUCKERUNG_TEMP", "40"],
+            ["FieldID_ABMAISCHEN_TEMP", "40"],
+            ["FieldID_KOCHEN_START_ZEIT", "12:40"],
+            ["FieldID_KOCHEN_1HOPFEN", "12:50"],
+            ["FieldID_KOCHEN_2HOPFEN", "13:00"],
+            ["FieldID_KOCHEN_3HOPFEN", "13:20"],
+            ["FieldID_KOCHEN_END_ZEIT", "13:30"],
+            ["FieldID_AUSSCHLAGWUERZE_LITER", "20"],
+            ["FieldID_STAMMWUERZE_PLATO", "5"],
+            ["FieldID_KOCHWUERZE_LITER", "10"],
+            ["FieldID_NACHGUSS_LITER", "30"]
+        ]
+        prepareProtocol(data);
+    }, 1000);
 }
