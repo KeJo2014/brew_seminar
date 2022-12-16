@@ -288,14 +288,14 @@ function handle_submit(){
     }
     var json = JSON.stringify(schuettung);
     document.getElementById("json_schuettung").value = json;
-
+ 
     //Maisch
     var maisch = [];
     for (let index = 1; index <= indexPhase.length; index++) {
         var maischI = document.getElementById('maisch' + index).value;
         var temp = document.getElementById('maischtemp' + index).value;
         var sub = [];
-        for (let index2 = 1; index2 <= indexPhase[index]; index2++) {
+        for (let index2 = 1; index2 <= indexPhase[index - 1]; index2++) {
             var rasttemp = document.getElementById('rasttemp' + index + index2).value;
             var rastdur = document.getElementById('rastdur' + index + index2).value;
             sub.push([rasttemp, rastdur]);
@@ -326,18 +326,18 @@ function handle_submit(){
     var carbon = document.getElementById('karbon1').value;
     gaerung.push([sort, temp, end, carbon]);
     var json = JSON.stringify(gaerung);
-    document.getElementById("json_gaerung").value = json;
+    document.getElementById("json_gaerung").value = json; 
 
     //phase
     var phase = [];
-    for (let index = 1; index <= indexPhase; index++) {
+    for (let index = 1; index <= indexPhaseDesc; index++) {
         var title = document.getElementById('phasenTitel' + index).value;
         var descr = document.getElementById('phasenBeschreibung' + index).value;
         phase.push([title, descr]);
     }
     var json = JSON.stringify(phase);
-    document.getElementById("json_phase").value = json;
+    document.getElementById("json_phase").value = json; 
     //submit
     console.log(json)
-    //document.getElementById("form").submit();
+    document.getElementById("form").submit();
 }

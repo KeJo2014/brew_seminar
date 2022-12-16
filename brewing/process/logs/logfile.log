@@ -121,3 +121,310 @@ Fri Dec 16 20:10:38 2022: Another client connected
 WebSocket DISCONNECT /ws/socket-server/ [192.168.2.179:50130]
 HTTP GET /brewing 200 [0.92, 192.168.2.179:50136]
 /home/pi/brew_seminar/brewing/process/hardware.py changed, reloading.
+HTTP GET / 200 [0.07, 127.0.0.1:54030]
+HTTP GET /static/css/create.css 304 [0.01, 127.0.0.1:54030]
+HTTP GET /static/css/brewing.css 304 [0.00, 127.0.0.1:54030]
+HTTP GET /static/css/template.css 304 [0.00, 127.0.0.1:54030]
+HTTP GET /static/img/beer_background.webm 200 [1.80, 127.0.0.1:54030]
+HTTP GET /home 200 [0.10, 127.0.0.1:38654]
+HTTP POST /brewing 302 [0.09, 127.0.0.1:38654]
+HTTP GET /brewing 200 [1.04, 127.0.0.1:38654]
+HTTP GET /static/js/server_connection.js 304 [0.01, 127.0.0.1:38654]
+HTTP GET /static/js/protocol_csv.js 304 [0.01, 127.0.0.1:59948]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:59950]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:59950]
+Fri Dec 16 21:27:01 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:59950]
+HTTP GET / 200 [0.06, 192.168.2.179:50206]
+HTTP GET /static/css/style.css 304 [0.01, 192.168.2.179:50206]
+HTTP GET /static/css/login.css 304 [0.00, 192.168.2.179:50206]
+HTTP GET /static/css/create.css 304 [0.00, 192.168.2.179:50206]
+HTTP GET /static/css/brewing.css 304 [0.00, 192.168.2.179:50206]
+HTTP GET /static/css/home.css 304 [0.00, 192.168.2.179:50206]
+HTTP GET /static/css/template.css 304 [0.00, 192.168.2.179:50206]
+HTTP GET /static/img/beer_background.webm 200 [1.51, 192.168.2.179:50206]
+HTTP GET /home 200 [0.05, 192.168.2.179:50206]
+HTTP GET /static/js/home.js 200 [0.01, 192.168.2.179:50206]
+HTTP POST /brewing 302 [0.02, 192.168.2.179:50206]
+HTTP GET /brewing 200 [0.95, 192.168.2.179:50206]
+HTTP GET /static/img/download.png 304 [0.01, 192.168.2.179:50206]
+HTTP GET /static/js/three.js 304 [0.01, 192.168.2.179:50209]
+HTTP GET /static/js/server_connection.js 304 [0.01, 192.168.2.179:50206]
+HTTP GET /static/js/protocol_csv.js 304 [0.01, 192.168.2.179:50209]
+HTTP GET /static/js/createPDF.js 304 [0.01, 192.168.2.179:50206]
+WebSocket HANDSHAKING /ws/socket-server/ [192.168.2.179:50211]
+WebSocket CONNECT /ws/socket-server/ [192.168.2.179:50211]
+Fri Dec 16 21:32:48 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [192.168.2.179:50211]
+HTTP GET /brewing 200 [0.93, 192.168.2.179:50220]
+WebSocket HANDSHAKING /ws/socket-server/ [192.168.2.179:50222]
+WebSocket CONNECT /ws/socket-server/ [192.168.2.179:50222]
+Fri Dec 16 21:41:09 2022: Another client connected
+Exception inside application: heat() missing 1 required positional argument: 'consumer'
+Traceback (most recent call last):
+  File "/home/pi/env/lib/python3.9/site-packages/channels/staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/pi/env/lib/python3.9/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/pi/env/lib/python3.9/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 442, in wait_for
+    return await fut
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/generic/websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "/home/pi/brew_seminar/brewing/consumer.py", line 24, in receive
+    self.evaluate_response(text_data_json)
+  File "/home/pi/brew_seminar/brewing/consumer.py", line 72, in evaluate_response
+    brew_system.heat(0)
+TypeError: heat() missing 1 required positional argument: 'consumer'
+Exception inside application: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/pi/env/lib/python3.9/site-packages/channels/staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/pi/env/lib/python3.9/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/pi/env/lib/python3.9/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 442, in wait_for
+    return await fut
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/generic/websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "/home/pi/brew_seminar/brewing/consumer.py", line 24, in receive
+    self.evaluate_response(text_data_json)
+  File "/home/pi/brew_seminar/brewing/consumer.py", line 79, in evaluate_response
+    print(int(msg["message"]))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+WebSocket DISCONNECT /ws/socket-server/ [192.168.2.179:50222]
+HTTP GET /home 200 [0.03, 192.168.2.179:50220]
+HTTP POST /brewing 302 [0.04, 192.168.2.179:50220]
+HTTP GET /brewing 200 [0.92, 192.168.2.179:50220]
+WebSocket HANDSHAKING /ws/socket-server/ [192.168.2.179:50227]
+WebSocket CONNECT /ws/socket-server/ [192.168.2.179:50227]
+Fri Dec 16 21:41:31 2022: Another client connected
+HTTP GET /home 200 [0.11, 127.0.0.1:57762]
+HTTP GET /static/css/create.css 304 [0.01, 127.0.0.1:57762]
+HTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:57762]
+HTTP GET /static/css/template.css 304 [0.01, 127.0.0.1:57762]
+HTTP GET /create 200 [0.05, 127.0.0.1:57762]
+HTTP GET /static/js/create.js 200 [0.03, 127.0.0.1:57762]
+HTTP GET /create?csrfmiddlewaretoken=A9GuWKGa6FZ0ibtskv6DSZ67X4jZmc8kORHCog4bVB82riYuyOoLfW3FJBnBTOd0&guss1=Brauwasser1&gussvol1=40&guss2=Brauwasser2&gussvol2=30&malz1=Sch%C3%BCttung1&malzmenge1=34&malz2=Sch%C3%BCttung2&malzmenge2=45&maisch1=Maischphase1&maischtemp1=43&rasttemp11=34&rastdur11=38&maisch2=Maischphase2&maischtemp2=34&rasttemp21=34&rastdur21=36&kochendur=78&hopfen1=Hopfen1&hopfenmenge1=45&alpha1=76&hopfentime1=45&hefe1=Hefe1&gaertemp1=34&endgaergrad1=75&karbon1=57&json_brauwasser=%5B%5B%22Brauwasser1%22%2C%2240%22%5D%2C%5B%22Brauwasser2%22%2C%2230%22%5D%5D&json_schuettung=%5B%5B%22Sch%C3%BCttung1%22%2C%2234%22%5D%2C%5B%22Sch%C3%BCttung2%22%2C%2245%22%5D%5D&json_maisch=%5B%5B%22Maischphase1%22%2C%2243%22%2C%5B%5B%2234%22%2C%2238%22%5D%5D%5D%2C%5B%22Maischphase2%22%2C%2234%22%2C%5B%5D%5D%5D&json_wuerze=%5B%2278%22%2C%5B%22Hopfen1%22%2C%2245%22%2C%2276%22%2C%2245%22%5D%5D&json_gaerung=%5B%5B%22Hefe1%22%2C%2234%22%2C%2275%22%2C%2257%22%5D%5D&json_phase=%5B%5D&name=Name&sort=Sorte&author=Ersteller&ausschlagswuerze=34&sudhausausbeute=57&stammwuerze=57&bittere=5&farbe=7&alkohol=698&beschreibung=Beschreibung 200 [0.04, 127.0.0.1:36812]
+HTTP GET /home 200 [0.05, 127.0.0.1:36812]
+HTTP GET /create 200 [0.07, 127.0.0.1:36812]
+HTTP GET /create?csrfmiddlewaretoken=ypKi2F1pG2Bs6OqVQVXuDpzhkPP6B5hYM7LqubpqvYKufVVX4efC0mwP6mTI8HmE&kochendur=&hefe1=&gaertemp1=&endgaergrad1=&karbon1=&json_brauwasser=%5B%5D&json_schuettung=%5B%5D&json_maisch=%5B%5D&json_wuerze=%5B%22%22%5D&json_gaerung=%5B%5B%22%22%2C%22%22%2C%22%22%2C%22%22%5D%5D&json_phase=%5B%5D&name=dfgj&sort=dfgj&author=457&ausschlagswuerze=45&sudhausausbeute=7&stammwuerze=5&bittere=5&farbe=7&alkohol=5&beschreibung=dfhg 200 [0.05, 127.0.0.1:36812]
+HTTP GET /home 200 [0.07, 127.0.0.1:57772]
+HTTP GET /delete/4 302 [0.06, 127.0.0.1:57772]
+HTTP GET /home 200 [0.04, 127.0.0.1:57772]
+HTTP GET /create 200 [0.04, 127.0.0.1:57772]
+HTTP GET /home 200 [0.06, 127.0.0.1:50424]
+HTTP GET /create 200 [0.05, 127.0.0.1:50424]
+HTTP GET /home 200 [0.08, 127.0.0.1:32862]
+HTTP GET /create 200 [0.11, 127.0.0.1:32862]
+HTTP GET /create 200 [0.04, 127.0.0.1:34250]
+HTTP GET / 200 [0.03, 127.0.0.1:52150]
+HTTP GET /static/img/beer_background.webm 200 [1.78, 127.0.0.1:52150]
+HTTP GET /home 200 [0.22, 127.0.0.1:52526]
+HTTP GET /create 200 [0.05, 127.0.0.1:52526]
+HTTP GET /create 200 [0.08, 127.0.0.1:40356]
+HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:40356]
+HTTP GET /static/js/create.js 200 [0.01, 127.0.0.1:40356]
+HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:40372]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:40372]
+HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:40372]
+HTTP GET /static/css/home.css 200 [0.01, 127.0.0.1:40372]
+HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:40372]
+HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:40372]
+HTTP GET /create 200 [0.05, 127.0.0.1:34964]
+HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:34964]
+HTTP GET /static/js/create.js 200 [0.01, 127.0.0.1:34964]
+HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:34964]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:34964]
+HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:34964]
+HTTP GET /static/css/home.css 200 [0.01, 127.0.0.1:34964]
+HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:34964]
+HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:34964]
+HTTP GET /create 200 [0.05, 127.0.0.1:51994]
+HTTP GET /static/css/style.css 200 [0.02, 127.0.0.1:51994]
+HTTP GET /static/js/create.js 200 [0.01, 127.0.0.1:51994]
+HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:51994]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:51994]
+HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:51994]
+HTTP GET /static/css/home.css 200 [0.01, 127.0.0.1:51994]
+HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:51994]
+HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:51994]
+HTTP GET /create 200 [0.05, 127.0.0.1:49186]
+HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:49186]
+HTTP GET /static/js/create.js 200 [0.01, 127.0.0.1:49186]
+HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:49186]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:49186]
+HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:49186]
+HTTP GET /static/css/home.css 200 [0.01, 127.0.0.1:49186]
+HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:49186]
+HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:49186]
+HTTP GET /create 200 [0.08, 127.0.0.1:35982]
+HTTP GET /static/css/style.css 200 [0.01, 127.0.0.1:35982]
+HTTP GET /static/js/create.js 200 [0.01, 127.0.0.1:35982]
+HTTP GET /static/css/login.css 200 [0.01, 127.0.0.1:35982]
+HTTP GET /static/css/create.css 200 [0.01, 127.0.0.1:35982]
+HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:35982]
+HTTP GET /static/css/home.css 200 [0.01, 127.0.0.1:35982]
+HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:35982]
+HTTP GET /static/img/favicon.ico 200 [0.01, 127.0.0.1:35982]
+HTTP GET /create?csrfmiddlewaretoken=E93BZkohxFNOxkoVEOcFTASj7UQlGxM0SR4JrQMimBWQGrTXS7uNgxPRTrUXd9RG&guss1=Brauwasser1&gussvol1=7&guss2=Brauwasser2&gussvol2=8&malz1=Sch%C3%BCttung1&malzmenge1=9&malz2=Sch%C3%BCttung2&malzmenge2=10&maisch1=Maischphase1&maischtemp1=11&rasttemp11=12&rastdur11=13&rasttemp12=14&rastdur12=15&maisch2=Maischphase2&maischtemp2=16&rasttemp21=17&rastdur21=18&kochendur=19&hopfen1=Hopfen1&hopfenmenge1=20&alpha1=21&hopfentime1=22&hopfen2=Hopfen2&hopfenmenge2=23&alpha2=24&hopfentime2=25&hefe1=Hefe1&gaertemp1=26&endgaergrad1=27&karbon1=28&json_brauwasser=%5B%5B%22Brauwasser1%22%2C%227%22%5D%2C%5B%22Brauwasser2%22%2C%228%22%5D%5D&json_schuettung=%5B%5B%22Sch%C3%BCttung1%22%2C%229%22%5D%2C%5B%22Sch%C3%BCttung2%22%2C%2210%22%5D%5D&json_maisch=%5B%5B%22Maischphase1%22%2C%2211%22%2C%5B%5B%2212%22%2C%2213%22%5D%2C%5B%2214%22%2C%2215%22%5D%5D%5D%2C%5B%22Maischphase2%22%2C%2216%22%2C%5B%5B%2217%22%2C%2218%22%5D%5D%5D%5D&json_wuerze=%5B%2219%22%2C%5B%22Hopfen1%22%2C%2220%22%2C%2221%22%2C%2222%22%5D%2C%5B%22Hopfen2%22%2C%2223%22%2C%2224%22%2C%2225%22%5D%5D&json_gaerung=%5B%5B%22Hefe1%22%2C%2226%22%2C%2227%22%2C%2228%22%5D%5D&json_phase=%5B%5B%22TestPhase%22%2C%22Testbeschreibung%22%5D%2C%5B%22Testphase2%22%2C%22Testbeschreibung%22%5D%5D&name=Test&sort=Testautor&author=Testersteller&ausschlagswuerze=1&sudhausausbeute=2&stammwuerze=3&bittere=4&farbe=5&alkohol=6&beschreibung=Testbeschreibung 200 [0.06, 127.0.0.1:35942]
+HTTP GET /static/js/create.js 304 [0.01, 127.0.0.1:35942]
+HTTP GET /home 200 [0.10, 127.0.0.1:35942]
+HTTP GET /static/js/home.js 200 [0.02, 127.0.0.1:35942]
+HTTP POST /brewing 302 [0.03, 127.0.0.1:35942]
+HTTP GET /brewing 200 [0.94, 127.0.0.1:35942]
+HTTP GET /static/js/three.js 200 [0.06, 127.0.0.1:35942]
+HTTP GET /static/js/server_connection.js 200 [0.05, 127.0.0.1:35270]
+HTTP GET /static/js/protocol_csv.js 200 [0.06, 127.0.0.1:35274]
+HTTP GET /static/js/createPDF.js 200 [0.08, 127.0.0.1:35278]
+HTTP GET /static/img/download.png 200 [0.09, 127.0.0.1:35294]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:35308]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:35308]
+Fri Dec 16 22:42:14 2022: Another client connected
+Exception inside application: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/home/pi/env/lib/python3.9/site-packages/channels/staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/pi/env/lib/python3.9/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/pi/env/lib/python3.9/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 442, in wait_for
+    return await fut
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/generic/websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "/home/pi/brew_seminar/brewing/consumer.py", line 24, in receive
+    self.evaluate_response(text_data_json)
+  File "/home/pi/brew_seminar/brewing/consumer.py", line 52, in evaluate_response
+    if(brew_system.next_step(self)):
+  File "/home/pi/brew_seminar/brewing/process/brew_server.py", line 98, in next_step
+    self.initiate_maischen(consumer)
+  File "/home/pi/brew_seminar/brewing/process/brew_server.py", line 223, in initiate_maischen
+    phases = self.load_phases(0)
+  File "/home/pi/brew_seminar/brewing/process/brew_server.py", line 194, in load_phases
+    temp = json.loads(recipe.maischplan)[0][2]
+  File "/usr/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:35308]
+HTTP GET /brewing 200 [1.04, 127.0.0.1:35942]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:51928]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:51928]
+Fri Dec 16 22:42:49 2022: Another client connected
+HTTP GET /home 200 [0.05, 127.0.0.1:35942]
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:51928]
+HTTP GET /admin 301 [0.01, 127.0.0.1:58710]
+HTTP GET /admin/ 200 [0.14, 127.0.0.1:58710]
+HTTP GET /static/admin/css/base.css 200 [0.01, 127.0.0.1:58710]
+HTTP GET /static/admin/css/nav_sidebar.css 200 [0.03, 127.0.0.1:58710]
+HTTP GET /static/admin/css/dashboard.css 200 [0.04, 127.0.0.1:58724]
+HTTP GET /static/admin/css/responsive.css 200 [0.05, 127.0.0.1:58726]
+HTTP GET /static/admin/js/nav_sidebar.js 200 [0.06, 127.0.0.1:58728]
+HTTP GET /static/admin/css/fonts.css 200 [0.02, 127.0.0.1:58710]
+HTTP GET /static/admin/img/icon-addlink.svg 200 [0.02, 127.0.0.1:58710]
+HTTP GET /static/admin/img/icon-changelink.svg 200 [0.03, 127.0.0.1:58728]
+HTTP GET /static/admin/fonts/Roboto-Light-webfont.woff 200 [0.03, 127.0.0.1:58728]
+HTTP GET /static/admin/fonts/Roboto-Regular-webfont.woff 200 [0.04, 127.0.0.1:58710]
+HTTP GET /static/admin/fonts/Roboto-Bold-webfont.woff 200 [0.05, 127.0.0.1:58726]
+Not Found: /favicon.ico
+HTTP GET /favicon.ico 404 [0.06, 127.0.0.1:58726]
+HTTP GET /admin/brewing/brew_recipe/ 200 [0.17, 127.0.0.1:58726]
+HTTP GET /static/admin/css/changelists.css 200 [0.01, 127.0.0.1:58726]
+HTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [0.04, 127.0.0.1:58728]
+HTTP GET /static/admin/js/jquery.init.js 200 [0.06, 127.0.0.1:58724]
+HTTP GET /admin/jsi18n/ 200 [0.09, 127.0.0.1:58710]
+HTTP GET /static/admin/js/core.js 200 [0.08, 127.0.0.1:47538]
+HTTP GET /static/admin/js/admin/RelatedObjectLookups.js 200 [0.09, 127.0.0.1:47548]
+HTTP GET /static/admin/js/actions.js 200 [0.10, 127.0.0.1:58726]
+HTTP GET /static/admin/js/urlify.js 200 [0.05, 127.0.0.1:58728]
+HTTP GET /static/admin/js/prepopulate.js 200 [0.06, 127.0.0.1:58724]
+HTTP GET /static/admin/js/vendor/xregexp/xregexp.js 200 [0.05, 127.0.0.1:58710]
+HTTP GET /static/admin/img/tooltag-add.svg 200 [0.01, 127.0.0.1:58710]
+HTTP GET /admin/brewing/brew_recipe/add/ 200 [0.37, 127.0.0.1:58710]
+HTTP GET /static/admin/css/forms.css 200 [0.01, 127.0.0.1:58710]
+HTTP GET /static/admin/js/prepopulate_init.js 200 [0.02, 127.0.0.1:58728]
+HTTP GET /static/admin/css/widgets.css 200 [0.02, 127.0.0.1:58728]
+HTTP GET /admin/jsi18n/ 200 [0.07, 127.0.0.1:58724]
+HTTP GET /static/admin/js/change_form.js 200 [0.01, 127.0.0.1:58724]
+HTTP GET /admin/brewing/brew_recipe/ 200 [0.16, 127.0.0.1:58724]
+HTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:58724]
+HTTP GET /admin/brewing/brew_recipe/3/change/ 200 [0.35, 127.0.0.1:58724]
+HTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:58724]
