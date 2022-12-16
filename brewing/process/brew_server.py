@@ -131,9 +131,9 @@ class brew_server():    # Übergabe this (Consumer)
             delta = time.time() - self.maischen["start"]
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < phases[i][1]):
-                    if(self.last_phase != i):
-                        self.proccess_logger.insert(f'rast{i}', time.time())
-                        self.last_phase = i
+                    if(self.last_phase != i+1):
+                        self.proccess_logger.insert(f'rast{i+1}', time.time())
+                        self.last_phase = i+1
                     heating_duration = self.heat(
                         phases[i][0], consumer)     # returns heating time
                     self.maischen["end"] = self.maischen["end"] + heating_duration
@@ -167,9 +167,9 @@ class brew_server():    # Übergabe this (Consumer)
             delta = time.time() - self.kochen["start"]
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < (int(root[0]) - int(phases[i][3]))):
-                    if(self.last_phase != i):
-                        self.proccess_logger.insert(f'cook{i}', time.time())
-                        self.last_phase = i
+                    if(self.last_phase != i+1):
+                        self.proccess_logger.insert(f'cook{i+1}', time.time())
+                        self.last_phase = i+1
                     heating_duration = self.heat(95, consumer)            # QUESTION 5
                     self.kochen["end"] = self.kochen["end"] + heating_duration
                     break
