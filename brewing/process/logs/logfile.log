@@ -1,0 +1,123 @@
+HTTP GET /home 302 [0.06, 127.0.0.1:54706]
+HTTP GET /login 200 [0.06, 127.0.0.1:54706]
+HTTP GET /static/css/create.css 200 [0.04, 127.0.0.1:54706]
+HTTP GET /static/css/brewing.css 200 [0.01, 127.0.0.1:54706]
+HTTP GET /static/css/template.css 200 [0.01, 127.0.0.1:54706]
+HTTP POST /login 302 [0.66, 127.0.0.1:54706]
+HTTP GET /home 200 [0.07, 127.0.0.1:54706]
+HTTP POST /brewing 302 [0.05, 127.0.0.1:54706]
+HTTP GET /brewing 200 [0.89, 127.0.0.1:54706]
+HTTP GET /static/js/server_connection.js 200 [0.01, 127.0.0.1:54706]
+HTTP GET /static/js/protocol_csv.js 200 [0.01, 127.0.0.1:41496]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:41506]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:41506]
+Fri Dec 16 18:02:36 2022: Another client connected
+Invalid HTTP_HOST header: '192.168.2.206:10000'. You may need to add '192.168.2.206' to ALLOWED_HOSTS.
+Bad Request: /
+HTTP GET / 400 [0.18, 192.168.2.184:43080]
+HTTP GET /brewing 200 [0.91, 127.0.0.1:33740]
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:41506]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:33748]
+HTTP GET /home 200 [0.08, 127.0.0.1:33740]
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:33748]
+Application instance <Task pending name='Task-27' coro=<StaticFilesWrapper.__call__() running at /home/pi/env/lib/python3.9/site-packages/channels/staticfiles.py:44> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/lib/python3.9/asyncio/futures.py:384, <TaskWakeupMethWrapper object at 0xb4068988>()]>> for connection <WebSocketProtocol client=['127.0.0.1', 41506] path=b'/ws/socket-server/'> took too long to shut down and was killed.
+Application instance <Task pending name='Task-92' coro=<StaticFilesWrapper.__call__() running at /home/pi/env/lib/python3.9/site-packages/channels/staticfiles.py:44> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/lib/python3.9/asyncio/futures.py:384, <TaskWakeupMethWrapper object at 0xb2dc2ee0>()]>> for connection <WebSocketProtocol client=['127.0.0.1', 33748] path=b'/ws/socket-server/'> took too long to shut down and was killed.
+HTTP GET / 200 [0.39, 127.0.0.1:38768]
+HTTP GET /static/css/create.css 304 [0.01, 127.0.0.1:38768]
+HTTP GET /static/css/brewing.css 304 [0.01, 127.0.0.1:38768]
+HTTP GET /static/css/template.css 304 [0.01, 127.0.0.1:38768]
+HTTP GET /static/img/beer_background.webm 200 [2.17, 127.0.0.1:38768]
+HTTP GET /home 200 [1.74, 127.0.0.1:38224]
+HTTP POST /brewing 302 [0.05, 127.0.0.1:38224]
+HTTP GET /brewing 200 [0.95, 127.0.0.1:38224]
+HTTP GET /static/js/server_connection.js 304 [0.02, 127.0.0.1:38224]
+HTTP GET /static/js/protocol_csv.js 304 [0.02, 127.0.0.1:39688]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:39698]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:39698]
+Fri Dec 16 19:58:10 2022: Another client connected
+Exception inside application: heat() missing 1 required positional argument: 'consumer'
+Traceback (most recent call last):
+  File "/home/pi/env/lib/python3.9/site-packages/channels/staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/home/pi/env/lib/python3.9/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/home/pi/env/lib/python3.9/site-packages/asgiref/sync.py", line 435, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 442, in wait_for
+    return await fut
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/asgiref/sync.py", line 476, in thread_handler
+    return func(*args, **kwargs)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/consumer.py", line 125, in dispatch
+    handler(message)
+  File "/home/pi/env/lib/python3.9/site-packages/channels/generic/websocket.py", line 59, in websocket_receive
+    self.receive(text_data=message["text"])
+  File "/home/pi/brew_seminar/brewing/consumer.py", line 24, in receive
+    self.evaluate_response(text_data_json)
+  File "/home/pi/brew_seminar/brewing/consumer.py", line 88, in evaluate_response
+    brew_system.heat(float(msg['message']))
+TypeError: heat() missing 1 required positional argument: 'consumer'
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:39698]
+/home/pi/brew_seminar/brewing/process/hardware.py changed, reloading.
+HTTP GET / 200 [0.07, 127.0.0.1:53502]
+HTTP GET /static/img/beer_background.webm 200 [1.97, 127.0.0.1:53502]
+HTTP GET /home 200 [0.14, 127.0.0.1:54472]
+HTTP POST /brewing 302 [0.03, 127.0.0.1:54472]
+HTTP GET /brewing 200 [0.90, 127.0.0.1:54472]
+WebSocket HANDSHAKING /ws/socket-server/ [127.0.0.1:43332]
+WebSocket CONNECT /ws/socket-server/ [127.0.0.1:43332]
+Fri Dec 16 20:02:58 2022: Another client connected
+Invalid HTTP_HOST header: '192.168.2.206:10000'. You may need to add '192.168.2.206' to ALLOWED_HOSTS.
+Bad Request: /
+HTTP GET / 400 [0.19, 192.168.2.179:50061]
+Invalid HTTP_HOST header: '192.168.2.206:10000'. You may need to add '192.168.2.206' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+HTTP GET /favicon.ico 400 [0.13, 192.168.2.179:50061]
+/home/pi/brew_seminar/brew_system/settings.py changed, reloading.
+WebSocket DISCONNECT /ws/socket-server/ [127.0.0.1:43332]
+HTTP GET / 200 [0.66, 192.168.2.179:50101]
+HTTP GET /static/css/style.css 200 [0.04, 192.168.2.179:50101]
+HTTP GET /static/css/login.css 200 [0.02, 192.168.2.179:50101]
+HTTP GET /static/css/create.css 200 [0.01, 192.168.2.179:50101]
+HTTP GET /static/css/brewing.css 200 [0.01, 192.168.2.179:50101]
+HTTP GET /static/css/home.css 200 [0.01, 192.168.2.179:50101]
+HTTP GET /static/css/template.css 200 [0.01, 192.168.2.179:50101]
+HTTP GET /static/img/beer_background.webm 200 [1.95, 192.168.2.179:50101]
+HTTP GET /static/img/favicon.ico 200 [1.33, 192.168.2.179:50117]
+HTTP GET /home 302 [0.08, 192.168.2.179:50121]
+HTTP GET /login 200 [0.02, 192.168.2.179:50122]
+HTTP POST /login 302 [0.72, 192.168.2.179:50122]
+HTTP GET /home 200 [0.04, 192.168.2.179:50122]
+HTTP GET /static/js/home.js 200 [0.01, 192.168.2.179:50122]
+HTTP POST /brewing 302 [0.02, 192.168.2.179:50122]
+HTTP GET /brewing 200 [0.91, 192.168.2.179:50122]
+HTTP GET /static/img/download.png 200 [0.01, 192.168.2.179:50122]
+HTTP GET /static/js/three.js 200 [0.04, 192.168.2.179:50121]
+HTTP GET /static/js/server_connection.js 200 [0.03, 192.168.2.179:50122]
+HTTP GET /static/js/protocol_csv.js 200 [0.02, 192.168.2.179:50128]
+HTTP GET /static/js/createPDF.js 200 [0.02, 192.168.2.179:50129]
+WebSocket HANDSHAKING /ws/socket-server/ [192.168.2.179:50130]
+WebSocket CONNECT /ws/socket-server/ [192.168.2.179:50130]
+Fri Dec 16 20:10:38 2022: Another client connected
+WebSocket DISCONNECT /ws/socket-server/ [192.168.2.179:50130]
+HTTP GET /brewing 200 [0.92, 192.168.2.179:50136]
+/home/pi/brew_seminar/brewing/process/hardware.py changed, reloading.

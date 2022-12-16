@@ -21,13 +21,13 @@ class brew_server_hardware():
 
 
     def heat_on(self):
-        os.system ("brewing/process/RPi_utils/codesend 1397077")
+        os.system ("./codesend 1397077")
         print("heating...")
         self.heat = True
 
     
     def heat_off(self):
-        os.system ("brewing/process/RPi_utils/codesend 1397076")
+        os.system ("./codesend 1397076")
         self.heat = False
 
     def get_engine_mode(self):
@@ -38,12 +38,12 @@ class brew_server_hardware():
 
     def engine_on(self):
         self.engine = True
-        os.system ("brewing/process/RPi_utils/codesend 1381717")
+        os.system ("./codesend 1381717")
         print("engine mode set to: True")
     
     def engine_off(self):
         self.engine = False
-        os.system ("brewing/process/RPi_utils/codesend 1381716")
+        os.system ("./codesend 1381716")
         print("engine mode set to: False")
     
     def get_sensor_object(self):
