@@ -158,6 +158,7 @@ class brew_server():    # Übergabe this (Consumer)
             print("finish")
             self.proccess_logger.insert(f'FieldID_KOCHEN_END_ZEIT', time.time())
             self.status["status"] = "running"
+            self.next_step(consumer)
         else:
             self.status["status"] = "cooking"
             root = self.load_phases(1)
