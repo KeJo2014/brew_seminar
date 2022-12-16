@@ -115,7 +115,7 @@ class brew_server():    # Übergabe this (Consumer)
         print(f'DAUER: {self.maischen["end"]-time.time()}')
         if(time.time() > self.maischen["end"]):
             print("finish")
-            self.proccess_logger.insert(f'rast{self.last_phase+1}', time.time())
+            self.proccess_logger.insert(f'FieldID_ABMAISCHEN_ZEIT', time.time())
             self.status["status"] = "running"
             self.hardware.engine_off()
             self.status["sensor_data"]["engine_mode"] = False
@@ -132,7 +132,7 @@ class brew_server():    # Übergabe this (Consumer)
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < phases[i][1]):
                     if(self.last_phase != i+1):
-                        self.proccess_logger.insert(f'rast{i+1}', time.time())
+                        self.proccess_logger.insert(f'FieldID_RAST_{i+2}', time.time())
                         self.last_phase = i+1
                     heating_duration = self.heat(
                         phases[i][0], consumer)     # returns heating time
@@ -156,7 +156,7 @@ class brew_server():    # Übergabe this (Consumer)
         print("COOKING")
         if(time.time() > self.kochen["end"]):
             print("finish")
-            self.proccess_logger.insert(f'rast{self.last_phase+1}', time.time())
+            self.proccess_logger.insert(f'FieldID_KOCHEN_END_ZEIT', time.time())
             self.status["status"] = "running"
         else:
             self.status["status"] = "cooking"
@@ -167,9 +167,9 @@ class brew_server():    # Übergabe this (Consumer)
             delta = time.time() - self.kochen["start"]
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < (int(root[0]) - int(phases[i][3]))):
-                    if(self.last_phase != i+1):
-                        self.proccess_logger.insert(f'cook{i+1}', time.time())
-                        self.last_phase = i+1
+                    if(self.last_phase != i):
+                        self.proccess_logger.insert(f'FieldID_KOCHEN_{i}HOPFEN', time.time())
+                        self.last_phase = i
                     heating_duration = self.heat(95, consumer)            # QUESTION 5
                     self.kochen["end"] = self.kochen["end"] + heating_duration
                     break
@@ -231,7 +231,7 @@ class brew_server():    # Übergabe this (Consumer)
         print(self.maischen["end"])
         self.status["status"] = "maischen"
         self.status["start_time"] = time.time()
-        self.proccess_logger.insert(f'rast{0}', time.time())
+        self.proccess_logger.insert(f'FieldID_RAST_1', time.time())
         self.hardware.engine_on()
 
     def initiate_kochen(self, consumer):
@@ -249,7 +249,7 @@ class brew_server():    # Übergabe this (Consumer)
         print(self.kochen["end"])
         self.status["status"] = "warmingUp"
         self.status["start_time"] = time.time()
-        self.proccess_logger.insert(f'cook{0}', time.time())
+        self.proccess_logger.insert(f'FieldID_KOCHEN_START_ZEIT', time.time())
         print("ENDE")
 
     def heat(self, destination_temp, consumer):

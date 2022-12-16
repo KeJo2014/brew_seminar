@@ -15,7 +15,7 @@ showGraph(false);
 const chatSocket = new WebSocket(url)
 
 chatSocket.onopen = function () {
-    delay(1000).then(() => loadRecipe())
+    delay(1000).then(function () { loadRecipe(); send_to_server("protocol_data", ""); })
 }
 
 chatSocket.onmessage = function (e) {
@@ -47,6 +47,7 @@ chatSocket.onmessage = function (e) {
                 "schuettung": JSON.parse(JSON.parse(data.schuettung))
             }
         case "getProcessData":
+            console.log(data.data)
             server_protocoll_response = data.data
 
         default:
@@ -418,40 +419,56 @@ function process_done() {
 
 function protocol_download() {
     console.log(server_protocoll_response)
-    // get server log data
-    send_to_server("protocol_data", "")
-    getRecipe()
     // create protocol
     setTimeout(function () {
         console.log(server_protocoll_response)
-        console.log(loadRecipe())
+        console.log(getRecipe())
         let date = new Date();
         let data = [
             ["FieldID_DATUM", date.getUTCDate() + "." + (parseInt(date.getUTCMonth()) + 1) + "." + date.getFullYear()],
             ["FieldID_SUD", document.querySelector("#brewCount").innerHTML],
             ["FieldID_BIERNAME", getRecipe().name],
-            ["FieldID_RAST_1", "20"],
-            ["FieldID_RAST_2", "30"],
-            ["FieldID_RAST_3", "10"],
-            ["FieldID_ABMAISCHEN_ZEIT", "40"],
+            // ["FieldID_RAST_1", "20"],
+            // ["FieldID_RAST_2", "30"],
+            // ["FieldID_RAST_3", "10"],
+            // ["FieldID_ABMAISCHEN_ZEIT", "40"],
             ["FieldID_EINMAISCHEN_TEMP", "40"],
             ["FieldID_EINWEIß_TEMP", "40"],
             ["FieldID_MALTOSE_TEMP", "40"],
             ["FieldID_VERZUCKERUNG_TEMP", "40"],
             ["FieldID_ABMAISCHEN_TEMP", "40"],
-            ["FieldID_KOCHEN_START_ZEIT", "12:40"],
-            ["FieldID_KOCHEN_1HOPFEN", "12:50"],
-            ["FieldID_KOCHEN_2HOPFEN", "13:00"],
-            ["FieldID_KOCHEN_3HOPFEN", "13:20"],
-            ["FieldID_KOCHEN_END_ZEIT", "13:30"],
-            ["FieldID_AUSSCHLAGWUERZE_LITER", "20"],
-            ["FieldID_STAMMWUERZE_PLATO", "5"],
-            ["FieldID_KOCHWUERZE_LITER", "10"],
-            ["FieldID_NACHGUSS_LITER", "30"]
+            // ["FieldID_KOCHEN_START_ZEIT", "12:40"],
+            // ["FieldID_KOCHEN_1HOPFEN", "12:50"],
+            // ["FieldID_KOCHEN_2HOPFEN", "13:00"],
+            // ["FieldID_KOCHEN_3HOPFEN", "13:20"],
+            // ["FieldID_KOCHEN_END_ZEIT", "13:30"],
+            ["FieldID_AUSSCHLAGWUERZE_LITER", "-"],
+            ["FieldID_STAMMWUERZE_PLATO", "-"],
+            ["FieldID_KOCHWUERZE_LITER", "-"],
+            ["FieldID_NACHGUSS_LITER", "-"]
         ]
-        for (let index = 0; index < server_protocoll_response.length; index++) {
-            data.push([server_protocoll_response[index].title,server_protocoll_response[server_protocoll_response[index].title]])
+        for (let index = 0; index < Object.keys(server_protocoll_response).length; index++) {
+            console.log()
+            data.push([Object.keys(server_protocoll_response)[index], convertUNIX(server_protocoll_response[Object.keys(server_protocoll_response)[index]])])
         }
+        console.log(data);
         prepareProtocol(data);
-    }, 1000);
+    }, 2000);
+}
+
+function convertUNIX(unix_timestamp) {
+    // Create a new JavaScript Date object based on the timestamp
+    // multiplied by 1000 so that the argument is in milliseconds, not seconds.
+    var date = new Date(unix_timestamp * 1000);
+    // Hours part from the timestamp
+    var hours = date.getHours();
+    // Minutes part from the timestamp
+    var minutes = "0" + date.getMinutes();
+    // Seconds part from the timestamp
+    var seconds = "0" + date.getSeconds();
+
+    // Will display time in 10:30:23 format
+    var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+
+    return (formattedTime);
 }
