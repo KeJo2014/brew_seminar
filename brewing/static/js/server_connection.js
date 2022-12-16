@@ -430,9 +430,9 @@ function protocol_download() {
             ["FieldID_DATUM", date.getUTCDate() + "." + (parseInt(date.getUTCMonth()) + 1) + "." + date.getFullYear()],
             ["FieldID_SUD", document.querySelector("#brewCount").innerHTML],
             ["FieldID_BIERNAME", getRecipe().name],
-            ["FieldID_EINWEIßRAST_ZEIT", "20"],
-            ["FieldID_MALTOSERAST_ZEIT", "30"],
-            ["FieldID_VERZUCKERUNGSRAST_ZEIT", "10"],
+            ["FieldID_RAST_1", "20"],
+            ["FieldID_RAST_2", "30"],
+            ["FieldID_RAST_3", "10"],
             ["FieldID_ABMAISCHEN_ZEIT", "40"],
             ["FieldID_EINMAISCHEN_TEMP", "40"],
             ["FieldID_EINWEIß_TEMP", "40"],
@@ -449,6 +449,9 @@ function protocol_download() {
             ["FieldID_KOCHWUERZE_LITER", "10"],
             ["FieldID_NACHGUSS_LITER", "30"]
         ]
+        for (let index = 0; index < server_protocoll_response.length; index++) {
+            data.push([server_protocoll_response[index].title,server_protocoll_response[server_protocoll_response[index].title]])
+        }
         prepareProtocol(data);
     }, 1000);
 }
