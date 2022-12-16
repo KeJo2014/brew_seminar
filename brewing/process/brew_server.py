@@ -168,7 +168,7 @@ class brew_server():    # Übergabe this (Consumer)
             for i in range(len(phases)):
                 if(delta/self.eye_of_agamotto < (int(root[0]) - int(phases[i][3]))):
                     if(self.last_phase != i):
-                        self.proccess_logger.insert(f'FieldID_KOCHEN_{i}HOPFEN', time.time())
+                        self.proccess_logger.insert(f'FieldID_KOCHEN_{i+1}HOPFEN', time.time())
                         self.last_phase = i
                     heating_duration = self.heat(95, consumer)            # QUESTION 5
                     self.kochen["end"] = self.kochen["end"] + heating_duration
